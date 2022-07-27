@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df85057f8e7b4f9983486991ecd1f533, type: 3}
+  m_Name: InteractStrategyGrabDrawer
+  m_EditorClassIdentifier: 
+  inputAction: {fileID: 11400000, guid: 1c4e0374c3d852d4fb472c61d8b3bf12, type: 2}
+  mode: 1
+  _filter:
+    _inputChannel: {fileID: 11400000, guid: cd6b3ed2516138a4d9f30a9c1025e408, type: 2}
+    _addActions:
+    - {fileID: 11400000, guid: e3f945d9efae26f4cb6e98daa9e7fad0, type: 2}
+    _removeActions:
+    - {fileID: 11400000, guid: adb9a20403e1e3847babd989f1412023, type: 2}
+  stopInteractWhenExceededMaxDistance: 1
+  stopInteractWhenNotInView: 0
+  maxInteractDistance: 3

@@ -1,0 +1,681 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8163736062172392864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9037cce914005e047a6b3c6c6db5644d, type: 3}
+  m_Name: Run
+  m_EditorClassIdentifier: 
+  _guid: 25c5536dd6965584ea676c392d5fc6d1
+  transitions:
+  - {fileID: 6279917247459175264}
+  - {fileID: 8746240067192081924}
+  - {fileID: -5179813677962099994}
+  - {fileID: 452472884593495898}
+  data: {fileID: 11400000, guid: 917f95ecf66778341a84d04660e396b5, type: 2}
+  _position: {x: 112.54476, y: 262.656}
+--- !u!114 &-6000192349333769558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c434bf9d86084cf4abd09de1d55362b4, type: 3}
+  m_Name: Jump_to_Crouch_3
+  m_EditorClassIdentifier: 
+  _guid: 1ad7091c0f930524ab3b31d106a358fe
+  targetState: {fileID: 1149103246764988441}
+  data: {fileID: 0}
+  _position: {x: 729.5999, y: 406.347}
+  _isMotionActive:
+    _value: 1
+    _hasValue: 1
+  _isRunActive:
+    _value: 0
+    _hasValue: 0
+  _isCrouchActive:
+    _value: 1
+    _hasValue: 1
+  _isGrounded:
+    _value: 1
+    _hasValue: 1
+--- !u!114 &-5371048077130856934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c434bf9d86084cf4abd09de1d55362b4, type: 3}
+  m_Name: Jump_to_Run_2
+  m_EditorClassIdentifier: 
+  _guid: c7a16298014074a4aa70b715d1379173
+  targetState: {fileID: -8163736062172392864}
+  data: {fileID: 0}
+  _position: {x: 674.8193, y: 399.45743}
+  _isMotionActive:
+    _value: 1
+    _hasValue: 1
+  _isRunActive:
+    _value: 1
+    _hasValue: 1
+  _isCrouchActive:
+    _value: 0
+    _hasValue: 1
+  _isGrounded:
+    _value: 1
+    _hasValue: 1
+--- !u!114 &-5179813677962099994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c434bf9d86084cf4abd09de1d55362b4, type: 3}
+  m_Name: Run_to_Crouch_2
+  m_EditorClassIdentifier: 
+  _guid: d70027d229b396b4386e1739b1aeac66
+  targetState: {fileID: 1149103246764988441}
+  data: {fileID: 0}
+  _position: {x: 168.19188, y: 407.03998}
+  _isMotionActive:
+    _value: 1
+    _hasValue: 1
+  _isRunActive:
+    _value: 0
+    _hasValue: 0
+  _isCrouchActive:
+    _value: 1
+    _hasValue: 1
+  _isGrounded:
+    _value: 1
+    _hasValue: 1
+--- !u!114 &-4665577363348506204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c434bf9d86084cf4abd09de1d55362b4, type: 3}
+  m_Name: Walk_to_Run_1
+  m_EditorClassIdentifier: 
+  _guid: 7d48f2fe98d6dd34abf469909fbad0b8
+  targetState: {fileID: -8163736062172392864}
+  data: {fileID: 0}
+  _position: {x: -119.808075, y: 413.952}
+  _isMotionActive:
+    _value: 1
+    _hasValue: 1
+  _isRunActive:
+    _value: 1
+    _hasValue: 1
+  _isCrouchActive:
+    _value: 0
+    _hasValue: 1
+  _isGrounded:
+    _value: 1
+    _hasValue: 1
+--- !u!114 &-1777885705864771145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c434bf9d86084cf4abd09de1d55362b4, type: 3}
+  m_Name: Jump_to_Idle_0
+  m_EditorClassIdentifier: 
+  _guid: 777fe361952c1944f8f83ba3b1e82659
+  targetState: {fileID: 3358878356495527190}
+  data: {fileID: 0}
+  _position: {x: 566.01587, y: 407.03998}
+  _isMotionActive:
+    _value: 0
+    _hasValue: 1
+  _isRunActive:
+    _value: 0
+    _hasValue: 0
+  _isCrouchActive:
+    _value: 0
+    _hasValue: 0
+  _isGrounded:
+    _value: 0
+    _hasValue: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15af4568615b4256a8b624a2480b1ad3, type: 3}
+  m_Name: MotionFsm
+  m_EditorClassIdentifier: 
+  initialState: {fileID: 3358878356495527190}
+  states:
+  - {fileID: 3358878356495527190}
+  - {fileID: 2148184776011363627}
+  - {fileID: -8163736062172392864}
+  - {fileID: 1149103246764988441}
+  - {fileID: 6358020031777979117}
+--- !u!114 &225430742863632708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c434bf9d86084cf4abd09de1d55362b4, type: 3}
+  m_Name: Walk_to_Idle_0
+  m_EditorClassIdentifier: 
+  _guid: 73145d3893bb35f4e945fe84f427d23e
+  targetState: {fileID: 3358878356495527190}
+  data: {fileID: 0}
+  _position: {x: -165.50403, y: 407.03998}
+  _isMotionActive:
+    _value: 0
+    _hasValue: 1
+  _isRunActive:
+    _value: 0
+    _hasValue: 0
+  _isCrouchActive:
+    _value: 0
+    _hasValue: 0
+  _isGrounded:
+    _value: 0
+    _hasValue: 0
+--- !u!114 &452472884593495898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c434bf9d86084cf4abd09de1d55362b4, type: 3}
+  m_Name: Run_to_Jump_3
+  m_EditorClassIdentifier: 
+  _guid: bc9f34a3b3874634cbb3d728ec757179
+  targetState: {fileID: 6358020031777979117}
+  data: {fileID: 0}
+  _position: {x: 233.85588, y: 407.03998}
+  _isMotionActive:
+    _value: 1
+    _hasValue: 1
+  _isRunActive:
+    _value: 0
+    _hasValue: 0
+  _isCrouchActive:
+    _value: 0
+    _hasValue: 0
+  _isGrounded:
+    _value: 0
+    _hasValue: 1
+--- !u!114 &519864979429499189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c434bf9d86084cf4abd09de1d55362b4, type: 3}
+  m_Name: Walk_to_Crouch_2
+  m_EditorClassIdentifier: 
+  _guid: 8e8632ee2582d624fa8e4d7cd7a1ac9f
+  targetState: {fileID: 1149103246764988441}
+  data: {fileID: 0}
+  _position: {x: -79.87204, y: 413.952}
+  _isMotionActive:
+    _value: 1
+    _hasValue: 1
+  _isRunActive:
+    _value: 0
+    _hasValue: 0
+  _isCrouchActive:
+    _value: 1
+    _hasValue: 1
+  _isGrounded:
+    _value: 1
+    _hasValue: 1
+--- !u!114 &776934448819726914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c434bf9d86084cf4abd09de1d55362b4, type: 3}
+  m_Name: Idle_to_Walk_0
+  m_EditorClassIdentifier: 
+  _guid: cb45707ae5adb564eaae5e60cfb7b4c1
+  targetState: {fileID: 2148184776011363627}
+  data: {fileID: 0}
+  _position: {x: -98.68805, y: 182.78401}
+  _isMotionActive:
+    _value: 1
+    _hasValue: 1
+  _isRunActive:
+    _value: 0
+    _hasValue: 1
+  _isCrouchActive:
+    _value: 0
+    _hasValue: 1
+  _isGrounded:
+    _value: 1
+    _hasValue: 1
+--- !u!114 &1149103246764988441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9037cce914005e047a6b3c6c6db5644d, type: 3}
+  m_Name: Crouch
+  m_EditorClassIdentifier: 
+  _guid: 349c64955d6e58a449fc64b9a00e9b5d
+  transitions:
+  - {fileID: 4255233792379394365}
+  - {fileID: 8106306019089256499}
+  - {fileID: 4868140893321740571}
+  - {fileID: 6191570458274884470}
+  data: {fileID: 11400000, guid: bb5c771e5df9f924faf9f26aa0d00d25, type: 2}
+  _position: {x: 355.8848, y: 262.656}
+--- !u!114 &1453507265164243914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c434bf9d86084cf4abd09de1d55362b4, type: 3}
+  m_Name: Idle_to_Run_1
+  m_EditorClassIdentifier: 
+  _guid: 616329165e71b6d45864041fe638494e
+  targetState: {fileID: -8163736062172392864}
+  data: {fileID: 0}
+  _position: {x: 152.448, y: 190.46399}
+  _isMotionActive:
+    _value: 1
+    _hasValue: 1
+  _isRunActive:
+    _value: 1
+    _hasValue: 1
+  _isCrouchActive:
+    _value: 0
+    _hasValue: 1
+  _isGrounded:
+    _value: 1
+    _hasValue: 1
+--- !u!114 &1457827730278291248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c434bf9d86084cf4abd09de1d55362b4, type: 3}
+  m_Name: Jump_to_Walk_1
+  m_EditorClassIdentifier: 
+  _guid: b1983edc63a6b9b47b91e77ea27b3a69
+  targetState: {fileID: 2148184776011363627}
+  data: {fileID: 0}
+  _position: {x: 612.86395, y: 407.03998}
+  _isMotionActive:
+    _value: 1
+    _hasValue: 1
+  _isRunActive:
+    _value: 0
+    _hasValue: 1
+  _isCrouchActive:
+    _value: 0
+    _hasValue: 1
+  _isGrounded:
+    _value: 1
+    _hasValue: 1
+--- !u!114 &2120756738551911390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c434bf9d86084cf4abd09de1d55362b4, type: 3}
+  m_Name: Walk_to_Jump_3
+  m_EditorClassIdentifier: 
+  _guid: ba2c692310e84334fb6d69b7bdfca7ac
+  targetState: {fileID: 6358020031777979117}
+  data: {fileID: 0}
+  _position: {x: -20.35208, y: 414.72003}
+  _isMotionActive:
+    _value: 1
+    _hasValue: 1
+  _isRunActive:
+    _value: 0
+    _hasValue: 0
+  _isCrouchActive:
+    _value: 0
+    _hasValue: 0
+  _isGrounded:
+    _value: 0
+    _hasValue: 1
+--- !u!114 &2148184776011363627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9037cce914005e047a6b3c6c6db5644d, type: 3}
+  m_Name: Walk
+  m_EditorClassIdentifier: 
+  _guid: 100839704a2a3844385b3d9d92bd2ddb
+  transitions:
+  - {fileID: 225430742863632708}
+  - {fileID: -4665577363348506204}
+  - {fileID: 519864979429499189}
+  - {fileID: 2120756738551911390}
+  data: {fileID: 11400000, guid: 9638e41e1ec949842bc954ceaace4b5b, type: 2}
+  _position: {x: -142.08002, y: 262.656}
+--- !u!114 &2703437400796792452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c434bf9d86084cf4abd09de1d55362b4, type: 3}
+  m_Name: Idle_to_Jump_3
+  m_EditorClassIdentifier: 
+  _guid: 0e2ba37cf0987c04496f66a8b64ed74a
+  targetState: {fileID: 6358020031777979117}
+  data: {fileID: 0}
+  _position: {x: 647.0399, y: 175.5359}
+  _isMotionActive:
+    _value: 1
+    _hasValue: 1
+  _isRunActive:
+    _value: 0
+    _hasValue: 0
+  _isCrouchActive:
+    _value: 0
+    _hasValue: 0
+  _isGrounded:
+    _value: 0
+    _hasValue: 1
+--- !u!114 &3358878356495527190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9037cce914005e047a6b3c6c6db5644d, type: 3}
+  m_Name: Idle
+  m_EditorClassIdentifier: 
+  _guid: 193809aefc381ee48a8a0954300096db
+  transitions:
+  - {fileID: 776934448819726914}
+  - {fileID: 1453507265164243914}
+  - {fileID: 3738498121923995419}
+  - {fileID: 2703437400796792452}
+  data: {fileID: 11400000, guid: 3647e7660ebb59a45b3dda63b65f85d4, type: 2}
+  _position: {x: 235.73575, y: -38.399967}
+--- !u!114 &3738498121923995419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c434bf9d86084cf4abd09de1d55362b4, type: 3}
+  m_Name: Idle_to_Crouch_2
+  m_EditorClassIdentifier: 
+  _guid: 8eb16e23962cd8d44814655f74bb4db7
+  targetState: {fileID: 1149103246764988441}
+  data: {fileID: 0}
+  _position: {x: 386.30402, y: 182.78401}
+  _isMotionActive:
+    _value: 1
+    _hasValue: 1
+  _isRunActive:
+    _value: 0
+    _hasValue: 0
+  _isCrouchActive:
+    _value: 1
+    _hasValue: 1
+  _isGrounded:
+    _value: 1
+    _hasValue: 1
+--- !u!114 &4255233792379394365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c434bf9d86084cf4abd09de1d55362b4, type: 3}
+  m_Name: Crouch_to_Idle_0
+  m_EditorClassIdentifier: 
+  _guid: 463004a942b47b049810935dfb572544
+  targetState: {fileID: 3358878356495527190}
+  data: {fileID: 0}
+  _position: {x: 309.50394, y: 407.03998}
+  _isMotionActive:
+    _value: 0
+    _hasValue: 1
+  _isRunActive:
+    _value: 0
+    _hasValue: 0
+  _isCrouchActive:
+    _value: 0
+    _hasValue: 0
+  _isGrounded:
+    _value: 0
+    _hasValue: 0
+--- !u!114 &4868140893321740571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c434bf9d86084cf4abd09de1d55362b4, type: 3}
+  m_Name: Crouch_to_Run_2
+  m_EditorClassIdentifier: 
+  _guid: 174e82121d8825945b7ae57765c106e5
+  targetState: {fileID: -8163736062172392864}
+  data: {fileID: 0}
+  _position: {x: 422.96237, y: 407.03998}
+  _isMotionActive:
+    _value: 1
+    _hasValue: 1
+  _isRunActive:
+    _value: 1
+    _hasValue: 1
+  _isCrouchActive:
+    _value: 0
+    _hasValue: 1
+  _isGrounded:
+    _value: 1
+    _hasValue: 1
+--- !u!114 &6191570458274884470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c434bf9d86084cf4abd09de1d55362b4, type: 3}
+  m_Name: Crouch_to_Jump_3
+  m_EditorClassIdentifier: 
+  _guid: 6ad33dfe8b501a246b32fe8e7f269865
+  targetState: {fileID: 6358020031777979117}
+  data: {fileID: 0}
+  _position: {x: 477.31192, y: 407.03998}
+  _isMotionActive:
+    _value: 1
+    _hasValue: 1
+  _isRunActive:
+    _value: 0
+    _hasValue: 0
+  _isCrouchActive:
+    _value: 0
+    _hasValue: 0
+  _isGrounded:
+    _value: 0
+    _hasValue: 1
+--- !u!114 &6279917247459175264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c434bf9d86084cf4abd09de1d55362b4, type: 3}
+  m_Name: Run_to_Idle_0
+  m_EditorClassIdentifier: 
+  _guid: 8a42b25567c147842a8e8b9267c11f12
+  targetState: {fileID: 3358878356495527190}
+  data: {fileID: 0}
+  _position: {x: 62.975937, y: 407.03998}
+  _isMotionActive:
+    _value: 0
+    _hasValue: 1
+  _isRunActive:
+    _value: 0
+    _hasValue: 0
+  _isCrouchActive:
+    _value: 0
+    _hasValue: 0
+  _isGrounded:
+    _value: 0
+    _hasValue: 0
+--- !u!114 &6358020031777979117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9037cce914005e047a6b3c6c6db5644d, type: 3}
+  m_Name: Jump
+  m_EditorClassIdentifier: 
+  _guid: 4a3b030205c3bea498fe1875270ac1ce
+  transitions:
+  - {fileID: -1777885705864771145}
+  - {fileID: 1457827730278291248}
+  - {fileID: -5371048077130856934}
+  - {fileID: -6000192349333769558}
+  data: {fileID: 11400000, guid: 5f2fe35795a18254c9a16db6ddda9e69, type: 2}
+  _position: {x: 612.91266, y: 263.1114}
+--- !u!114 &8106306019089256499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c434bf9d86084cf4abd09de1d55362b4, type: 3}
+  m_Name: Crouch_to_Walk_1
+  m_EditorClassIdentifier: 
+  _guid: c2545b8fe5c2f7a45895a7683262002d
+  targetState: {fileID: 2148184776011363627}
+  data: {fileID: 0}
+  _position: {x: 356.35196, y: 407.03998}
+  _isMotionActive:
+    _value: 1
+    _hasValue: 1
+  _isRunActive:
+    _value: 0
+    _hasValue: 1
+  _isCrouchActive:
+    _value: 0
+    _hasValue: 1
+  _isGrounded:
+    _value: 1
+    _hasValue: 1
+--- !u!114 &8746240067192081924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c434bf9d86084cf4abd09de1d55362b4, type: 3}
+  m_Name: Run_to_Walk_1
+  m_EditorClassIdentifier: 
+  _guid: 13eae0a2be2ec2a49a04a8c70395bc0b
+  targetState: {fileID: 2148184776011363627}
+  data: {fileID: 0}
+  _position: {x: 112.8959, y: 407.03998}
+  _isMotionActive:
+    _value: 1
+    _hasValue: 1
+  _isRunActive:
+    _value: 0
+    _hasValue: 1
+  _isCrouchActive:
+    _value: 0
+    _hasValue: 1
+  _isGrounded:
+    _value: 1
+    _hasValue: 1

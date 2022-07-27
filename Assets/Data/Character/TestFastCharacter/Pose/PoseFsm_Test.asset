@@ -1,0 +1,421 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8294131340091292630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9037cce914005e047a6b3c6c6db5644d, type: 3}
+  m_Name: WantStand
+  m_EditorClassIdentifier: 
+  _guid: 23bd7ade63ee6bf4d967d86dd918f8c0
+  transitions:
+  - {fileID: 6295400503683598047}
+  - {fileID: 1540980541082387338}
+  - {fileID: 8844458090515183719}
+  data: {fileID: 11400000, guid: 79aef5b2e6e4ce9439a402d7ee849b1b, type: 2}
+  _position: {x: 420.3362, y: 46.079987}
+--- !u!114 &-8019983610716960848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9037cce914005e047a6b3c6c6db5644d, type: 3}
+  m_Name: Crouch
+  m_EditorClassIdentifier: 
+  _guid: f491fa81c8e410e41a3e6733c8ee8467
+  transitions:
+  - {fileID: -2390445193696598982}
+  - {fileID: -3707306072381826044}
+  - {fileID: -6344170961600715973}
+  data: {fileID: 11400000, guid: 79aef5b2e6e4ce9439a402d7ee849b1b, type: 2}
+  _position: {x: 117.18342, y: 46.08}
+--- !u!114 &-7332102087338516926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4ecc5e0ed744043a6cf97f335a16ab7, type: 3}
+  m_Name: ReadyStand_to_Stand_1
+  m_EditorClassIdentifier: 
+  _guid: a96bcf3d9c463ec4faec0e631aa3eb65
+  targetState: {fileID: 4243553562259245838}
+  data: {fileID: 11400000, guid: 8e4d38c3a9746924cad3c9a1a2886355, type: 2}
+  _position: {x: 579.12866, y: 522.24}
+  _isGrounded:
+    _value: 0
+    _hasValue: 1
+  _hasCeiling:
+    _value: 0
+    _hasValue: 0
+  _isCrouchInputActive:
+    _value: 0
+    _hasValue: 1
+  _isCrouching:
+    _value: 1
+    _hasValue: 1
+--- !u!114 &-7187254397570059692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4ecc5e0ed744043a6cf97f335a16ab7, type: 3}
+  m_Name: ReadyStand_to_Crouch_0
+  m_EditorClassIdentifier: 
+  _guid: b556ad74c9bb2b940a77d8ebdbdb5c63
+  targetState: {fileID: -8019983610716960848}
+  data: {fileID: 0}
+  _position: {x: 413.1839, y: 514.7671}
+  _isGrounded:
+    _value: 0
+    _hasValue: 0
+  _hasCeiling:
+    _value: 0
+    _hasValue: 0
+  _isCrouchInputActive:
+    _value: 1
+    _hasValue: 1
+  _isCrouching:
+    _value: 1
+    _hasValue: 1
+--- !u!114 &-6344170961600715973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4ecc5e0ed744043a6cf97f335a16ab7, type: 3}
+  m_Name: Crouch_to_WantStand_2
+  m_EditorClassIdentifier: 
+  _guid: d2ce888d9456e90499aed55cacd6c8f3
+  targetState: {fileID: -8294131340091292630}
+  data: {fileID: 0}
+  _position: {x: 69.50399, y: 214.656}
+  _isGrounded:
+    _value: 1
+    _hasValue: 1
+  _hasCeiling:
+    _value: 1
+    _hasValue: 1
+  _isCrouchInputActive:
+    _value: 0
+    _hasValue: 1
+  _isCrouching:
+    _value: 1
+    _hasValue: 1
+--- !u!114 &-3707306072381826044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4ecc5e0ed744043a6cf97f335a16ab7, type: 3}
+  m_Name: Crouch_to_Stand_1
+  m_EditorClassIdentifier: 
+  _guid: acb109f34616d06499fd22855b381417
+  targetState: {fileID: 4243553562259245838}
+  data: {fileID: 11400000, guid: 8e4d38c3a9746924cad3c9a1a2886355, type: 2}
+  _position: {x: 236.92796, y: 224.64}
+  _isGrounded:
+    _value: 0
+    _hasValue: 1
+  _hasCeiling:
+    _value: 0
+    _hasValue: 0
+  _isCrouchInputActive:
+    _value: 0
+    _hasValue: 1
+  _isCrouching:
+    _value: 1
+    _hasValue: 1
+--- !u!114 &-2390445193696598982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4ecc5e0ed744043a6cf97f335a16ab7, type: 3}
+  m_Name: Crouch_to_Stand_0
+  m_EditorClassIdentifier: 
+  _guid: c4caec1db0a9f824fb7210e4c4014ba6
+  targetState: {fileID: 4243553562259245838}
+  data: {fileID: 11400000, guid: 8e4d38c3a9746924cad3c9a1a2886355, type: 2}
+  _position: {x: 164.73596, y: 216.96002}
+  _isGrounded:
+    _value: 1
+    _hasValue: 1
+  _hasCeiling:
+    _value: 0
+    _hasValue: 1
+  _isCrouchInputActive:
+    _value: 0
+    _hasValue: 1
+  _isCrouching:
+    _value: 1
+    _hasValue: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15af4568615b4256a8b624a2480b1ad3, type: 3}
+  m_Name: PoseFsm_Test
+  m_EditorClassIdentifier: 
+  initialState: {fileID: 4243553562259245838}
+  states:
+  - {fileID: 4243553562259245838}
+  - {fileID: -8019983610716960848}
+  - {fileID: -8294131340091292630}
+  - {fileID: 8359671489352129986}
+--- !u!114 &1493860343169805386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4ecc5e0ed744043a6cf97f335a16ab7, type: 3}
+  m_Name: Stand_to_WantStand_1
+  m_EditorClassIdentifier: 
+  _guid: b52f45adb6acb074ea11d5d605530cd0
+  targetState: {fileID: -8294131340091292630}
+  data: {fileID: 11400000, guid: 8e4d38c3a9746924cad3c9a1a2886355, type: 2}
+  _position: {x: 445.43997, y: -43.008015}
+  _isGrounded:
+    _value: 1
+    _hasValue: 1
+  _hasCeiling:
+    _value: 1
+    _hasValue: 1
+  _isCrouchInputActive:
+    _value: 0
+    _hasValue: 1
+  _isCrouching:
+    _value: 0
+    _hasValue: 1
+--- !u!114 &1540980541082387338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4ecc5e0ed744043a6cf97f335a16ab7, type: 3}
+  m_Name: WantStand_to_Stand_1
+  m_EditorClassIdentifier: 
+  _guid: f5a5789c2f8a6904692d0cd7e7b90cbc
+  targetState: {fileID: 4243553562259245838}
+  data: {fileID: 11400000, guid: 8e4d38c3a9746924cad3c9a1a2886355, type: 2}
+  _position: {x: 586.7519, y: 242.68799}
+  _isGrounded:
+    _value: 0
+    _hasValue: 1
+  _hasCeiling:
+    _value: 0
+    _hasValue: 0
+  _isCrouchInputActive:
+    _value: 0
+    _hasValue: 1
+  _isCrouching:
+    _value: 1
+    _hasValue: 1
+--- !u!114 &4243553562259245838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9037cce914005e047a6b3c6c6db5644d, type: 3}
+  m_Name: Stand
+  m_EditorClassIdentifier: 
+  _guid: 2a23d468601a4f24c9bfa1d9f2ba4374
+  transitions:
+  - {fileID: 8465950451830365034}
+  - {fileID: 1493860343169805386}
+  data: {fileID: 11400000, guid: 332500bfee2849742aa75a032f867068, type: 2}
+  _position: {x: 266.49588, y: -251.38623}
+--- !u!114 &4985058000005285318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4ecc5e0ed744043a6cf97f335a16ab7, type: 3}
+  m_Name: ReadyStand_to_WantStand_2
+  m_EditorClassIdentifier: 
+  _guid: 32badec3e0288fe459e4ff8ea9dca4b7
+  targetState: {fileID: -8294131340091292630}
+  data: {fileID: 0}
+  _position: {x: 483.0719, y: 522.24}
+  _isGrounded:
+    _value: 1
+    _hasValue: 1
+  _hasCeiling:
+    _value: 1
+    _hasValue: 1
+  _isCrouchInputActive:
+    _value: 0
+    _hasValue: 1
+  _isCrouching:
+    _value: 1
+    _hasValue: 1
+--- !u!114 &6226203254802582204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1466203a19304250bcd68a2720e917bf, type: 3}
+  m_Name: ReadyStand_to_Stand_3
+  m_EditorClassIdentifier: 
+  _guid: f3a35e18ffbfdd340a05f2d8e3decd8d
+  targetState: {fileID: 4243553562259245838}
+  data: {fileID: 11400000, guid: 8e4d38c3a9746924cad3c9a1a2886355, type: 2}
+  _position: {x: 645.94464, y: 522.24}
+  _delay: 0.5
+--- !u!114 &6295400503683598047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4ecc5e0ed744043a6cf97f335a16ab7, type: 3}
+  m_Name: WantStand_to_Crouch_0
+  m_EditorClassIdentifier: 
+  _guid: f12a601f6f68e8a4db3e2854710b05eb
+  targetState: {fileID: -8019983610716960848}
+  data: {fileID: 0}
+  _position: {x: 395.52005, y: 232.704}
+  _isGrounded:
+    _value: 0
+    _hasValue: 0
+  _hasCeiling:
+    _value: 0
+    _hasValue: 0
+  _isCrouchInputActive:
+    _value: 1
+    _hasValue: 1
+  _isCrouching:
+    _value: 1
+    _hasValue: 1
+--- !u!114 &8359671489352129986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9037cce914005e047a6b3c6c6db5644d, type: 3}
+  m_Name: ReadyStand
+  m_EditorClassIdentifier: 
+  _guid: d811f8b66d46dc445b7ee025ca886143
+  transitions:
+  - {fileID: -7187254397570059692}
+  - {fileID: -7332102087338516926}
+  - {fileID: 4985058000005285318}
+  - {fileID: 6226203254802582204}
+  data: {fileID: 11400000, guid: 79aef5b2e6e4ce9439a402d7ee849b1b, type: 2}
+  _position: {x: 463.1039, y: 328.91104}
+--- !u!114 &8465950451830365034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4ecc5e0ed744043a6cf97f335a16ab7, type: 3}
+  m_Name: Stand_to_Crouch_0
+  m_EditorClassIdentifier: 
+  _guid: 6d3171f002ab5934c990b5f7775111d3
+  targetState: {fileID: -8019983610716960848}
+  data: {fileID: 11400000, guid: 4f7d594bb8f499845bcc05378092006b, type: 2}
+  _position: {x: 151.29588, y: -51.07203}
+  _isGrounded:
+    _value: 0
+    _hasValue: 0
+  _hasCeiling:
+    _value: 0
+    _hasValue: 0
+  _isCrouchInputActive:
+    _value: 1
+    _hasValue: 1
+  _isCrouching:
+    _value: 0
+    _hasValue: 1
+--- !u!114 &8844458090515183719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4ecc5e0ed744043a6cf97f335a16ab7, type: 3}
+  m_Name: WantStand_to_ReadyStand_2
+  m_EditorClassIdentifier: 
+  _guid: 9275fd03127b33f4990888912a7a7c98
+  targetState: {fileID: 8359671489352129986}
+  data: {fileID: 0}
+  _position: {x: 476.15988, y: 242.68799}
+  _isGrounded:
+    _value: 1
+    _hasValue: 1
+  _hasCeiling:
+    _value: 0
+    _hasValue: 1
+  _isCrouchInputActive:
+    _value: 0
+    _hasValue: 1
+  _isCrouching:
+    _value: 1
+    _hasValue: 1

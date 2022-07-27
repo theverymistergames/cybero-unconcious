@@ -1,0 +1,450 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 781cc897cf8675041a751163b51f97dd, type: 3}
+  m_Name: HDRenderPipelineGlobalSettings
+  m_EditorClassIdentifier: 
+  m_DefaultVolumeProfile: {fileID: 11400000, guid: 92677ed6886ef03488c89897c876db53, type: 2}
+  m_LookDevVolumeProfile: {fileID: 11400000, guid: a4841d6c5bb4ccc40b39cdc61a4779d1, type: 2}
+  m_RenderingPathDefaultCameraFrameSettings:
+    bitDatas:
+      data1: 109762173730670
+      data2: 4539628433784635416
+    lodBias: 1
+    lodBiasMode: 0
+    lodBiasQualityLevel: 0
+    maximumLODLevel: 0
+    maximumLODLevelMode: 0
+    maximumLODLevelQualityLevel: 0
+    sssQualityMode: 0
+    sssQualityLevel: 0
+    sssCustomSampleBudget: 20
+    msaaMode: 8
+    materialQuality: 0
+  m_RenderingPathDefaultBakedOrCustomReflectionFrameSettings:
+    bitDatas:
+      data1: 135358040866636
+      data2: 4539628427610685464
+    lodBias: 1
+    lodBiasMode: 0
+    lodBiasQualityLevel: 0
+    maximumLODLevel: 0
+    maximumLODLevelMode: 0
+    maximumLODLevelQualityLevel: 0
+    sssQualityMode: 0
+    sssQualityLevel: 0
+    sssCustomSampleBudget: 20
+    msaaMode: 2
+    materialQuality: 0
+  m_RenderingPathDefaultRealtimeReflectionFrameSettings:
+    bitDatas:
+      data1: 136079585541965
+      data2: 4539628433784635416
+    lodBias: 1
+    lodBiasMode: 0
+    lodBiasQualityLevel: 0
+    maximumLODLevel: 0
+    maximumLODLevelMode: 0
+    maximumLODLevelQualityLevel: 0
+    sssQualityMode: 0
+    sssQualityLevel: 0
+    sssCustomSampleBudget: 20
+    msaaMode: 2
+    materialQuality: 0
+  m_RenderPipelineResources: {fileID: 11400000, guid: 3ce144cff5783da45aa5d4fdc2da14b7, type: 2}
+  m_RenderPipelineRayTracingResources: {fileID: 0}
+  beforeTransparentCustomPostProcesses: []
+  beforePostProcessCustomPostProcesses:
+  - UnityEngine.Rendering.HighDefinition.Compositor.ChromaKeying, Unity.RenderPipelines.HighDefinition.Runtime,
+    Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - UnityEngine.Rendering.HighDefinition.Compositor.AlphaInjection, Unity.RenderPipelines.HighDefinition.Runtime,
+    Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  afterPostProcessBlursCustomPostProcesses: []
+  afterPostProcessCustomPostProcesses: []
+  beforeTAACustomPostProcesses: []
+  lightLayerName0: Light Layer default
+  lightLayerName1: Light Layer 1
+  lightLayerName2: Light Layer 2
+  lightLayerName3: Light Layer 3
+  lightLayerName4: Light Layer 4
+  lightLayerName5: Light Layer 5
+  lightLayerName6: Light Layer 6
+  lightLayerName7: Light Layer 7
+  decalLayerName0: Decal Layer default
+  decalLayerName1: Decal Layer 1
+  decalLayerName2: Decal Layer 2
+  decalLayerName3: Decal Layer 3
+  decalLayerName4: Decal Layer 4
+  decalLayerName5: Decal Layer 5
+  decalLayerName6: Decal Layer 6
+  decalLayerName7: Decal Layer 7
+  shaderVariantLogLevel: 2
+  lensAttenuationMode: 0
+  diffusionProfileSettingsList:
+  - {fileID: 11400000, guid: 8c8260065718206498f1cc91a11f28c9, type: 2}
+  - {fileID: 11400000, guid: 81906f128f2cf25469f129f8b00ab11a, type: 2}
+  - {fileID: 11400000, guid: f9c7b3f0a2e52b94c8fe3b415831a017, type: 2}
+  - {fileID: 11400000, guid: 42df212190fe02f46a41475dd41c5fb0, type: 2}
+  - {fileID: 11400000, guid: b1ca1295111dd4145a242b16610af3b1, type: 2}
+  - {fileID: 11400000, guid: 4e5a85c9874781943819f6714202f4f0, type: 2}
+  rendererListCulling: 0
+  DLSSProjectId: 000000
+  useDLSSCustomProjectId: 0
+  supportProbeVolumes: 1
+  supportRuntimeDebugDisplay: 1
+  apvScenesData:
+    serializedBounds:
+    - sceneGUID: 538f31686a1e3c24caf3687f88358b8f
+      bounds:
+        m_Center: {x: 0, y: 0, z: 0}
+        m_Extent: {x: 81, y: 81, z: 81}
+    serializedHasVolumes:
+    - sceneGUID: 443834309faeae24ba9a721b31e14aa0
+      hasProbeVolumes: 0
+    - sceneGUID: 489a793886e210e4b9e9e7bed232d731
+      hasProbeVolumes: 0
+    - sceneGUID: 538f31686a1e3c24caf3687f88358b8f
+      hasProbeVolumes: 0
+    - sceneGUID: 44004e921e1266b459af22c0e83f3b05
+      hasProbeVolumes: 0
+    - sceneGUID: 906257725a674f745a2b8ff4646e0511
+      hasProbeVolumes: 0
+    - sceneGUID: 5636d560e9e16ac48b12f9095257376b
+      hasProbeVolumes: 0
+    - sceneGUID: 8b84cdcd427d4d6438399b152d863cbd
+      hasProbeVolumes: 0
+    - sceneGUID: 94c7b75133a50ad468a10dca58dd5548
+      hasProbeVolumes: 0
+    - sceneGUID: 4a30c7d5623c90b4ea9d0cb7ddcb3073
+      hasProbeVolumes: 0
+    - sceneGUID: 6136b8e47bc52424eb7826b3ab1c1c33
+      hasProbeVolumes: 0
+    - sceneGUID: f5720d21d76a12644ae1a8dbe880e246
+      hasProbeVolumes: 0
+    - sceneGUID: d7d22fdbdb9e4fe4c9f9025d898ce1ee
+      hasProbeVolumes: 0
+    - sceneGUID: 1c2c93f731de405419422e3b70984fc2
+      hasProbeVolumes: 0
+    - sceneGUID: 864f00cc71b17be49971e1f715b62a2d
+      hasProbeVolumes: 0
+    - sceneGUID: d729d1ac9c4c08e438f03e44b6dfe8b9
+      hasProbeVolumes: 0
+    - sceneGUID: ab63f50b9cc726144a82b88e5ec9beb7
+      hasProbeVolumes: 0
+    - sceneGUID: 460703cab57c82d4eaf8fac723dbbbc2
+      hasProbeVolumes: 0
+    - sceneGUID: 0b8069322a0b0b847a05118627619a0d
+      hasProbeVolumes: 0
+    - sceneGUID: b07285e16954f1e44bf5c7650283e6ab
+      hasProbeVolumes: 0
+    serializedProfiles:
+    - sceneGUID: 443834309faeae24ba9a721b31e14aa0
+      profile: {fileID: 11400000, guid: 18bea62167c676a43bf5db8d2ab2ef9b, type: 2}
+    - sceneGUID: 489a793886e210e4b9e9e7bed232d731
+      profile: {fileID: 11400000, guid: 18bea62167c676a43bf5db8d2ab2ef9b, type: 2}
+    - sceneGUID: 538f31686a1e3c24caf3687f88358b8f
+      profile: {fileID: 11400000, guid: 18bea62167c676a43bf5db8d2ab2ef9b, type: 2}
+    - sceneGUID: 44004e921e1266b459af22c0e83f3b05
+      profile: {fileID: 11400000, guid: 18bea62167c676a43bf5db8d2ab2ef9b, type: 2}
+    - sceneGUID: 906257725a674f745a2b8ff4646e0511
+      profile: {fileID: 11400000, guid: 18bea62167c676a43bf5db8d2ab2ef9b, type: 2}
+    - sceneGUID: 5636d560e9e16ac48b12f9095257376b
+      profile: {fileID: 11400000, guid: 18bea62167c676a43bf5db8d2ab2ef9b, type: 2}
+    - sceneGUID: 8b84cdcd427d4d6438399b152d863cbd
+      profile: {fileID: 11400000, guid: 18bea62167c676a43bf5db8d2ab2ef9b, type: 2}
+    - sceneGUID: 94c7b75133a50ad468a10dca58dd5548
+      profile: {fileID: 11400000, guid: 18bea62167c676a43bf5db8d2ab2ef9b, type: 2}
+    - sceneGUID: 4a30c7d5623c90b4ea9d0cb7ddcb3073
+      profile: {fileID: 11400000, guid: 18bea62167c676a43bf5db8d2ab2ef9b, type: 2}
+    - sceneGUID: 6136b8e47bc52424eb7826b3ab1c1c33
+      profile: {fileID: 11400000, guid: 18bea62167c676a43bf5db8d2ab2ef9b, type: 2}
+    - sceneGUID: f5720d21d76a12644ae1a8dbe880e246
+      profile: {fileID: 11400000, guid: 18bea62167c676a43bf5db8d2ab2ef9b, type: 2}
+    - sceneGUID: d7d22fdbdb9e4fe4c9f9025d898ce1ee
+      profile: {fileID: 11400000, guid: 18bea62167c676a43bf5db8d2ab2ef9b, type: 2}
+    - sceneGUID: 1c2c93f731de405419422e3b70984fc2
+      profile: {fileID: 11400000, guid: 18bea62167c676a43bf5db8d2ab2ef9b, type: 2}
+    - sceneGUID: 864f00cc71b17be49971e1f715b62a2d
+      profile: {fileID: 11400000, guid: 18bea62167c676a43bf5db8d2ab2ef9b, type: 2}
+    - sceneGUID: d729d1ac9c4c08e438f03e44b6dfe8b9
+      profile: {fileID: 11400000, guid: 18bea62167c676a43bf5db8d2ab2ef9b, type: 2}
+    - sceneGUID: ab63f50b9cc726144a82b88e5ec9beb7
+      profile: {fileID: 11400000, guid: 18bea62167c676a43bf5db8d2ab2ef9b, type: 2}
+    - sceneGUID: 460703cab57c82d4eaf8fac723dbbbc2
+      profile: {fileID: 11400000, guid: 18bea62167c676a43bf5db8d2ab2ef9b, type: 2}
+    - sceneGUID: 0b8069322a0b0b847a05118627619a0d
+      profile: {fileID: 11400000, guid: 18bea62167c676a43bf5db8d2ab2ef9b, type: 2}
+    - sceneGUID: b07285e16954f1e44bf5c7650283e6ab
+      profile: {fileID: 11400000, guid: 18bea62167c676a43bf5db8d2ab2ef9b, type: 2}
+    serializedBakeSettings:
+    - sceneGUID: 443834309faeae24ba9a721b31e14aa0
+      settings:
+        dilationSettings:
+          enableDilation: 1
+          dilationDistance: 1
+          dilationValidityThreshold: 0.25
+          dilationIterations: 1
+          squaredDistWeighting: 1
+        virtualOffsetSettings:
+          useVirtualOffset: 1
+          outOfGeoOffset: 0.01
+          searchMultiplier: 0.2
+    - sceneGUID: 489a793886e210e4b9e9e7bed232d731
+      settings:
+        dilationSettings:
+          enableDilation: 1
+          dilationDistance: 1
+          dilationValidityThreshold: 0.25
+          dilationIterations: 1
+          squaredDistWeighting: 1
+        virtualOffsetSettings:
+          useVirtualOffset: 1
+          outOfGeoOffset: 0.01
+          searchMultiplier: 0.2
+    - sceneGUID: 538f31686a1e3c24caf3687f88358b8f
+      settings:
+        dilationSettings:
+          enableDilation: 1
+          dilationDistance: 1
+          dilationValidityThreshold: 0.25
+          dilationIterations: 1
+          squaredDistWeighting: 1
+        virtualOffsetSettings:
+          useVirtualOffset: 1
+          outOfGeoOffset: 0.01
+          searchMultiplier: 0.2
+    - sceneGUID: 44004e921e1266b459af22c0e83f3b05
+      settings:
+        dilationSettings:
+          enableDilation: 1
+          dilationDistance: 1
+          dilationValidityThreshold: 0.25
+          dilationIterations: 1
+          squaredDistWeighting: 1
+        virtualOffsetSettings:
+          useVirtualOffset: 1
+          outOfGeoOffset: 0.01
+          searchMultiplier: 0.2
+    - sceneGUID: 906257725a674f745a2b8ff4646e0511
+      settings:
+        dilationSettings:
+          enableDilation: 1
+          dilationDistance: 1
+          dilationValidityThreshold: 0.25
+          dilationIterations: 1
+          squaredDistWeighting: 1
+        virtualOffsetSettings:
+          useVirtualOffset: 1
+          outOfGeoOffset: 0.01
+          searchMultiplier: 0.2
+    - sceneGUID: 5636d560e9e16ac48b12f9095257376b
+      settings:
+        dilationSettings:
+          enableDilation: 1
+          dilationDistance: 1
+          dilationValidityThreshold: 0.25
+          dilationIterations: 1
+          squaredDistWeighting: 1
+        virtualOffsetSettings:
+          useVirtualOffset: 1
+          outOfGeoOffset: 0.01
+          searchMultiplier: 0.2
+    - sceneGUID: 8b84cdcd427d4d6438399b152d863cbd
+      settings:
+        dilationSettings:
+          enableDilation: 1
+          dilationDistance: 1
+          dilationValidityThreshold: 0.25
+          dilationIterations: 1
+          squaredDistWeighting: 1
+        virtualOffsetSettings:
+          useVirtualOffset: 1
+          outOfGeoOffset: 0.01
+          searchMultiplier: 0.2
+    - sceneGUID: 94c7b75133a50ad468a10dca58dd5548
+      settings:
+        dilationSettings:
+          enableDilation: 1
+          dilationDistance: 1
+          dilationValidityThreshold: 0.25
+          dilationIterations: 1
+          squaredDistWeighting: 1
+        virtualOffsetSettings:
+          useVirtualOffset: 1
+          outOfGeoOffset: 0.01
+          searchMultiplier: 0.2
+    - sceneGUID: 4a30c7d5623c90b4ea9d0cb7ddcb3073
+      settings:
+        dilationSettings:
+          enableDilation: 1
+          dilationDistance: 1
+          dilationValidityThreshold: 0.25
+          dilationIterations: 1
+          squaredDistWeighting: 1
+        virtualOffsetSettings:
+          useVirtualOffset: 1
+          outOfGeoOffset: 0.01
+          searchMultiplier: 0.2
+    - sceneGUID: 6136b8e47bc52424eb7826b3ab1c1c33
+      settings:
+        dilationSettings:
+          enableDilation: 1
+          dilationDistance: 1
+          dilationValidityThreshold: 0.25
+          dilationIterations: 1
+          squaredDistWeighting: 1
+        virtualOffsetSettings:
+          useVirtualOffset: 1
+          outOfGeoOffset: 0.01
+          searchMultiplier: 0.2
+    - sceneGUID: f5720d21d76a12644ae1a8dbe880e246
+      settings:
+        dilationSettings:
+          enableDilation: 1
+          dilationDistance: 1
+          dilationValidityThreshold: 0.25
+          dilationIterations: 1
+          squaredDistWeighting: 1
+        virtualOffsetSettings:
+          useVirtualOffset: 1
+          outOfGeoOffset: 0.01
+          searchMultiplier: 0.2
+    - sceneGUID: d7d22fdbdb9e4fe4c9f9025d898ce1ee
+      settings:
+        dilationSettings:
+          enableDilation: 1
+          dilationDistance: 1
+          dilationValidityThreshold: 0.25
+          dilationIterations: 1
+          squaredDistWeighting: 1
+        virtualOffsetSettings:
+          useVirtualOffset: 1
+          outOfGeoOffset: 0.01
+          searchMultiplier: 0.2
+    - sceneGUID: 1c2c93f731de405419422e3b70984fc2
+      settings:
+        dilationSettings:
+          enableDilation: 1
+          dilationDistance: 1
+          dilationValidityThreshold: 0.25
+          dilationIterations: 1
+          squaredDistWeighting: 1
+        virtualOffsetSettings:
+          useVirtualOffset: 1
+          outOfGeoOffset: 0.01
+          searchMultiplier: 0.2
+    - sceneGUID: 864f00cc71b17be49971e1f715b62a2d
+      settings:
+        dilationSettings:
+          enableDilation: 1
+          dilationDistance: 1
+          dilationValidityThreshold: 0.25
+          dilationIterations: 1
+          squaredDistWeighting: 1
+        virtualOffsetSettings:
+          useVirtualOffset: 1
+          outOfGeoOffset: 0.01
+          searchMultiplier: 0.2
+    - sceneGUID: d729d1ac9c4c08e438f03e44b6dfe8b9
+      settings:
+        dilationSettings:
+          enableDilation: 1
+          dilationDistance: 1
+          dilationValidityThreshold: 0.25
+          dilationIterations: 1
+          squaredDistWeighting: 1
+        virtualOffsetSettings:
+          useVirtualOffset: 1
+          outOfGeoOffset: 0.01
+          searchMultiplier: 0.2
+    - sceneGUID: ab63f50b9cc726144a82b88e5ec9beb7
+      settings:
+        dilationSettings:
+          enableDilation: 1
+          dilationDistance: 1
+          dilationValidityThreshold: 0.25
+          dilationIterations: 1
+          squaredDistWeighting: 1
+        virtualOffsetSettings:
+          useVirtualOffset: 1
+          outOfGeoOffset: 0.01
+          searchMultiplier: 0.2
+    - sceneGUID: 460703cab57c82d4eaf8fac723dbbbc2
+      settings:
+        dilationSettings:
+          enableDilation: 1
+          dilationDistance: 1
+          dilationValidityThreshold: 0.25
+          dilationIterations: 1
+          squaredDistWeighting: 1
+        virtualOffsetSettings:
+          useVirtualOffset: 1
+          outOfGeoOffset: 0.01
+          searchMultiplier: 0.2
+    - sceneGUID: 0b8069322a0b0b847a05118627619a0d
+      settings:
+        dilationSettings:
+          enableDilation: 1
+          dilationDistance: 1
+          dilationValidityThreshold: 0.25
+          dilationIterations: 1
+          squaredDistWeighting: 1
+        virtualOffsetSettings:
+          useVirtualOffset: 1
+          outOfGeoOffset: 0.01
+          searchMultiplier: 0.2
+    - sceneGUID: b07285e16954f1e44bf5c7650283e6ab
+      settings:
+        dilationSettings:
+          enableDilation: 1
+          dilationDistance: 1
+          dilationValidityThreshold: 0.25
+          dilationIterations: 1
+          squaredDistWeighting: 1
+        virtualOffsetSettings:
+          useVirtualOffset: 1
+          outOfGeoOffset: 0.01
+          searchMultiplier: 0.2
+    serializedBakingSets:
+    - name: Default
+      sceneGUIDs:
+      - 443834309faeae24ba9a721b31e14aa0
+      - 489a793886e210e4b9e9e7bed232d731
+      - 538f31686a1e3c24caf3687f88358b8f
+      - 44004e921e1266b459af22c0e83f3b05
+      - 906257725a674f745a2b8ff4646e0511
+      - 5636d560e9e16ac48b12f9095257376b
+      - 8b84cdcd427d4d6438399b152d863cbd
+      - 94c7b75133a50ad468a10dca58dd5548
+      - 4a30c7d5623c90b4ea9d0cb7ddcb3073
+      - 6136b8e47bc52424eb7826b3ab1c1c33
+      - f5720d21d76a12644ae1a8dbe880e246
+      - d7d22fdbdb9e4fe4c9f9025d898ce1ee
+      - 1c2c93f731de405419422e3b70984fc2
+      - 864f00cc71b17be49971e1f715b62a2d
+      - d729d1ac9c4c08e438f03e44b6dfe8b9
+      - ab63f50b9cc726144a82b88e5ec9beb7
+      - 460703cab57c82d4eaf8fac723dbbbc2
+      - 0b8069322a0b0b847a05118627619a0d
+      - b07285e16954f1e44bf5c7650283e6ab
+      settings:
+        dilationSettings:
+          enableDilation: 1
+          dilationDistance: 1
+          dilationValidityThreshold: 0.25
+          dilationIterations: 1
+          squaredDistWeighting: 1
+        virtualOffsetSettings:
+          useVirtualOffset: 1
+          outOfGeoOffset: 0.01
+          searchMultiplier: 0.2
+      profile: {fileID: 11400000, guid: 18bea62167c676a43bf5db8d2ab2ef9b, type: 2}
+  m_Version: 3
