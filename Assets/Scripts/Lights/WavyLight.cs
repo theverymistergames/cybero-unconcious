@@ -48,7 +48,6 @@ namespace Lights
                     emissiveObject.material.SetFloat("EmissionIntensityOverride", emission);
                 }
 
-                Debug.Log(timer);
                 timer += Time.deltaTime;
                 yield return new WaitForSeconds(Time.deltaTime);
             }

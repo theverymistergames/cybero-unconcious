@@ -24,7 +24,6 @@ namespace Lights
         {
             if (!_isAnimationPlaying && !_isAnimationStopped)
             {
-                Debug.Log("START ANIM");
                 StartCoroutine(StartAnimation());
             }
         }
