@@ -27,6 +27,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3231216614183432095}
   m_Father: {fileID: 0}
@@ -58,6 +59,31 @@ MonoBehaviour:
   _historyUpInput: {fileID: 11400000, guid: 6d81b48b0035df747b11d9af3f878c5f, type: 2}
   _historyDownInput: {fileID: 11400000, guid: 30398ddd62cf0ca4c9a839b6d78e9f74, type: 2}
   _maxCommandHistorySize: 20
+  _consoleCommands:
+  - rid: 5452144554516676618
+  - rid: 5452144554516676619
+  - rid: 5452144554516676620
+  - rid: 5452144554516676621
+  - rid: 5452144554516676622
+  - rid: 5452144554516676623
+  - rid: 5452144554516676624
+  references:
+    version: 2
+    RefIds:
+    - rid: 5452144554516676618
+      type: {class: ConsoleCommandClear, ns: MisterGames.Dbg.Console.Commands, asm: MisterGames.Dbg}
+    - rid: 5452144554516676619
+      type: {class: ConsoleCommandHelp, ns: MisterGames.Dbg.Console.Commands, asm: MisterGames.Dbg}
+    - rid: 5452144554516676620
+      type: {class: ConsoleCommandSetFontSize, ns: MisterGames.Dbg.Console.Commands, asm: MisterGames.Dbg}
+    - rid: 5452144554516676621
+      type: {class: ConsoleCommandHero, ns: MisterGames.ConsoleCommandsLib, asm: MisterGames.ConsoleCommandsLib}
+    - rid: 5452144554516676622
+      type: {class: ConsoleCommandSetPosition, ns: MisterGames.ConsoleCommandsLib, asm: MisterGames.ConsoleCommandsLib}
+    - rid: 5452144554516676623
+      type: {class: ConsoleCommandLog, ns: MisterGames.ConsoleCommandsLib, asm: MisterGames.ConsoleCommandsLib}
+    - rid: 5452144554516676624
+      type: {class: ConsoleCommandScene, ns: MisterGames.ConsoleCommandsLib, asm: MisterGames.ConsoleCommandsLib}
 --- !u!1 &3231216614124822505
 GameObject:
   m_ObjectHideFlags: 0
@@ -86,6 +112,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3231216614183432095}
   m_RootOrder: 0
@@ -119,6 +146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MoveRepeatDelay: 0.5
   m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
   m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_PointAction: {fileID: 1054132383583890850, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_MoveAction: {fileID: 3710738434707379630, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
@@ -161,6 +189,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3231216614124822504}
   - {fileID: 3231216615417145564}
@@ -262,6 +291,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3231216615584580146}
   - {fileID: 3231216615590923942}
@@ -353,6 +383,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3231216616019215223}
   m_RootOrder: 0
@@ -488,6 +519,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3231216616019215223}
   m_Father: {fileID: 3231216615417145564}
@@ -662,6 +694,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3231216615417145564}
   m_RootOrder: 1
@@ -795,6 +828,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3231216615450416669}
   m_Father: {fileID: 3231216615584580146}
