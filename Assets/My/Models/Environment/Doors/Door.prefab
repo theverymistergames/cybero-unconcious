@@ -828,12 +828,35 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4723555129963381792, guid: d433da2e9593ad6469e6bbe83b69d365, type: 3}
   m_PrefabInstance: {fileID: 4647525864849216672}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1644175446587236518 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6245961606170637318, guid: d433da2e9593ad6469e6bbe83b69d365, type: 3}
+  m_PrefabInstance: {fileID: 4647525864849216672}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1477159656365447916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644175446587236518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c36bc25ea14d4af3b3be08ea5f8285fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _canvas: {fileID: 1644175446587236538}
+--- !u!223 &1644175446587236538 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 6245961606170637338, guid: d433da2e9593ad6469e6bbe83b69d365, type: 3}
+  m_PrefabInstance: {fileID: 4647525864849216672}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1644175448352399575 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6245961607935014007, guid: d433da2e9593ad6469e6bbe83b69d365, type: 3}
   m_PrefabInstance: {fileID: 4647525864849216672}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7868029665311443981
+--- !u!114 &538607872660183544
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -842,12 +865,38 @@ MonoBehaviour:
   m_GameObject: {fileID: 1644175448352399575}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2082b857fe34a5d87eb7fe47500c04b, type: 3}
+  m_Script: {fileID: 11500000, guid: 15607a9816044bc7b2548f343182030f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorController: {fileID: 4758473583386020097}
-  blockedMaterial: {fileID: 2100000, guid: f0fc44a29288019439755f5904063b1a, type: 2}
-  normalMaterial: {fileID: 2100000, guid: 41d77e9f51a84af4d8033b259ce43acf, type: 2}
+  _timeDomain: {fileID: 11400000, guid: 5dc26c8186f848343bbbcba87b4457eb, type: 2}
+  _strategy: {fileID: 11400000, guid: 87f3cf7412d28fe4ea8abe9f95f6f48d, type: 2}
+--- !u!114 &7289094314721883850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644175448352399575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87a2ce6726c04bc283655ec7faf2fcb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4758473583386020097}
+        m_TargetAssemblyTypeName: SimpleDoor, Assembly-CSharp
+        m_MethodName: Toggle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!1001 &4647525865954717603
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -931,7 +980,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6245961607935014007, guid: d433da2e9593ad6469e6bbe83b69d365, type: 3}
   m_PrefabInstance: {fileID: 4647525865954717603}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2962289987541873224
+--- !u!114 &4775604026289896892
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -940,9 +989,58 @@ MonoBehaviour:
   m_GameObject: {fileID: 1644175447306148820}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2082b857fe34a5d87eb7fe47500c04b, type: 3}
+  m_Script: {fileID: 11500000, guid: 15607a9816044bc7b2548f343182030f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorController: {fileID: 4758473583386020097}
-  blockedMaterial: {fileID: 2100000, guid: f0fc44a29288019439755f5904063b1a, type: 2}
-  normalMaterial: {fileID: 2100000, guid: 41d77e9f51a84af4d8033b259ce43acf, type: 2}
+  _timeDomain: {fileID: 11400000, guid: 5dc26c8186f848343bbbcba87b4457eb, type: 2}
+  _strategy: {fileID: 11400000, guid: 87f3cf7412d28fe4ea8abe9f95f6f48d, type: 2}
+--- !u!114 &2886115202712684669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644175447306148820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87a2ce6726c04bc283655ec7faf2fcb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4758473583386020097}
+        m_TargetAssemblyTypeName: SimpleDoor, Assembly-CSharp
+        m_MethodName: Toggle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &1644175447693253541 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6245961606170637318, guid: d433da2e9593ad6469e6bbe83b69d365, type: 3}
+  m_PrefabInstance: {fileID: 4647525865954717603}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6748364662643306543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644175447693253541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c36bc25ea14d4af3b3be08ea5f8285fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _canvas: {fileID: 1644175447693253561}
+--- !u!223 &1644175447693253561 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 6245961606170637338, guid: d433da2e9593ad6469e6bbe83b69d365, type: 3}
+  m_PrefabInstance: {fileID: 4647525865954717603}
+  m_PrefabAsset: {fileID: 0}
