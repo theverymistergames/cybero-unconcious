@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7201652344378548620}
   - component: {fileID: 573323738810678484}
   - component: {fileID: 4246030658389873029}
+  - component: {fileID: 3212345903070777036}
   m_Layer: 2
   m_Name: InteractiveUser
   m_TagString: Untagged
@@ -76,12 +77,9 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  _maxHits: 2
   _maxDistance: 10
-  _layerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  _triggerInteraction: 2
+  _transparencyRaycaster: {fileID: 3212345903070777036}
+  _debugDrawRaycastHit: 0
 --- !u!114 &7201652344378548620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94,8 +92,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8cb8e6afd38428a89598acf1fff6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _physicsRaycaster: {fileID: 4246030658389873029}
-  _uiRaycaster: {fileID: 573323738810678484}
+  _collisionFilter:
+    maxDistance: 1.7
+  _collisionDetector: {fileID: 3212345903070777036}
+  _debugDrawRaycastHit: 0
 --- !u!114 &573323738810678484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,9 +109,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _timeDomain: {fileID: 11400000, guid: f868b3e962bf85e47b09c0558cd7fb94, type: 2}
-  _layerMask:
-    serializedVersion: 2
-    m_Bits: 1
+  _collisionFilter:
+    maxDistance: 10
 --- !u!114 &4246030658389873029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,9 +125,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _timeDomain: {fileID: 11400000, guid: f868b3e962bf85e47b09c0558cd7fb94, type: 2}
   _maxHits: 6
-  _maxDistance: 1.7
   _radius: 0.03
+  _maxDistance: 10
   _layerMask:
     serializedVersion: 2
     m_Bits: 1
   _triggerInteraction: 2
+--- !u!114 &3212345903070777036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3539474951015124131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fac2b4c602574aebb0d4e1976b9e69da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _timeDomain: {fileID: 11400000, guid: f868b3e962bf85e47b09c0558cd7fb94, type: 2}
+  _detectorGroup:
+  - {fileID: 573323738810678484}
+  - {fileID: 4246030658389873029}
+  _collisionFilter:
+    maxDistance: 10
