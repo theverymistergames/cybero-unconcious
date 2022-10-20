@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b8bcdf71d7fafa419fca1ed162f5fc9, type: 3}
   m_Name: ColorAdjustments
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   postExposure:
     m_OverrideState: 1
     m_Value: 0.4
@@ -278,10 +278,10 @@ MonoBehaviour:
   active: 0
   temperature:
     m_OverrideState: 1
-    m_Value: -16.1
+    m_Value: 24
   tint:
     m_OverrideState: 1
-    m_Value: -20
+    m_Value: -0
 --- !u!114 &-3727022757469144430
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -294,86 +294,86 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 384c4d03a551c44448145f4093304119, type: 3}
   m_Name: ScreenSpaceReflection
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   quality:
     m_OverrideState: 1
-    m_Value: 3
+    m_Value: 2
   enabled:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   enabledTransparent:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   tracing:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   m_MinSmoothness:
     m_OverrideState: 1
-    m_Value: 0.35
+    m_Value: 0.376
   m_SmoothnessFadeStart:
     m_OverrideState: 1
-    m_Value: 0.583
+    m_Value: 0.545
   reflectSky:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   usedAlgorithm:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0
   depthBufferThickness:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.101
   screenFadeDistance:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.639
   accumulationFactor:
     m_OverrideState: 1
-    m_Value: 0.558
+    m_Value: 0.505
   m_RayMaxIterations:
     m_OverrideState: 1
     m_Value: 64
   rayMiss:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 3
   lastBounceFallbackHierarchy:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 3
   layerMask:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value:
       serializedVersion: 2
       m_Bits: 4294967295
   textureLodBias:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   m_RayLength:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 50
   m_ClampValue:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   m_Denoise:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   m_DenoiserRadius:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 8
   m_AffectSmoothSurfaces:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   mode:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 2
   m_FullResolution:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   sampleCount:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   bounceCount:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   m_RayMaxIterationsRT:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 48
 --- !u!114 &-3480131718746529058
 MonoBehaviour:
@@ -389,7 +389,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   quality:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 0
   spectralLut:
     m_OverrideState: 0
@@ -398,7 +398,7 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 0.194
   m_MaxSamples:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 3
 --- !u!114 &-2780621527115401753
 MonoBehaviour:
@@ -738,13 +738,13 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.615
+    m_Value: 0.56
   smoothness:
     m_OverrideState: 1
     m_Value: 1
   roundness:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 0.084
   rounded:
     m_OverrideState: 1
     m_Value: 0
@@ -802,7 +802,7 @@ MonoBehaviour:
     m_Value: 123
   meanFreePath:
     m_OverrideState: 1
-    m_Value: 5
+    m_Value: 15
   enableVolumetricFog:
     m_OverrideState: 1
     m_Value: 1
@@ -922,19 +922,19 @@ MonoBehaviour:
     m_Value: 3
   toeStrength:
     m_OverrideState: 1
-    m_Value: 0.641
+    m_Value: 0.708
   toeLength:
     m_OverrideState: 1
-    m_Value: 0.712
+    m_Value: 0.329
   shoulderStrength:
     m_OverrideState: 1
-    m_Value: 0.9
+    m_Value: 0.906
   shoulderLength:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 2.03
   shoulderAngle:
     m_OverrideState: 1
-    m_Value: 0.9
+    m_Value: 1
   gamma:
     m_OverrideState: 1
     m_Value: 0.45
@@ -959,7 +959,7 @@ MonoBehaviour:
   active: 1
   quality:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   threshold:
     m_OverrideState: 1
     m_Value: 1
@@ -983,13 +983,13 @@ MonoBehaviour:
     m_Value: 1
   m_Resolution:
     m_OverrideState: 1
-    m_Value: 4
+    m_Value: 2
   m_HighQualityPrefiltering:
     m_OverrideState: 1
     m_Value: 0
   m_HighQualityFiltering:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
 --- !u!114 &5649339995995106984
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1085,13 +1085,13 @@ MonoBehaviour:
     m_Value: 1
   xMultiplier:
     m_OverrideState: 1
-    m_Value: 0.3
+    m_Value: 0.35
   yMultiplier:
     m_OverrideState: 1
-    m_Value: 0.3
+    m_Value: 0.35
   center:
     m_OverrideState: 1
     m_Value: {x: 0.5, y: 0.5}
   scale:
     m_OverrideState: 1
-    m_Value: 0.82
+    m_Value: 0.75
