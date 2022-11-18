@@ -93,23 +93,23 @@ MonoBehaviour:
   _greeting: MisterGames Debug Console
   _activationInput: {fileID: 11400000, guid: cc25600298f40554a9241809af3f877c, type: 2}
   _consoleModules:
-  - rid: 1728865701026594821
-  - rid: 1728865701026594822
-  - rid: 1728865701026594824
-  - rid: 1728865701026594817
+  - rid: 1728865909098151936
+  - rid: 1728865909098151937
+  - rid: 1728865909098151938
+  - rid: 1728865909098151939
   references:
     version: 2
     RefIds:
-    - rid: 1728865701026594817
-      type: {class: TextConsoleModule, ns: MisterGames.Dbg.Console.Modules, asm: MisterGames.Dbg}
-    - rid: 1728865701026594821
+    - rid: 1728865909098151936
       type: {class: HeroConsoleModule, ns: MisterGames.ConsoleCommandsLib.Modules, asm: MisterGames.ConsoleCommandsLib}
       data:
         _heroPrefab: {fileID: 7205586870401899322, guid: 8eb4ea36122b5da4da483a1b605c6cda, type: 3}
-    - rid: 1728865701026594822
+    - rid: 1728865909098151937
       type: {class: SceneConsoleModule, ns: MisterGames.ConsoleCommandsLib.Modules, asm: MisterGames.ConsoleCommandsLib}
-    - rid: 1728865701026594824
+    - rid: 1728865909098151938
       type: {class: HelpConsoleModule, ns: MisterGames.Dbg.Console.Modules, asm: MisterGames.Dbg}
+    - rid: 1728865909098151939
+      type: {class: TextConsoleModule, ns: MisterGames.Dbg.Console.Modules, asm: MisterGames.Dbg}
 --- !u!114 &-8721823811315351641
 MonoBehaviour:
   m_ObjectHideFlags: 0
