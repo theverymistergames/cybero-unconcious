@@ -129,7 +129,7 @@ MonoBehaviour:
   tweens:
   - rid: 1193714679525670912
   - rid: 1193714679525670913
-  timeDomain: {fileID: 11400000, guid: 5dc26c8186f848343bbbcba87b4457eb, type: 2}
+  timeDomain: {fileID: 11400000, guid: 92c5e96a1414f9a43b3056e0bf623cdd, type: 2}
   references:
     version: 2
     RefIds:
@@ -934,20 +934,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6245961607935014007, guid: d433da2e9593ad6469e6bbe83b69d365, type: 3}
   m_PrefabInstance: {fileID: 1863617638}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4692234100612762904
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6245961606273251345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15607a9816044bc7b2548f343182030f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _timeDomain: {fileID: 11400000, guid: 5dc26c8186f848343bbbcba87b4457eb, type: 2}
-  _strategy: {fileID: 11400000, guid: 87f3cf7412d28fe4ea8abe9f95f6f48d, type: 2}
 --- !u!114 &4176333133293755598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -975,6 +961,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+--- !u!114 &4692234100612762904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6245961606273251345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15607a9816044bc7b2548f343182030f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _timeDomain: {fileID: 11400000, guid: 92c5e96a1414f9a43b3056e0bf623cdd, type: 2}
+  _strategy: {fileID: 11400000, guid: 87f3cf7412d28fe4ea8abe9f95f6f48d, type: 2}
 --- !u!82 &8748049249511462229 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 8748049247818242355, guid: d433da2e9593ad6469e6bbe83b69d365, type: 3}
@@ -1137,7 +1137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15607a9816044bc7b2548f343182030f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeDomain: {fileID: 11400000, guid: 5dc26c8186f848343bbbcba87b4457eb, type: 2}
+  _timeDomain: {fileID: 11400000, guid: 92c5e96a1414f9a43b3056e0bf623cdd, type: 2}
   _strategy: {fileID: 11400000, guid: 87f3cf7412d28fe4ea8abe9f95f6f48d, type: 2}
 --- !u!1 &2089291750 stripped
 GameObject:
