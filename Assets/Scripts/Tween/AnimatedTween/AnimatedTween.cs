@@ -1,6 +1,6 @@
 ﻿using System;
 using EasingCurve;
-using MisterGames.Common.Routines;
+using MisterGames.Tick.Core;
 using UnityEngine;
 
 namespace Tween {
@@ -9,8 +9,8 @@ namespace Tween {
         
         private AnimationCurve _curve;
 
-        public override void Init(GameObject gameobj, TimeDomain domain) {
-            base.Init(gameobj, domain);
+        public override void Init(GameObject gameobj, ITimeSource source) {
+            base.Init(gameobj, source);
 
             _curve = EasingAnimationCurve.EaseToAnimationCurve(easing);
         }

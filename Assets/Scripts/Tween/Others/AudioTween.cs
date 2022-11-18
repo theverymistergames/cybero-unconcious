@@ -1,23 +1,30 @@
 ﻿using System;
-using MisterGames.Common.Routines;
+using MisterGames.Tick.Core;
+using MisterGames.Tick.Jobs;
+using MisterGames.Tick.Utils;
 using UnityEngine;
 
 namespace Tween {
-    [Serializable]internal struct TweenAudio {
+
+    [Serializable]
+    internal struct TweenAudio {
         public AudioClip clip;
         public float volume;
         public float delay;
         public bool loop;
     }
     
-    [Serializable]public class AudioTween : Tween {
+    [Serializable]
+    public class AudioTween : Tween {
+
         [SerializeField] private TweenAudio[] audios;
+
         private AudioSource _source;
         private float _oldProgress = -1;
-        private readonly SingleJobHandler _handler = new SingleJobHandler();
+        private IJob _job;
 
-        public override void Init(GameObject gameobj, TimeDomain domain) {
-            base.Init(gameobj, domain);
+        public override void Init(GameObject gameobj, ITimeSource source) {
+            base.Init(gameobj, source);
 
             _source = tweenableObject.GetComponent<AudioSource>();
 
@@ -34,27 +41,32 @@ namespace Tween {
 
         private void PlayLoopSound(TweenAudio audio) {
             _source.PlayOneShot(audio.clip, audio.volume);
-            Jobs.Do(Domain.Delay(audio.clip.length)).Then(() => PlayLoopSound(audio)).StartFrom(_handler);
+
+            _job?.Stop();
+            _job = JobSequence.Create()
+                .Delay(audio.clip.length)
+                .Action(() => PlayLoopSound(audio))
+                .StartFrom(timeSource);
         }
     
         public override void Pause() {
             base.Pause();
 
-            _handler.Pause();
+            _job?.Stop();
             _source.Pause();
         }
 
         public override void Play() {
             base.Play();
             
-            _handler.Resume();
+            _job?.Start();
             _source.Play();
         }
         
         public override void Stop() {
             base.Stop();
             
-            _handler.Stop();
+            _job?.Stop();
             _source.Stop();
         }
 

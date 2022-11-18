@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using MisterGames.Common.Routines;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -28,7 +27,6 @@ namespace Lights
     {
         public AnimationCurve curve;
         public Params animationConfig;
-        public TimeDomain Domain;
 
         public override IEnumerator Animate()
         {
