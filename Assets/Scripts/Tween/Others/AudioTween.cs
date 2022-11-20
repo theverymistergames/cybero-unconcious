@@ -46,7 +46,7 @@ namespace Tween {
             _job = JobSequence.Create()
                 .Delay(audio.clip.length)
                 .Action(() => PlayLoopSound(audio))
-                .StartFrom(timeSource);
+                .RunFrom(timeSource);
         }
     
         public override void Pause() {

@@ -38,7 +38,7 @@ namespace Tween
                 _job = JobSequence.Create()
                     .Delay(globalDelay)
                     .Action(Play)
-                    .StartFrom(timeDomain.Source);
+                    .RunFrom(timeDomain.Source);
             }
         }
 
@@ -93,7 +93,7 @@ namespace Tween
                     .Delay(globalDuration * speed)
                     .Action(Rewind)
                     .Action(Play)
-                    .StartFrom(timeDomain.Source);
+                    .RunFrom(timeDomain.Source);
 
                 return;
             }
@@ -107,7 +107,7 @@ namespace Tween
                         Stop();
                         OnFinished.Invoke();
                     })
-                    .StartFrom(timeDomain.Source);
+                    .RunFrom(timeDomain.Source);
             }
         }
 
