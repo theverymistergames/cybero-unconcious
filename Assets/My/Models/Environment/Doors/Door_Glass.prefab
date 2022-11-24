@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1647302}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.2172, z: 0.4922}
+  m_LocalPosition: {x: -0, y: 0.386, z: 0.4922}
   m_LocalScale: {x: 0.080531, y: 0.96399736, z: 0.60976666}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -108,6 +108,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 63
       objectReference: {fileID: 0}
+    - target: {fileID: 1650432384933539976, guid: 52a4be0d76019884cac18231c4daed59, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -642027560687081412, guid: 6ee2689615bb7bb49b0d0910994630fd, type: 3}
     - target: {fileID: 5488662184910898608, guid: 52a4be0d76019884cac18231c4daed59, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -152,14 +156,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8038311302800503760, guid: 52a4be0d76019884cac18231c4daed59, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8729994060436865826, guid: 52a4be0d76019884cac18231c4daed59, type: 3}
       propertyPath: m_Name
       value: Door_Glass
       objectReference: {fileID: 0}
+    - target: {fileID: 8793017300405837665, guid: 52a4be0d76019884cac18231c4daed59, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9103694491425405573, guid: 52a4be0d76019884cac18231c4daed59, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 2541903684030938528, guid: b2ce8e721ff65d64ebf3c867603f4e4a, type: 3}
+      objectReference: {fileID: 8067281744462311183, guid: 2dbc4e374348448408aebd5231434737, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52a4be0d76019884cac18231c4daed59, type: 3}
 --- !u!4 &7530363850552993548 stripped
