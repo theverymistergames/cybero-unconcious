@@ -12,16 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b8bcdf71d7fafa419fca1ed162f5fc9, type: 3}
   m_Name: ColorAdjustments
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   postExposure:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0.4
   contrast:
-    m_OverrideState: 1
-    m_Value: 7
+    m_OverrideState: 0
+    m_Value: 24
   colorFilter:
     m_OverrideState: 0
-    m_Value: {r: 0.9481132, g: 0.9818235, b: 1, a: 1}
+    m_Value: {r: 0, g: 0.6153846, b: 1, a: 1}
   hueShift:
     m_OverrideState: 0
     m_Value: 0
@@ -250,19 +250,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a6b00fcf518bb94a90b408492e07b44, type: 3}
   m_Name: FilmGrain
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   type:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 10
   intensity:
     m_OverrideState: 1
-    m_Value: 0.146
+    m_Value: 0
   response:
     m_OverrideState: 1
-    m_Value: 0.167
+    m_Value: 1
   texture:
-    m_OverrideState: 0
-    m_Value: {fileID: 0}
+    m_OverrideState: 1
+    m_Value: {fileID: 2800000, guid: a78ba25c6fd8d1f44abf3724cf2a742b, type: 3}
 --- !u!114 &-4265509659585918571
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -392,11 +392,11 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 0
   spectralLut:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: {fileID: 0}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.194
+    m_Value: 0.2
   m_MaxSamples:
     m_OverrideState: 1
     m_Value: 3

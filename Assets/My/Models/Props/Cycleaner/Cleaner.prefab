@@ -524,9 +524,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1604914769087377936}
+  - component: {fileID: 1638762536}
   m_Layer: 0
   m_Name: Cleaner
-  m_TagString: Untagged
+  m_TagString: jija
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -556,6 +557,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &1638762536
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093643682414291114}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 2.4765115
+  m_Height: 5.716291
+  m_Direction: 1
+  m_Center: {x: -0.7279104, y: 0.54133624, z: 0.15970345}
 --- !u!1 &5060835564206095689
 GameObject:
   m_ObjectHideFlags: 0
