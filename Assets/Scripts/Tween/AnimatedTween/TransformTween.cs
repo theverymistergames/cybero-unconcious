@@ -1,5 +1,5 @@
 ﻿using System;
-using MisterGames.Common.Routines;
+using MisterGames.Tick.Core;
 using UnityEditor;
 using UnityEngine;
 
@@ -27,8 +27,8 @@ namespace Tween
             end = pos;
         }
 
-        public override void Init(GameObject gameobj, TimeDomain domain) {
-            base.Init(gameobj, domain);
+        public override void Init(GameObject gameobj, ITimeSource source) {
+            base.Init(gameobj, source);
 
             _transform = tweenableObject.transform;
         }

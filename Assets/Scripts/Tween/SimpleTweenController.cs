@@ -1,21 +1,21 @@
 ﻿using System;
 using MisterGames.Common.Attributes;
-using MisterGames.Common.Routines;
+using MisterGames.Tick.Core;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 namespace Tween {
-    [Serializable]public class SimpleTweenController : MonoBehaviour, ITweenController {
+    [Serializable]
+    public class SimpleTweenController : MonoBehaviour, ITweenController {
         
         [SerializeField][SubclassSelector][SerializeReference] private Tween tween;
-        [SerializeField] private TimeDomain timeDomain;
+        [FormerlySerializedAs("timeDomainLauncher")] [SerializeField] private TimeDomain timeDomain;
 
         public event Action OnFinished = delegate { };
         
         private void Awake() {
-            if (!timeDomain) return;
-            
-            tween.Init(gameObject, timeDomain);
+            tween.Init(gameObject, timeDomain.Source);
         }
 
         private void Start() {

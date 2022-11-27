@@ -1,10 +1,11 @@
 ﻿using System;
-using MisterGames.Common.Routines;
+using MisterGames.Tick.Core;
 using Tween;
 using UnityEngine;
 
 namespace DefaultNamespace {
     public class SimpleMovingPlatform : MonoBehaviour {
+
         [SerializeField] private Vector3[] positions = new Vector3[2];
         [SerializeField] private SimpleDoor[] doors;
         [SerializeField] private int startPositionID = 0;

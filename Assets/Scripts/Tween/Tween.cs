@@ -1,10 +1,12 @@
 ﻿using System;
 using UnityEngine;
-using MisterGames.Common.Routines;
+using MisterGames.Tick.Core;
 using Random = UnityEngine.Random;
 
 namespace Tween {
-    [Serializable]public abstract class Tween : IUpdate {
+    [Serializable]
+    public abstract class Tween : IUpdate {
+
         [SerializeField] private string id;
         [SerializeField] protected GameObject tweenableObject;
         [SerializeField] private bool loop;
@@ -13,7 +15,8 @@ namespace Tween {
         [SerializeField] private Vector2 speedRange = new Vector2(1, 1);
         [SerializeField] private float duration = 1;
         [SerializeField] private float delay = 0;
-        [NonSerialized] public TimeDomain Domain;
+
+        protected ITimeSource timeSource;
         
         public event Action OnCompleted = delegate { };
         public event Action OnLooped = delegate { };
@@ -50,12 +53,13 @@ namespace Tween {
         private bool _paused = false;
         private bool _active = true;
 
-        public virtual void Init(GameObject gameobj, TimeDomain domain) {
+        public virtual void Init(GameObject gameObject, ITimeSource source) {
             if (tweenableObject == null) {
-                tweenableObject = gameobj;
+                tweenableObject = gameObject;
             }
-            
-            domain.SubscribeUpdate(this);
+
+            timeSource = source;
+            timeSource.Subscribe(this);
         }
 
         public virtual void Play() {

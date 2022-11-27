@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using MisterGames.Common.Attributes;
-using MisterGames.Common.Routines;
-using Unity.VisualScripting;
+using MisterGames.Tick.Core;
+using MisterGames.Tick.Jobs;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 namespace Tween
@@ -18,18 +17,15 @@ namespace Tween
         [SerializeField] private bool loop;
         [SerializeField] private bool chain; //TODO
         [SerializeField][SubclassSelector][SerializeReference] private Tween[] tweens;
-        [SerializeField] private TimeDomain timeDomain;
+        [FormerlySerializedAs("timeDomainLauncher")] [SerializeField] private TimeDomain timeDomain;
 
         public event Action OnFinished = delegate { };
         
-        private readonly SingleJobHandler _handler = new SingleJobHandler();
+        private IJob _job;
         
         private void Awake() {
-            if (!timeDomain) return;
-            
             foreach (var tween in tweens) {
-                tween.Init(gameObject, timeDomain);
-                // tween.Domain = timeDomain;
+                tween.Init(gameObject, timeDomain.Source);
             }
         }
 
@@ -37,12 +33,16 @@ namespace Tween
             Rewind();
             
             if (autoStart) {
-                Jobs.Do(timeDomain.Delay(globalDelay)).Then(Play).StartFrom(_handler);
+                _job?.Stop();
+                _job = JobSequence.Create()
+                    .Delay(globalDelay)
+                    .Action(Play)
+                    .RunFrom(timeDomain.Source);
             }
         }
 
         public void Pause() {
-            _handler.Pause();
+            _job?.Stop();
             
             foreach (var tween in tweens) {
                 tween.Pause();
@@ -50,7 +50,7 @@ namespace Tween
         }
 
         public void Stop() {
-            _handler.Stop();
+            _job?.Stop();
             
             foreach (var tween in tweens) {
                 tween.Stop();
@@ -58,7 +58,7 @@ namespace Tween
         }
 
         public void Resume() {
-            _handler.Resume();
+            _job?.Start();
             
             foreach (var tween in tweens) {
                 if (tween.Paused) tween.Resume();
@@ -86,12 +86,27 @@ namespace Tween
             }
 
             if (loop && globalDuration > 0) {
-                Jobs.Do(timeDomain.Delay(globalDuration * speed)).Then(Rewind).Then(Play).StartFrom(_handler);
-            } else if (globalDuration > 0) {
-                Jobs.Do(timeDomain.Delay(globalDuration * speed)).Then(() => {
-                    Stop();
-                    OnFinished.Invoke();
-                }).StartFrom(_handler);
+                _job?.Stop();
+
+                _job = JobSequence.Create()
+                    .Delay(globalDuration * speed)
+                    .Action(Rewind)
+                    .Action(Play)
+                    .RunFrom(timeDomain.Source);
+
+                return;
+            }
+
+            if (globalDuration > 0) {
+                _job?.Stop();
+
+                _job = JobSequence.Create()
+                    .Delay(globalDuration * speed)
+                    .Action(() => {
+                        Stop();
+                        OnFinished.Invoke();
+                    })
+                    .RunFrom(timeDomain.Source);
             }
         }
 
