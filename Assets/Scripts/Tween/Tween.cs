@@ -4,6 +4,7 @@ using MisterGames.Tick.Core;
 using Random = UnityEngine.Random;
 
 namespace Tween {
+
     [Serializable]
     public abstract class Tween : IUpdate {
 

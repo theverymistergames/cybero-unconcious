@@ -9,8 +9,8 @@ namespace Tween {
     [Serializable]
     public class SimpleTweenController : MonoBehaviour, ITweenController {
         
-        [SerializeField][SubclassSelector][SerializeReference] private Tween tween;
-        [FormerlySerializedAs("timeDomainLauncher")] [SerializeField] private TimeDomain timeDomain;
+        [SubclassSelector][SerializeReference] private Tween tween;
+        [SerializeField] private TimeDomain timeDomain;
 
         public event Action OnFinished = delegate { };
         
