@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using DefaultNamespace.Proto;
 using UnityEngine;
 
-public class Cycleaner : MonoBehaviour {
+public class Cycleaner : MonoBehaviour, IOverloadable {
     public bool isEnabled = true;
     public MeshRenderer emissive;
     public Transform psyPoint;
@@ -12,7 +13,6 @@ public class Cycleaner : MonoBehaviour {
     public float toggleTime = 0.5f;
 
     [Header("Curves")]
-    public AnimationCurve toggleOnCurve;
     public AnimationCurve overloadCurve;
     
     private float _toggleTimer = 1;
@@ -48,11 +48,11 @@ public class Cycleaner : MonoBehaviour {
         blueLight.intensity = _lightIntensity * value;
     }
 
-    public void StartOverload() {
-        StartCoroutine(Overload());
+    public void Overload() {
+        StartCoroutine(StartOverload());
     }
 
-    private IEnumerator Overload() {
+    private IEnumerator StartOverload() {
         _toggleTimer = 1;
         
         while (_toggleTimer > 0) {
@@ -66,6 +66,8 @@ public class Cycleaner : MonoBehaviour {
         _toggleTimer = 0;
         psyPoint.gameObject.SetActive(false);
         system.Stop();
+
+        isEnabled = false;
     }
 
     private IEnumerator ToggleOff() {

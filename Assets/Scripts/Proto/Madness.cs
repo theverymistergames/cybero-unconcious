@@ -27,10 +27,9 @@ public class Madness : MonoBehaviour {
     
     [Header("Madness settings")]
     public AnimationCurve madnessByTimeCurve;
-    public float madnessTime = 10;
     public float upSpeedMultiplier = 2;
     public float downSpeedMultiplier = 5;
-    public float enemyMultiplier = 5;
+    public float enemyMultiplier = 10;
 
     [Header("Pulse settings")]
     public float pulseSpeed = 5;
@@ -80,7 +79,7 @@ public class Madness : MonoBehaviour {
             Physics.Raycast(new Ray(transform.position, targetPosition - position), out _hit);
 
             var distance = Vector3.Distance(targetPosition, position);
-            if (_hit.distance < distance && _wallMask.Contains(_hit.collider.gameObject.layer)) continue;
+            if (_hit.distance > distance || _wallMask.Contains(_hit.collider.gameObject.layer)) continue;
 
             var layer = target.gameObject.layer;
             
@@ -92,7 +91,7 @@ public class Madness : MonoBehaviour {
         }
         
         _pulseTimer += Time.deltaTime;
-        _madnessLevel += Time.deltaTime * (madnessLevelUp - madnessLevelDown) / madnessTime;
+        _madnessLevel += Time.deltaTime * (madnessLevelUp - madnessLevelDown);
         
         if (_madnessLevel <= 0) _madnessLevel = 0;
         else if (_madnessLevel >= 1) _madnessLevel = 1;
