@@ -22,7 +22,7 @@ namespace Lights
         public float maxDelayBase;
     }
 
-    [ExecuteInEditMode]
+    // [ExecuteInEditMode]
     public class WavyLight : AnimatedLightWithMeshBase
     {
         public AnimationCurve curve;
@@ -38,7 +38,7 @@ namespace Lights
             while (timer < time)
             {
                 var value = curve.Evaluate(timer / time);
-                Light.intensity = (maxIntensity - animationConfig.minLightIntensity) * value + animationConfig.minLightIntensity;
+                _light.intensity = (maxIntensity - animationConfig.minLightIntensity) * value + animationConfig.minLightIntensity;
 
                 if (emissiveObject)
                 {

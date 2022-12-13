@@ -22,13 +22,13 @@ namespace Lights
             var delay = Random.Range(config.delayTime[0], config.delayTime[1]) / Multiplier;
             yield return new WaitForSeconds(delay / Multiplier);
         
-            emissiveObject.enabled = true;
-            Light.enabled = true;
+            if (emissiveObject) emissiveObject.enabled = true;
+            _light.enabled = true;
             
             yield return new WaitForSeconds(config.flickTime / Multiplier);
             
-            emissiveObject.enabled = false;
-            Light.enabled = false;
+            if (emissiveObject) emissiveObject.enabled = false;
+            _light.enabled = false;
             
             yield return new WaitForSeconds(config.maxDelayBase * DelayMultiplier);
         }

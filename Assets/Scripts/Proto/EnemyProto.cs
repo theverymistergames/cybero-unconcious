@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Linq;
 using DefaultNamespace.Proto;
 using MisterGames.Collisions.Utils;
 using MisterGames.Common.Layers;
@@ -112,7 +113,7 @@ public class EnemyProto : MonoBehaviour {
         return true;
     }
 
-    bool IsStopped() {
+    bool IsAgentReachedDestination() {
         return _agent.remainingDistance <= _agent.stoppingDistance && !_agent.isStopped;
     }
 
@@ -120,20 +121,18 @@ public class EnemyProto : MonoBehaviour {
         var position = transform.position;
         var targetPosition = _currentDestination.position;
         var hitsCount = Physics.RaycastNonAlloc(new Ray(position, targetPosition - position), _hitResults, hitDistance, LayerMask.GetMask("Wall", "Door", "Psy", "Ignore Raycast"));
-        
+
         if (hitsCount == 0) return false;
         
-        var hits = _hitResults.Slice(0, hitsCount - 1);
-        
-        Array.Sort(hits, (hit0, hit1) => Vector3.Distance(hit0.transform.position, position).CompareTo(Vector3.Distance(hit1.transform.position, position)));
+        _hitResults.SortByDistance(hitsCount);
 
-        foreach (var hit in hits) {
+        foreach (var hit in _hitResults) {
             var layer = hit.collider.gameObject.layer;
 
             if (_wallMask.Contains(layer)) return false;
             if (_psyMask.Contains(layer)) return true;
         }
-        
+
         return false;
     }
 
@@ -235,7 +234,7 @@ public class EnemyProto : MonoBehaviour {
             case State.Roaming: {
                 if (CheckForPsyPointsAndSetIfPossible()) SetState(State.Chasing);
                 
-                if (IsStopped()) SetState(State.Thinking);
+                if (IsAgentReachedDestination()) SetState(State.Thinking);
                 
                 break;
             }
@@ -245,7 +244,7 @@ public class EnemyProto : MonoBehaviour {
                     break;
                 }
 
-                if (!CheckForPsyPointsAndSetIfPossible() && IsStopped()) {
+                if (!CheckForPsyPointsAndSetIfPossible() && IsAgentReachedDestination()) {
                     SetState(State.Thinking);
                 }
                 
@@ -254,8 +253,8 @@ public class EnemyProto : MonoBehaviour {
             case State.Running: {
                 SetDestination(_currentDestination);
                 
-                if (IsStopped() && IsSeeingPsyPoint() && !_currentDestination.CompareTag("Player")) SetState(State.Sucking);
-                if (!IsSeeingPsyPoint()) SetState(State.Chasing);
+                if (IsAgentReachedDestination() && !_currentDestination.CompareTag("Player")) SetState(State.Sucking);
+                // if (!IsSeeingPsyPoint()) SetState(State.Chasing);
 
                 break;
             }
