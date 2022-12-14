@@ -1,15 +1,17 @@
 ﻿using System;
+using System.Threading;
 using MisterGames.Common.Attributes;
 using MisterGames.Tick.Core;
 using MisterGames.Tick.Jobs;
 using UnityEngine;
-using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 namespace Tween
 {
     public class TweenController : MonoBehaviour, ITweenController
     {
+        [SerializeField] private PlayerLoopStage _timeSourceStage = PlayerLoopStage.Update;
+
         [SerializeField] private float globalDelay;
         [SerializeField] private float globalDuration;
         [SerializeField] private Vector2 globalSpeedRange = new Vector2(1, 1);
@@ -17,32 +19,39 @@ namespace Tween
         [SerializeField] private bool loop;
         [SerializeField] private bool chain; //TODO
         [SerializeField][SubclassSelector][SerializeReference] private Tween[] tweens;
-        [FormerlySerializedAs("timeDomainLauncher")] [SerializeField] private TimeDomain timeDomain;
 
         public event Action OnFinished = delegate { };
-        
-        private IJob _job;
+
+        private Job _job;
         
         private void Awake() {
             foreach (var tween in tweens) {
-                tween.Init(gameObject, timeDomain.Source);
+                tween.Init(gameObject, _timeSourceStage);
             }
+        }
+
+        private void OnDestroy() {
+            _job.Dispose();
         }
 
         private void Start() {
             Rewind();
-            
-            if (autoStart) {
-                _job?.Stop();
-                _job = JobSequence.Create()
-                    .Delay(globalDelay)
-                    .Action(Play)
-                    .RunFrom(timeDomain.Source);
-            }
+
+            if (autoStart) StartPlayAfterDelay(globalDelay);
+        }
+
+        private void StartPlayAfterDelay(float delay) {
+            _job.Dispose();
+
+            _job = JobSequence.Create(_timeSourceStage)
+                .Delay(delay)
+                .Action(Play)
+                .Push()
+                .Start();
         }
 
         public void Pause() {
-            _job?.Stop();
+            _job.Stop();
             
             foreach (var tween in tweens) {
                 tween.Pause();
@@ -50,7 +59,7 @@ namespace Tween
         }
 
         public void Stop() {
-            _job?.Stop();
+            _job.Stop();
             
             foreach (var tween in tweens) {
                 tween.Stop();
@@ -58,7 +67,7 @@ namespace Tween
         }
 
         public void Resume() {
-            _job?.Start();
+            _job.Start();
             
             foreach (var tween in tweens) {
                 if (tween.Paused) tween.Resume();
@@ -86,27 +95,29 @@ namespace Tween
             }
 
             if (loop && globalDuration > 0) {
-                _job?.Stop();
+                _job.Dispose();
 
-                _job = JobSequence.Create()
+                _job = JobSequence.Create(_timeSourceStage)
                     .Delay(globalDuration * speed)
                     .Action(Rewind)
                     .Action(Play)
-                    .RunFrom(timeDomain.Source);
+                    .Push()
+                    .Start();
 
                 return;
             }
 
             if (globalDuration > 0) {
-                _job?.Stop();
+                _job.Dispose();
 
-                _job = JobSequence.Create()
+                _job = JobSequence.Create(_timeSourceStage)
                     .Delay(globalDuration * speed)
                     .Action(() => {
                         Stop();
                         OnFinished.Invoke();
                     })
-                    .RunFrom(timeDomain.Source);
+                    .Push()
+                    .Start();
             }
         }
 

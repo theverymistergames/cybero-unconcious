@@ -3,7 +3,10 @@ using MisterGames.Tick.Core;
 using UnityEngine;
 
 namespace Tween {
-    [Serializable]public class ToggleComponentTween : Tween {
+
+    [Serializable]
+    public class ToggleComponentTween : Tween {
+
         [SerializeField] private string componentName;
         [SerializeField] private bool enable;
 
@@ -11,8 +14,8 @@ namespace Tween {
         private CharacterController _controller;
         private float _oldProgress = -1;
         
-        public override void Init(GameObject gameobj, ITimeSource source) {
-            base.Init(gameobj, source);
+        public override void Init(GameObject gameobj, PlayerLoopStage stage) {
+            base.Init(gameobj, stage);
             
             var component = tweenableObject.GetComponent(componentName);
             
@@ -47,4 +50,5 @@ namespace Tween {
             _oldProgress = progress;
         }
     }
+
 }

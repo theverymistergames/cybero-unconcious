@@ -2,6 +2,7 @@
 using UnityEngine;
 
 namespace Tween {
+
     internal enum ActionType {
         Play,
         Stop,
@@ -11,6 +12,7 @@ namespace Tween {
     }
     
     public abstract class TweenRunner : MonoBehaviour {
+
         [SerializeField] private GameObject obj;
         [SerializeField] private ActionType actionType = ActionType.Play;
         
@@ -42,7 +44,7 @@ namespace Tween {
                     _controller.Pause();
                     break;
             }
-            
         }
     }
+
 }

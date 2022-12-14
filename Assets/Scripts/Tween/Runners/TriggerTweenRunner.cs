@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Tween {
 
@@ -10,4 +9,5 @@ namespace Tween {
             }
         }
     }
+
 }

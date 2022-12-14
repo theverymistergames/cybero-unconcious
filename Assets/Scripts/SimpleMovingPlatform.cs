@@ -4,6 +4,7 @@ using Tween;
 using UnityEngine;
 
 namespace DefaultNamespace {
+
     public class SimpleMovingPlatform : MonoBehaviour {
 
         [SerializeField] private Vector3[] positions = new Vector3[2];
@@ -81,4 +82,5 @@ namespace DefaultNamespace {
             MoveToPositionById(_currentPositionID - 1);
         }
     }
+
 }

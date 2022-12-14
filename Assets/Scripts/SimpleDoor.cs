@@ -10,8 +10,9 @@ public enum DoorState {
 }
 
 public class SimpleDoor : MonoBehaviour {
+
     [SerializeField] private DoorState state = DoorState.Closed;
-    [SerializeField]private bool blocked = false;
+    [SerializeField] private bool blocked = false;
     
     private ITweenController _controller;
     private bool _inProgress;

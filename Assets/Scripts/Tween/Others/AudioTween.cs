@@ -20,10 +20,10 @@ namespace Tween {
 
         private AudioSource _source;
         private float _oldProgress = -1;
-        private IJob _job;
+        private Job _job;
 
-        public override void Init(GameObject gameobj, ITimeSource source) {
-            base.Init(gameobj, source);
+        public override void Init(GameObject gameobj, PlayerLoopStage stage) {
+            base.Init(gameobj, stage);
 
             _source = tweenableObject.GetComponent<AudioSource>();
 
@@ -41,31 +41,33 @@ namespace Tween {
         private void PlayLoopSound(TweenAudio audio) {
             _source.PlayOneShot(audio.clip, audio.volume);
 
-            _job?.Stop();
-            _job = JobSequence.Create()
+            _job.Dispose();
+
+            _job = JobSequence.Create(timeSourceStage)
                 .Delay(audio.clip.length)
                 .Action(() => PlayLoopSound(audio))
-                .RunFrom(timeSource);
+                .Push()
+                .Start();
         }
     
         public override void Pause() {
             base.Pause();
 
-            _job?.Stop();
+            _job.Stop();
             _source.Pause();
         }
 
         public override void Play() {
             base.Play();
             
-            _job?.Start();
+            _job.Start();
             _source.Play();
         }
         
         public override void Stop() {
             base.Stop();
             
-            _job?.Stop();
+            _job.Stop();
             _source.Stop();
         }
 
