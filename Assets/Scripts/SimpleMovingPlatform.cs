@@ -27,7 +27,6 @@ namespace DefaultNamespace {
             
             if (_tween == null) {
                 throw new NullReferenceException("No tween with ID " + transformTweenID);
-                return;
             }
             
             _tween.SetStartPosition(positions[startPositionID]);

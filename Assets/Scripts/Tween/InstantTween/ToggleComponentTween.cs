@@ -27,7 +27,7 @@ namespace Tween {
             try {
                 _behaviour = (Behaviour) component;
             }
-            catch (Exception e) {
+            catch (Exception) {
                 _controller = (CharacterController) component;
             }
         }
