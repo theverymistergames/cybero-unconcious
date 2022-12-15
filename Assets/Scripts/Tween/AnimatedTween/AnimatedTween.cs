@@ -1,6 +1,6 @@
 ﻿using System;
-using EasingCurve;
 using MisterGames.Tick.Core;
+using Tweens.Easing;
 using UnityEngine;
 
 namespace Tween {
@@ -8,14 +8,14 @@ namespace Tween {
     [Serializable]
     public abstract class AnimatedTween : Tween {
 
-        [SerializeField] private EasingFunctions.Ease easing = EasingFunctions.Ease.Linear;
+        [SerializeField] private EasingType easing = EasingType.Linear;
         
         private AnimationCurve _curve;
 
         public override void Init(GameObject gameobj, PlayerLoopStage stage) {
             base.Init(gameobj, stage);
 
-            _curve = EasingAnimationCurve.EaseToAnimationCurve(easing);
+            _curve = easing.ToAnimationCurve();
         }
 
         protected float GetCurveValue(float value) {
