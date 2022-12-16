@@ -8,6 +8,7 @@ using Random = UnityEngine.Random;
 
 namespace Tween
 {
+    [Obsolete("Need to replace TweenController with MisterGames.Tweens.Core.TweenRunner")]
     public class TweenController : MonoBehaviour, ITweenController
     {
         [SerializeField] private PlayerLoopStage _timeSourceStage = PlayerLoopStage.Update;
