@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1812984632119403659}
   - component: {fileID: 8272872261008063223}
   - component: {fileID: 1812984632119403658}
-  - component: {fileID: 1812984632119403661}
+  - component: {fileID: 6883284657413201717}
   m_Layer: 0
   m_Name: VentDoorProto
   m_TagString: Untagged
@@ -99,9 +99,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771f920009c34d72a76fac8a216c4d4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  state: 1
-  blocked: 0
---- !u!114 &1812984632119403661
+  _tweenRunner: {fileID: 6883284657413201717}
+  _initialState: 0
+  _isBlocked: 0
+--- !u!114 &6883284657413201717
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -110,37 +111,56 @@ MonoBehaviour:
   m_GameObject: {fileID: 5055833656360908686}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e33bfa58c574f8a991067e6f9224beb, type: 3}
+  m_Script: {fileID: 11500000, guid: 57270a0731e243fe9da2d6d92826a39b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  globalDelay: 0
-  globalDuration: 1
-  globalSpeedRange: {x: 1, y: 1}
-  autoStart: 0
-  loop: 0
-  chain: 0
-  tweens:
-  - rid: 3551968185459408896
-  timeDomain: {fileID: 11400000, guid: 92c5e96a1414f9a43b3056e0bf623cdd, type: 2}
+  _playAtStart: 0
+  _tween:
+    rid: 2772173688650596478
   references:
     version: 2
     RefIds:
-    - rid: 3551968185459408896
-      type: {class: TransformTween, ns: Tween, asm: Assembly-CSharp}
+    - rid: 2772173688650596478
+      type: {class: ProgressTween, ns: MisterGames.Tweens, asm: MisterGames.Tweens}
       data:
-        id: 
-        tweenableObject: {fileID: 8775808604941975694}
-        loop: 0
-        yoyo: 0
-        autoStart: 1
-        speedRange: {x: 1, y: 1}
-        duration: 0.5
-        delay: 0
-        easing: 14
-        type: 0
-        start: {x: -0.07484592, y: 0.94341534, z: 1.0551742}
-        end: {x: -0.07484592, y: 2.148, z: 1.0551742}
-        local: 1
+        _playerLoopStage: 1
+        _duration: 0.5
+        _easingType: 14
+        _useCustomEasingCurve: 0
+        _customEasingCurve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 1
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 1
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        _actions:
+        - rid: 2772173688650596480
+    - rid: 2772173688650596480
+      type: {class: TweenProgressActionTransform, ns: MisterGames.Tweens.Actions, asm: MisterGames.Tweens}
+      data:
+        _transform: {fileID: 8251227572047862324}
+        _type: 0
+        _startValue: {x: -0.07484592, y: 0.94341534, z: 1.0551742}
+        _endValue: {x: -0.07484592, y: 2.148, z: 1.0551742}
+        _useLocal: 1
 --- !u!1001 &8433138459636214801
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -248,6 +268,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.00145643, y: 0.0028533502, z: 0.0023578505}
   m_Center: {x: -0.00041577852, y: 0.0000066130306, z: -0.00013248513}
+--- !u!114 &8433138459636214802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2850993453137231410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15607a9816044bc7b2548f343182030f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _timeSourceStage: 1
+  _strategy: {fileID: 11400000, guid: 87f3cf7412d28fe4ea8abe9f95f6f48d, type: 2}
 --- !u!114 &8433138459636214803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,20 +309,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &8433138459636214802
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2850993453137231410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15607a9816044bc7b2548f343182030f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _timeDomain: {fileID: 11400000, guid: 92c5e96a1414f9a43b3056e0bf623cdd, type: 2}
-  _strategy: {fileID: 11400000, guid: 87f3cf7412d28fe4ea8abe9f95f6f48d, type: 2}
 --- !u!4 &3232198993811678344 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6472681344878512281, guid: fbeff3b3c401ff94f87730b307843dd3, type: 3}
@@ -370,10 +390,5 @@ PrefabInstance:
 --- !u!4 &8251227572047862324 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: dfb3b77220fca5c47882b20e49d34de4, type: 3}
-  m_PrefabInstance: {fileID: 8433138461282614751}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8775808604941975694 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: dfb3b77220fca5c47882b20e49d34de4, type: 3}
   m_PrefabInstance: {fileID: 8433138461282614751}
   m_PrefabAsset: {fileID: 0}

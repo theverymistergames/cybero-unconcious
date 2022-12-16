@@ -1223,7 +1223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15607a9816044bc7b2548f343182030f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeDomain: {fileID: 11400000, guid: 92c5e96a1414f9a43b3056e0bf623cdd, type: 2}
+  _timeSourceStage: 1
   _strategy: {fileID: 11400000, guid: 87f3cf7412d28fe4ea8abe9f95f6f48d, type: 2}
 --- !u!1 &3218984535559176827
 GameObject:
@@ -1430,7 +1430,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15607a9816044bc7b2548f343182030f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeDomain: {fileID: 11400000, guid: 92c5e96a1414f9a43b3056e0bf623cdd, type: 2}
+  _timeSourceStage: 1
   _strategy: {fileID: 11400000, guid: 87f3cf7412d28fe4ea8abe9f95f6f48d, type: 2}
 --- !u!114 &6869529926518107924
 MonoBehaviour:
@@ -1979,7 +1979,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8527227897024093294}
   - component: {fileID: 8679587918342918367}
-  - component: {fileID: 8679587918342918364}
+  - component: {fileID: 2620998543514270909}
   m_Layer: 0
   m_Name: Door_mixed
   m_TagString: Untagged
@@ -2025,9 +2025,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 771f920009c34d72a76fac8a216c4d4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  state: 1
-  blocked: 0
---- !u!114 &8679587918342918364
+  _tweenRunner: {fileID: 2620998543514270909}
+  _initialState: 0
+  _isBlocked: 0
+--- !u!114 &2620998543514270909
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2036,54 +2037,65 @@ MonoBehaviour:
   m_GameObject: {fileID: 4853265089975540476}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e33bfa58c574f8a991067e6f9224beb, type: 3}
+  m_Script: {fileID: 11500000, guid: 57270a0731e243fe9da2d6d92826a39b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  globalDelay: 0
-  globalDuration: 1
-  globalSpeedRange: {x: 1, y: 1}
-  autoStart: 0
-  loop: 0
-  chain: 0
-  tweens:
-  - rid: 1193714679525670914
-  - rid: 1193714679525670915
-  timeDomain: {fileID: 11400000, guid: 92c5e96a1414f9a43b3056e0bf623cdd, type: 2}
+  _playAtStart: 0
+  _tween:
+    rid: 2772173688650596471
   references:
     version: 2
     RefIds:
-    - rid: 1193714679525670914
-      type: {class: TransformTween, ns: Tween, asm: Assembly-CSharp}
+    - rid: 2772173688650596471
+      type: {class: ProgressTween, ns: MisterGames.Tweens, asm: MisterGames.Tweens}
       data:
-        id: 
-        tweenableObject: {fileID: 7591682661117114173}
-        loop: 0
-        yoyo: 0
-        autoStart: 1
-        speedRange: {x: 1, y: 1}
-        duration: 1
-        delay: 0
-        easing: 17
-        type: 0
-        start: {x: 0, y: 0.97204447, z: -0.6006527}
-        end: {x: 0, y: 0.97204447, z: -1.5}
-        local: 1
-    - rid: 1193714679525670915
-      type: {class: TransformTween, ns: Tween, asm: Assembly-CSharp}
+        _playerLoopStage: 1
+        _duration: 1
+        _easingType: 17
+        _useCustomEasingCurve: 0
+        _customEasingCurve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 1
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 1
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        _actions:
+        - rid: 2772173688650596472
+        - rid: 2772173688650596473
+    - rid: 2772173688650596472
+      type: {class: TweenProgressActionTransform, ns: MisterGames.Tweens.Actions, asm: MisterGames.Tweens}
       data:
-        id: 
-        tweenableObject: {fileID: 981106360135285752}
-        loop: 0
-        yoyo: 0
-        autoStart: 1
-        speedRange: {x: 1, y: 1}
-        duration: 1
-        delay: 0
-        easing: 17
-        type: 0
-        start: {x: 0, y: 0.97204447, z: -0.6977291}
-        end: {x: 0, y: 0.97204447, z: -0.529}
-        local: 1
+        _transform: {fileID: 7760307950831906103}
+        _type: 0
+        _startValue: {x: 0, y: 0.97204447, z: -0.6006527}
+        _endValue: {x: 0, y: 0.97204447, z: -1.5}
+        _useLocal: 1
+    - rid: 2772173688650596473
+      type: {class: TweenProgressActionTransform, ns: MisterGames.Tweens.Actions, asm: MisterGames.Tweens}
+      data:
+        _transform: {fileID: 2463955242482354451}
+        _type: 0
+        _startValue: {x: 0, y: 0.97204447, z: -0.6977291}
+        _endValue: {x: 0, y: 0.97204447, z: -0.529}
+        _useLocal: 1
 --- !u!1 &4929764252181864224
 GameObject:
   m_ObjectHideFlags: 0
