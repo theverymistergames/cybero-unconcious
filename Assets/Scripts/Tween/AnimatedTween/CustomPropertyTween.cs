@@ -3,9 +3,11 @@ using System.Reflection;
 using MisterGames.Tick.Core;
 using UnityEngine;
 
-namespace Tween
-{
-    [Serializable]public class CustomTween : AnimatedTween {
+namespace Tween {
+
+    [Serializable]
+    public class CustomTween : AnimatedTween {
+
         [SerializeField] private string componentName;
         [SerializeField] private string fieldName;
         [SerializeField] private float startValue = 0;
@@ -17,8 +19,8 @@ namespace Tween
         
         private BindingFlags _flags = BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Public | BindingFlags.Static;
         
-        public override void Init(GameObject gameobj, ITimeSource source) {
-            base.Init(gameobj, source);
+        public override void Init(GameObject gameobj, PlayerLoopStage stage) {
+            base.Init(gameobj, stage);
             
             _component = tweenableObject.GetComponent(componentName);
             
@@ -33,7 +35,6 @@ namespace Tween
 
             if (_field == null && _property == null) {
                 Debug.LogWarning("No field with name " + fieldName);
-                return;
             }
         }
         

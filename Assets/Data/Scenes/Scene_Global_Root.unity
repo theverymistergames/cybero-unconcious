@@ -162,6 +162,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 182470994}
     m_Modifications:
+    - target: {fileID: 457537589035104159, guid: c5b396d86ce105e4a8ec8d94cd471b82, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3231216613973138704, guid: c5b396d86ce105e4a8ec8d94cd471b82, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -209,6 +213,14 @@ PrefabInstance:
     - target: {fileID: 3231216613973138705, guid: c5b396d86ce105e4a8ec8d94cd471b82, type: 3}
       propertyPath: m_Name
       value: DeveloperConsole
+      objectReference: {fileID: 0}
+    - target: {fileID: 8546323579614634932, guid: c5b396d86ce105e4a8ec8d94cd471b82, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8546323579614634932, guid: c5b396d86ce105e4a8ec8d94cd471b82, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5b396d86ce105e4a8ec8d94cd471b82, type: 3}
@@ -327,9 +339,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 464711563082992953, guid: b307b46eca7f7c54dae46309dc353abd, type: 3}
       propertyPath: m_Name
-      value: TimeDomainRunner
+      value: TimeSourcesRunner
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 464711563082992950, guid: b307b46eca7f7c54dae46309dc353abd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b307b46eca7f7c54dae46309dc353abd, type: 3}
 --- !u!1001 &4583349733417234101
 PrefabInstance:
@@ -504,5 +517,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8111654072982513166, guid: 1325f020f2506884da59ae505380dc7b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1325f020f2506884da59ae505380dc7b, type: 3}

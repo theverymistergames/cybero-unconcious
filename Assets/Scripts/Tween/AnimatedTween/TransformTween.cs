@@ -1,17 +1,18 @@
 ﻿using System;
 using MisterGames.Tick.Core;
-using UnityEditor;
 using UnityEngine;
 
-namespace Tween
-{
+namespace Tween {
+
     public enum TransformTypes {
         Position,
         Rotation,
         Scale
     }
     
-    [Serializable]public class TransformTween : AnimatedTween {
+    [Serializable]
+    public class TransformTween : AnimatedTween {
+
         [SerializeField] private TransformTypes type = TransformTypes.Position;
         [SerializeField] private Vector3 start;
         [SerializeField] private Vector3 end;
@@ -27,8 +28,8 @@ namespace Tween
             end = pos;
         }
 
-        public override void Init(GameObject gameobj, ITimeSource source) {
-            base.Init(gameobj, source);
+        public override void Init(GameObject gameobj, PlayerLoopStage stage) {
+            base.Init(gameobj, stage);
 
             _transform = tweenableObject.transform;
         }
@@ -52,4 +53,5 @@ namespace Tween
             }
         }
     }
+
 }
