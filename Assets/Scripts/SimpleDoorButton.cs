@@ -1,9 +1,10 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 namespace DefaultNamespace {
+
     public class SimpleDoorButton : MonoBehaviour {
+
         [SerializeField] private SimpleDoor doorController;
         [SerializeField] private Material blockedMaterial;
         [SerializeField] private Material normalMaterial;
@@ -20,4 +21,5 @@ namespace DefaultNamespace {
             }
         }
     }
+
 }

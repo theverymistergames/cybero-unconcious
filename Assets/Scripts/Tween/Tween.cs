@@ -17,7 +17,7 @@ namespace Tween {
         [SerializeField] private float duration = 1;
         [SerializeField] private float delay = 0;
 
-        protected ITimeSource timeSource;
+        protected PlayerLoopStage timeSourceStage;
         
         public event Action OnCompleted = delegate { };
         public event Action OnLooped = delegate { };
@@ -54,13 +54,12 @@ namespace Tween {
         private bool _paused = false;
         private bool _active = true;
 
-        public virtual void Init(GameObject gameObject, ITimeSource source) {
+        public virtual void Init(GameObject gameObject, PlayerLoopStage stage) {
             if (tweenableObject == null) {
                 tweenableObject = gameObject;
             }
 
-            timeSource = source;
-            timeSource.Subscribe(this);
+            TimeSources.Get(stage).Subscribe(this);
         }
 
         public virtual void Play() {

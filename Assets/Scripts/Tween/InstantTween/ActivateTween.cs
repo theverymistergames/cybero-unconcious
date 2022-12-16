@@ -2,7 +2,10 @@
 using UnityEngine;
 
 namespace Tween {
-    [Serializable]public class ActivateTween : Tween {
+
+    [Serializable]
+    public class ActivateTween : Tween {
+
         [SerializeField] private bool active;
 
         private float _oldProgress = -1;
@@ -17,4 +20,5 @@ namespace Tween {
             _oldProgress = progress;
         }
     }
+
 }

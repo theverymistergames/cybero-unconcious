@@ -4,7 +4,10 @@ using MisterGames.Tick.Core;
 using UnityEngine;
 
 namespace Tween {
-    [Serializable]public class MethodTween : Tween {
+
+    [Serializable]
+    public class MethodTween : Tween {
+
         [SerializeField] private string componentName;
         [SerializeField] private string methodName;
         [SerializeField] private float args;
@@ -17,8 +20,8 @@ namespace Tween {
         
         private BindingFlags _flags = BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Public | BindingFlags.Static;
         
-        public override void Init(GameObject gameobj, ITimeSource source) {
-            base.Init(gameobj, source);
+        public override void Init(GameObject gameobj, PlayerLoopStage stage) {
+            base.Init(gameobj, stage);
 
             _args = new object[1];
             _args[0] = args;
@@ -41,7 +44,6 @@ namespace Tween {
 
             if (_method == null) {
                 Debug.LogWarning("No method with name " + methodName);
-                return;
             }
         }
         
@@ -55,4 +57,5 @@ namespace Tween {
             _oldProgress = progress;
         }
     }
+
 }

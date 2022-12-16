@@ -6,16 +6,17 @@ using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 namespace Tween {
+
     [Serializable]
     public class SimpleTweenController : MonoBehaviour, ITweenController {
         
         [SubclassSelector][SerializeReference] private Tween tween;
-        [SerializeField] private TimeDomain timeDomain;
+        [SerializeField] private PlayerLoopStage _timeSourceStage;
 
         public event Action OnFinished = delegate { };
         
         private void Awake() {
-            tween.Init(gameObject, timeDomain.Source);
+            tween.Init(gameObject, _timeSourceStage);
         }
 
         private void Start() {
@@ -58,4 +59,5 @@ namespace Tween {
             return tween;
         }
     }
+
 }

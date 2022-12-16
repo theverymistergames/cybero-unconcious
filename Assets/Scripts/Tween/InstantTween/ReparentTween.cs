@@ -2,7 +2,10 @@
 using UnityEngine;
 
 namespace Tween {
-    [Serializable]public class ReparentTween : Tween {
+
+    [Serializable]
+    public class ReparentTween : Tween {
+
         [SerializeField] private GameObject reparentFrom;
         [SerializeField] private GameObject reparentTo;
 
@@ -24,4 +27,5 @@ namespace Tween {
             _oldProgress = progress;
         }
     }
+
 }
