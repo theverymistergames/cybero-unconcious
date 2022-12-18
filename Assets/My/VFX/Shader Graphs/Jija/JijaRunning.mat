@@ -18,14 +18,18 @@ MonoBehaviour:
     m_Values: 
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: JijaRunning
   m_Shader: {fileID: -6465566751694194690, guid: 9f9db2f38ec312842b951f7cc5ef4ab6, type: 3}
-  m_ShaderKeywords: _ALPHATEST_ON _DISABLE_DECALS _DISABLE_SSR_TRANSPARENT
+  m_ValidKeywords:
+  - _ALPHATEST_ON
+  - _DISABLE_DECALS
+  - _DISABLE_SSR_TRANSPARENT
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -142,7 +146,7 @@ Material:
     m_Floats:
     - Vector1_195E5D77: 5
     - Vector1_5599F0EB: 5
-    - Vector1_5E4C4145: 10.4
+    - Vector1_5E4C4145: 8.98
     - Vector1_83A53FA0: 1.09
     - Vector1_84B962CB: 1
     - Vector1_C4935831: 6.5
@@ -284,7 +288,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - Color_AEF888F8: {r: 0, g: 0.093050815, b: 0.3207547, a: 0}
-    - Color_B48F8FA1: {r: 0, g: 0.952482, b: 1, a: 1}
+    - Color_B48F8FA1: {r: 0.254717, g: 0.254717, b: 0.254717, a: 1}
     - Color_D07EDDD8: {r: 0, g: 0, b: 0, a: 1}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
@@ -297,7 +301,7 @@ Material:
     - _InvPrimScale: {r: 1, g: 1, b: 0, a: 0}
     - _IridescenceThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
     - _Move_speed: {r: 0, g: 0.3, b: 0, a: 0}
-    - _Multiply_color: {r: 0, g: 0.23603399, b: 0.41509432, a: 1}
+    - _Multiply_color: {r: 0.044214953, g: 0.51046556, b: 0.8679245, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _ThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
     - _TransmittanceColor: {r: 1, g: 1, b: 1, a: 1}
