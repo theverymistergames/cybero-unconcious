@@ -3,7 +3,10 @@ using MisterGames.Tick.Core;
 using UnityEngine;
 
 namespace Tween {
-    [Serializable]public class MaterialTween : AnimatedTween {
+
+    [Serializable]
+    public class MaterialTween : AnimatedTween {
+
         [SerializeField] private string fieldName;
         [SerializeField] private float startValue = 0;
         [SerializeField] private float endValue = 1;
@@ -12,8 +15,8 @@ namespace Tween {
         private Material _material;
         private Color _color;
 
-        public override void Init(GameObject gameobj, ITimeSource source) {
-            base.Init(gameobj, source);
+        public override void Init(GameObject gameobj, PlayerLoopStage stage) {
+            base.Init(gameobj, stage);
 
             var renderer = tweenableObject.GetComponent<Renderer>();
             
@@ -44,4 +47,5 @@ namespace Tween {
             }
         }
     }
+
 }
