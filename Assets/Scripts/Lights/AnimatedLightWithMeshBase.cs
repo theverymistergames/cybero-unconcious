@@ -5,7 +5,6 @@ using UnityEngine;
 
 namespace Lights
 {
-    [ExecuteInEditMode]
     public class AnimatedLightWithMeshBase : MonoBehaviour
     {
         public Renderer emissiveObject;
@@ -13,11 +12,11 @@ namespace Lights
         [NonSerialized] public float DelayMultiplier = 1;
         
         private bool _isAnimationPlaying, _isAnimationStopped;
-        protected Light Light;
+        protected Light _light;
         
         private void Start()
         {
-            Light = GetComponent<Light>();
+            _light = GetComponent<Light>();
         }
         
         private void Update()
