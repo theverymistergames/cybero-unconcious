@@ -483,7 +483,7 @@ Animation:
   m_CullingType: 0
 --- !u!95 &2027359105
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -500,7 +500,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &7205586868813128952
 GameObject:
   m_ObjectHideFlags: 0
@@ -545,7 +545,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55833d1d890e4dbfb17c272e32b7bbdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeDomain: {fileID: 11400000, guid: 39f2127ef4250bf40afcc82c315a42eb, type: 2}
+  _timeSourceStage: 1
   _input: {fileID: 7205586869400830036}
   _adapter: {fileID: 7205586869400830035}
   _viewSettings: {fileID: 11400000, guid: f360ee52b794541448e04fc87f4c310e, type: 2}
@@ -595,7 +595,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9cf7e2d03e54500b87c531c700b36fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeDomain: {fileID: 11400000, guid: 39f2127ef4250bf40afcc82c315a42eb, type: 2}
+  _timeSourceStage: 1
   _maxHits: 6
   _distanceAddition: 0.15
   _radius: 0.4
@@ -622,7 +622,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec30cf9dd57d465fbd72cdcfb4f70b00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeDomain: {fileID: 11400000, guid: 39f2127ef4250bf40afcc82c315a42eb, type: 2}
+  _timeSourceStage: 1
   _maxHits: 2
   _distance: 0.6
   _radius: 0.4
@@ -696,7 +696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8246ccddbcf24f7195612aba17d31a5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeDomain: {fileID: 11400000, guid: 39f2127ef4250bf40afcc82c315a42eb, type: 2}
+  _timeSourceStage: 1
   _stateMachine: {fileID: 11400000, guid: 8134a5d80f0c10a479267a13f6268dfc, type: 2}
 --- !u!114 &7205586869188020228
 MonoBehaviour:
@@ -743,7 +743,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c61bbe30dd55423899c69d11cc51ba00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeDomain: {fileID: 11400000, guid: 39f2127ef4250bf40afcc82c315a42eb, type: 2}
+  _timeSourceStage: 1
   _input: {fileID: 7205586869400830036}
   _adapter: {fileID: 7205586869400830035}
   _motionFsm: {fileID: 7205586869188020229}
@@ -1057,7 +1057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93261f072393461a8fcbc88e3523599d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeDomain: {fileID: 11400000, guid: 39f2127ef4250bf40afcc82c315a42eb, type: 2}
+  _timeSourceStage: 1
   _body: {fileID: 7205586870401899320}
   _characterController: {fileID: 7205586870401899302}
   _massProcessor: {fileID: 7205586869400830033}
@@ -1074,7 +1074,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af9c624e70d54f05b05945eb39e72a1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeDomain: {fileID: 11400000, guid: 39f2127ef4250bf40afcc82c315a42eb, type: 2}
+  _timeSourceStage: 1
   _groundDetector: {fileID: 7205586868961636115}
   _ceilingDetector: {fileID: 7205586868961636116}
   _hitDetector: {fileID: 7205586868961636115}
@@ -1129,7 +1129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8246ccddbcf24f7195612aba17d31a5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeDomain: {fileID: 11400000, guid: 39f2127ef4250bf40afcc82c315a42eb, type: 2}
+  _timeSourceStage: 1
   _stateMachine: {fileID: 11400000, guid: a96268c3361f31f47adfa62636467af1, type: 2}
 --- !u!114 &7205586870386989440
 MonoBehaviour:
@@ -1159,7 +1159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a647517fe62841be9759f689f4c2f3bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeDomain: {fileID: 11400000, guid: 39f2127ef4250bf40afcc82c315a42eb, type: 2}
+  _playerLoopStage: 1
   _poseFsm: {fileID: 7205586870386989453}
   _groundDetector: {fileID: 7205586868961636115}
   _characterController: {fileID: 7205586870401899302}
@@ -1251,43 +1251,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcb0952f224744f4dbd42b9630a9098d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  madnessCurve:
+  madnessByTimeCurve:
     serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 34
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.3
-      value: 0
-      inSlope: -0
-      outSlope: 0.50673306
-      tangentMode: 5
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.44642857
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 3.420022
-      outSlope: 3.420022
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.12499997
-      outWeight: 0
+    m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  madnessTime: 10
-  fallSpeedMultiplier: 5
+  upSpeedMultiplier: 2
+  downSpeedMultiplier: 5
+  enemyMultiplier: 10
   pulseSpeed: 8
   pulseAmplitude: 1
+  distanceCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  enemyDistanceCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  psyMaxDistance: 5
+  enemyMaxDistance: 5
 --- !u!114 &450691650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1365,7 +1353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b7c1ce4f00644d38bed2cb8aa4a1040, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeDomain: {fileID: 11400000, guid: 39f2127ef4250bf40afcc82c315a42eb, type: 2}
+  _timeSourceStage: 1
   _adapter: {fileID: 7205586869400830035}
   _motionInputProcessor: {fileID: 7205586869188020226}
   _groundDetector: {fileID: 7205586868961636115}
@@ -1494,7 +1482,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4046996624456019787, guid: 58028f1ec487a954e992e5a75fed5fe4, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7050681151641885586, guid: 58028f1ec487a954e992e5a75fed5fe4, type: 3}
       propertyPath: m_UiScaleMode
