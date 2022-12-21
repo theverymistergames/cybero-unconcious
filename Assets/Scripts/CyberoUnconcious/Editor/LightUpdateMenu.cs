@@ -10,6 +10,11 @@ namespace MisterGames.CyberoUnconcious.Editor {
 
         [MenuItem("MisterGames/Tools/Render shadow map for OnDemand lights %&L")]
         private static void UpdateLights() {
+            if (Application.isPlaying) {
+                Debug.LogWarning($"Cannot render shadow map for OnDemand lights while in play mode");
+                return;
+            }
+
             Debug.Log($"Requested shadow map rendering for light with ShadowUpdateMode {ShadowUpdateMode.OnDemand}");
             int lightRequestsCount = 0;
 
