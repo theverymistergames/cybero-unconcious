@@ -1,4 +1,5 @@
 ﻿using UnityEditor;
+using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.Profiling;
 using UnityEngine.Rendering.HighDefinition;
@@ -8,17 +9,18 @@ namespace MisterGames.CyberoUnconcious.Editor {
 
     public static class LightUpdateMenu {
 
-        [MenuItem("MisterGames/Tools/Render shadow map for OnDemand lights %&L")]
+        [MenuItem("MisterGames/Tools/Render shadow map for OnDemand lights #r")]
         private static void UpdateLights() {
             if (Application.isPlaying) {
                 Debug.LogWarning($"Cannot render shadow map for OnDemand lights while in play mode");
                 return;
             }
 
-            Debug.Log($"Requested shadow map rendering for light with ShadowUpdateMode {ShadowUpdateMode.OnDemand}");
-            int lightRequestsCount = 0;
+            Debug.Log($"Requested shadow map rendering for OnDemand lights");
 
             var gameObjects = SceneManager.GetActiveScene().GetRootGameObjects();
+            int lightRequestsCount = 0;
+
             foreach (var gameObject in gameObjects) {
                 var lights = gameObject.GetComponentsInChildren<HDAdditionalLightData>();
                 if (lights.Length == 0) continue;
@@ -29,19 +31,19 @@ namespace MisterGames.CyberoUnconcious.Editor {
                     light.RequestShadowMapRendering();
                     lightRequestsCount++;
 
-                    Debug.Log($"Requested shadow map rendering for light on game object '{light.gameObject}'");
                     EditorUtility.SetDirty(light);
+                    Debug.Log($"Requested shadow map rendering for light on game object '{light.gameObject}'");
                 }
             }
 
             if (lightRequestsCount == 0) {
-                Debug.Log($"No game objects on the current scene have lights with ShadowUpdateMode {ShadowUpdateMode.OnDemand}. " +
-                          $"Nothing to render.");
+                Debug.Log($"No game objects on the current scene have OnDemand lights, " +
+                          $"nothing to render.");
                 return;
             }
 
-            Debug.Log($"Requested shadow map rendering for light with ShadowUpdateMode {ShadowUpdateMode.OnDemand} done. " +
-                      $"Rendered {lightRequestsCount} lights.");
+            Debug.Log($"Requested shadow map rendering for OnDemand lights done, " +
+                      $"{lightRequestsCount} renders were performed.");
         }
     }
 
