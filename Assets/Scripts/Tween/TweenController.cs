@@ -20,7 +20,7 @@ namespace Tween
         public event Action OnFinished = delegate { };
 
         private void Awake() {
-            Debug.LogError($"TweenController is obsolete: gameObject {gameObject.name}. " +
+            Debug.LogWarning($"TweenController is obsolete: gameObject {gameObject.name}. " +
                            $"Need to replace TweenController with MisterGames.Tweens.Core.TweenRunner");
         }
 

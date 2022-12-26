@@ -7,7 +7,7 @@ namespace DefaultNamespace {
     public class SimpleMovingPlatform : MonoBehaviour {
 
         private void Awake() {
-            Debug.LogError($"SimpleMovingPlatform is obsolete: gameObject {gameObject.name}.");
+            Debug.LogWarning($"SimpleMovingPlatform is obsolete: gameObject {gameObject.name}.");
         }
     }
 
