@@ -30,6 +30,8 @@ Material:
   - _DISABLE_SSR_TRANSPARENT
   - _DOUBLESIDED_ON
   - _ENABLE_FOG_ON_TRANSPARENT
+  - _MASKMAP
+  - _NORMALMAP
   - _NORMALMAP_TANGENT_SPACE
   - _REFRACTION_THIN
   - _SPECULAR_OCCLUSION_NONE
@@ -107,11 +109,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: ff6d6656957baf34a8674798194f0157, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 859a206f451c0694987e71cc7856bc38, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMapOS:
@@ -238,7 +240,7 @@ Material:
     - _LinkDetailsWithBase: 0
     - _MaterialID: 1
     - _Metallic: 0.726
-    - _MetallicRemapMax: 0.0499138
+    - _MetallicRemapMax: 0.46890822
     - _MetallicRemapMin: 0
     - _NormalMapSpace: 0
     - _NormalScale: 0.33
@@ -257,7 +259,7 @@ Material:
     - _SSRefractionProjectionModel: 0
     - _Smoothness: 0.922
     - _SmoothnessRemapMax: 1
-    - _SmoothnessRemapMin: 0.738187
+    - _SmoothnessRemapMin: 0.53068507
     - _SpecularAAScreenSpaceVariance: 0.1
     - _SpecularAAThreshold: 0.2
     - _SpecularOcclusionMode: 0

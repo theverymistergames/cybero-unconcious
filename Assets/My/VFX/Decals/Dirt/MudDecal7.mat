@@ -139,7 +139,7 @@ Material:
     - _AffectAO: 0
     - _AffectAlbedo: 1
     - _AffectEmission: 0
-    - _AffectMetal: 0
+    - _AffectMetal: 1
     - _AffectNormal: 1
     - _AffectSmoothness: 1
     - _AlbedoAffectEmissive: 0
@@ -158,11 +158,11 @@ Material:
     - _CullMode: 2
     - _CullModeForward: 2
     - _Cutoff: 0.5
-    - _DecalBlend: 0.116
+    - _DecalBlend: 0.41
     - _DecalColorMask0: 15
     - _DecalColorMask1: 15
-    - _DecalColorMask2: 3
-    - _DecalColorMask3: 0
+    - _DecalColorMask2: 11
+    - _DecalColorMask3: 8
     - _DecalMaskMapBlueScale: 1
     - _DecalMeshBiasType: 0
     - _DecalMeshDepthBias: 0
@@ -220,7 +220,7 @@ Material:
     - _LinkDetailsWithBase: 1
     - _MaskBlendSrc: 0
     - _MaterialID: 1
-    - _Metallic: 0
+    - _Metallic: 0.28
     - _MetallicRemapMax: 1
     - _MetallicRemapMin: 0
     - _NormalBlendSrc: 0
@@ -236,7 +236,7 @@ Material:
     - _ReceivesSSR: 1
     - _ReceivesSSRTransparent: 0
     - _RefractionModel: 0
-    - _Smoothness: 0.133
+    - _Smoothness: 0.442
     - _SmoothnessRemapMax: 1
     - _SmoothnessRemapMin: 0
     - _SpecularAAScreenSpaceVariance: 0.1
@@ -279,7 +279,7 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.4528302, g: 0.4528302, b: 0.4528302, a: 1}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}

@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/AssetStore/Padlock/Demo/Demo_Scene_1.unity
-    guid: aafb11519e68a8b40bda86145df54a68
-  - enabled: 1
     path: Assets/Data/Scenes/Scene_Global_Root.unity
     guid: 6136b8e47bc52424eb7826b3ab1c1c33
   - enabled: 1
@@ -46,6 +43,9 @@ EditorBuildSettings:
     path: Assets/Scenes/CyberoUnconsious/Level0/Level0.unity
     guid: 94c7b75133a50ad468a10dca58dd5548
   - enabled: 1
+    path: Assets/Scenes/CyberoUnconsious/Level1_beginning/Level1 pipes hall new.unity
+    guid: 12d11d3fd20b09947bc29db82bba9e39
+  - enabled: 1
     path: Assets/Scenes/CyberoUnconsious/Level1_beginning/Level1_0.unity
     guid: 489a793886e210e4b9e9e7bed232d731
   - enabled: 1
@@ -61,11 +61,14 @@ EditorBuildSettings:
     path: Assets/Scenes/CyberoUnconsious/Level1_beginning/TESt.unity
     guid: b07285e16954f1e44bf5c7650283e6ab
   - enabled: 1
-    path: Assets/Scenes/CyberoUnconsious/Level1_lab/Level1_palaty_test.unity
-    guid: 7b228bb1effc4ef4c9a9858aa4c13e41
+    path: Assets/Scenes/CyberoUnconsious/Level1_lab/Level1_lab_new.unity
+    guid: d78e3712cc9818645b6f3538de640220
   - enabled: 1
     path: Assets/Scenes/CyberoUnconsious/Level1_lab/Level1_lab_new_2.unity
     guid: a0e64f7ae4b6b8d4a8ca3c43ca8f3202
+  - enabled: 1
+    path: Assets/Scenes/CyberoUnconsious/Level1_lab/Level1_palaty_test.unity
+    guid: 7b228bb1effc4ef4c9a9858aa4c13e41
   - enabled: 1
     path: Assets/Scenes/CyberoUnconsious/Level2_distribHall/Level2_0_hall.unity
     guid: 538f31686a1e3c24caf3687f88358b8f
@@ -99,5 +102,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/House/House.unity
     guid: ed957d46b0e84a948b2f88338cbab3e9
+  - enabled: 1
+    path: Assets/Scripts/Unity-Custom-Tools-Tutorial-master/Assets/Part 1 - Add prefabs
+      within circle/Within circle.unity
+    guid: d3e2ad58f644c4241b6212edc3970aa2
+  - enabled: 1
+    path: Assets/Scripts/Unity-Custom-Tools-Tutorial-master/Assets/Part 2 - Add prefabs
+      along a line/Along line.unity
+    guid: 2059ad990767e6149b3d6b80eb2fdfbd
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 8c54b9a03b4b2db40a25ba5cbc60172e, type: 2}
