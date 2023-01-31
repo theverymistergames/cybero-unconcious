@@ -16,8 +16,8 @@ MonoBehaviour:
   m_LookDevVolumeProfile: {fileID: 11400000, guid: a4841d6c5bb4ccc40b39cdc61a4779d1, type: 2}
   m_RenderingPathDefaultCameraFrameSettings:
     bitDatas:
-      data1: 118592626422638
-      data2: 4539628433784635416
+      data1: 122990681322350
+      data2: 13763000471713153048
     lodBias: 1
     lodBiasMode: 0
     lodBiasQualityLevel: 0
@@ -31,8 +31,8 @@ MonoBehaviour:
     materialQuality: 0
   m_RenderingPathDefaultBakedOrCustomReflectionFrameSettings:
     bitDatas:
-      data1: 117765846433612
-      data2: 4539628424389459992
+      data1: 122163901333324
+      data2: 4539628425463201816
     lodBias: 1
     lodBiasMode: 0
     lodBiasQualityLevel: 0
@@ -46,8 +46,8 @@ MonoBehaviour:
     materialQuality: 0
   m_RenderingPathDefaultRealtimeReflectionFrameSettings:
     bitDatas:
-      data1: 136113945211725
-      data2: 4539628433784635416
+      data1: 140512000111437
+      data2: 4539628434858377240
     lodBias: 1
     lodBiasMode: 0
     lodBiasQualityLevel: 0
@@ -68,7 +68,8 @@ MonoBehaviour:
   - UnityEngine.Rendering.HighDefinition.Compositor.AlphaInjection, Unity.RenderPipelines.HighDefinition.Runtime,
     Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   afterPostProcessBlursCustomPostProcesses: []
-  afterPostProcessCustomPostProcesses: []
+  afterPostProcessCustomPostProcesses:
+  - ZoomBlur, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   beforeTAACustomPostProcesses: []
   lightLayerName0: Light Layer default
   lightLayerName1: Light Layer 1

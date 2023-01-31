@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_RenderPipelineSettings:
     supportShadowMask: 1
-    supportSSR: 0
+    supportSSR: 1
     supportSSRTransparent: 1
     supportSSAO: 1
     supportSSGI: 0
@@ -33,7 +33,7 @@ MonoBehaviour:
     colorBufferFormat: 48
     supportCustomPass: 0
     customBufferFormat: 48
-    supportedLitShaderMode: 1
+    supportedLitShaderMode: 3
     planarReflectionResolution:
       m_Values: 400000004000000040000000
       m_SchemaId:
