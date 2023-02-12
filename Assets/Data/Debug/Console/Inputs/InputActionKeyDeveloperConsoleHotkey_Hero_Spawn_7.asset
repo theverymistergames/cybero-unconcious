@@ -12,13 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbad9b8d92504b3c9bb899cf6e8d6d2e, type: 3}
   m_Name: InputActionKeyDeveloperConsoleHotkey_Hero_Spawn_7
   m_EditorClassIdentifier: 
+  _strategy:
+  - rid: -2
   _bindings:
   - rid: 5452144554516676625
-  _strategy: {fileID: 0}
   references:
     version: 2
     RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
     - rid: 5452144554516676625
-      type: {class: InputBindingKeyCombo, ns: MisterGames.Input.Bindings, asm: MisterGames.Input}
+      type: {class: KeyCombo, ns: MisterGames.Input.Bindings, asm: MisterGames.Input}
       data:
-        _keys: 0200000049000000
+        keys: 0200000049000000

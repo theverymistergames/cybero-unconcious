@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbad9b8d92504b3c9bb899cf6e8d6d2e, type: 3}
   m_Name: InputActionCharacterJump
   m_EditorClassIdentifier: 
+  _strategy:
+    rid: -2
   _bindings:
   - rid: 5452144531743965201
   - rid: 5452144531743965202
@@ -19,11 +21,13 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
     - rid: 5452144531743965201
-      type: {class: InputBindingKey, ns: MisterGames.Input.Bindings, asm: MisterGames.Input}
+      type: {class: Key, ns: MisterGames.Input.Bindings, asm: MisterGames.Input}
       data:
-        _key: 7
+        key: 7
     - rid: 5452144531743965202
-      type: {class: InputBindingKey, ns: MisterGames.Input.Bindings, asm: MisterGames.Input}
+      type: {class: Key, ns: MisterGames.Input.Bindings, asm: MisterGames.Input}
       data:
-        _key: 26
+        key: 26
