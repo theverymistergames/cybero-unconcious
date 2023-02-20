@@ -1,6 +1,6 @@
 ﻿using System;
+using MisterGames.Common.Easing;
 using MisterGames.Tick.Core;
-using Tweens.Easing;
 using UnityEngine;
 
 namespace Tween {
