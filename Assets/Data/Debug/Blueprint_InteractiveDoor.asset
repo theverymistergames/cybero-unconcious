@@ -1,0 +1,479 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95aa8f7d5aa490e9877070cd957eaff, type: 3}
+  m_Name: Blueprint_InteractiveDoor
+  m_EditorClassIdentifier: 
+  _blueprintMeta:
+    _nodesMap:
+      _entries:
+      - key: 0
+        value:
+          _nodeId: 0
+          _node:
+            rid: 5847603519011422703
+          _position: {x: 264.67462, y: 404.66663}
+          _ports:
+          - name: Play
+            isExternalPort: 0
+            mode: 0
+            _serializedType:
+              _type: 
+          - name: Pause
+            isExternalPort: 0
+            mode: 0
+            _serializedType:
+              _type: 
+          - name: Wind
+            isExternalPort: 0
+            mode: 0
+            _serializedType:
+              _type: 
+          - name: Rewind
+            isExternalPort: 0
+            mode: 0
+            _serializedType:
+              _type: 
+          - name: Invert
+            isExternalPort: 0
+            mode: 0
+            _serializedType:
+              _type: 
+          - name: Set Tween
+            isExternalPort: 0
+            mode: 0
+            _serializedType:
+              _type: 
+          - name: Tween
+            isExternalPort: 0
+            mode: 2
+            _serializedType:
+              _type: MisterGames.Tweens.Core.ITween, MisterGames.Tweens##0
+          - name: On Finish
+            isExternalPort: 0
+            mode: 1
+            _serializedType:
+              _type: 
+      - key: 1
+        value:
+          _nodeId: 1
+          _node:
+            rid: 5847603519011422706
+          _position: {x: -326.6366, y: 197.33333}
+          _ports:
+          - name: Set Interactive
+            isExternalPort: 0
+            mode: 0
+            _serializedType:
+              _type: 
+          - name: Interactive
+            isExternalPort: 0
+            mode: 2
+            _serializedType:
+              _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact##0
+          - name: On Start Interact
+            isExternalPort: 0
+            mode: 1
+            _serializedType:
+              _type: 
+          - name: On Stop Interact
+            isExternalPort: 0
+            mode: 1
+            _serializedType:
+              _type: 
+          - name: Is Interacting
+            isExternalPort: 0
+            mode: 3
+            _serializedType:
+              _type: System.Boolean, mscorlib##0
+          - name: User
+            isExternalPort: 0
+            mode: 3
+            _serializedType:
+              _type: MisterGames.Interact.Core.InteractiveUser, MisterGames.Interact##0
+      - key: 2
+        value:
+          _nodeId: 2
+          _node:
+            rid: 5847603519011422710
+          _position: {x: -318.66675, y: 336.00003}
+          _ports:
+          - name: Set Interactive
+            isExternalPort: 0
+            mode: 0
+            _serializedType:
+              _type: 
+          - name: Interactive
+            isExternalPort: 0
+            mode: 2
+            _serializedType:
+              _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact##0
+          - name: On Start Interact
+            isExternalPort: 0
+            mode: 1
+            _serializedType:
+              _type: 
+          - name: On Stop Interact
+            isExternalPort: 0
+            mode: 1
+            _serializedType:
+              _type: 
+          - name: Is Interacting
+            isExternalPort: 0
+            mode: 3
+            _serializedType:
+              _type: System.Boolean, mscorlib##0
+          - name: User
+            isExternalPort: 0
+            mode: 3
+            _serializedType:
+              _type: MisterGames.Interact.Core.InteractiveUser, MisterGames.Interact##0
+      - key: 3
+        value:
+          _nodeId: 3
+          _node:
+            rid: 5847603519011422714
+          _position: {x: -882.3461, y: 205.33333}
+          _ports:
+          - name: 
+            isExternalPort: 0
+            mode: 3
+            _serializedType:
+              _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact##0
+      - key: 4
+        value:
+          _nodeId: 4
+          _node:
+            rid: 5847603519011422724
+          _position: {x: -889.64215, y: 336.00006}
+          _ports:
+          - name: 
+            isExternalPort: 0
+            mode: 3
+            _serializedType:
+              _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact##0
+      - key: 5
+        value:
+          _nodeId: 5
+          _node:
+            rid: 5847603519011422731
+          _position: {x: -538.6667, y: 592}
+          _ports:
+          - name: Duration
+            isExternalPort: 0
+            mode: 2
+            _serializedType:
+              _type: System.Single, mscorlib##0
+          - name: Curve
+            isExternalPort: 0
+            mode: 2
+            _serializedType:
+              _type: MisterGames.Common.Easing.EasingCurve, MisterGames.Common##0
+          - name: Tween Progress Action
+            isExternalPort: 0
+            mode: 2
+            _serializedType:
+              _type: MisterGames.Tweens.Core.ITweenProgressAction, MisterGames.Tweens##0
+          - name: Tween
+            isExternalPort: 0
+            mode: 3
+            _serializedType:
+              _type: MisterGames.Tweens.Core.ITween, MisterGames.Tweens##0
+      - key: 6
+        value:
+          _nodeId: 6
+          _node:
+            rid: 5847603519011422739
+          _position: {x: -1081.0743, y: 523.3333}
+          _ports:
+          - name: 
+            isExternalPort: 0
+            mode: 3
+            _serializedType:
+              _type: System.Single, mscorlib##0
+      - key: 7
+        value:
+          _nodeId: 7
+          _node:
+            rid: 5847603519011422748
+          _position: {x: -1112.6667, y: 592}
+          _ports:
+          - name: 
+            isExternalPort: 0
+            mode: 3
+            _serializedType:
+              _type: MisterGames.Common.Easing.EasingCurve, MisterGames.Common##0
+      - key: 8
+        value:
+          _nodeId: 8
+          _node:
+            rid: 5847603519011422758
+          _position: {x: -1165.3334, y: 660.6667}
+          _ports:
+          - name: 
+            isExternalPort: 0
+            mode: 3
+            _serializedType:
+              _type: MisterGames.Tweens.Core.ITweenProgressAction, MisterGames.Tweens##0
+    _fromNodePortLinksMap:
+      _entries:
+      - key: 1
+        value:
+          _entries:
+          - key: 2
+            value:
+            - nodeId: 0
+              portIndex: 0
+          - key: 1
+            value:
+            - nodeId: 3
+              portIndex: 0
+      - key: 2
+        value:
+          _entries:
+          - key: 2
+            value:
+            - nodeId: 0
+              portIndex: 0
+          - key: 1
+            value:
+            - nodeId: 4
+              portIndex: 0
+      - key: 0
+        value:
+          _entries:
+          - key: 6
+            value:
+            - nodeId: 5
+              portIndex: 3
+      - key: 5
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 6
+              portIndex: 0
+          - key: 1
+            value:
+            - nodeId: 7
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 8
+              portIndex: 0
+    _addedNodesTotalCount: 10
+    _toNodePortLinksMap:
+      _entries:
+      - key: 0
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 1
+              portIndex: 2
+            - nodeId: 2
+              portIndex: 2
+      - key: 3
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 1
+              portIndex: 1
+      - key: 4
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 2
+              portIndex: 1
+      - key: 5
+        value:
+          _entries:
+          - key: 3
+            value:
+            - nodeId: 0
+              portIndex: 6
+      - key: 6
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 5
+              portIndex: 0
+      - key: 7
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 5
+              portIndex: 1
+      - key: 8
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 5
+              portIndex: 2
+    _subgraphReferencesMap:
+      _entries: []
+  _blackboard:
+    _properties:
+    - hash: -1164085002
+      name: Interactive 0
+      type:
+        _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact##0
+    - hash: -1164085003
+      name: Interactive 1
+      type:
+        _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact##0
+    - hash: 1233610838
+      name: Duration
+      type:
+        _type: System.Single, mscorlib##0
+    - hash: 1837104047
+      name: Curve
+      type:
+        _type: MisterGames.Common.Easing.EasingCurve, MisterGames.Common##0
+    - hash: 900617739
+      name: Progress Action
+      type:
+        _type: MisterGames.Tweens.Core.ITweenProgressAction, MisterGames.Tweens##0
+    _bools:
+      _entries: []
+    _floats:
+      _entries:
+      - key: 1233610838
+        value: 0
+    _longs:
+      _entries: []
+    _strings:
+      _entries: []
+    _vectors2:
+      _entries: []
+    _vectors3:
+      _entries: []
+    _objects:
+      _entries:
+      - key: -1164085002
+        value: {fileID: 0}
+      - key: -1164085003
+        value: {fileID: 0}
+    _references:
+      _entries:
+      - key: 1837104047
+        value:
+          data:
+            rid: 5847603519011422777
+          type:
+            _type: MisterGames.Common.Easing.EasingCurve, MisterGames.Common##0
+      - key: 900617739
+        value:
+          data:
+            rid: -2
+          type:
+            _type: MisterGames.Tweens.Core.ITweenProgressAction, MisterGames.Tweens##0
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 5847603519011422703
+      type: {class: BlueprintNodeRunTween, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _autoInvertNextPlay: 1
+        _autoSetTweenOnStart: 1
+    - rid: 5847603519011422706
+      type: {class: BlueprintNodeInteractiveEvents, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _autoSetInteractiveOnStart: 1
+    - rid: 5847603519011422710
+      type: {class: BlueprintNodeInteractiveEvents, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _autoSetInteractiveOnStart: 1
+    - rid: 5847603519011422714
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.Blueprints.Nodes, asm: MisterGames.Blueprints}
+      data:
+        _property: Interactive 0
+    - rid: 5847603519011422724
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.Blueprints.Nodes, asm: MisterGames.Blueprints}
+      data:
+        _property: Interactive 1
+    - rid: 5847603519011422731
+      type: {class: BlueprintNodeProgressTween, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _duration: 0
+        _curve:
+          easingType: 21
+          curve:
+            serializedVersion: 2
+            m_Curve:
+            - serializedVersion: 3
+              time: 0
+              value: 0
+              inSlope: 0
+              outSlope: 1
+              tangentMode: 0
+              weightedMode: 0
+              inWeight: 0
+              outWeight: 0
+            - serializedVersion: 3
+              time: 1
+              value: 1
+              inSlope: 1
+              outSlope: 0
+              tangentMode: 0
+              weightedMode: 0
+              inWeight: 0
+              outWeight: 0
+            m_PreInfinity: 2
+            m_PostInfinity: 2
+            m_RotationOrder: 4
+    - rid: 5847603519011422739
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.Blueprints.Nodes, asm: MisterGames.Blueprints}
+      data:
+        _property: Duration
+    - rid: 5847603519011422748
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.Blueprints.Nodes, asm: MisterGames.Blueprints}
+      data:
+        _property: Curve
+    - rid: 5847603519011422758
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.Blueprints.Nodes, asm: MisterGames.Blueprints}
+      data:
+        _property: Progress Action
+    - rid: 5847603519011422777
+      type: {class: EasingCurve, ns: MisterGames.Common.Easing, asm: MisterGames.Common}
+      data:
+        easingType: 21
+        curve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 1
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 1
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4

@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 981106360135285752}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.03945705, y: 0.9498882, z: -0.7736309}
+  m_LocalPosition: {x: 0.0335, y: 0.9498563, z: -0.7736309}
   m_LocalScale: {x: 0.55866, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1968,12 +1968,117 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14e6e69af36349bf9f40d0c82e5f80d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _blueprintAsset: {fileID: 0}
+  _blueprintAsset: {fileID: 11400000, guid: 955abb334f64b7f47b56223e19d3b058, type: 2}
   _blackboardOverridesMap:
-    _entries: []
+    _entries:
+    - key: {fileID: 11400000, guid: 955abb334f64b7f47b56223e19d3b058, type: 2}
+      value:
+        _properties:
+        - hash: -1164085002
+          name: Interactive 0
+          type:
+            _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact##0
+        - hash: -1164085003
+          name: Interactive 1
+          type:
+            _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact##0
+        - hash: 1233610838
+          name: Duration
+          type:
+            _type: System.Single, mscorlib##0
+        - hash: 1837104047
+          name: Curve
+          type:
+            _type: MisterGames.Common.Easing.EasingCurve, MisterGames.Common##0
+        - hash: 900617739
+          name: Progress Action
+          type:
+            _type: MisterGames.Tweens.Core.ITweenProgressAction, MisterGames.Tweens##0
+        _bools:
+          _entries: []
+        _floats:
+          _entries:
+          - key: 1233610838
+            value: 1
+        _longs:
+          _entries: []
+        _strings:
+          _entries: []
+        _vectors2:
+          _entries: []
+        _vectors3:
+          _entries: []
+        _objects:
+          _entries:
+          - key: -1164085002
+            value: {fileID: 4396899425137737766}
+          - key: -1164085003
+            value: {fileID: 8663574614422119522}
+        _references:
+          _entries:
+          - key: 1837104047
+            value:
+              data:
+                rid: 5847603519011422778
+              type:
+                _type: MisterGames.Common.Easing.EasingCurve, MisterGames.Common##0
+          - key: 900617739
+            value:
+              data:
+                rid: 5847603519011422774
+              type:
+                _type: MisterGames.Tweens.Core.ITweenProgressAction, MisterGames.Tweens##0
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 5847603519011422774
+      type: {class: TweenProgressActions, ns: MisterGames.Tweens.Actions, asm: MisterGames.Tweens}
+      data:
+        actions:
+        - rid: 5847603519011422775
+        - rid: 5847603519011422776
+    - rid: 5847603519011422775
+      type: {class: TweenProgressActionMoveTransform, ns: MisterGames.TweenLib, asm: MisterGames.TweenLib}
+      data:
+        transform: {fileID: 7760307950831906103}
+        startPosition: {x: 0.0335, y: 0.9498563, z: -0.5723323}
+        endPosition: {x: 0.0335, y: 0.9498563, z: -1.71}
+        useLocal: 1
+    - rid: 5847603519011422776
+      type: {class: TweenProgressActionMoveTransform, ns: MisterGames.TweenLib, asm: MisterGames.TweenLib}
+      data:
+        transform: {fileID: 2463955242482354451}
+        startPosition: {x: 0.0335, y: 0.9498563, z: -0.7736309}
+        endPosition: {x: 0.0335, y: 0.9498563, z: -0.35}
+        useLocal: 1
+    - rid: 5847603519011422778
+      type: {class: EasingCurve, ns: MisterGames.Common.Easing, asm: MisterGames.Common}
+      data:
+        easingType: 21
+        curve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 1
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 1
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
 --- !u!1 &4929764252181864224
 GameObject:
   m_ObjectHideFlags: 0
@@ -2433,7 +2538,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7591682661117114173}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.028528217, y: 0.9498563, z: -0.5723323}
+  m_LocalPosition: {x: 0.0335, y: 0.9498563, z: -0.5723323}
   m_LocalScale: {x: 0.55866, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
