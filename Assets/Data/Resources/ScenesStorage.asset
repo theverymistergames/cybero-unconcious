@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-  m_ObjectHideFlags: 32
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -14,13 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _enablePlayModeStartSceneOverride: 1
   _searchScenesInFolders:
-  - Assets/Scenes
-  - Assets/Data/Scenes
+  - Assets/
   _sceneRoot:
     scene: Scene_Global_Root
-  _sceneStart: Scene_Global_Root
+  _sceneStart: Station_v3
   _sceneNames:
   - Scene_Global_Root
+  - Dance Animations - Example Scene
+  - ParticleShaderGraphsSampleScene
   - Beginning
   - Lake
   - MachineRoom
@@ -30,6 +31,7 @@ MonoBehaviour:
   - Station_v
   - Station_v3
   - Level0
+  - Level1 pipes hall new
   - Level1_0
   - Level1_1
   - Level1_2
