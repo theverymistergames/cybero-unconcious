@@ -522,10 +522,6 @@ MonoBehaviour:
       - key: 17
         value:
           _entries:
-          - key: 0
-            value:
-            - nodeId: 18
-              portIndex: 0
           - key: 1
             value:
             - nodeId: 23
@@ -533,6 +529,10 @@ MonoBehaviour:
           - key: 2
             value:
             - nodeId: 24
+              portIndex: 0
+          - key: 0
+            value:
+            - nodeId: 18
               portIndex: 0
       - key: 21
         value:
@@ -670,13 +670,6 @@ MonoBehaviour:
             value:
             - nodeId: 15
               portIndex: 1
-      - key: 18
-        value:
-          _entries:
-          - key: 0
-            value:
-            - nodeId: 17
-              portIndex: 0
       - key: 20
         value:
           _entries:
@@ -749,6 +742,13 @@ MonoBehaviour:
             value:
             - nodeId: 26
               portIndex: 2
+      - key: 18
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 17
+              portIndex: 0
     _subgraphReferencesMap:
       _entries: []
   _blackboard:
