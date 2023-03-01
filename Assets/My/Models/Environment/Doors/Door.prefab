@@ -167,7 +167,7 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!95 &5616610802053796606
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -184,7 +184,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1890812750914146219
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,7 +355,7 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!95 &3788749067877052401
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -372,7 +372,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &2329561691014811300
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,8 +1048,7 @@ GameObject:
   - component: {fileID: 5488662184910898608}
   - component: {fileID: 4725406352012606309}
   - component: {fileID: 177376127296587574}
-  - component: {fileID: 4758473583386020097}
-  - component: {fileID: 3262655513986271972}
+  - component: {fileID: 5287239974596550660}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -1132,7 +1131,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &4758473583386020097
+--- !u!114 &5287239974596550660
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1141,80 +1140,229 @@ MonoBehaviour:
   m_GameObject: {fileID: 8729994060436865826}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 771f920009c34d72a76fac8a216c4d4b, type: 3}
+  m_Script: {fileID: 11500000, guid: 14e6e69af36349bf9f40d0c82e5f80d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tweenRunner: {fileID: 3262655513986271972}
-  _initialState: 1
-  _isBlocked: 0
---- !u!114 &3262655513986271972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8729994060436865826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57270a0731e243fe9da2d6d92826a39b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _playAtStart: 0
-  _tween:
-    rid: 2772173688650596464
+  _blueprintAsset: {fileID: 11400000, guid: 9da75e4366994384ba44585adc8037a8, type: 2}
+  _blackboardOverridesMap:
+    _entries:
+    - key: {fileID: 11400000, guid: 9da75e4366994384ba44585adc8037a8, type: 2}
+      value:
+        _properties: f6789dbaf5789dba56688749affb7f6d0b56ae35f9af6211f8af621143414177685b20d1aaaf443fb37cfda1
+        _propertiesMap:
+          _entries:
+          - key: -1164085002
+            value:
+              name: Interactive 0
+              type:
+                _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact##0
+          - key: -1164085003
+            value:
+              name: Interactive 1
+              type:
+                _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact##0
+          - key: 1233610838
+            value:
+              name: Duration
+              type:
+                _type: System.Single, mscorlib##0
+          - key: 1837104047
+            value:
+              name: Curve
+              type:
+                _type: UnityEngine.AnimationCurve, UnityEngine.CoreModule##0
+          - key: 900617739
+            value:
+              name: Progress Action
+              type:
+                _type: MisterGames.Tweens.Core.ITweenProgressAction, MisterGames.Tweens##0
+          - key: 291680249
+            value:
+              name: Indicator 0
+              type:
+                _type: UnityEngine.UI.Image, UnityEngine.UI##0
+          - key: 291680248
+            value:
+              name: Indicator 1
+              type:
+                _type: UnityEngine.UI.Image, UnityEngine.UI##0
+          - key: 2000765251
+            value:
+              name: Material Blocked
+              type:
+                _type: UnityEngine.Material, UnityEngine.CoreModule##0
+          - key: -786408600
+            value:
+              name: Material Non Blocked
+              type:
+                _type: UnityEngine.Material, UnityEngine.CoreModule##0
+          - key: 1061466026
+            value:
+              name: Is Blocked
+              type:
+                _type: System.Boolean, mscorlib##0
+          - key: -1577222989
+            value:
+              name: Is Opened
+              type:
+                _type: System.Boolean, mscorlib##0
+        _bools:
+          _entries:
+          - key: 1061466026
+            value: 0
+          - key: -1577222989
+            value: 0
+        _ints:
+          _entries: []
+        _longs:
+          _entries: []
+        _floats:
+          _entries:
+          - key: 1233610838
+            value: 2
+        _doubles:
+          _entries: []
+        _strings:
+          _entries: []
+        _vectors2Int:
+          _entries: []
+        _vectors3Int:
+          _entries: []
+        _vectors2:
+          _entries: []
+        _vectors3:
+          _entries: []
+        _vectors4:
+          _entries: []
+        _quaternions:
+          _entries: []
+        _colors:
+          _entries: []
+        _layerMasks:
+          _entries: []
+        _curves:
+          _entries:
+          - key: 1837104047
+            value:
+              serializedVersion: 2
+              m_Curve:
+              - serializedVersion: 3
+                time: 0
+                value: 0
+                inSlope: 0
+                outSlope: -0.0012029491
+                tangentMode: 0
+                weightedMode: 3
+                inWeight: 0
+                outWeight: 0.36078
+              - serializedVersion: 3
+                time: 0.5
+                value: 0.5
+                inSlope: 1.5725082
+                outSlope: 1.5733721
+                tangentMode: 0
+                weightedMode: 3
+                inWeight: 0.326514
+                outWeight: 0.33093
+              - serializedVersion: 3
+                time: 1
+                value: 1
+                inSlope: -0.0009312395
+                outSlope: 0
+                tangentMode: 0
+                weightedMode: 3
+                inWeight: 0.358688
+                outWeight: 0
+              m_PreInfinity: 2
+              m_PostInfinity: 2
+              m_RotationOrder: 4
+        _objects:
+          _entries:
+          - key: -1164085002
+            value:
+              value: {fileID: 538607872660183544}
+          - key: -1164085003
+            value:
+              value: {fileID: 4775604026289896892}
+          - key: 291680249
+            value:
+              value: {fileID: 1644175448352399401}
+          - key: 291680248
+            value:
+              value: {fileID: 1644175447306148650}
+          - key: 2000765251
+            value:
+              value: {fileID: 2100000, guid: 58e95ee5214d260419ee04e5685a303e, type: 2}
+          - key: -786408600
+            value:
+              value: {fileID: 2100000, guid: 41d77e9f51a84af4d8033b259ce43acf, type: 2}
+        _enums:
+          _entries: []
+        _references:
+          _entries:
+          - key: 900617739
+            value:
+              value:
+                rid: 8965085788223307801
+        _boolArrays:
+          _entries: []
+        _intArrays:
+          _entries: []
+        _longArrays:
+          _entries: []
+        _floatArrays:
+          _entries: []
+        _doubleArrays:
+          _entries: []
+        _stringArrays:
+          _entries: []
+        _vectors2IntArrays:
+          _entries: []
+        _vectors3IntArrays:
+          _entries: []
+        _vectors2Arrays:
+          _entries: []
+        _vectors3Arrays:
+          _entries: []
+        _vectors4Arrays:
+          _entries: []
+        _quaternionArrays:
+          _entries: []
+        _colorArrays:
+          _entries: []
+        _layerMaskArrays:
+          _entries: []
+        _curveArrays:
+          _entries: []
+        _objectArrays:
+          _entries: []
+        _enumArrays:
+          _entries: []
+        _referenceArrays:
+          _entries: []
   references:
     version: 2
     RefIds:
-    - rid: 2772173688650596464
-      type: {class: ProgressTween, ns: MisterGames.Tweens, asm: MisterGames.Tweens}
+    - rid: 8965085788223307801
+      type: {class: TweenProgressActions, ns: MisterGames.Tweens.Actions, asm: MisterGames.Tweens}
       data:
-        _playerLoopStage: 1
-        _duration: 1
-        _easingType: 17
-        _useCustomEasingCurve: 0
-        _customEasingCurve:
-          serializedVersion: 2
-          m_Curve:
-          - serializedVersion: 3
-            time: 0
-            value: 0
-            inSlope: 0
-            outSlope: 1
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          - serializedVersion: 3
-            time: 1
-            value: 1
-            inSlope: 1
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        _actions:
-        - rid: 2772173688650596465
-        - rid: 2772173688650596466
-    - rid: 2772173688650596465
-      type: {class: TweenProgressActionTransform, ns: MisterGames.Tweens.Actions, asm: MisterGames.Tweens}
+        actions:
+        - rid: 8965085788223307802
+        - rid: 8965085788223307803
+    - rid: 8965085788223307802
+      type: {class: TweenProgressActionMoveTransform, ns: MisterGames.TweenLib, asm: MisterGames.TweenLib}
       data:
-        _transform: {fileID: 5895017632396899561}
-        _type: 0
-        _startValue: {x: 0, y: 0.97204447, z: -0.6006527}
-        _endValue: {x: 0, y: 0.97204447, z: -1.5}
-        _useLocal: 1
-    - rid: 2772173688650596466
-      type: {class: TweenProgressActionTransform, ns: MisterGames.Tweens.Actions, asm: MisterGames.Tweens}
+        transform: {fileID: 5895017632396899561}
+        useLocal: 1
+        startPosition: {x: 0, y: 0.97204447, z: -0.6006527}
+        endPosition: {x: 0, y: 0.97204447, z: -1.718}
+    - rid: 8965085788223307803
+      type: {class: TweenProgressActionMoveTransform, ns: MisterGames.TweenLib, asm: MisterGames.TweenLib}
       data:
-        _transform: {fileID: 1751006934561493197}
-        _type: 0
-        _startValue: {x: 0, y: 0.97204447, z: -0.6977291}
-        _endValue: {x: 0, y: 0.97204447, z: -0.41}
-        _useLocal: 1
+        transform: {fileID: 1751006934561493197}
+        useLocal: 1
+        startPosition: {x: 0, y: 0.97204447, z: -0.6977291}
+        endPosition: {x: 0, y: 0.97204447, z: -0.309}
 --- !u!1 &8793017300405837665
 GameObject:
   m_ObjectHideFlags: 0
@@ -1494,7 +1642,7 @@ PrefabInstance:
     - target: {fileID: 1362056578, guid: d433da2e9593ad6469e6bbe83b69d365, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 4758473583386020097}
+      objectReference: {fileID: 0}
     - target: {fileID: 1362056578, guid: d433da2e9593ad6469e6bbe83b69d365, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Toggle
@@ -1585,6 +1733,17 @@ Canvas:
   m_CorrespondingSourceObject: {fileID: 6245961606170637338, guid: d433da2e9593ad6469e6bbe83b69d365, type: 3}
   m_PrefabInstance: {fileID: 4647525864849216672}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1644175448352399401 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6245961607935014025, guid: d433da2e9593ad6469e6bbe83b69d365, type: 3}
+  m_PrefabInstance: {fileID: 4647525864849216672}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644175448352399575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1644175448352399575 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6245961607935014007, guid: d433da2e9593ad6469e6bbe83b69d365, type: 3}
@@ -1604,33 +1763,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _timeSourceStage: 1
   _strategy: {fileID: 11400000, guid: 87f3cf7412d28fe4ea8abe9f95f6f48d, type: 2}
---- !u!114 &7289094314721883850
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1644175448352399575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87a2ce6726c04bc283655ec7faf2fcb6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _event:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4758473583386020097}
-        m_TargetAssemblyTypeName: SimpleDoor, Assembly-CSharp
-        m_MethodName: Toggle
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
 --- !u!1001 &4647525865954717603
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1645,7 +1777,7 @@ PrefabInstance:
     - target: {fileID: 1362056578, guid: d433da2e9593ad6469e6bbe83b69d365, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 4758473583386020097}
+      objectReference: {fileID: 0}
     - target: {fileID: 1362056578, guid: d433da2e9593ad6469e6bbe83b69d365, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Toggle
@@ -1709,38 +1841,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4723555129963381792, guid: d433da2e9593ad6469e6bbe83b69d365, type: 3}
   m_PrefabInstance: {fileID: 4647525865954717603}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1644175447306148650 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6245961607935014025, guid: d433da2e9593ad6469e6bbe83b69d365, type: 3}
+  m_PrefabInstance: {fileID: 4647525865954717603}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644175447306148820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1644175447306148820 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6245961607935014007, guid: d433da2e9593ad6469e6bbe83b69d365, type: 3}
   m_PrefabInstance: {fileID: 4647525865954717603}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2886115202712684669
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1644175447306148820}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87a2ce6726c04bc283655ec7faf2fcb6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _event:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4758473583386020097}
-        m_TargetAssemblyTypeName: SimpleDoor, Assembly-CSharp
-        m_MethodName: Toggle
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &4775604026289896892
 MonoBehaviour:
   m_ObjectHideFlags: 0
