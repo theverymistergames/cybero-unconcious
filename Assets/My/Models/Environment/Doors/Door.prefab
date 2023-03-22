@@ -1143,83 +1143,71 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14e6e69af36349bf9f40d0c82e5f80d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _blueprintAsset: {fileID: 11400000, guid: 9da75e4366994384ba44585adc8037a8, type: 2}
+  _blueprintAsset: {fileID: 11400000, guid: 13dccdc4e304d26429daf94f83c74991, type: 2}
   _blackboardOverridesMap:
     _entries:
-    - key: {fileID: 11400000, guid: 9da75e4366994384ba44585adc8037a8, type: 2}
+    - key: {fileID: 11400000, guid: 13dccdc4e304d26429daf94f83c74991, type: 2}
       value:
-        _properties: f6789dbaf5789dba56688749affb7f6d0b56ae35f9af6211f8af621143414177685b20d1aaaf443fb37cfda1
+        _properties: 8dfec9a243414177ae0d52f6aaaf443fb37cfda1f9af6211f8af6211f6789dbaf5789dba
         _propertiesMap:
           _entries:
-          - key: -1164085002
-            value:
-              name: Interactive 0
-              type:
-                _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact##0
-          - key: -1164085003
-            value:
-              name: Interactive 1
-              type:
-                _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact##0
-          - key: 1233610838
-            value:
-              name: Duration
-              type:
-                _type: System.Single, mscorlib##0
-          - key: 1837104047
-            value:
-              name: Curve
-              type:
-                _type: UnityEngine.AnimationCurve, UnityEngine.CoreModule##0
-          - key: 900617739
-            value:
-              name: Progress Action
-              type:
-                _type: MisterGames.Tweens.Core.ITweenProgressAction, MisterGames.Tweens##0
-          - key: 291680249
-            value:
-              name: Indicator 0
-              type:
-                _type: UnityEngine.UI.Image, UnityEngine.UI##0
-          - key: 291680248
-            value:
-              name: Indicator 1
-              type:
-                _type: UnityEngine.UI.Image, UnityEngine.UI##0
-          - key: 2000765251
-            value:
-              name: Material Blocked
-              type:
-                _type: UnityEngine.Material, UnityEngine.CoreModule##0
-          - key: -786408600
-            value:
-              name: Material Non Blocked
-              type:
-                _type: UnityEngine.Material, UnityEngine.CoreModule##0
-          - key: 1061466026
-            value:
-              name: Is Blocked
-              type:
-                _type: System.Boolean, mscorlib##0
           - key: -1577222989
             value:
               name: Is Opened
               type:
-                _type: System.Boolean, mscorlib##0
+                _type: System.Boolean, mscorlib
+          - key: 1061466026
+            value:
+              name: Is Blocked
+              type:
+                _type: System.Boolean, mscorlib
+          - key: -162394706
+            value:
+              name: Material Enabled
+              type:
+                _type: UnityEngine.Material, UnityEngine.CoreModule
+          - key: 2000765251
+            value:
+              name: Material Blocked
+              type:
+                _type: UnityEngine.Material, UnityEngine.CoreModule
+          - key: -1563820403
+            value:
+              name: Tween
+              type:
+                _type: MisterGames.Tweens.Core.ITween, MisterGames.Tweens
+          - key: 291680249
+            value:
+              name: Indicator 0
+              type:
+                _type: UnityEngine.UI.Image, UnityEngine.UI
+          - key: -1164085002
+            value:
+              name: Interactive 0
+              type:
+                _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact
+          - key: 291680248
+            value:
+              name: Indicator 1
+              type:
+                _type: UnityEngine.UI.Image, UnityEngine.UI
+          - key: -1164085003
+            value:
+              name: Interactive 1
+              type:
+                _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact
         _bools:
           _entries:
-          - key: 1061466026
-            value: 0
           - key: -1577222989
+            value: 0
+          - key: 1061466026
             value: 0
         _ints:
           _entries: []
         _longs:
           _entries: []
         _floats:
-          _entries:
-          - key: 1233610838
-            value: 2
+          _entries: []
         _doubles:
           _entries: []
         _strings:
@@ -1241,69 +1229,35 @@ MonoBehaviour:
         _layerMasks:
           _entries: []
         _curves:
-          _entries:
-          - key: 1837104047
-            value:
-              serializedVersion: 2
-              m_Curve:
-              - serializedVersion: 3
-                time: 0
-                value: 0
-                inSlope: 0
-                outSlope: -0.0012029491
-                tangentMode: 0
-                weightedMode: 3
-                inWeight: 0
-                outWeight: 0.36078
-              - serializedVersion: 3
-                time: 0.5
-                value: 0.5
-                inSlope: 1.5725082
-                outSlope: 1.5733721
-                tangentMode: 0
-                weightedMode: 3
-                inWeight: 0.326514
-                outWeight: 0.33093
-              - serializedVersion: 3
-                time: 1
-                value: 1
-                inSlope: -0.0009312395
-                outSlope: 0
-                tangentMode: 0
-                weightedMode: 3
-                inWeight: 0.358688
-                outWeight: 0
-              m_PreInfinity: 2
-              m_PostInfinity: 2
-              m_RotationOrder: 4
+          _entries: []
         _objects:
           _entries:
-          - key: -1164085002
+          - key: -162394706
             value:
-              value: {fileID: 538607872660183544}
-          - key: -1164085003
+              value: {fileID: 2100000, guid: 41d77e9f51a84af4d8033b259ce43acf, type: 2}
+          - key: 2000765251
             value:
-              value: {fileID: 4775604026289896892}
+              value: {fileID: 2100000, guid: 58e95ee5214d260419ee04e5685a303e, type: 2}
           - key: 291680249
             value:
               value: {fileID: 1644175448352399401}
           - key: 291680248
             value:
               value: {fileID: 1644175447306148650}
-          - key: 2000765251
+          - key: -1164085002
             value:
-              value: {fileID: 2100000, guid: 58e95ee5214d260419ee04e5685a303e, type: 2}
-          - key: -786408600
+              value: {fileID: 538607872660183544}
+          - key: -1164085003
             value:
-              value: {fileID: 2100000, guid: 41d77e9f51a84af4d8033b259ce43acf, type: 2}
+              value: {fileID: 4775604026289896892}
         _enums:
           _entries: []
         _references:
           _entries:
-          - key: 900617739
+          - key: -1563820403
             value:
               value:
-                rid: 8965085788223307801
+                rid: 8965086267122909206
         _boolArrays:
           _entries: []
         _intArrays:
@@ -1343,26 +1297,65 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 8965085788223307801
+    - rid: 8965086267122909206
+      type: {class: ProgressTween, ns: MisterGames.Tweens, asm: MisterGames.Tweens}
+      data:
+        duration: 2
+        curve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: -0.0012029491
+            tangentMode: 0
+            weightedMode: 3
+            inWeight: 0
+            outWeight: 0.36078
+          - serializedVersion: 3
+            time: 0.5
+            value: 0.5
+            inSlope: 1.5725082
+            outSlope: 1.5733721
+            tangentMode: 0
+            weightedMode: 3
+            inWeight: 0.326514
+            outWeight: 0.33093
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: -0.0009312395
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 3
+            inWeight: 0.358688
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        action:
+          rid: 8965086267122909207
+    - rid: 8965086267122909207
       type: {class: TweenProgressActions, ns: MisterGames.TweenLib, asm: MisterGames.TweenLib}
       data:
         actions:
-        - rid: 8965085788223307802
-        - rid: 8965085788223307803
-    - rid: 8965085788223307802
+        - rid: 8965086267122909208
+        - rid: 8965086267122909209
+    - rid: 8965086267122909208
       type: {class: TweenProgressActionMoveTransform, ns: MisterGames.TweenLib, asm: MisterGames.TweenLib}
       data:
         transform: {fileID: 5895017632396899561}
         useLocal: 1
         startPosition: {x: 0, y: 0.97204447, z: -0.6006527}
-        endPosition: {x: 0, y: 0.97204447, z: -1.718}
-    - rid: 8965085788223307803
+        endPosition: {x: 0, y: 0.97204447, z: -1.728}
+    - rid: 8965086267122909209
       type: {class: TweenProgressActionMoveTransform, ns: MisterGames.TweenLib, asm: MisterGames.TweenLib}
       data:
         transform: {fileID: 1751006934561493197}
         useLocal: 1
         startPosition: {x: 0, y: 0.97204447, z: -0.6977291}
-        endPosition: {x: 0, y: 0.97204447, z: -0.309}
+        endPosition: {x: 0, y: 0.97204447, z: -0.274}
 --- !u!1 &8793017300405837665
 GameObject:
   m_ObjectHideFlags: 0
