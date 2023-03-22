@@ -358,7 +358,7 @@ MonoBehaviour:
           _nodeId: 23
           _node:
             rid: 8965086267122909193
-          _position: {x: 1303.9429, y: 642.8938}
+          _position: {x: 1286.6666, y: 631.6667}
           _ports:
           - _name: 
             _mode: 1
@@ -381,7 +381,7 @@ MonoBehaviour:
           _nodeId: 24
           _node:
             rid: 8965086267122909194
-          _position: {x: 985.9429, y: 667.5604}
+          _position: {x: 940, y: 668.3333}
           _ports:
           - _name: 
             _mode: 2
@@ -537,6 +537,10 @@ MonoBehaviour:
               portIndex: 3
             - nodeId: 11
               portIndex: 5
+          - key: 3
+            value:
+            - nodeId: 11
+              portIndex: 4
       - key: 25
         value:
           _entries:
@@ -679,6 +683,10 @@ MonoBehaviour:
             value:
             - nodeId: 23
               portIndex: 2
+          - key: 4
+            value:
+            - nodeId: 23
+              portIndex: 3
       - key: 13
         value:
           _entries:
@@ -859,8 +867,6 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: -2
-      type: {class: , ns: , asm: }
     - rid: 8965086222731444228
       type: {class: ProgressTween, ns: MisterGames.Tweens, asm: MisterGames.Tweens}
       data:
@@ -899,7 +905,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         action:
-          rid: -2
+          rid: 8965086267122909210
     - rid: 8965086244798988288
       type: {class: BlueprintNodeImageSetMaterial, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
     - rid: 8965086244798988289
@@ -981,3 +987,23 @@ MonoBehaviour:
       type: {class: BlueprintNodeInputActionKey, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
         _inputActionKey: {fileID: 11400000, guid: fd8ec366fa1b3664bb88771fd3e89974, type: 2}
+    - rid: 8965086267122909210
+      type: {class: TweenProgressActions, ns: MisterGames.TweenLib, asm: MisterGames.TweenLib}
+      data:
+        actions:
+        - rid: 8965086267122909211
+        - rid: 8965086267122909212
+    - rid: 8965086267122909211
+      type: {class: TweenProgressActionMoveTransform, ns: MisterGames.TweenLib, asm: MisterGames.TweenLib}
+      data:
+        transform: {fileID: 0}
+        useLocal: 1
+        startPosition: {x: 0, y: -1.8210258, z: 0}
+        endPosition: {x: -0, y: -1.8210258, z: -1.116}
+    - rid: 8965086267122909212
+      type: {class: TweenProgressActionMoveTransform, ns: MisterGames.TweenLib, asm: MisterGames.TweenLib}
+      data:
+        transform: {fileID: 0}
+        useLocal: 1
+        startPosition: {x: -0, y: -1.8210258, z: 0}
+        endPosition: {x: -0, y: -1.8210258, z: 1.097}
