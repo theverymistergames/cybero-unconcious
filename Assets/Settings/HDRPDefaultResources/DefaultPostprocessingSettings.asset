@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f03108a17e21aff45a9eed5751d2befa, type: 3}
   m_Name: ZoomBlur
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   intensity:
     m_OverrideState: 1
     m_Value: 1
@@ -21,7 +21,7 @@ MonoBehaviour:
     m_Value: 20
   threshold:
     m_OverrideState: 1
-    m_Value: 0.277
+    m_Value: 0.324
   quad:
     m_OverrideState: 1
     m_Value: 1
@@ -31,6 +31,37 @@ MonoBehaviour:
   distance:
     m_OverrideState: 1
     m_Value: 8.62
+--- !u!114 &-9009494989235827441
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50160148b72f4174b973e8e11fc786b5, type: 3}
+  m_Name: Focus
+  m_EditorClassIdentifier: 
+  active: 0
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.124
+  steps:
+    m_OverrideState: 1
+    m_Value: 5
+  threshold:
+    m_OverrideState: 0
+    m_Value: 0
+  quad:
+    m_OverrideState: 0
+    m_Value: 0
+  useConstantDistance:
+    m_OverrideState: 0
+    m_Value: 0
+  distance:
+    m_OverrideState: 0
+    m_Value: 5
 --- !u!114 &-8347542235851498230
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -59,6 +90,28 @@ MonoBehaviour:
   saturation:
     m_OverrideState: 0
     m_Value: 20
+--- !u!114 &-8004502856424138985
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 693cd54210b6ebd4d99d595488591061, type: 3}
+  m_Name: Wave
+  m_EditorClassIdentifier: 
+  active: 0
+  amplitude:
+    m_OverrideState: 1
+    m_Value: 2.41
+  frequency:
+    m_OverrideState: 1
+    m_Value: 0.268
+  speed:
+    m_OverrideState: 1
+    m_Value: 0.1
 --- !u!114 &-6670970546904130042
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -341,6 +394,64 @@ MonoBehaviour:
   m_MaxSamples:
     m_OverrideState: 1
     m_Value: 3
+--- !u!114 &-3240056977803772088
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaa3b8214f75b354e9ba2caadd022259, type: 3}
+  m_Name: DepthOfField
+  m_EditorClassIdentifier: 
+  active: 0
+  quality:
+    m_OverrideState: 0
+    m_Value: 1
+  focusMode:
+    m_OverrideState: 1
+    m_Value: 2
+  focusDistance:
+    m_OverrideState: 0
+    m_Value: 10
+  focusDistanceMode:
+    m_OverrideState: 0
+    m_Value: 0
+  nearFocusStart:
+    m_OverrideState: 0
+    m_Value: 0
+  nearFocusEnd:
+    m_OverrideState: 0
+    m_Value: 4
+  farFocusStart:
+    m_OverrideState: 0
+    m_Value: 10
+  farFocusEnd:
+    m_OverrideState: 0
+    m_Value: 20
+  m_NearSampleCount:
+    m_OverrideState: 0
+    m_Value: 5
+  m_NearMaxBlur:
+    m_OverrideState: 0
+    m_Value: 4
+  m_FarSampleCount:
+    m_OverrideState: 0
+    m_Value: 7
+  m_FarMaxBlur:
+    m_OverrideState: 0
+    m_Value: 8
+  m_Resolution:
+    m_OverrideState: 0
+    m_Value: 2
+  m_HighQualityFiltering:
+    m_OverrideState: 0
+    m_Value: 1
+  m_PhysicallyBased:
+    m_OverrideState: 0
+    m_Value: 0
 --- !u!114 &-2780621527115401753
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -598,6 +709,9 @@ MonoBehaviour:
   - {fileID: -3727022757469144430}
   - {fileID: -4265509659585918571}
   - {fileID: -9192948522835657926}
+  - {fileID: -8004502856424138985}
+  - {fileID: -3240056977803772088}
+  - {fileID: -9009494989235827441}
 --- !u!114 &750614585993239288
 MonoBehaviour:
   m_ObjectHideFlags: 3

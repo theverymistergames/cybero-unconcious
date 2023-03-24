@@ -18,15 +18,19 @@ MonoBehaviour:
     m_Values: 
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: WaterCanals
   m_Shader: {fileID: -6465566751694194690, guid: 019cf8d2166e7f441a49c0f5aadd7d5d, type: 3}
-  m_ShaderKeywords: _DISABLE_DECALS _DISABLE_SSR_TRANSPARENT _ENABLE_FOG_ON_TRANSPARENT
-    _SURFACE_TYPE_TRANSPARENT
+  m_ValidKeywords:
+  - _DISABLE_DECALS
+  - _DISABLE_SSR_TRANSPARENT
+  - _ENABLE_FOG_ON_TRANSPARENT
+  - _SURFACE_TYPE_TRANSPARENT
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -149,20 +153,20 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - Vector1_1B9A4EB: 4
-    - Vector1_2bbd927f1573427cb332780bf51ea2e1: 0.0003
-    - Vector1_49835A50: 0.1
-    - Vector1_529507D1: 0.1
+    - Vector1_1B9A4EB: 100
+    - Vector1_2bbd927f1573427cb332780bf51ea2e1: 0
+    - Vector1_49835A50: 0.46
+    - Vector1_529507D1: 1
     - Vector1_54514e8d8c7749dbb7931ba74c01e801: 0.0000001
     - Vector1_5d6d277325904df6b5ca9cf0129d70ec: 1
-    - Vector1_848ac06d33a34f9898d1ebff3db0f4ab: 0.43
+    - Vector1_848ac06d33a34f9898d1ebff3db0f4ab: 0.17
     - Vector1_998a46a56629495a868557c3144a161e: 0
     - Vector1_9eacfc10980a47f1a21ea22b2175edf9: 60
     - Vector1_D3712035: 0
     - Vector1_F05E5F5: 2.09
-    - Vector1_FDD4BBD9: 0.27
+    - Vector1_FDD4BBD9: 0
     - Vector1_b0a01ab49bd8412884818d8c392ef539: -0.35
-    - Vector1_fb526ac5dd91494d9bbe4fd2d3b3e487: 3.09
+    - Vector1_fb526ac5dd91494d9bbe4fd2d3b3e487: 0.92
     - _AORemapMax: 1
     - _AORemapMin: 0
     - _ATDistance: 1
@@ -296,7 +300,7 @@ Material:
     - Color_93D77076: {r: 0, g: 0, b: 0, a: 0}
     - Vector2_E47A3DA5: {r: 0.001, g: 0.002, b: 0, a: 0}
     - Vector2_dac286bbbf004079a11790858b07e153: {r: 1, g: 1, b: 0, a: 0}
-    - Vector2_ecdbcb70d633404c9d6040220d78ce51: {r: 0.02, g: 0.01, b: 0, a: 0}
+    - Vector2_ecdbcb70d633404c9d6040220d78ce51: {r: 0.001, g: 0.001, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}

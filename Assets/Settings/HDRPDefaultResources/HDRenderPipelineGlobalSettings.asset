@@ -70,6 +70,8 @@ MonoBehaviour:
   afterPostProcessBlursCustomPostProcesses: []
   afterPostProcessCustomPostProcesses:
   - ZoomBlur, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Wave, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Focus, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   beforeTAACustomPostProcesses: []
   lightLayerName0: Light Layer default
   lightLayerName1: Light Layer 1
@@ -180,6 +182,8 @@ MonoBehaviour:
       hasProbeVolumes: 0
     - sceneGUID: 2059ad990767e6149b3d6b80eb2fdfbd
       hasProbeVolumes: 0
+    - sceneGUID: fbbab41a528abe542b92e6ba0fb71476
+      hasProbeVolumes: 0
     serializedProfiles:
     - sceneGUID: 443834309faeae24ba9a721b31e14aa0
       profile: {fileID: 11400000, guid: 18bea62167c676a43bf5db8d2ab2ef9b, type: 2}
@@ -252,6 +256,8 @@ MonoBehaviour:
     - sceneGUID: 14548885081fedc4ebcf2bebac23df65
       profile: {fileID: 11400000, guid: 18bea62167c676a43bf5db8d2ab2ef9b, type: 2}
     - sceneGUID: 2059ad990767e6149b3d6b80eb2fdfbd
+      profile: {fileID: 11400000, guid: 18bea62167c676a43bf5db8d2ab2ef9b, type: 2}
+    - sceneGUID: fbbab41a528abe542b92e6ba0fb71476
       profile: {fileID: 11400000, guid: 18bea62167c676a43bf5db8d2ab2ef9b, type: 2}
     serializedBakeSettings:
     - sceneGUID: 443834309faeae24ba9a721b31e14aa0
@@ -686,6 +692,18 @@ MonoBehaviour:
           useVirtualOffset: 1
           outOfGeoOffset: 0.01
           searchMultiplier: 0.2
+    - sceneGUID: fbbab41a528abe542b92e6ba0fb71476
+      settings:
+        dilationSettings:
+          enableDilation: 1
+          dilationDistance: 1
+          dilationValidityThreshold: 0.25
+          dilationIterations: 1
+          squaredDistWeighting: 1
+        virtualOffsetSettings:
+          useVirtualOffset: 1
+          outOfGeoOffset: 0.01
+          searchMultiplier: 0.2
     serializedBakingSets:
     - name: Default
       sceneGUIDs:
@@ -725,6 +743,7 @@ MonoBehaviour:
       - d3e2ad58f644c4241b6212edc3970aa2
       - 14548885081fedc4ebcf2bebac23df65
       - 2059ad990767e6149b3d6b80eb2fdfbd
+      - fbbab41a528abe542b92e6ba0fb71476
       settings:
         dilationSettings:
           enableDilation: 1
