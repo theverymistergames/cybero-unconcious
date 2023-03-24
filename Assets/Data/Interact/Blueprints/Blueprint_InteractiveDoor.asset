@@ -1,0 +1,1009 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95aa8f7d5aa490e9877070cd957eaff, type: 3}
+  m_Name: Blueprint_InteractiveDoor
+  m_EditorClassIdentifier: 
+  _blueprintMeta:
+    _nodesMap:
+      _entries:
+      - key: 4
+        value:
+          _nodeId: 4
+          _node:
+            rid: 8965086244798988288
+          _position: {x: 916, y: -212.66667}
+          _ports:
+          - _name: 
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: Images
+            _mode: 11
+            _dataType:
+              _type: UnityEngine.UI.Image, UnityEngine.UI
+          - _name: Material
+            _mode: 3
+            _dataType:
+              _type: UnityEngine.Material, UnityEngine.CoreModule
+          - _name: 
+            _mode: 0
+            _dataType:
+              _type: 
+      - key: 5
+        value:
+          _nodeId: 5
+          _node:
+            rid: 8965086244798988289
+          _position: {x: 551.6667, y: -220.33333}
+          _ports:
+          - _name: 
+            _mode: 2
+            _dataType:
+              _type: UnityEngine.UI.Image, UnityEngine.UI
+      - key: 6
+        value:
+          _nodeId: 6
+          _node:
+            rid: 8965086244798988290
+          _position: {x: 219.7775, y: -116.60168}
+          _ports:
+          - _name: 
+            _mode: 2
+            _dataType:
+              _type: System.Boolean, mscorlib
+      - key: 7
+        value:
+          _nodeId: 7
+          _node:
+            rid: 8965086244798988291
+          _position: {x: 220.44415, y: -57.93501}
+          _ports:
+          - _name: 
+            _mode: 2
+            _dataType:
+              _type: UnityEngine.Material, UnityEngine.CoreModule
+      - key: 8
+        value:
+          _nodeId: 8
+          _node:
+            rid: 8965086244798988292
+          _position: {x: 565.6667, y: -81.66666}
+          _ports:
+          - _name: Condition
+            _mode: 3
+            _dataType:
+              _type: System.Boolean, mscorlib
+          - _name: On True
+            _mode: 3
+            _dataType:
+              _type: UnityEngine.Material, UnityEngine.CoreModule
+          - _name: On False
+            _mode: 3
+            _dataType:
+              _type: UnityEngine.Material, UnityEngine.CoreModule
+          - _name: 
+            _mode: 2
+            _dataType:
+              _type: UnityEngine.Material, UnityEngine.CoreModule
+      - key: 9
+        value:
+          _nodeId: 9
+          _node:
+            rid: 8965086244798988293
+          _position: {x: 221.11081, y: 5.398324}
+          _ports:
+          - _name: 
+            _mode: 2
+            _dataType:
+              _type: UnityEngine.Material, UnityEngine.CoreModule
+      - key: 10
+        value:
+          _nodeId: 10
+          _node:
+            rid: 8965086244798988294
+          _position: {x: 781.3334, y: -282.96}
+          _ports:
+          - _name: 
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: On Start
+            _mode: 193
+            _dataType:
+              _type: 
+      - key: 11
+        value:
+          _nodeId: 11
+          _node:
+            rid: 8965086244798988298
+          _position: {x: 1665.9429, y: 487.56046}
+          _ports:
+          - _name: Init
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: Play
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: Pause
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: Wind
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: Rewind
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: Invert
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: Tweens
+            _mode: 43
+            _dataType:
+              _type: MisterGames.BlueprintLib.IBlueprintNodeTween, MisterGames.BlueprintsLib
+          - _name: On Start
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: On Cancelled
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: On Finished
+            _mode: 0
+            _dataType:
+              _type: 
+      - key: 12
+        value:
+          _nodeId: 12
+          _node:
+            rid: 8965086244798988299
+          _position: {x: 2057.2761, y: 380.22714}
+          _ports:
+          - _name: Self
+            _mode: 22
+            _dataType:
+              _type: MisterGames.BlueprintLib.IBlueprintNodeTween, MisterGames.BlueprintsLib
+          - _name: Next Tweens
+            _mode: 43
+            _dataType:
+              _type: MisterGames.BlueprintLib.IBlueprintNodeTween, MisterGames.BlueprintsLib
+          - _name: 
+            _mode: 3
+            _dataType:
+              _type: MisterGames.Tweens.Core.ITween, MisterGames.Tweens
+          - _name: On Start
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: On Cancelled
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: On Finished
+            _mode: 0
+            _dataType:
+              _type: 
+      - key: 13
+        value:
+          _nodeId: 13
+          _node:
+            rid: 8965086244798988300
+          _position: {x: 1713.2761, y: 404.89377}
+          _ports:
+          - _name: 
+            _mode: 2
+            _dataType:
+              _type: MisterGames.Tweens.Core.ITween, MisterGames.Tweens
+      - key: 14
+        value:
+          _nodeId: 14
+          _node:
+            rid: 8965086267122909184
+          _position: {x: 553, y: -155.33334}
+          _ports:
+          - _name: 
+            _mode: 2
+            _dataType:
+              _type: UnityEngine.UI.Image, UnityEngine.UI
+      - key: 15
+        value:
+          _nodeId: 15
+          _node:
+            rid: 8965086267122909185
+          _position: {x: 1127.9429, y: 219.5605}
+          _ports:
+          - _name: Set Interactive
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: Interactive
+            _mode: 3
+            _dataType:
+              _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact
+          - _name: On Start Interact
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: On Stop Interact
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: Is Interacting
+            _mode: 2
+            _dataType:
+              _type: System.Boolean, mscorlib
+          - _name: User
+            _mode: 2
+            _dataType:
+              _type: MisterGames.Interact.Core.InteractiveUser, MisterGames.Interact
+      - key: 16
+        value:
+          _nodeId: 16
+          _node:
+            rid: 8965086267122909186
+          _position: {x: 789.2763, y: 243.56046}
+          _ports:
+          - _name: 
+            _mode: 2
+            _dataType:
+              _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact
+      - key: 17
+        value:
+          _nodeId: 17
+          _node:
+            rid: 8965086267122909187
+          _position: {x: 602.6096, y: 530.2272}
+          _ports:
+          - _name: 
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: Condition
+            _mode: 3
+            _dataType:
+              _type: System.Boolean, mscorlib
+          - _name: On True
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: On False
+            _mode: 0
+            _dataType:
+              _type: 
+      - key: 18
+        value:
+          _nodeId: 18
+          _node:
+            rid: 8965086267122909188
+          _position: {x: 245.94296, y: 570.8938}
+          _ports:
+          - _name: 
+            _mode: 2
+            _dataType:
+              _type: System.Boolean, mscorlib
+      - key: 19
+        value:
+          _nodeId: 19
+          _node:
+            rid: 8965086267122909189
+          _position: {x: 489.94296, y: 514.8938}
+          _ports:
+          - _name: 
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: On Start
+            _mode: 193
+            _dataType:
+              _type: 
+      - key: 20
+        value:
+          _nodeId: 20
+          _node:
+            rid: 8965086267122909190
+          _position: {x: 1125.9429, y: 355.5605}
+          _ports:
+          - _name: Set Interactive
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: Interactive
+            _mode: 3
+            _dataType:
+              _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact
+          - _name: On Start Interact
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: On Stop Interact
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: Is Interacting
+            _mode: 2
+            _dataType:
+              _type: System.Boolean, mscorlib
+          - _name: User
+            _mode: 2
+            _dataType:
+              _type: MisterGames.Interact.Core.InteractiveUser, MisterGames.Interact
+      - key: 21
+        value:
+          _nodeId: 21
+          _node:
+            rid: 8965086267122909191
+          _position: {x: 785.2763, y: 379.5605}
+          _ports:
+          - _name: 
+            _mode: 2
+            _dataType:
+              _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact
+      - key: 23
+        value:
+          _nodeId: 23
+          _node:
+            rid: 8965086267122909193
+          _position: {x: 1286.6666, y: 631.6667}
+          _ports:
+          - _name: 
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: Condition
+            _mode: 3
+            _dataType:
+              _type: System.Boolean, mscorlib
+          - _name: On True
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: On False
+            _mode: 0
+            _dataType:
+              _type: 
+      - key: 24
+        value:
+          _nodeId: 24
+          _node:
+            rid: 8965086267122909194
+          _position: {x: 940, y: 668.3333}
+          _ports:
+          - _name: 
+            _mode: 2
+            _dataType:
+              _type: System.Boolean, mscorlib
+      - key: 25
+        value:
+          _nodeId: 25
+          _node:
+            rid: 8965086267122909195
+          _position: {x: 937.27625, y: 585.5604}
+          _ports:
+          - _name: 
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 0
+            _dataType:
+              _type: 
+      - key: 27
+        value:
+          _nodeId: 27
+          _node:
+            rid: 8965086267122909197
+          _position: {x: 1087.2762, y: 106.22714}
+          _ports:
+          - _name: 
+            _mode: 3
+            _dataType:
+              _type: MisterGames.Input.Actions.InputActionKey, MisterGames.Input
+          - _name: On Use
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: On Press
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: On Release
+            _mode: 0
+            _dataType:
+              _type: 
+    _fromNodePortLinksMap:
+      _entries:
+      - key: 4
+        value:
+          _entries:
+          - key: 2
+            value:
+            - nodeId: 8
+              portIndex: 3
+          - key: 1
+            value:
+            - nodeId: 5
+              portIndex: 0
+            - nodeId: 14
+              portIndex: 0
+      - key: 8
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 6
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 9
+              portIndex: 0
+          - key: 1
+            value:
+            - nodeId: 7
+              portIndex: 0
+      - key: 10
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 4
+              portIndex: 0
+      - key: 11
+        value:
+          _entries:
+          - key: 6
+            value:
+            - nodeId: 12
+              portIndex: 0
+      - key: 15
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 16
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 11
+              portIndex: 1
+      - key: 17
+        value:
+          _entries:
+          - key: 3
+            value:
+            - nodeId: 15
+              portIndex: 0
+            - nodeId: 20
+              portIndex: 0
+            - nodeId: 25
+              portIndex: 0
+          - key: 1
+            value:
+            - nodeId: 18
+              portIndex: 0
+      - key: 19
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 17
+              portIndex: 0
+      - key: 20
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 21
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 11
+              portIndex: 1
+      - key: 12
+        value:
+          _entries:
+          - key: 2
+            value:
+            - nodeId: 13
+              portIndex: 0
+      - key: 23
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 24
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 11
+              portIndex: 3
+            - nodeId: 11
+              portIndex: 5
+          - key: 3
+            value:
+            - nodeId: 11
+              portIndex: 4
+      - key: 25
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 11
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 23
+              portIndex: 0
+      - key: 27
+        value:
+          _entries:
+          - key: 2
+            value:
+            - nodeId: 11
+              portIndex: 1
+    _addedNodesTotalCount: 28
+    _toNodePortLinksMap:
+      _entries:
+      - key: 8
+        value:
+          _entries:
+          - key: 3
+            value:
+            - nodeId: 4
+              portIndex: 2
+      - key: 6
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 8
+              portIndex: 0
+      - key: 9
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 8
+              portIndex: 2
+      - key: 7
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 8
+              portIndex: 1
+      - key: 4
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 10
+              portIndex: 0
+      - key: 12
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 11
+              portIndex: 6
+      - key: 5
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 4
+              portIndex: 1
+      - key: 14
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 4
+              portIndex: 1
+      - key: 16
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 15
+              portIndex: 1
+      - key: 15
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 17
+              portIndex: 3
+      - key: 18
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 17
+              portIndex: 1
+      - key: 17
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 19
+              portIndex: 0
+      - key: 21
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 20
+              portIndex: 1
+      - key: 20
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 17
+              portIndex: 3
+      - key: 11
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 15
+              portIndex: 2
+            - nodeId: 20
+              portIndex: 2
+            - nodeId: 27
+              portIndex: 2
+          - key: 0
+            value:
+            - nodeId: 25
+              portIndex: 1
+          - key: 3
+            value:
+            - nodeId: 23
+              portIndex: 2
+          - key: 5
+            value:
+            - nodeId: 23
+              portIndex: 2
+          - key: 4
+            value:
+            - nodeId: 23
+              portIndex: 3
+      - key: 13
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 12
+              portIndex: 2
+      - key: 25
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 17
+              portIndex: 3
+      - key: 24
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 23
+              portIndex: 1
+      - key: 23
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 25
+              portIndex: 2
+    _subgraphReferencesMap:
+      _entries: []
+  _blackboard:
+    _properties: 8dfec9a243414177ae0d52f6aaaf443fb37cfda1f9af6211f8af6211f6789dbaf5789dba
+    _propertiesMap:
+      _entries:
+      - key: -1577222989
+        value:
+          name: Is Opened
+          type:
+            _type: System.Boolean, mscorlib
+      - key: 1061466026
+        value:
+          name: Is Blocked
+          type:
+            _type: System.Boolean, mscorlib
+      - key: -162394706
+        value:
+          name: Material Enabled
+          type:
+            _type: UnityEngine.Material, UnityEngine.CoreModule
+      - key: 2000765251
+        value:
+          name: Material Blocked
+          type:
+            _type: UnityEngine.Material, UnityEngine.CoreModule
+      - key: -1563820403
+        value:
+          name: Tween
+          type:
+            _type: MisterGames.Tweens.Core.ITween, MisterGames.Tweens
+      - key: 291680249
+        value:
+          name: Indicator 0
+          type:
+            _type: UnityEngine.UI.Image, UnityEngine.UI
+      - key: -1164085002
+        value:
+          name: Interactive 0
+          type:
+            _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact
+      - key: 291680248
+        value:
+          name: Indicator 1
+          type:
+            _type: UnityEngine.UI.Image, UnityEngine.UI
+      - key: -1164085003
+        value:
+          name: Interactive 1
+          type:
+            _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact
+    _bools:
+      _entries:
+      - key: -1577222989
+        value: 0
+      - key: 1061466026
+        value: 0
+    _ints:
+      _entries: []
+    _longs:
+      _entries: []
+    _floats:
+      _entries: []
+    _doubles:
+      _entries: []
+    _strings:
+      _entries: []
+    _vectors2Int:
+      _entries: []
+    _vectors3Int:
+      _entries: []
+    _vectors2:
+      _entries: []
+    _vectors3:
+      _entries: []
+    _vectors4:
+      _entries: []
+    _quaternions:
+      _entries: []
+    _colors:
+      _entries: []
+    _layerMasks:
+      _entries: []
+    _curves:
+      _entries: []
+    _objects:
+      _entries:
+      - key: -162394706
+        value:
+          value: {fileID: 2100000, guid: 41d77e9f51a84af4d8033b259ce43acf, type: 2}
+      - key: 2000765251
+        value:
+          value: {fileID: 2100000, guid: 58e95ee5214d260419ee04e5685a303e, type: 2}
+      - key: 291680249
+        value:
+          value: {fileID: 0}
+      - key: 291680248
+        value:
+          value: {fileID: 0}
+      - key: -1164085002
+        value:
+          value: {fileID: 0}
+      - key: -1164085003
+        value:
+          value: {fileID: 0}
+    _enums:
+      _entries: []
+    _references:
+      _entries:
+      - key: -1563820403
+        value:
+          value:
+            rid: 8965086222731444228
+    _boolArrays:
+      _entries: []
+    _intArrays:
+      _entries: []
+    _longArrays:
+      _entries: []
+    _floatArrays:
+      _entries: []
+    _doubleArrays:
+      _entries: []
+    _stringArrays:
+      _entries: []
+    _vectors2IntArrays:
+      _entries: []
+    _vectors3IntArrays:
+      _entries: []
+    _vectors2Arrays:
+      _entries: []
+    _vectors3Arrays:
+      _entries: []
+    _vectors4Arrays:
+      _entries: []
+    _quaternionArrays:
+      _entries: []
+    _colorArrays:
+      _entries: []
+    _layerMaskArrays:
+      _entries: []
+    _curveArrays:
+      _entries: []
+    _objectArrays:
+      _entries: []
+    _enumArrays:
+      _entries: []
+    _referenceArrays:
+      _entries: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 8965086222731444228
+      type: {class: ProgressTween, ns: MisterGames.Tweens, asm: MisterGames.Tweens}
+      data:
+        duration: 2
+        curve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: -0.0012029491
+            tangentMode: 0
+            weightedMode: 3
+            inWeight: 0
+            outWeight: 0.36078
+          - serializedVersion: 3
+            time: 0.5
+            value: 0.5
+            inSlope: 1.5725082
+            outSlope: 1.5733721
+            tangentMode: 0
+            weightedMode: 3
+            inWeight: 0.326514
+            outWeight: 0.33093
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: -0.0009312395
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 3
+            inWeight: 0.358688
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        action:
+          rid: 8965086267122909210
+    - rid: 8965086244798988288
+      type: {class: BlueprintNodeImageSetMaterial, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+    - rid: 8965086244798988289
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: 291680249
+    - rid: 8965086244798988290
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: 1061466026
+    - rid: 8965086244798988291
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: 2000765251
+    - rid: 8965086244798988292
+      type: {class: BlueprintNodeIfData, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _condition: 0
+    - rid: 8965086244798988293
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: -162394706
+    - rid: 8965086244798988294
+      type: {class: BlueprintNodeStart, ns: MisterGames.Blueprints.Nodes, asm: MisterGames.Blueprints}
+    - rid: 8965086244798988298
+      type: {class: BlueprintNodeRunTween, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _autoInitOnStart: 0
+        _autoInvertNextPlay: 1
+    - rid: 8965086244798988299
+      type: {class: BlueprintNodeCustomTween, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+    - rid: 8965086244798988300
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: -1563820403
+    - rid: 8965086267122909184
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: 291680248
+    - rid: 8965086267122909185
+      type: {class: BlueprintNodeInteractiveEvents, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _autoSetInteractiveOnStart: 0
+    - rid: 8965086267122909186
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: -1164085002
+    - rid: 8965086267122909187
+      type: {class: BlueprintNodeIf, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _condition: 0
+    - rid: 8965086267122909188
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: 1061466026
+    - rid: 8965086267122909189
+      type: {class: BlueprintNodeStart, ns: MisterGames.Blueprints.Nodes, asm: MisterGames.Blueprints}
+    - rid: 8965086267122909190
+      type: {class: BlueprintNodeInteractiveEvents, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _autoSetInteractiveOnStart: 0
+    - rid: 8965086267122909191
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: -1164085003
+    - rid: 8965086267122909193
+      type: {class: BlueprintNodeIf, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _condition: 0
+    - rid: 8965086267122909194
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: -1577222989
+    - rid: 8965086267122909195
+      type: {class: BlueprintNodePipe, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _exits: 2
+    - rid: 8965086267122909197
+      type: {class: BlueprintNodeInputActionKey, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _inputActionKey: {fileID: 11400000, guid: fd8ec366fa1b3664bb88771fd3e89974, type: 2}
+    - rid: 8965086267122909210
+      type: {class: TweenProgressActions, ns: MisterGames.TweenLib, asm: MisterGames.TweenLib}
+      data:
+        actions:
+        - rid: 8965086267122909211
+        - rid: 8965086267122909212
+    - rid: 8965086267122909211
+      type: {class: TweenProgressActionMoveTransform, ns: MisterGames.TweenLib, asm: MisterGames.TweenLib}
+      data:
+        transform: {fileID: 0}
+        useLocal: 1
+        startPosition: {x: 0, y: -1.8210258, z: 0}
+        endPosition: {x: -0, y: -1.8210258, z: -1.116}
+    - rid: 8965086267122909212
+      type: {class: TweenProgressActionMoveTransform, ns: MisterGames.TweenLib, asm: MisterGames.TweenLib}
+      data:
+        transform: {fileID: 0}
+        useLocal: 1
+        startPosition: {x: -0, y: -1.8210258, z: 0}
+        endPosition: {x: -0, y: -1.8210258, z: 1.097}

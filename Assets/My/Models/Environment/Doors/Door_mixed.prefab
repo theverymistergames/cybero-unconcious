@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 981106360135285752}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0000038147, y: 0.97204447, z: -0.529}
+  m_LocalPosition: {x: 0.0335, y: 0.9498563, z: -0.7736309}
   m_LocalScale: {x: 0.55866, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -700,7 +700,7 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!95 &1074458768037688879
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -717,7 +717,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &2932741513206234376
 GameObject:
   m_ObjectHideFlags: 0
@@ -805,7 +805,7 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!95 &8615206311193086752
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -822,7 +822,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &3103718796130690540
 GameObject:
   m_ObjectHideFlags: 0
@@ -1117,7 +1117,6 @@ GameObject:
   - component: {fileID: 3218984535136780811}
   - component: {fileID: 3218984535136781045}
   - component: {fileID: 3218984535136781044}
-  - component: {fileID: 1328812333272437155}
   - component: {fileID: 8663574614422119522}
   m_Layer: 5
   m_Name: Fish
@@ -1184,33 +1183,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 1
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1328812333272437155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3218984535136780810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87a2ce6726c04bc283655ec7faf2fcb6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _event:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8679587918342918367}
-        m_TargetAssemblyTypeName: SimpleDoor, Assembly-CSharp
-        m_MethodName: Toggle
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &8663574614422119522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1352,7 +1324,6 @@ GameObject:
   - component: {fileID: 3218984536241175030}
   - component: {fileID: 3218984536241175031}
   - component: {fileID: 4396899425137737766}
-  - component: {fileID: 6869529926518107924}
   m_Layer: 5
   m_Name: Fish
   m_TagString: Untagged
@@ -1432,33 +1403,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _timeSourceStage: 1
   _strategy: {fileID: 11400000, guid: 87f3cf7412d28fe4ea8abe9f95f6f48d, type: 2}
---- !u!114 &6869529926518107924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3218984536241174793}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87a2ce6726c04bc283655ec7faf2fcb6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _event:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8679587918342918367}
-        m_TargetAssemblyTypeName: SimpleDoor, Assembly-CSharp
-        m_MethodName: Toggle
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
 --- !u!1 &3247942821172093376
 GameObject:
   m_ObjectHideFlags: 0
@@ -1978,8 +1922,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8527227897024093294}
-  - component: {fileID: 8679587918342918367}
-  - component: {fileID: 2620998543514270909}
+  - component: {fileID: 1742404312358659201}
   m_Layer: 0
   m_Name: Door_mixed
   m_TagString: Untagged
@@ -2013,7 +1956,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -360.001, z: 0}
---- !u!114 &8679587918342918367
+--- !u!114 &1742404312358659201
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2022,80 +1965,222 @@ MonoBehaviour:
   m_GameObject: {fileID: 4853265089975540476}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 771f920009c34d72a76fac8a216c4d4b, type: 3}
+  m_Script: {fileID: 11500000, guid: 14e6e69af36349bf9f40d0c82e5f80d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tweenRunner: {fileID: 2620998543514270909}
-  _initialState: 0
-  _isBlocked: 0
---- !u!114 &2620998543514270909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4853265089975540476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57270a0731e243fe9da2d6d92826a39b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _playAtStart: 0
-  _tween:
-    rid: 2772173688650596471
+  _blueprintAsset: {fileID: 11400000, guid: 13dccdc4e304d26429daf94f83c74991, type: 2}
+  _blackboardOverridesMap:
+    _entries:
+    - key: {fileID: 11400000, guid: 13dccdc4e304d26429daf94f83c74991, type: 2}
+      value:
+        _properties: 8dfec9a243414177ae0d52f6aaaf443fb37cfda1f9af6211f8af6211f6789dbaf5789dba
+        _propertiesMap:
+          _entries:
+          - key: -1577222989
+            value:
+              name: Is Opened
+              type:
+                _type: System.Boolean, mscorlib
+          - key: 1061466026
+            value:
+              name: Is Blocked
+              type:
+                _type: System.Boolean, mscorlib
+          - key: -162394706
+            value:
+              name: Material Enabled
+              type:
+                _type: UnityEngine.Material, UnityEngine.CoreModule
+          - key: 2000765251
+            value:
+              name: Material Blocked
+              type:
+                _type: UnityEngine.Material, UnityEngine.CoreModule
+          - key: -1563820403
+            value:
+              name: Tween
+              type:
+                _type: MisterGames.Tweens.Core.ITween, MisterGames.Tweens
+          - key: 291680248
+            value:
+              name: Indicator 1
+              type:
+                _type: UnityEngine.UI.Image, UnityEngine.UI
+          - key: 291680249
+            value:
+              name: Indicator 0
+              type:
+                _type: UnityEngine.UI.Image, UnityEngine.UI
+          - key: -1164085002
+            value:
+              name: Interactive 0
+              type:
+                _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact
+          - key: -1164085003
+            value:
+              name: Interactive 1
+              type:
+                _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact
+        _bools:
+          _entries:
+          - key: -1577222989
+            value: 0
+          - key: 1061466026
+            value: 0
+        _ints:
+          _entries: []
+        _longs:
+          _entries: []
+        _floats:
+          _entries: []
+        _doubles:
+          _entries: []
+        _strings:
+          _entries: []
+        _vectors2Int:
+          _entries: []
+        _vectors3Int:
+          _entries: []
+        _vectors2:
+          _entries: []
+        _vectors3:
+          _entries: []
+        _vectors4:
+          _entries: []
+        _quaternions:
+          _entries: []
+        _colors:
+          _entries: []
+        _layerMasks:
+          _entries: []
+        _curves:
+          _entries: []
+        _objects:
+          _entries:
+          - key: -162394706
+            value:
+              value: {fileID: 2100000, guid: 41d77e9f51a84af4d8033b259ce43acf, type: 2}
+          - key: 2000765251
+            value:
+              value: {fileID: 2100000, guid: 58e95ee5214d260419ee04e5685a303e, type: 2}
+          - key: 291680249
+            value:
+              value: {fileID: 3218984536241175031}
+          - key: 291680248
+            value:
+              value: {fileID: 3218984535136781044}
+          - key: -1164085002
+            value:
+              value: {fileID: 4396899425137737766}
+          - key: -1164085003
+            value:
+              value: {fileID: 8663574614422119522}
+        _enums:
+          _entries: []
+        _references:
+          _entries:
+          - key: -1563820403
+            value:
+              value:
+                rid: 8965086267122909202
+        _boolArrays:
+          _entries: []
+        _intArrays:
+          _entries: []
+        _longArrays:
+          _entries: []
+        _floatArrays:
+          _entries: []
+        _doubleArrays:
+          _entries: []
+        _stringArrays:
+          _entries: []
+        _vectors2IntArrays:
+          _entries: []
+        _vectors3IntArrays:
+          _entries: []
+        _vectors2Arrays:
+          _entries: []
+        _vectors3Arrays:
+          _entries: []
+        _vectors4Arrays:
+          _entries: []
+        _quaternionArrays:
+          _entries: []
+        _colorArrays:
+          _entries: []
+        _layerMaskArrays:
+          _entries: []
+        _curveArrays:
+          _entries: []
+        _objectArrays:
+          _entries: []
+        _enumArrays:
+          _entries: []
+        _referenceArrays:
+          _entries: []
   references:
     version: 2
     RefIds:
-    - rid: 2772173688650596471
+    - rid: 8965086267122909202
       type: {class: ProgressTween, ns: MisterGames.Tweens, asm: MisterGames.Tweens}
       data:
-        _playerLoopStage: 1
-        _duration: 1
-        _easingType: 17
-        _useCustomEasingCurve: 0
-        _customEasingCurve:
+        duration: 2
+        curve:
           serializedVersion: 2
           m_Curve:
           - serializedVersion: 3
             time: 0
             value: 0
             inSlope: 0
-            outSlope: 1
+            outSlope: -0.0012029491
             tangentMode: 0
-            weightedMode: 0
+            weightedMode: 3
             inWeight: 0
-            outWeight: 0
+            outWeight: 0.36078
+          - serializedVersion: 3
+            time: 0.5
+            value: 0.5
+            inSlope: 1.5725082
+            outSlope: 1.5733721
+            tangentMode: 0
+            weightedMode: 3
+            inWeight: 0.326514
+            outWeight: 0.33093
           - serializedVersion: 3
             time: 1
             value: 1
-            inSlope: 1
+            inSlope: -0.0009312395
             outSlope: 0
             tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
+            weightedMode: 3
+            inWeight: 0.358688
             outWeight: 0
           m_PreInfinity: 2
           m_PostInfinity: 2
           m_RotationOrder: 4
-        _actions:
-        - rid: 2772173688650596472
-        - rid: 2772173688650596473
-    - rid: 2772173688650596472
-      type: {class: TweenProgressActionTransform, ns: MisterGames.Tweens.Actions, asm: MisterGames.Tweens}
+        action:
+          rid: 8965086267122909203
+    - rid: 8965086267122909203
+      type: {class: TweenProgressActions, ns: MisterGames.TweenLib, asm: MisterGames.TweenLib}
       data:
-        _transform: {fileID: 7760307950831906103}
-        _type: 0
-        _startValue: {x: 0, y: 0.97204447, z: -0.6006527}
-        _endValue: {x: 0, y: 0.97204447, z: -1.5}
-        _useLocal: 1
-    - rid: 2772173688650596473
-      type: {class: TweenProgressActionTransform, ns: MisterGames.Tweens.Actions, asm: MisterGames.Tweens}
+        actions:
+        - rid: 8965086267122909204
+        - rid: 8965086267122909205
+    - rid: 8965086267122909204
+      type: {class: TweenProgressActionMoveTransform, ns: MisterGames.TweenLib, asm: MisterGames.TweenLib}
       data:
-        _transform: {fileID: 2463955242482354451}
-        _type: 0
-        _startValue: {x: 0, y: 0.97204447, z: -0.6977291}
-        _endValue: {x: 0, y: 0.97204447, z: -0.529}
-        _useLocal: 1
+        transform: {fileID: 7760307950831906103}
+        useLocal: 1
+        startPosition: {x: 0.0335, y: 0.9498563, z: -0.5723323}
+        endPosition: {x: 0.033, y: 0.9498563, z: -1.707}
+    - rid: 8965086267122909205
+      type: {class: TweenProgressActionMoveTransform, ns: MisterGames.TweenLib, asm: MisterGames.TweenLib}
+      data:
+        transform: {fileID: 2463955242482354451}
+        useLocal: 1
+        startPosition: {x: 0.0335, y: 0.9498563, z: -0.7736309}
+        endPosition: {x: 0.034, y: 0.9498563, z: -0.336}
 --- !u!1 &4929764252181864224
 GameObject:
   m_ObjectHideFlags: 0
@@ -2555,7 +2640,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7591682661117114173}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0000038147, y: 0.97204447, z: -1.407}
+  m_LocalPosition: {x: 0.0335, y: 0.9498563, z: -0.5723323}
   m_LocalScale: {x: 0.55866, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -201,6 +201,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 529048858, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
+      propertyPath: m_Size.y
+      value: 2.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 529048858, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
+      propertyPath: m_Size.z
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 529048858, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 529048858, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
+      propertyPath: m_Center.y
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 529048858, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
+      propertyPath: m_Center.z
+      value: -0.44
+      objectReference: {fileID: 0}
     - target: {fileID: 569850984, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
       propertyPath: managedReferences[3265702873330876416].id
       value: LeftDoor
@@ -285,13 +305,69 @@ PrefabInstance:
       propertyPath: managedReferences[1193714653096312834].start.z
       value: -0.921
       objectReference: {fileID: 0}
+    - target: {fileID: 1439035260, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
+      propertyPath: m_Size.y
+      value: 2.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439035260, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439035260, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
+      propertyPath: m_Center.y
+      value: 0.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 1439035260, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
+      propertyPath: m_Center.z
+      value: 0.45
+      objectReference: {fileID: 0}
     - target: {fileID: 2089291770, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 120867503666608460, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
+      propertyPath: managedReferences[8965086267122909215].endPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 120867503666608460, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
+      propertyPath: managedReferences[8965086267122909215].endPosition.y
+      value: -0.858
+      objectReference: {fileID: 0}
+    - target: {fileID: 120867503666608460, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
+      propertyPath: managedReferences[8965086267122909215].endPosition.z
+      value: -2.034
+      objectReference: {fileID: 0}
+    - target: {fileID: 120867503666608460, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
+      propertyPath: managedReferences[8965086267122909216].endPosition.y
+      value: -0.858
+      objectReference: {fileID: 0}
+    - target: {fileID: 120867503666608460, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
+      propertyPath: managedReferences[8965086267122909216].endPosition.z
+      value: 2.012
+      objectReference: {fileID: 0}
+    - target: {fileID: 120867503666608460, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
+      propertyPath: managedReferences[8965086267122909215].startPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 120867503666608460, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
+      propertyPath: managedReferences[8965086267122909215].startPosition.y
+      value: -0.858
+      objectReference: {fileID: 0}
+    - target: {fileID: 120867503666608460, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
+      propertyPath: managedReferences[8965086267122909215].startPosition.z
+      value: -0.921
+      objectReference: {fileID: 0}
+    - target: {fileID: 120867503666608460, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
+      propertyPath: managedReferences[8965086267122909216].startPosition.y
+      value: -0.858
+      objectReference: {fileID: 0}
+    - target: {fileID: 120867503666608460, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
+      propertyPath: managedReferences[8965086267122909216].startPosition.z
+      value: 0.923
+      objectReference: {fileID: 0}
     - target: {fileID: 365090271717367360, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
       propertyPath: m_Name
-      value: DoorDouble_Glass Variant (2)
+      value: DoorDouble_Glass Variant
       objectReference: {fileID: 0}
     - target: {fileID: 374631074124201292, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
       propertyPath: m_RootOrder

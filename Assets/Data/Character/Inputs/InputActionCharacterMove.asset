@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74eefbea81344b0980cc13894e58e3e7, type: 3}
   m_Name: InputActionCharacterMove
   m_EditorClassIdentifier: 
+  _strategy:
+    rid: -2
   _bindings:
   - rid: 5452144531743965203
   - rid: 5452144531743965204
@@ -22,8 +24,10 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
     - rid: 5452144531743965203
-      type: {class: InputBindingVector2Key, ns: MisterGames.Input.Bindings, asm: MisterGames.Input}
+      type: {class: FourKeyVector2, ns: MisterGames.Input.Bindings, asm: MisterGames.Input}
       data:
         _positiveX: 43
         _negativeX: 40
@@ -33,7 +37,7 @@ MonoBehaviour:
         _sensitivityY: 1
         _normalize: 1
     - rid: 5452144531743965204
-      type: {class: InputBindingVector2Key, ns: MisterGames.Input.Bindings, asm: MisterGames.Input}
+      type: {class: FourKeyVector2, ns: MisterGames.Input.Bindings, asm: MisterGames.Input}
       data:
         _positiveX: 20
         _negativeX: 19
@@ -43,7 +47,7 @@ MonoBehaviour:
         _sensitivityY: 1
         _normalize: 1
     - rid: 5452144531743965205
-      type: {class: InputBindingVector2Axis, ns: MisterGames.Input.Bindings, asm: MisterGames.Input}
+      type: {class: AxisVector2, ns: MisterGames.Input.Bindings, asm: MisterGames.Input}
       data:
         _axis: 2
         _sensitivityX: 1
