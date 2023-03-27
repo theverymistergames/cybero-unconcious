@@ -182,6 +182,18 @@ MonoBehaviour:
       hasProbeVolumes: 0
     - sceneGUID: 40a2f86c030266545bb5a3ca89baa07e
       hasProbeVolumes: 0
+    - sceneGUID: 972a4d88b9d791e4c935977305f3601e
+      hasProbeVolumes: 0
+    - sceneGUID: a6ca281e1c635a7429650b0eea641a22
+      hasProbeVolumes: 0
+    - sceneGUID: b3c5350a73afaf74a8739b02dce2780f
+      hasProbeVolumes: 0
+    - sceneGUID: e8a46cd95ded91345ad92b14d121f977
+      hasProbeVolumes: 0
+    - sceneGUID: 2723aaa31bfaa514aaaa1a9dcd697e33
+      hasProbeVolumes: 0
+    - sceneGUID: bb94fbca84e40ed4590d441d0febb1a8
+      hasProbeVolumes: 0
     serializedProfiles:
     - sceneGUID: 443834309faeae24ba9a721b31e14aa0
       profile: {fileID: 11400000, guid: 18bea62167c676a43bf5db8d2ab2ef9b, type: 2}
@@ -256,6 +268,18 @@ MonoBehaviour:
     - sceneGUID: 2059ad990767e6149b3d6b80eb2fdfbd
       profile: {fileID: 11400000, guid: 18bea62167c676a43bf5db8d2ab2ef9b, type: 2}
     - sceneGUID: 40a2f86c030266545bb5a3ca89baa07e
+      profile: {fileID: 11400000, guid: 18bea62167c676a43bf5db8d2ab2ef9b, type: 2}
+    - sceneGUID: 972a4d88b9d791e4c935977305f3601e
+      profile: {fileID: 11400000, guid: 18bea62167c676a43bf5db8d2ab2ef9b, type: 2}
+    - sceneGUID: a6ca281e1c635a7429650b0eea641a22
+      profile: {fileID: 11400000, guid: 18bea62167c676a43bf5db8d2ab2ef9b, type: 2}
+    - sceneGUID: b3c5350a73afaf74a8739b02dce2780f
+      profile: {fileID: 11400000, guid: 18bea62167c676a43bf5db8d2ab2ef9b, type: 2}
+    - sceneGUID: e8a46cd95ded91345ad92b14d121f977
+      profile: {fileID: 11400000, guid: 18bea62167c676a43bf5db8d2ab2ef9b, type: 2}
+    - sceneGUID: 2723aaa31bfaa514aaaa1a9dcd697e33
+      profile: {fileID: 11400000, guid: 18bea62167c676a43bf5db8d2ab2ef9b, type: 2}
+    - sceneGUID: bb94fbca84e40ed4590d441d0febb1a8
       profile: {fileID: 11400000, guid: 18bea62167c676a43bf5db8d2ab2ef9b, type: 2}
     serializedBakeSettings:
     - sceneGUID: 443834309faeae24ba9a721b31e14aa0
@@ -702,6 +726,78 @@ MonoBehaviour:
           useVirtualOffset: 1
           outOfGeoOffset: 0.01
           searchMultiplier: 0.2
+    - sceneGUID: 972a4d88b9d791e4c935977305f3601e
+      settings:
+        dilationSettings:
+          enableDilation: 1
+          dilationDistance: 1
+          dilationValidityThreshold: 0.25
+          dilationIterations: 1
+          squaredDistWeighting: 1
+        virtualOffsetSettings:
+          useVirtualOffset: 1
+          outOfGeoOffset: 0.01
+          searchMultiplier: 0.2
+    - sceneGUID: a6ca281e1c635a7429650b0eea641a22
+      settings:
+        dilationSettings:
+          enableDilation: 1
+          dilationDistance: 1
+          dilationValidityThreshold: 0.25
+          dilationIterations: 1
+          squaredDistWeighting: 1
+        virtualOffsetSettings:
+          useVirtualOffset: 1
+          outOfGeoOffset: 0.01
+          searchMultiplier: 0.2
+    - sceneGUID: b3c5350a73afaf74a8739b02dce2780f
+      settings:
+        dilationSettings:
+          enableDilation: 1
+          dilationDistance: 1
+          dilationValidityThreshold: 0.25
+          dilationIterations: 1
+          squaredDistWeighting: 1
+        virtualOffsetSettings:
+          useVirtualOffset: 1
+          outOfGeoOffset: 0.01
+          searchMultiplier: 0.2
+    - sceneGUID: e8a46cd95ded91345ad92b14d121f977
+      settings:
+        dilationSettings:
+          enableDilation: 1
+          dilationDistance: 1
+          dilationValidityThreshold: 0.25
+          dilationIterations: 1
+          squaredDistWeighting: 1
+        virtualOffsetSettings:
+          useVirtualOffset: 1
+          outOfGeoOffset: 0.01
+          searchMultiplier: 0.2
+    - sceneGUID: 2723aaa31bfaa514aaaa1a9dcd697e33
+      settings:
+        dilationSettings:
+          enableDilation: 1
+          dilationDistance: 1
+          dilationValidityThreshold: 0.25
+          dilationIterations: 1
+          squaredDistWeighting: 1
+        virtualOffsetSettings:
+          useVirtualOffset: 1
+          outOfGeoOffset: 0.01
+          searchMultiplier: 0.2
+    - sceneGUID: bb94fbca84e40ed4590d441d0febb1a8
+      settings:
+        dilationSettings:
+          enableDilation: 1
+          dilationDistance: 1
+          dilationValidityThreshold: 0.25
+          dilationIterations: 1
+          squaredDistWeighting: 1
+        virtualOffsetSettings:
+          useVirtualOffset: 1
+          outOfGeoOffset: 0.01
+          searchMultiplier: 0.2
     serializedBakingSets:
     - name: Default
       sceneGUIDs:
@@ -742,6 +838,12 @@ MonoBehaviour:
       - 14548885081fedc4ebcf2bebac23df65
       - 2059ad990767e6149b3d6b80eb2fdfbd
       - 40a2f86c030266545bb5a3ca89baa07e
+      - 972a4d88b9d791e4c935977305f3601e
+      - a6ca281e1c635a7429650b0eea641a22
+      - b3c5350a73afaf74a8739b02dce2780f
+      - e8a46cd95ded91345ad92b14d121f977
+      - 2723aaa31bfaa514aaaa1a9dcd697e33
+      - bb94fbca84e40ed4590d441d0febb1a8
       settings:
         dilationSettings:
           enableDilation: 1
