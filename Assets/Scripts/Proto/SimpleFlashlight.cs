@@ -1,18 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
-public class SimpleFlashlight : MonoBehaviour {
-    public GameObject light;
-    public GameObject flashlightMesh;
+
+public sealed class SimpleFlashlight : MonoBehaviour {
+
+    [SerializeField] [FormerlySerializedAs("light")] private GameObject _light;
+    [SerializeField] [FormerlySerializedAs("flashlightMesh")] private GameObject _flashlightMesh;
     
     private bool _active;
     private Vector3 _flashlightPosition;
-    private float _flashlightShowTime = 0.3f;
-    
+    private const float _flashlightShowTime = 0.3f;
+
     void Start() {
-        light.SetActive(_active);
-        _flashlightPosition = flashlightMesh.transform.localPosition;
+        _light.SetActive(_active);
+        _flashlightPosition = _flashlightMesh.transform.localPosition;
     }
 
     void Update() {
@@ -26,11 +29,11 @@ public class SimpleFlashlight : MonoBehaviour {
     }
 
     IEnumerator MoveFlashlight(bool active) {
-        if (active) light.SetActive(true);
+        if (active) _light.SetActive(true);
         
         var timer = 0f;
         
-        var transform = flashlightMesh.transform;
+        var transform = _flashlightMesh.transform;
         
         var offPosition = _flashlightPosition;
         offPosition.y -= 1;
@@ -47,6 +50,6 @@ public class SimpleFlashlight : MonoBehaviour {
             yield return null;
         }
         
-        if (!active) light.SetActive(false);
+        if (!active) _light.SetActive(false);
     }
 }

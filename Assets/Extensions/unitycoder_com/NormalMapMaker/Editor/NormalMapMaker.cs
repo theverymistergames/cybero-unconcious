@@ -30,8 +30,7 @@ namespace unitycodercom_mapmaker
 	    [MenuItem ("Window/Normal Map Maker")]
 	    static void Init () 
 		{
-	    NormalMapMaker window = (NormalMapMaker)EditorWindow.GetWindow (typeof (NormalMapMaker));
-			window.title = appName;
+			var window = GetWindow<NormalMapMaker>(appName);
 			window.minSize = new Vector2(300,348);
 			window.maxSize = new Vector2(300,350);
 			running = true;
