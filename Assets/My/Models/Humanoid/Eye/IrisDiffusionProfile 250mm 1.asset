@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: IrisDiffusionProfile 250mm 1
   m_EditorClassIdentifier: 
   profile:
-    scatteringDistance: {r: 1, g: 1, b: 1, a: 1}
+    scatteringDistance: {r: 0.7490196, g: 0.7490196, b: 0.7490196, a: 1}
+    scatteringDistanceMultiplier: 1.3350785
     transmissionTint: {r: 1, g: 0, b: 0, a: 1}
     texturingMode: 0
     transmissionMode: 0
@@ -21,4 +22,4 @@ MonoBehaviour:
     worldScale: 14.23
     ior: 1.279
     hash: 1075794435
-  m_Version: 1
+  m_Version: 2
