@@ -1,0 +1,2626 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95aa8f7d5aa490e9877070cd957eaff, type: 3}
+  m_Name: Blueprint_CharacterMotionFsm
+  m_EditorClassIdentifier: 
+  _blueprintMeta:
+    _nodesMap:
+      _entries:
+      - key: 0
+        value:
+          _nodeId: 0
+          _node:
+            rid: 6196715695940042752
+          _position: {x: 241.33334, y: 173.66667}
+          _ports:
+          - _name: 
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: On Start
+            _mode: 193
+            _dataType:
+              _type: 
+      - key: 1
+        value:
+          _nodeId: 1
+          _node:
+            rid: 6196715695940042753
+          _position: {x: 413.33334, y: 310.66666}
+          _ports:
+          - _name: Enter
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: Transitions
+            _mode: 43
+            _dataType:
+              _type: MisterGames.BlueprintLib.Fsm.IBlueprintFsmTransition, MisterGames.BlueprintsLib
+          - _name: On Enter
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: On Exit
+            _mode: 0
+            _dataType:
+              _type: 
+      - key: 3
+        value:
+          _nodeId: 3
+          _node:
+            rid: 6196715695940042755
+          _position: {x: 138.33334, y: 310.66666}
+          _ports:
+          - _name: 
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 129
+            _dataType:
+              _type: 
+      - key: 16
+        value:
+          _nodeId: 16
+          _node:
+            rid: 6196715695940043169
+          _position: {x: 1605.6807, y: 331.39862}
+          _ports:
+          - _name: 
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 129
+            _dataType:
+              _type: 
+      - key: 6
+        value:
+          _nodeId: 6
+          _node:
+            rid: 6196715695940042759
+          _position: {x: 709.27655, y: -202.11357}
+          _ports:
+          - _name: Self
+            _mode: 22
+            _dataType:
+              _type: MisterGames.BlueprintLib.Fsm.IBlueprintFsmTransition, MisterGames.BlueprintsLib
+          - _name: On Transit
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 3
+            _dataType:
+              _type: MisterGames.BlueprintLib.Character.CharacterMotionBlueprintFsmTransitionData,
+                MisterGames.BlueprintsLib
+      - key: 7
+        value:
+          _nodeId: 7
+          _node:
+            rid: 6196715695940042763
+          _position: {x: 665.6082, y: 499.60815}
+          _ports:
+          - _name: 
+            _mode: 2
+            _dataType:
+              _type: MisterGames.Character.Core2.CharacterAccess, MisterGames.Character
+      - key: 8
+        value:
+          _nodeId: 8
+          _node:
+            rid: 6196715695940043158
+          _position: {x: 708.70074, y: -64.80638}
+          _ports:
+          - _name: Self
+            _mode: 22
+            _dataType:
+              _type: MisterGames.BlueprintLib.Fsm.IBlueprintFsmTransition, MisterGames.BlueprintsLib
+          - _name: On Transit
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 3
+            _dataType:
+              _type: MisterGames.BlueprintLib.Character.CharacterMotionBlueprintFsmTransitionData,
+                MisterGames.BlueprintsLib
+      - key: 9
+        value:
+          _nodeId: 9
+          _node:
+            rid: 6196715695940043160
+          _position: {x: 704.034, y: 211.86023}
+          _ports:
+          - _name: Self
+            _mode: 22
+            _dataType:
+              _type: MisterGames.BlueprintLib.Fsm.IBlueprintFsmTransition, MisterGames.BlueprintsLib
+          - _name: On Transit
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 3
+            _dataType:
+              _type: MisterGames.BlueprintLib.Character.CharacterMotionBlueprintFsmTransitionData,
+                MisterGames.BlueprintsLib
+      - key: 10
+        value:
+          _nodeId: 10
+          _node:
+            rid: 6196715695940043162
+          _position: {x: 705.3674, y: 74.52693}
+          _ports:
+          - _name: Self
+            _mode: 22
+            _dataType:
+              _type: MisterGames.BlueprintLib.Fsm.IBlueprintFsmTransition, MisterGames.BlueprintsLib
+          - _name: On Transit
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 3
+            _dataType:
+              _type: MisterGames.BlueprintLib.Character.CharacterMotionBlueprintFsmTransitionData,
+                MisterGames.BlueprintsLib
+      - key: 11
+        value:
+          _nodeId: 11
+          _node:
+            rid: 6196715695940043164
+          _position: {x: 709.20386, y: -263.08978}
+          _ports:
+          - _name: 
+            _mode: 2
+            _dataType:
+              _type: MisterGames.BlueprintLib.Character.CharacterMotionBlueprintFsmTransitionData,
+                MisterGames.BlueprintsLib
+      - key: 12
+        value:
+          _nodeId: 12
+          _node:
+            rid: 6196715695940043165
+          _position: {x: 1366.315, y: -201.27916}
+          _ports:
+          - _name: 
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 128
+            _dataType:
+              _type: 
+      - key: 13
+        value:
+          _nodeId: 13
+          _node:
+            rid: 6196715695940043166
+          _position: {x: 1364.9816, y: -63.27917}
+          _ports:
+          - _name: 
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 128
+            _dataType:
+              _type: 
+      - key: 14
+        value:
+          _nodeId: 14
+          _node:
+            rid: 6196715695940043167
+          _position: {x: 1366.315, y: 75.387505}
+          _ports:
+          - _name: 
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 128
+            _dataType:
+              _type: 
+      - key: 15
+        value:
+          _nodeId: 15
+          _node:
+            rid: 6196715695940043168
+          _position: {x: 1364.315, y: 212.72083}
+          _ports:
+          - _name: 
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 128
+            _dataType:
+              _type: 
+      - key: 17
+        value:
+          _nodeId: 17
+          _node:
+            rid: 6196715695940043170
+          _position: {x: 1875.6805, y: 331.39862}
+          _ports:
+          - _name: Enter
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: Transitions
+            _mode: 43
+            _dataType:
+              _type: MisterGames.BlueprintLib.Fsm.IBlueprintFsmTransition, MisterGames.BlueprintsLib
+          - _name: On Enter
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: On Exit
+            _mode: 0
+            _dataType:
+              _type: 
+      - key: 42
+        value:
+          _nodeId: 42
+          _node:
+            rid: 6196715695940043199
+          _position: {x: 1871.3333, y: 1200.6666}
+          _ports:
+          - _name: Enter
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: Transitions
+            _mode: 43
+            _dataType:
+              _type: MisterGames.BlueprintLib.Fsm.IBlueprintFsmTransition, MisterGames.BlueprintsLib
+          - _name: On Enter
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: On Exit
+            _mode: 0
+            _dataType:
+              _type: 
+      - key: 41
+        value:
+          _nodeId: 41
+          _node:
+            rid: 6196715695940043198
+          _position: {x: 1601.3333, y: 1200.6666}
+          _ports:
+          - _name: 
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 129
+            _dataType:
+              _type: 
+      - key: 52
+        value:
+          _nodeId: 52
+          _node:
+            rid: 6196715695940043213
+          _position: {x: 2844, y: 939.57324}
+          _ports:
+          - _name: 
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 128
+            _dataType:
+              _type: 
+      - key: 51
+        value:
+          _nodeId: 51
+          _node:
+            rid: 6196715695940043212
+          _position: {x: 2843.3335, y: 800.9066}
+          _ports:
+          - _name: 
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 128
+            _dataType:
+              _type: 
+      - key: 50
+        value:
+          _nodeId: 50
+          _node:
+            rid: 6196715695940043211
+          _position: {x: 2844, y: 662.9066}
+          _ports:
+          - _name: 
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 128
+            _dataType:
+              _type: 
+      - key: 49
+        value:
+          _nodeId: 49
+          _node:
+            rid: 6196715695940043210
+          _position: {x: 2184, y: 602}
+          _ports:
+          - _name: 
+            _mode: 2
+            _dataType:
+              _type: MisterGames.BlueprintLib.Character.CharacterMotionBlueprintFsmTransitionData,
+                MisterGames.BlueprintsLib
+      - key: 25
+        value:
+          _nodeId: 25
+          _node:
+            rid: 6196715695940043178
+          _position: {x: 2189.681, y: 458.73196}
+          _ports:
+          - _name: 
+            _mode: 2
+            _dataType:
+              _type: MisterGames.Character.Core2.CharacterAccess, MisterGames.Character
+      - key: 48
+        value:
+          _nodeId: 48
+          _node:
+            rid: 6196715695940043208
+          _position: {x: 2180.6667, y: 940}
+          _ports:
+          - _name: Self
+            _mode: 22
+            _dataType:
+              _type: MisterGames.BlueprintLib.Fsm.IBlueprintFsmTransition, MisterGames.BlueprintsLib
+          - _name: On Transit
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 3
+            _dataType:
+              _type: MisterGames.BlueprintLib.Character.CharacterMotionBlueprintFsmTransitionData,
+                MisterGames.BlueprintsLib
+      - key: 47
+        value:
+          _nodeId: 47
+          _node:
+            rid: 6196715695940043206
+          _position: {x: 2179.3335, y: 1077.3334}
+          _ports:
+          - _name: Self
+            _mode: 22
+            _dataType:
+              _type: MisterGames.BlueprintLib.Fsm.IBlueprintFsmTransition, MisterGames.BlueprintsLib
+          - _name: On Transit
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 3
+            _dataType:
+              _type: MisterGames.BlueprintLib.Character.CharacterMotionBlueprintFsmTransitionData,
+                MisterGames.BlueprintsLib
+      - key: 46
+        value:
+          _nodeId: 46
+          _node:
+            rid: 6196715695940043204
+          _position: {x: 2184, y: 800.6666}
+          _ports:
+          - _name: Self
+            _mode: 22
+            _dataType:
+              _type: MisterGames.BlueprintLib.Fsm.IBlueprintFsmTransition, MisterGames.BlueprintsLib
+          - _name: On Transit
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 3
+            _dataType:
+              _type: MisterGames.BlueprintLib.Character.CharacterMotionBlueprintFsmTransitionData,
+                MisterGames.BlueprintsLib
+      - key: 45
+        value:
+          _nodeId: 45
+          _node:
+            rid: 6196715695940043202
+          _position: {x: 2184, y: 663.3334}
+          _ports:
+          - _name: Self
+            _mode: 22
+            _dataType:
+              _type: MisterGames.BlueprintLib.Fsm.IBlueprintFsmTransition, MisterGames.BlueprintsLib
+          - _name: On Transit
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 3
+            _dataType:
+              _type: MisterGames.BlueprintLib.Character.CharacterMotionBlueprintFsmTransitionData,
+                MisterGames.BlueprintsLib
+      - key: 44
+        value:
+          _nodeId: 44
+          _node:
+            rid: 6196715695940043201
+          _position: {x: 2185.3335, y: 1328.0001}
+          _ports:
+          - _name: 
+            _mode: 2
+            _dataType:
+              _type: MisterGames.Character.Core2.CharacterAccess, MisterGames.Character
+      - key: 32
+        value:
+          _nodeId: 32
+          _node:
+            rid: 6196715695940043185
+          _position: {x: 2186.6667, y: -207.08}
+          _ports:
+          - _name: Self
+            _mode: 22
+            _dataType:
+              _type: MisterGames.BlueprintLib.Fsm.IBlueprintFsmTransition, MisterGames.BlueprintsLib
+          - _name: On Transit
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 3
+            _dataType:
+              _type: MisterGames.BlueprintLib.Character.CharacterMotionBlueprintFsmTransitionData,
+                MisterGames.BlueprintsLib
+      - key: 33
+        value:
+          _nodeId: 33
+          _node:
+            rid: 6196715695940043187
+          _position: {x: 2188.3474, y: -68.60138}
+          _ports:
+          - _name: Self
+            _mode: 22
+            _dataType:
+              _type: MisterGames.BlueprintLib.Fsm.IBlueprintFsmTransition, MisterGames.BlueprintsLib
+          - _name: On Transit
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 3
+            _dataType:
+              _type: MisterGames.BlueprintLib.Character.CharacterMotionBlueprintFsmTransitionData,
+                MisterGames.BlueprintsLib
+      - key: 34
+        value:
+          _nodeId: 34
+          _node:
+            rid: 6196715695940043189
+          _position: {x: 2183.681, y: 208.06534}
+          _ports:
+          - _name: Self
+            _mode: 22
+            _dataType:
+              _type: MisterGames.BlueprintLib.Fsm.IBlueprintFsmTransition, MisterGames.BlueprintsLib
+          - _name: On Transit
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 3
+            _dataType:
+              _type: MisterGames.BlueprintLib.Character.CharacterMotionBlueprintFsmTransitionData,
+                MisterGames.BlueprintsLib
+      - key: 35
+        value:
+          _nodeId: 35
+          _node:
+            rid: 6196715695940043191
+          _position: {x: 2185.0142, y: 70.73193}
+          _ports:
+          - _name: Self
+            _mode: 22
+            _dataType:
+              _type: MisterGames.BlueprintLib.Fsm.IBlueprintFsmTransition, MisterGames.BlueprintsLib
+          - _name: On Transit
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 3
+            _dataType:
+              _type: MisterGames.BlueprintLib.Character.CharacterMotionBlueprintFsmTransitionData,
+                MisterGames.BlueprintsLib
+      - key: 36
+        value:
+          _nodeId: 36
+          _node:
+            rid: 6196715695940043193
+          _position: {x: 2188.3474, y: -267.268}
+          _ports:
+          - _name: 
+            _mode: 2
+            _dataType:
+              _type: MisterGames.BlueprintLib.Character.CharacterMotionBlueprintFsmTransitionData,
+                MisterGames.BlueprintsLib
+      - key: 37
+        value:
+          _nodeId: 37
+          _node:
+            rid: 6196715695940043194
+          _position: {x: 2848, y: -206.42667}
+          _ports:
+          - _name: 
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 128
+            _dataType:
+              _type: 
+      - key: 38
+        value:
+          _nodeId: 38
+          _node:
+            rid: 6196715695940043195
+          _position: {x: 2847.3335, y: -68.42665}
+          _ports:
+          - _name: 
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 128
+            _dataType:
+              _type: 
+      - key: 39
+        value:
+          _nodeId: 39
+          _node:
+            rid: 6196715695940043196
+          _position: {x: 2848, y: 70.240005}
+          _ports:
+          - _name: 
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 128
+            _dataType:
+              _type: 
+      - key: 40
+        value:
+          _nodeId: 40
+          _node:
+            rid: 6196715695940043197
+          _position: {x: 2846.6667, y: 207.57335}
+          _ports:
+          - _name: 
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 128
+            _dataType:
+              _type: 
+      - key: 53
+        value:
+          _nodeId: 53
+          _node:
+            rid: 6196715695940043214
+          _position: {x: 2842.6667, y: 1076.9066}
+          _ports:
+          - _name: 
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 128
+            _dataType:
+              _type: 
+      - key: 54
+        value:
+          _nodeId: 54
+          _node:
+            rid: 6196715695940043215
+          _position: {x: 1620.9176, y: 2106.8086}
+          _ports:
+          - _name: 
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 129
+            _dataType:
+              _type: 
+      - key: 55
+        value:
+          _nodeId: 55
+          _node:
+            rid: 6196715695940043216
+          _position: {x: 1890.9176, y: 2106.8086}
+          _ports:
+          - _name: Enter
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: Transitions
+            _mode: 43
+            _dataType:
+              _type: MisterGames.BlueprintLib.Fsm.IBlueprintFsmTransition, MisterGames.BlueprintsLib
+          - _name: On Enter
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: On Exit
+            _mode: 0
+            _dataType:
+              _type: 
+      - key: 57
+        value:
+          _nodeId: 57
+          _node:
+            rid: 6196715695940043218
+          _position: {x: 2204.9177, y: 2234.1418}
+          _ports:
+          - _name: 
+            _mode: 2
+            _dataType:
+              _type: MisterGames.Character.Core2.CharacterAccess, MisterGames.Character
+      - key: 58
+        value:
+          _nodeId: 58
+          _node:
+            rid: 6196715695940043219
+          _position: {x: 2203.5845, y: 1569.4752}
+          _ports:
+          - _name: Self
+            _mode: 22
+            _dataType:
+              _type: MisterGames.BlueprintLib.Fsm.IBlueprintFsmTransition, MisterGames.BlueprintsLib
+          - _name: On Transit
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 3
+            _dataType:
+              _type: MisterGames.BlueprintLib.Character.CharacterMotionBlueprintFsmTransitionData,
+                MisterGames.BlueprintsLib
+      - key: 59
+        value:
+          _nodeId: 59
+          _node:
+            rid: 6196715695940043221
+          _position: {x: 2203.5845, y: 1706.8085}
+          _ports:
+          - _name: Self
+            _mode: 22
+            _dataType:
+              _type: MisterGames.BlueprintLib.Fsm.IBlueprintFsmTransition, MisterGames.BlueprintsLib
+          - _name: On Transit
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 3
+            _dataType:
+              _type: MisterGames.BlueprintLib.Character.CharacterMotionBlueprintFsmTransitionData,
+                MisterGames.BlueprintsLib
+      - key: 60
+        value:
+          _nodeId: 60
+          _node:
+            rid: 6196715695940043223
+          _position: {x: 2198.9177, y: 1983.4753}
+          _ports:
+          - _name: Self
+            _mode: 22
+            _dataType:
+              _type: MisterGames.BlueprintLib.Fsm.IBlueprintFsmTransition, MisterGames.BlueprintsLib
+          - _name: On Transit
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 3
+            _dataType:
+              _type: MisterGames.BlueprintLib.Character.CharacterMotionBlueprintFsmTransitionData,
+                MisterGames.BlueprintsLib
+      - key: 61
+        value:
+          _nodeId: 61
+          _node:
+            rid: 6196715695940043225
+          _position: {x: 2200.251, y: 1846.1418}
+          _ports:
+          - _name: Self
+            _mode: 22
+            _dataType:
+              _type: MisterGames.BlueprintLib.Fsm.IBlueprintFsmTransition, MisterGames.BlueprintsLib
+          - _name: On Transit
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 3
+            _dataType:
+              _type: MisterGames.BlueprintLib.Character.CharacterMotionBlueprintFsmTransitionData,
+                MisterGames.BlueprintsLib
+      - key: 62
+        value:
+          _nodeId: 62
+          _node:
+            rid: 6196715695940043227
+          _position: {x: 2203.5845, y: 1508.142}
+          _ports:
+          - _name: 
+            _mode: 2
+            _dataType:
+              _type: MisterGames.BlueprintLib.Character.CharacterMotionBlueprintFsmTransitionData,
+                MisterGames.BlueprintsLib
+      - key: 63
+        value:
+          _nodeId: 63
+          _node:
+            rid: 6196715695940043228
+          _position: {x: 2863.3335, y: 1568.9066}
+          _ports:
+          - _name: 
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 128
+            _dataType:
+              _type: 
+      - key: 64
+        value:
+          _nodeId: 64
+          _node:
+            rid: 6196715695940043229
+          _position: {x: 2862.6667, y: 1706.9066}
+          _ports:
+          - _name: 
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 128
+            _dataType:
+              _type: 
+      - key: 65
+        value:
+          _nodeId: 65
+          _node:
+            rid: 6196715695940043230
+          _position: {x: 2863.3335, y: 1845.5734}
+          _ports:
+          - _name: 
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 128
+            _dataType:
+              _type: 
+      - key: 66
+        value:
+          _nodeId: 66
+          _node:
+            rid: 6196715695940043231
+          _position: {x: 2862, y: 1982.9066}
+          _ports:
+          - _name: 
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 128
+            _dataType:
+              _type: 
+      - key: 67
+        value:
+          _nodeId: 67
+          _node:
+            rid: 6196715695940043232
+          _position: {x: 1630.251, y: 2998.1418}
+          _ports:
+          - _name: 
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 129
+            _dataType:
+              _type: 
+      - key: 68
+        value:
+          _nodeId: 68
+          _node:
+            rid: 6196715695940043233
+          _position: {x: 1900.251, y: 2998.1418}
+          _ports:
+          - _name: Enter
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: Transitions
+            _mode: 43
+            _dataType:
+              _type: MisterGames.BlueprintLib.Fsm.IBlueprintFsmTransition, MisterGames.BlueprintsLib
+          - _name: On Enter
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: On Exit
+            _mode: 0
+            _dataType:
+              _type: 
+      - key: 81
+        value:
+          _nodeId: 81
+          _node:
+            rid: 6196715740304244745
+          _position: {x: 664, y: 417.66666}
+          _ports:
+          - _name: Apply
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 3
+            _dataType:
+              _type: MisterGames.Character.Core2.CharacterAccess, MisterGames.Character
+      - key: 70
+        value:
+          _nodeId: 70
+          _node:
+            rid: 6196715695940043235
+          _position: {x: 2214.251, y: 3125.4753}
+          _ports:
+          - _name: 
+            _mode: 2
+            _dataType:
+              _type: MisterGames.Character.Core2.CharacterAccess, MisterGames.Character
+      - key: 71
+        value:
+          _nodeId: 71
+          _node:
+            rid: 6196715695940043236
+          _position: {x: 2212.9177, y: 2460.8086}
+          _ports:
+          - _name: Self
+            _mode: 22
+            _dataType:
+              _type: MisterGames.BlueprintLib.Fsm.IBlueprintFsmTransition, MisterGames.BlueprintsLib
+          - _name: On Transit
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 3
+            _dataType:
+              _type: MisterGames.BlueprintLib.Character.CharacterMotionBlueprintFsmTransitionData,
+                MisterGames.BlueprintsLib
+      - key: 72
+        value:
+          _nodeId: 72
+          _node:
+            rid: 6196715695940043238
+          _position: {x: 2212.9177, y: 2598.1418}
+          _ports:
+          - _name: Self
+            _mode: 22
+            _dataType:
+              _type: MisterGames.BlueprintLib.Fsm.IBlueprintFsmTransition, MisterGames.BlueprintsLib
+          - _name: On Transit
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 3
+            _dataType:
+              _type: MisterGames.BlueprintLib.Character.CharacterMotionBlueprintFsmTransitionData,
+                MisterGames.BlueprintsLib
+      - key: 73
+        value:
+          _nodeId: 73
+          _node:
+            rid: 6196715695940043240
+          _position: {x: 2208.251, y: 2874.8083}
+          _ports:
+          - _name: Self
+            _mode: 22
+            _dataType:
+              _type: MisterGames.BlueprintLib.Fsm.IBlueprintFsmTransition, MisterGames.BlueprintsLib
+          - _name: On Transit
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 3
+            _dataType:
+              _type: MisterGames.BlueprintLib.Character.CharacterMotionBlueprintFsmTransitionData,
+                MisterGames.BlueprintsLib
+      - key: 74
+        value:
+          _nodeId: 74
+          _node:
+            rid: 6196715695940043242
+          _position: {x: 2209.5845, y: 2737.475}
+          _ports:
+          - _name: Self
+            _mode: 22
+            _dataType:
+              _type: MisterGames.BlueprintLib.Fsm.IBlueprintFsmTransition, MisterGames.BlueprintsLib
+          - _name: On Transit
+            _mode: 0
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 3
+            _dataType:
+              _type: MisterGames.BlueprintLib.Character.CharacterMotionBlueprintFsmTransitionData,
+                MisterGames.BlueprintsLib
+      - key: 75
+        value:
+          _nodeId: 75
+          _node:
+            rid: 6196715695940043244
+          _position: {x: 2212.9177, y: 2399.4753}
+          _ports:
+          - _name: 
+            _mode: 2
+            _dataType:
+              _type: MisterGames.BlueprintLib.Character.CharacterMotionBlueprintFsmTransitionData,
+                MisterGames.BlueprintsLib
+      - key: 76
+        value:
+          _nodeId: 76
+          _node:
+            rid: 6196715695940043245
+          _position: {x: 2876.587, y: 2459.255}
+          _ports:
+          - _name: 
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 128
+            _dataType:
+              _type: 
+      - key: 77
+        value:
+          _nodeId: 77
+          _node:
+            rid: 6196715695940043246
+          _position: {x: 2875.9204, y: 2597.255}
+          _ports:
+          - _name: 
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 128
+            _dataType:
+              _type: 
+      - key: 78
+        value:
+          _nodeId: 78
+          _node:
+            rid: 6196715695940043247
+          _position: {x: 2876.587, y: 2735.9216}
+          _ports:
+          - _name: 
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 128
+            _dataType:
+              _type: 
+      - key: 79
+        value:
+          _nodeId: 79
+          _node:
+            rid: 6196715695940043248
+          _position: {x: 2875.254, y: 2873.255}
+          _ports:
+          - _name: 
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 128
+            _dataType:
+              _type: 
+      - key: 82
+        value:
+          _nodeId: 82
+          _node:
+            rid: 6196715740304244746
+          _position: {x: 2188.8164, y: 373.615}
+          _ports:
+          - _name: Apply
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 3
+            _dataType:
+              _type: MisterGames.Character.Core2.CharacterAccess, MisterGames.Character
+      - key: 83
+        value:
+          _nodeId: 83
+          _node:
+            rid: 6196715740304244747
+          _position: {x: 2182.881, y: 1245.7157}
+          _ports:
+          - _name: Apply
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 3
+            _dataType:
+              _type: MisterGames.Character.Core2.CharacterAccess, MisterGames.Character
+      - key: 84
+        value:
+          _nodeId: 84
+          _node:
+            rid: 6196715740304244748
+          _position: {x: 2206.44, y: 2150.5737}
+          _ports:
+          - _name: Apply
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 3
+            _dataType:
+              _type: MisterGames.Character.Core2.CharacterAccess, MisterGames.Character
+      - key: 85
+        value:
+          _nodeId: 85
+          _node:
+            rid: 6196715740304244749
+          _position: {x: 2210.0913, y: 3041.8867}
+          _ports:
+          - _name: Apply
+            _mode: 1
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 3
+            _dataType:
+              _type: MisterGames.Character.Core2.CharacterAccess, MisterGames.Character
+    _fromNodePortLinksMap:
+      _entries:
+      - key: 3
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 1
+              portIndex: 0
+      - key: 1
+        value:
+          _entries:
+          - key: 2
+            value:
+            - nodeId: 81
+              portIndex: 0
+          - key: 1
+            value:
+            - nodeId: 6
+              portIndex: 0
+            - nodeId: 8
+              portIndex: 0
+            - nodeId: 10
+              portIndex: 0
+            - nodeId: 9
+              portIndex: 0
+      - key: 6
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 12
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 11
+              portIndex: 0
+      - key: 8
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 13
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 11
+              portIndex: 0
+      - key: 10
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 14
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 11
+              portIndex: 0
+      - key: 9
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 15
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 11
+              portIndex: 0
+      - key: 16
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 17
+              portIndex: 0
+      - key: 47
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 53
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 49
+              portIndex: 0
+      - key: 46
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 51
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 49
+              portIndex: 0
+      - key: 45
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 50
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 49
+              portIndex: 0
+      - key: 42
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 45
+              portIndex: 0
+            - nodeId: 46
+              portIndex: 0
+            - nodeId: 48
+              portIndex: 0
+            - nodeId: 47
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 83
+              portIndex: 0
+      - key: 41
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 42
+              portIndex: 0
+      - key: 17
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 32
+              portIndex: 0
+            - nodeId: 33
+              portIndex: 0
+            - nodeId: 35
+              portIndex: 0
+            - nodeId: 34
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 82
+              portIndex: 0
+      - key: 32
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 37
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 36
+              portIndex: 0
+      - key: 33
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 38
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 36
+              portIndex: 0
+      - key: 34
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 40
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 36
+              portIndex: 0
+      - key: 35
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 39
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 36
+              portIndex: 0
+      - key: 48
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 52
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 49
+              portIndex: 0
+      - key: 54
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 55
+              portIndex: 0
+      - key: 55
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 58
+              portIndex: 0
+            - nodeId: 59
+              portIndex: 0
+            - nodeId: 61
+              portIndex: 0
+            - nodeId: 60
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 84
+              portIndex: 0
+      - key: 58
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 63
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 62
+              portIndex: 0
+      - key: 59
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 64
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 62
+              portIndex: 0
+      - key: 60
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 66
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 62
+              portIndex: 0
+      - key: 61
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 65
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 62
+              portIndex: 0
+      - key: 67
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 68
+              portIndex: 0
+      - key: 68
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 71
+              portIndex: 0
+            - nodeId: 72
+              portIndex: 0
+            - nodeId: 74
+              portIndex: 0
+            - nodeId: 73
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 85
+              portIndex: 0
+      - key: 71
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 76
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 75
+              portIndex: 0
+      - key: 72
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 77
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 75
+              portIndex: 0
+      - key: 73
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 79
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 75
+              portIndex: 0
+      - key: 74
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 78
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 75
+              portIndex: 0
+      - key: 81
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 7
+              portIndex: 0
+      - key: 85
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 70
+              portIndex: 0
+      - key: 84
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 57
+              portIndex: 0
+      - key: 83
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 44
+              portIndex: 0
+      - key: 82
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 25
+              portIndex: 0
+      - key: 0
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 1
+              portIndex: 0
+    _addedNodesTotalCount: 86
+    _toNodePortLinksMap:
+      _entries:
+      - key: 1
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 3
+              portIndex: 0
+            - nodeId: 0
+              portIndex: 0
+      - key: 17
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 16
+              portIndex: 0
+      - key: 6
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 1
+              portIndex: 1
+      - key: 8
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 1
+              portIndex: 1
+      - key: 10
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 1
+              portIndex: 1
+      - key: 9
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 1
+              portIndex: 1
+      - key: 12
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 6
+              portIndex: 1
+      - key: 13
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 8
+              portIndex: 1
+      - key: 14
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 10
+              portIndex: 1
+      - key: 15
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 9
+              portIndex: 1
+      - key: 47
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 42
+              portIndex: 1
+      - key: 48
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 42
+              portIndex: 1
+      - key: 46
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 42
+              portIndex: 1
+      - key: 45
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 42
+              portIndex: 1
+      - key: 42
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 41
+              portIndex: 0
+      - key: 37
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 32
+              portIndex: 1
+      - key: 38
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 33
+              portIndex: 1
+      - key: 39
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 35
+              portIndex: 1
+      - key: 40
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 34
+              portIndex: 1
+      - key: 34
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 17
+              portIndex: 1
+      - key: 35
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 17
+              portIndex: 1
+      - key: 33
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 17
+              portIndex: 1
+      - key: 32
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 17
+              portIndex: 1
+      - key: 50
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 45
+              portIndex: 1
+      - key: 51
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 46
+              portIndex: 1
+      - key: 53
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 47
+              portIndex: 1
+      - key: 52
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 48
+              portIndex: 1
+      - key: 55
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 54
+              portIndex: 0
+      - key: 58
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 55
+              portIndex: 1
+      - key: 59
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 55
+              portIndex: 1
+      - key: 61
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 55
+              portIndex: 1
+      - key: 60
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 55
+              portIndex: 1
+      - key: 63
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 58
+              portIndex: 1
+      - key: 64
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 59
+              portIndex: 1
+      - key: 66
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 60
+              portIndex: 1
+      - key: 65
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 61
+              portIndex: 1
+      - key: 68
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 67
+              portIndex: 0
+      - key: 71
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 68
+              portIndex: 1
+      - key: 72
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 68
+              portIndex: 1
+      - key: 74
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 68
+              portIndex: 1
+      - key: 73
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 68
+              portIndex: 1
+      - key: 81
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 1
+              portIndex: 2
+      - key: 76
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 71
+              portIndex: 1
+      - key: 77
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 72
+              portIndex: 1
+      - key: 79
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 73
+              portIndex: 1
+      - key: 78
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 74
+              portIndex: 1
+      - key: 11
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 6
+              portIndex: 2
+            - nodeId: 8
+              portIndex: 2
+            - nodeId: 10
+              portIndex: 2
+            - nodeId: 9
+              portIndex: 2
+      - key: 7
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 81
+              portIndex: 1
+      - key: 36
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 32
+              portIndex: 2
+            - nodeId: 33
+              portIndex: 2
+            - nodeId: 35
+              portIndex: 2
+            - nodeId: 34
+              portIndex: 2
+      - key: 75
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 71
+              portIndex: 2
+            - nodeId: 72
+              portIndex: 2
+            - nodeId: 74
+              portIndex: 2
+            - nodeId: 73
+              portIndex: 2
+      - key: 62
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 60
+              portIndex: 2
+            - nodeId: 61
+              portIndex: 2
+            - nodeId: 59
+              portIndex: 2
+            - nodeId: 58
+              portIndex: 2
+      - key: 49
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 45
+              portIndex: 2
+            - nodeId: 46
+              portIndex: 2
+            - nodeId: 48
+              portIndex: 2
+            - nodeId: 47
+              portIndex: 2
+      - key: 70
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 85
+              portIndex: 1
+      - key: 85
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 68
+              portIndex: 2
+      - key: 84
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 55
+              portIndex: 2
+      - key: 57
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 84
+              portIndex: 1
+      - key: 83
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 42
+              portIndex: 2
+      - key: 44
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 83
+              portIndex: 1
+      - key: 25
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 82
+              portIndex: 1
+      - key: 82
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 17
+              portIndex: 2
+    _subgraphReferencesMap:
+      _entries: []
+  _blackboard:
+    _properties: e1537916ad4f1d6e
+    _propertiesMap:
+      _entries:
+      - key: 377050081
+        value:
+          name: Motion Transition Data
+          type:
+            _type: MisterGames.BlueprintLib.Character.CharacterMotionBlueprintFsmTransitionData,
+              MisterGames.BlueprintsLib
+      - key: 1847414701
+        value:
+          name: Character Access
+          type:
+            _type: MisterGames.Character.Core2.CharacterAccess, MisterGames.Character
+    _bools:
+      _entries: []
+    _ints:
+      _entries: []
+    _longs:
+      _entries: []
+    _floats:
+      _entries: []
+    _doubles:
+      _entries: []
+    _strings:
+      _entries: []
+    _vectors2Int:
+      _entries: []
+    _vectors3Int:
+      _entries: []
+    _vectors2:
+      _entries: []
+    _vectors3:
+      _entries: []
+    _vectors4:
+      _entries: []
+    _quaternions:
+      _entries: []
+    _colors:
+      _entries: []
+    _layerMasks:
+      _entries: []
+    _curves:
+      _entries: []
+    _objects:
+      _entries:
+      - key: 1847414701
+        value:
+          value: {fileID: 0}
+    _enums:
+      _entries: []
+    _references:
+      _entries:
+      - key: 377050081
+        value:
+          value:
+            rid: 6196715695940043251
+    _boolArrays:
+      _entries: []
+    _intArrays:
+      _entries: []
+    _longArrays:
+      _entries: []
+    _floatArrays:
+      _entries: []
+    _doubleArrays:
+      _entries: []
+    _stringArrays:
+      _entries: []
+    _vectors2IntArrays:
+      _entries: []
+    _vectors3IntArrays:
+      _entries: []
+    _vectors2Arrays:
+      _entries: []
+    _vectors3Arrays:
+      _entries: []
+    _vectors4Arrays:
+      _entries: []
+    _quaternionArrays:
+      _entries: []
+    _colorArrays:
+      _entries: []
+    _layerMaskArrays:
+      _entries: []
+    _curveArrays:
+      _entries: []
+    _objectArrays:
+      _entries: []
+    _enumArrays:
+      _entries: []
+    _referenceArrays:
+      _entries: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 6196715695940042752
+      type: {class: BlueprintNodeStart, ns: MisterGames.Blueprints.Nodes, asm: MisterGames.Blueprints}
+    - rid: 6196715695940042753
+      type: {class: BlueprintNodeFsmState, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+    - rid: 6196715695940042755
+      type: {class: BlueprintNodeGotoExit, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _label: Idle
+    - rid: 6196715695940042759
+      type: {class: BlueprintNodeFsmTransition, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _transition:
+          rid: 6196715695940042787
+    - rid: 6196715695940042763
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: 1847414701
+    - rid: 6196715695940042787
+      type: {class: CharacterMotionBlueprintFsmTransition, ns: MisterGames.BlueprintLib.Character, asm: MisterGames.BlueprintsLib}
+      data:
+        _isMotionActive:
+          _hasValue: 1
+          _value: 1
+        _isRunActive:
+          _hasValue: 1
+          _value: 0
+        _isCrouchActive:
+          _hasValue: 1
+          _value: 0
+        _isGrounded:
+          _hasValue: 1
+          _value: 1
+    - rid: 6196715695940043158
+      type: {class: BlueprintNodeFsmTransition, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _transition:
+          rid: 6196715695940043159
+    - rid: 6196715695940043159
+      type: {class: CharacterMotionBlueprintFsmTransition, ns: MisterGames.BlueprintLib.Character, asm: MisterGames.BlueprintsLib}
+      data:
+        _isMotionActive:
+          _hasValue: 1
+          _value: 1
+        _isRunActive:
+          _hasValue: 1
+          _value: 1
+        _isCrouchActive:
+          _hasValue: 1
+          _value: 0
+        _isGrounded:
+          _hasValue: 1
+          _value: 1
+    - rid: 6196715695940043160
+      type: {class: BlueprintNodeFsmTransition, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _transition:
+          rid: 6196715695940043161
+    - rid: 6196715695940043161
+      type: {class: CharacterMotionBlueprintFsmTransition, ns: MisterGames.BlueprintLib.Character, asm: MisterGames.BlueprintsLib}
+      data:
+        _isMotionActive:
+          _hasValue: 0
+          _value: 0
+        _isRunActive:
+          _hasValue: 0
+          _value: 0
+        _isCrouchActive:
+          _hasValue: 0
+          _value: 0
+        _isGrounded:
+          _hasValue: 1
+          _value: 0
+    - rid: 6196715695940043162
+      type: {class: BlueprintNodeFsmTransition, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _transition:
+          rid: 6196715695940043163
+    - rid: 6196715695940043163
+      type: {class: CharacterMotionBlueprintFsmTransition, ns: MisterGames.BlueprintLib.Character, asm: MisterGames.BlueprintsLib}
+      data:
+        _isMotionActive:
+          _hasValue: 1
+          _value: 1
+        _isRunActive:
+          _hasValue: 0
+          _value: 0
+        _isCrouchActive:
+          _hasValue: 1
+          _value: 1
+        _isGrounded:
+          _hasValue: 1
+          _value: 1
+    - rid: 6196715695940043164
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: 377050081
+    - rid: 6196715695940043165
+      type: {class: BlueprintNodeGoto, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _label: Walk
+    - rid: 6196715695940043166
+      type: {class: BlueprintNodeGoto, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _label: Run
+    - rid: 6196715695940043167
+      type: {class: BlueprintNodeGoto, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _label: Crouch
+    - rid: 6196715695940043168
+      type: {class: BlueprintNodeGoto, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _label: Jump
+    - rid: 6196715695940043169
+      type: {class: BlueprintNodeGotoExit, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _label: Walk
+    - rid: 6196715695940043170
+      type: {class: BlueprintNodeFsmState, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+    - rid: 6196715695940043178
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: 1847414701
+    - rid: 6196715695940043185
+      type: {class: BlueprintNodeFsmTransition, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _transition:
+          rid: 6196715695940043186
+    - rid: 6196715695940043186
+      type: {class: CharacterMotionBlueprintFsmTransition, ns: MisterGames.BlueprintLib.Character, asm: MisterGames.BlueprintsLib}
+      data:
+        _isMotionActive:
+          _hasValue: 1
+          _value: 0
+        _isRunActive:
+          _hasValue: 0
+          _value: 0
+        _isCrouchActive:
+          _hasValue: 0
+          _value: 0
+        _isGrounded:
+          _hasValue: 1
+          _value: 1
+    - rid: 6196715695940043187
+      type: {class: BlueprintNodeFsmTransition, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _transition:
+          rid: 6196715695940043188
+    - rid: 6196715695940043188
+      type: {class: CharacterMotionBlueprintFsmTransition, ns: MisterGames.BlueprintLib.Character, asm: MisterGames.BlueprintsLib}
+      data:
+        _isMotionActive:
+          _hasValue: 1
+          _value: 1
+        _isRunActive:
+          _hasValue: 1
+          _value: 1
+        _isCrouchActive:
+          _hasValue: 1
+          _value: 0
+        _isGrounded:
+          _hasValue: 1
+          _value: 1
+    - rid: 6196715695940043189
+      type: {class: BlueprintNodeFsmTransition, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _transition:
+          rid: 6196715695940043190
+    - rid: 6196715695940043190
+      type: {class: CharacterMotionBlueprintFsmTransition, ns: MisterGames.BlueprintLib.Character, asm: MisterGames.BlueprintsLib}
+      data:
+        _isMotionActive:
+          _hasValue: 0
+          _value: 0
+        _isRunActive:
+          _hasValue: 0
+          _value: 0
+        _isCrouchActive:
+          _hasValue: 0
+          _value: 0
+        _isGrounded:
+          _hasValue: 1
+          _value: 0
+    - rid: 6196715695940043191
+      type: {class: BlueprintNodeFsmTransition, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _transition:
+          rid: 6196715695940043192
+    - rid: 6196715695940043192
+      type: {class: CharacterMotionBlueprintFsmTransition, ns: MisterGames.BlueprintLib.Character, asm: MisterGames.BlueprintsLib}
+      data:
+        _isMotionActive:
+          _hasValue: 1
+          _value: 1
+        _isRunActive:
+          _hasValue: 0
+          _value: 0
+        _isCrouchActive:
+          _hasValue: 1
+          _value: 1
+        _isGrounded:
+          _hasValue: 1
+          _value: 1
+    - rid: 6196715695940043193
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: 377050081
+    - rid: 6196715695940043194
+      type: {class: BlueprintNodeGoto, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _label: Idle
+    - rid: 6196715695940043195
+      type: {class: BlueprintNodeGoto, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _label: Run
+    - rid: 6196715695940043196
+      type: {class: BlueprintNodeGoto, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _label: Crouch
+    - rid: 6196715695940043197
+      type: {class: BlueprintNodeGoto, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _label: Jump
+    - rid: 6196715695940043198
+      type: {class: BlueprintNodeGotoExit, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _label: Run
+    - rid: 6196715695940043199
+      type: {class: BlueprintNodeFsmState, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+    - rid: 6196715695940043201
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: 1847414701
+    - rid: 6196715695940043202
+      type: {class: BlueprintNodeFsmTransition, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _transition:
+          rid: 6196715695940043203
+    - rid: 6196715695940043203
+      type: {class: CharacterMotionBlueprintFsmTransition, ns: MisterGames.BlueprintLib.Character, asm: MisterGames.BlueprintsLib}
+      data:
+        _isMotionActive:
+          _hasValue: 1
+          _value: 0
+        _isRunActive:
+          _hasValue: 0
+          _value: 0
+        _isCrouchActive:
+          _hasValue: 0
+          _value: 0
+        _isGrounded:
+          _hasValue: 1
+          _value: 1
+    - rid: 6196715695940043204
+      type: {class: BlueprintNodeFsmTransition, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _transition:
+          rid: 6196715695940043205
+    - rid: 6196715695940043205
+      type: {class: CharacterMotionBlueprintFsmTransition, ns: MisterGames.BlueprintLib.Character, asm: MisterGames.BlueprintsLib}
+      data:
+        _isMotionActive:
+          _hasValue: 1
+          _value: 1
+        _isRunActive:
+          _hasValue: 1
+          _value: 0
+        _isCrouchActive:
+          _hasValue: 1
+          _value: 0
+        _isGrounded:
+          _hasValue: 1
+          _value: 1
+    - rid: 6196715695940043206
+      type: {class: BlueprintNodeFsmTransition, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _transition:
+          rid: 6196715695940043207
+    - rid: 6196715695940043207
+      type: {class: CharacterMotionBlueprintFsmTransition, ns: MisterGames.BlueprintLib.Character, asm: MisterGames.BlueprintsLib}
+      data:
+        _isMotionActive:
+          _hasValue: 0
+          _value: 0
+        _isRunActive:
+          _hasValue: 0
+          _value: 0
+        _isCrouchActive:
+          _hasValue: 0
+          _value: 0
+        _isGrounded:
+          _hasValue: 1
+          _value: 0
+    - rid: 6196715695940043208
+      type: {class: BlueprintNodeFsmTransition, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _transition:
+          rid: 6196715695940043209
+    - rid: 6196715695940043209
+      type: {class: CharacterMotionBlueprintFsmTransition, ns: MisterGames.BlueprintLib.Character, asm: MisterGames.BlueprintsLib}
+      data:
+        _isMotionActive:
+          _hasValue: 1
+          _value: 1
+        _isRunActive:
+          _hasValue: 0
+          _value: 0
+        _isCrouchActive:
+          _hasValue: 1
+          _value: 1
+        _isGrounded:
+          _hasValue: 1
+          _value: 1
+    - rid: 6196715695940043210
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: 377050081
+    - rid: 6196715695940043211
+      type: {class: BlueprintNodeGoto, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _label: Idle
+    - rid: 6196715695940043212
+      type: {class: BlueprintNodeGoto, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _label: Walk
+    - rid: 6196715695940043213
+      type: {class: BlueprintNodeGoto, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _label: Crouch
+    - rid: 6196715695940043214
+      type: {class: BlueprintNodeGoto, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _label: Jump
+    - rid: 6196715695940043215
+      type: {class: BlueprintNodeGotoExit, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _label: Crouch
+    - rid: 6196715695940043216
+      type: {class: BlueprintNodeFsmState, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+    - rid: 6196715695940043218
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: 1847414701
+    - rid: 6196715695940043219
+      type: {class: BlueprintNodeFsmTransition, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _transition:
+          rid: 6196715695940043220
+    - rid: 6196715695940043220
+      type: {class: CharacterMotionBlueprintFsmTransition, ns: MisterGames.BlueprintLib.Character, asm: MisterGames.BlueprintsLib}
+      data:
+        _isMotionActive:
+          _hasValue: 1
+          _value: 0
+        _isRunActive:
+          _hasValue: 0
+          _value: 0
+        _isCrouchActive:
+          _hasValue: 0
+          _value: 0
+        _isGrounded:
+          _hasValue: 1
+          _value: 1
+    - rid: 6196715695940043221
+      type: {class: BlueprintNodeFsmTransition, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _transition:
+          rid: 6196715695940043222
+    - rid: 6196715695940043222
+      type: {class: CharacterMotionBlueprintFsmTransition, ns: MisterGames.BlueprintLib.Character, asm: MisterGames.BlueprintsLib}
+      data:
+        _isMotionActive:
+          _hasValue: 1
+          _value: 1
+        _isRunActive:
+          _hasValue: 1
+          _value: 0
+        _isCrouchActive:
+          _hasValue: 1
+          _value: 0
+        _isGrounded:
+          _hasValue: 1
+          _value: 1
+    - rid: 6196715695940043223
+      type: {class: BlueprintNodeFsmTransition, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _transition:
+          rid: 6196715695940043224
+    - rid: 6196715695940043224
+      type: {class: CharacterMotionBlueprintFsmTransition, ns: MisterGames.BlueprintLib.Character, asm: MisterGames.BlueprintsLib}
+      data:
+        _isMotionActive:
+          _hasValue: 0
+          _value: 0
+        _isRunActive:
+          _hasValue: 0
+          _value: 0
+        _isCrouchActive:
+          _hasValue: 0
+          _value: 0
+        _isGrounded:
+          _hasValue: 1
+          _value: 0
+    - rid: 6196715695940043225
+      type: {class: BlueprintNodeFsmTransition, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _transition:
+          rid: 6196715695940043226
+    - rid: 6196715695940043226
+      type: {class: CharacterMotionBlueprintFsmTransition, ns: MisterGames.BlueprintLib.Character, asm: MisterGames.BlueprintsLib}
+      data:
+        _isMotionActive:
+          _hasValue: 1
+          _value: 1
+        _isRunActive:
+          _hasValue: 1
+          _value: 1
+        _isCrouchActive:
+          _hasValue: 1
+          _value: 0
+        _isGrounded:
+          _hasValue: 1
+          _value: 1
+    - rid: 6196715695940043227
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: 377050081
+    - rid: 6196715695940043228
+      type: {class: BlueprintNodeGoto, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _label: Idle
+    - rid: 6196715695940043229
+      type: {class: BlueprintNodeGoto, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _label: Walk
+    - rid: 6196715695940043230
+      type: {class: BlueprintNodeGoto, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _label: Run
+    - rid: 6196715695940043231
+      type: {class: BlueprintNodeGoto, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _label: Jump
+    - rid: 6196715695940043232
+      type: {class: BlueprintNodeGotoExit, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _label: Jump
+    - rid: 6196715695940043233
+      type: {class: BlueprintNodeFsmState, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+    - rid: 6196715695940043235
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: 1847414701
+    - rid: 6196715695940043236
+      type: {class: BlueprintNodeFsmTransition, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _transition:
+          rid: 6196715695940043237
+    - rid: 6196715695940043237
+      type: {class: CharacterMotionBlueprintFsmTransition, ns: MisterGames.BlueprintLib.Character, asm: MisterGames.BlueprintsLib}
+      data:
+        _isMotionActive:
+          _hasValue: 1
+          _value: 0
+        _isRunActive:
+          _hasValue: 0
+          _value: 0
+        _isCrouchActive:
+          _hasValue: 0
+          _value: 0
+        _isGrounded:
+          _hasValue: 1
+          _value: 1
+    - rid: 6196715695940043238
+      type: {class: BlueprintNodeFsmTransition, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _transition:
+          rid: 6196715695940043239
+    - rid: 6196715695940043239
+      type: {class: CharacterMotionBlueprintFsmTransition, ns: MisterGames.BlueprintLib.Character, asm: MisterGames.BlueprintsLib}
+      data:
+        _isMotionActive:
+          _hasValue: 1
+          _value: 1
+        _isRunActive:
+          _hasValue: 1
+          _value: 0
+        _isCrouchActive:
+          _hasValue: 1
+          _value: 0
+        _isGrounded:
+          _hasValue: 1
+          _value: 1
+    - rid: 6196715695940043240
+      type: {class: BlueprintNodeFsmTransition, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _transition:
+          rid: 6196715695940043241
+    - rid: 6196715695940043241
+      type: {class: CharacterMotionBlueprintFsmTransition, ns: MisterGames.BlueprintLib.Character, asm: MisterGames.BlueprintsLib}
+      data:
+        _isMotionActive:
+          _hasValue: 1
+          _value: 1
+        _isRunActive:
+          _hasValue: 0
+          _value: 0
+        _isCrouchActive:
+          _hasValue: 1
+          _value: 1
+        _isGrounded:
+          _hasValue: 1
+          _value: 1
+    - rid: 6196715695940043242
+      type: {class: BlueprintNodeFsmTransition, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _transition:
+          rid: 6196715695940043243
+    - rid: 6196715695940043243
+      type: {class: CharacterMotionBlueprintFsmTransition, ns: MisterGames.BlueprintLib.Character, asm: MisterGames.BlueprintsLib}
+      data:
+        _isMotionActive:
+          _hasValue: 1
+          _value: 1
+        _isRunActive:
+          _hasValue: 1
+          _value: 1
+        _isCrouchActive:
+          _hasValue: 1
+          _value: 0
+        _isGrounded:
+          _hasValue: 1
+          _value: 1
+    - rid: 6196715695940043244
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: 377050081
+    - rid: 6196715695940043245
+      type: {class: BlueprintNodeGoto, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _label: Idle
+    - rid: 6196715695940043246
+      type: {class: BlueprintNodeGoto, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _label: Walk
+    - rid: 6196715695940043247
+      type: {class: BlueprintNodeGoto, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _label: Run
+    - rid: 6196715695940043248
+      type: {class: BlueprintNodeGoto, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _label: Crouch
+    - rid: 6196715695940043251
+      type: {class: CharacterMotionBlueprintFsmTransitionData, ns: MisterGames.BlueprintLib.Character, asm: MisterGames.BlueprintsLib}
+      data:
+        characterAccess: {fileID: 0}
+    - rid: 6196715740304244745
+      type: {class: BlueprintNodeApplyCharacterMotionStateSettings, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        motionStateSettings: {fileID: 11400000, guid: 01b1db9f88db14244baba77332fde3e7, type: 2}
+    - rid: 6196715740304244746
+      type: {class: BlueprintNodeApplyCharacterMotionStateSettings, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        motionStateSettings: {fileID: 11400000, guid: 0be999b77626f324fa3c87354c159e7f, type: 2}
+    - rid: 6196715740304244747
+      type: {class: BlueprintNodeApplyCharacterMotionStateSettings, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        motionStateSettings: {fileID: 11400000, guid: 270e464cd59ace348bd586a34ee0d178, type: 2}
+    - rid: 6196715740304244748
+      type: {class: BlueprintNodeApplyCharacterMotionStateSettings, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        motionStateSettings: {fileID: 11400000, guid: 25192632f4426bd439e7ffe2cb8bc47f, type: 2}
+    - rid: 6196715740304244749
+      type: {class: BlueprintNodeApplyCharacterMotionStateSettings, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        motionStateSettings: {fileID: 11400000, guid: 83083a4f77ad2664e8414fcaa1fd5665, type: 2}
