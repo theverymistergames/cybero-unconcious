@@ -374,10 +374,10 @@ MonoBehaviour:
   _triggerInteraction: 1
   _hitPointElevation: 0.2
   _normalSphereCastRadius: 0.05
-  _debugDrawNormal: 1
-  _debugDrawCast: 1
-  _debugDrawHitPoint: 1
-  _debugDrawIsGroundedText: 1
+  _debugDrawNormal: 0
+  _debugDrawCast: 0
+  _debugDrawHitPoint: 0
+  _debugDrawIsGroundedText: 0
   _debugDrawIsGroundedTextOffset: {x: 0, y: 0, z: 0}
 --- !u!114 &7205586868961636116
 MonoBehaviour:
@@ -400,9 +400,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   _triggerInteraction: 1
-  _debugDrawHitPoint: 1
-  _debugDrawCast: 1
-  _debugDrawHasCeilingText: 1
+  _debugDrawHitPoint: 0
+  _debugDrawCast: 0
+  _debugDrawHasCeilingText: 0
   _debugDrawHasCeilingTextOffset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &7205586869188020231
 GameObject:

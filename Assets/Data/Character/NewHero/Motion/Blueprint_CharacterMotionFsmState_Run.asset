@@ -395,138 +395,6 @@ MonoBehaviour:
             _options: 0
             _dataType:
               _type: 
-      - key: 37
-        value:
-          _nodeId: 37
-          _node:
-            rid: 6196715892176322756
-          _position: {x: 574, y: -36.413315}
-          _ports:
-          - _name: 
-            _mode: 1
-            _options: 0
-            _dataType:
-              _type: 
-          - _name: Text
-            _mode: 3
-            _options: 0
-            _dataType:
-              _type: System.String, mscorlib
-          - _name: 
-            _mode: 0
-            _options: 0
-            _dataType:
-              _type: 
-      - key: 38
-        value:
-          _nodeId: 38
-          _node:
-            rid: 6196715892176322757
-          _position: {x: 575, y: 60.666656}
-          _ports:
-          - _name: 
-            _mode: 1
-            _options: 0
-            _dataType:
-              _type: 
-          - _name: Text
-            _mode: 3
-            _options: 0
-            _dataType:
-              _type: System.String, mscorlib
-          - _name: 
-            _mode: 0
-            _options: 0
-            _dataType:
-              _type: 
-      - key: 39
-        value:
-          _nodeId: 39
-          _node:
-            rid: 6196715892176322758
-          _position: {x: 1508.4066, y: 162.49968}
-          _ports:
-          - _name: 
-            _mode: 1
-            _options: 0
-            _dataType:
-              _type: 
-          - _name: Text
-            _mode: 3
-            _options: 0
-            _dataType:
-              _type: System.String, mscorlib
-          - _name: 
-            _mode: 0
-            _options: 0
-            _dataType:
-              _type: 
-      - key: 40
-        value:
-          _nodeId: 40
-          _node:
-            rid: 6196715892176322759
-          _position: {x: 1509.7401, y: 575.833}
-          _ports:
-          - _name: 
-            _mode: 1
-            _options: 0
-            _dataType:
-              _type: 
-          - _name: Text
-            _mode: 3
-            _options: 0
-            _dataType:
-              _type: System.String, mscorlib
-          - _name: 
-            _mode: 0
-            _options: 0
-            _dataType:
-              _type: 
-      - key: 41
-        value:
-          _nodeId: 41
-          _node:
-            rid: 6196715892176322760
-          _position: {x: 1502.0332, y: 1017.41675}
-          _ports:
-          - _name: 
-            _mode: 1
-            _options: 0
-            _dataType:
-              _type: 
-          - _name: Text
-            _mode: 3
-            _options: 0
-            _dataType:
-              _type: System.String, mscorlib
-          - _name: 
-            _mode: 0
-            _options: 0
-            _dataType:
-              _type: 
-      - key: 42
-        value:
-          _nodeId: 42
-          _node:
-            rid: 6196715892176322761
-          _position: {x: 1497.1418, y: 1263.8784}
-          _ports:
-          - _name: 
-            _mode: 1
-            _options: 0
-            _dataType:
-              _type: 
-          - _name: Text
-            _mode: 3
-            _options: 0
-            _dataType:
-              _type: System.String, mscorlib
-          - _name: 
-            _mode: 0
-            _options: 0
-            _dataType:
-              _type: 
     _fromNodePortLinksMap:
       _entries:
       - key: 1
@@ -540,13 +408,7 @@ MonoBehaviour:
               portIndex: 0
           - key: 2
             value:
-            - nodeId: 37
-              portIndex: 0
             - nodeId: 6
-              portIndex: 0
-          - key: 3
-            value:
-            - nodeId: 38
               portIndex: 0
       - key: 6
         value:
@@ -560,8 +422,6 @@ MonoBehaviour:
           _entries:
           - key: 1
             value:
-            - nodeId: 41
-              portIndex: 0
             - nodeId: 36
               portIndex: 0
           - key: 2
@@ -573,8 +433,6 @@ MonoBehaviour:
           _entries:
           - key: 1
             value:
-            - nodeId: 42
-              portIndex: 0
             - nodeId: 30
               portIndex: 0
           - key: 2
@@ -586,8 +444,6 @@ MonoBehaviour:
           _entries:
           - key: 1
             value:
-            - nodeId: 39
-              portIndex: 0
             - nodeId: 31
               portIndex: 0
           - key: 2
@@ -625,8 +481,6 @@ MonoBehaviour:
               portIndex: 0
           - key: 1
             value:
-            - nodeId: 40
-              portIndex: 0
             - nodeId: 33
               portIndex: 0
       - key: 36
@@ -741,48 +595,6 @@ MonoBehaviour:
             value:
             - nodeId: 36
               portIndex: 5
-      - key: 37
-        value:
-          _entries:
-          - key: 0
-            value:
-            - nodeId: 1
-              portIndex: 2
-      - key: 38
-        value:
-          _entries:
-          - key: 0
-            value:
-            - nodeId: 1
-              portIndex: 3
-      - key: 39
-        value:
-          _entries:
-          - key: 0
-            value:
-            - nodeId: 20
-              portIndex: 1
-      - key: 40
-        value:
-          _entries:
-          - key: 0
-            value:
-            - nodeId: 32
-              portIndex: 1
-      - key: 41
-        value:
-          _entries:
-          - key: 0
-            value:
-            - nodeId: 22
-              portIndex: 1
-      - key: 42
-        value:
-          _entries:
-          - key: 0
-            value:
-            - nodeId: 24
-              portIndex: 1
       - key: 1
         value:
           _entries:
@@ -1115,39 +927,3 @@ MonoBehaviour:
         _applyActions:
         - {fileID: 11400000, guid: c3dd919a540e8c44685d9aaf19cd047c, type: 2}
         _releaseActions: []
-    - rid: 6196715892176322756
-      type: {class: BlueprintNodeLog, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
-      data:
-        _level: 0
-        _color: {r: 1, g: 1, b: 1, a: 1}
-        _defaultText: 'State entered: Run'
-    - rid: 6196715892176322757
-      type: {class: BlueprintNodeLog, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
-      data:
-        _level: 0
-        _color: {r: 1, g: 1, b: 1, a: 1}
-        _defaultText: 'State exited: Run'
-    - rid: 6196715892176322758
-      type: {class: BlueprintNodeLog, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
-      data:
-        _level: 0
-        _color: {r: 1, g: 1, b: 1, a: 1}
-        _defaultText: 'Transition fired: Run to Crouch'
-    - rid: 6196715892176322759
-      type: {class: BlueprintNodeLog, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
-      data:
-        _level: 0
-        _color: {r: 1, g: 1, b: 1, a: 1}
-        _defaultText: 'Transition fired: Run to Walk'
-    - rid: 6196715892176322760
-      type: {class: BlueprintNodeLog, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
-      data:
-        _level: 0
-        _color: {r: 1, g: 1, b: 1, a: 1}
-        _defaultText: 'Transition fired: Run to InAir_Stand'
-    - rid: 6196715892176322761
-      type: {class: BlueprintNodeLog, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
-      data:
-        _level: 0
-        _color: {r: 1, g: 1, b: 1, a: 1}
-        _defaultText: 'Transition fired: Run to InAir_Crouch'
