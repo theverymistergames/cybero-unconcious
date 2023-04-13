@@ -1,0 +1,1296 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95aa8f7d5aa490e9877070cd957eaff, type: 3}
+  m_Name: Blueprint_CharacterMotionFsmState_Want_Stand
+  m_EditorClassIdentifier: 
+  _blueprintMeta:
+    _nodesMap:
+      _entries:
+      - key: 17
+        value:
+          _nodeId: 17
+          _node:
+            rid: 6196715892176322584
+          _position: {x: 40.48189, y: 262.9916}
+          _ports:
+          - _name: 
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: Want_Stand
+            _mode: 1
+            _options: 3
+            _dataType:
+              _type: 
+      - key: 1
+        value:
+          _nodeId: 1
+          _node:
+            rid: 6196715892176322561
+          _position: {x: 307.14856, y: 264.9916}
+          _ports:
+          - _name: Enter
+            _mode: 1
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: Transitions
+            _mode: 43
+            _options: 0
+            _dataType:
+              _type: MisterGames.Common.Conditions.ICondition, MisterGames.Common
+          - _name: On Enter
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: On Exit
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+      - key: 3
+        value:
+          _nodeId: 3
+          _node:
+            rid: 6196715892176322564
+          _position: {x: 518.0133, y: 202.21776}
+          _ports:
+          - _name: 
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Core2.Access.CharacterAccess, MisterGames.Character
+      - key: 22
+        value:
+          _nodeId: 22
+          _node:
+            rid: 6196715892176322596
+          _position: {x: 520.941, y: 538.6284}
+          _ports:
+          - _name: Self
+            _mode: 22
+            _options: 0
+            _dataType:
+              _type: MisterGames.Common.Conditions.ICondition, MisterGames.Common
+          - _name: On Transit
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Core2.Access.CharacterAccess, MisterGames.Character
+      - key: 20
+        value:
+          _nodeId: 20
+          _node:
+            rid: 6196715892176322593
+          _position: {x: 515.649, y: 266.6394}
+          _ports:
+          - _name: Self
+            _mode: 22
+            _options: 0
+            _dataType:
+              _type: MisterGames.Common.Conditions.ICondition, MisterGames.Common
+          - _name: On Transit
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Core2.Access.CharacterAccess, MisterGames.Character
+      - key: 23
+        value:
+          _nodeId: 23
+          _node:
+            rid: 6196715892176322598
+          _position: {x: 2136.7927, y: 536.02057}
+          _ports:
+          - _name: 
+            _mode: 1
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: Walk
+            _mode: 0
+            _options: 3
+            _dataType:
+              _type: 
+      - key: 24
+        value:
+          _nodeId: 24
+          _node:
+            rid: 6196715892176322599
+          _position: {x: 514.775, y: 1423.3766}
+          _ports:
+          - _name: Self
+            _mode: 22
+            _options: 0
+            _dataType:
+              _type: MisterGames.Common.Conditions.ICondition, MisterGames.Common
+          - _name: On Transit
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Core2.Access.CharacterAccess, MisterGames.Character
+      - key: 25
+        value:
+          _nodeId: 25
+          _node:
+            rid: 6196715892176322601
+          _position: {x: 2048.4, y: 1422.3373}
+          _ports:
+          - _name: 
+            _mode: 1
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: InAir_Stand
+            _mode: 0
+            _options: 3
+            _dataType:
+              _type: 
+      - key: 29
+        value:
+          _nodeId: 29
+          _node:
+            rid: 6196715892176322612
+          _position: {x: 1371.2032, y: 269.37665}
+          _ports:
+          - _name: 
+            _mode: 1
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: Crouch
+            _mode: 0
+            _options: 3
+            _dataType:
+              _type: 
+      - key: 30
+        value:
+          _nodeId: 30
+          _node:
+            rid: 6196715892176322613
+          _position: {x: 1383.7332, y: 1422.3373}
+          _ports:
+          - _name: Apply
+            _mode: 1
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: Release
+            _mode: 1
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Core2.Access.CharacterAccess, MisterGames.Character
+          - _name: Apply Set
+            _mode: 11
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Core2.Actions.CharacterChangeSet, MisterGames.Character
+          - _name: Release Set
+            _mode: 11
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Core2.Actions.CharacterChangeSet, MisterGames.Character
+          - _name: On Apply
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: On Release
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+      - key: 34
+        value:
+          _nodeId: 34
+          _node:
+            rid: 6196715892176322642
+          _position: {x: 1473.4592, y: 538.6872}
+          _ports:
+          - _name: Apply
+            _mode: 1
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: Release
+            _mode: 1
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Core2.Access.CharacterAccess, MisterGames.Character
+          - _name: Apply Set
+            _mode: 11
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Core2.Actions.CharacterChangeSet, MisterGames.Character
+          - _name: Release Set
+            _mode: 11
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Core2.Actions.CharacterChangeSet, MisterGames.Character
+          - _name: On Apply
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: On Release
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+      - key: 35
+        value:
+          _nodeId: 35
+          _node:
+            rid: 6196715892176322655
+          _position: {x: 516.6746, y: 1015.8274}
+          _ports:
+          - _name: Self
+            _mode: 22
+            _options: 0
+            _dataType:
+              _type: MisterGames.Common.Conditions.ICondition, MisterGames.Common
+          - _name: On Transit
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Core2.Access.CharacterAccess, MisterGames.Character
+      - key: 36
+        value:
+          _nodeId: 36
+          _node:
+            rid: 6196715892176322661
+          _position: {x: 1385.9841, y: 1018.08636}
+          _ports:
+          - _name: Apply
+            _mode: 1
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: Release
+            _mode: 1
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Core2.Access.CharacterAccess, MisterGames.Character
+          - _name: Apply Set
+            _mode: 11
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Core2.Actions.CharacterChangeSet, MisterGames.Character
+          - _name: Release Set
+            _mode: 11
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Core2.Actions.CharacterChangeSet, MisterGames.Character
+          - _name: On Apply
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: On Release
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+      - key: 37
+        value:
+          _nodeId: 37
+          _node:
+            rid: 6196715892176322662
+          _position: {x: 2055.9841, y: 1018.753}
+          _ports:
+          - _name: 
+            _mode: 1
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: Run
+            _mode: 0
+            _options: 3
+            _dataType:
+              _type: 
+      - key: 38
+        value:
+          _nodeId: 38
+          _node:
+            rid: 6196715892176322665
+          _position: {x: 516.9176, y: 1694.1567}
+          _ports:
+          - _name: Self
+            _mode: 22
+            _options: 0
+            _dataType:
+              _type: MisterGames.Common.Conditions.ICondition, MisterGames.Common
+          - _name: On Transit
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Core2.Access.CharacterAccess, MisterGames.Character
+      - key: 39
+        value:
+          _nodeId: 39
+          _node:
+            rid: 6196715892176322669
+          _position: {x: 1385.5842, y: 1694.1567}
+          _ports:
+          - _name: Apply
+            _mode: 1
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: Release
+            _mode: 1
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Core2.Access.CharacterAccess, MisterGames.Character
+          - _name: Apply Set
+            _mode: 11
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Core2.Actions.CharacterChangeSet, MisterGames.Character
+          - _name: Release Set
+            _mode: 11
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Core2.Actions.CharacterChangeSet, MisterGames.Character
+          - _name: On Apply
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: On Release
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+      - key: 40
+        value:
+          _nodeId: 40
+          _node:
+            rid: 6196715892176322670
+          _position: {x: 2050.251, y: 1693.4901}
+          _ports:
+          - _name: 
+            _mode: 1
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: InAir_Crouch
+            _mode: 0
+            _options: 3
+            _dataType:
+              _type: 
+      - key: 42
+        value:
+          _nodeId: 42
+          _node:
+            rid: 6196715892176322767
+          _position: {x: 571, y: -4.8533325}
+          _ports:
+          - _name: 
+            _mode: 1
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: Text
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: System.String, mscorlib
+          - _name: 
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+      - key: 43
+        value:
+          _nodeId: 43
+          _node:
+            rid: 6196715892176322768
+          _position: {x: 570, y: 95.33331}
+          _ports:
+          - _name: 
+            _mode: 1
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: Text
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: System.String, mscorlib
+          - _name: 
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+      - key: 44
+        value:
+          _nodeId: 44
+          _node:
+            rid: 6196715892176322769
+          _position: {x: 1372.5366, y: 168.04332}
+          _ports:
+          - _name: 
+            _mode: 1
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: Text
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: System.String, mscorlib
+          - _name: 
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+      - key: 45
+        value:
+          _nodeId: 45
+          _node:
+            rid: 6196715892176322770
+          _position: {x: 1471.4592, y: 438.02054}
+          _ports:
+          - _name: 
+            _mode: 1
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: Text
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: System.String, mscorlib
+          - _name: 
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+      - key: 46
+        value:
+          _nodeId: 46
+          _node:
+            rid: 6196715892176322771
+          _position: {x: 1472.996, y: 916.17267}
+          _ports:
+          - _name: 
+            _mode: 1
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: Text
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: System.String, mscorlib
+          - _name: 
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+      - key: 47
+        value:
+          _nodeId: 47
+          _node:
+            rid: 6196715892176322772
+          _position: {x: 1390.3998, y: 1325.6707}
+          _ports:
+          - _name: 
+            _mode: 1
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: Text
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: System.String, mscorlib
+          - _name: 
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+      - key: 48
+        value:
+          _nodeId: 48
+          _node:
+            rid: 6196715892176322773
+          _position: {x: 1388.9176, y: 1600.8235}
+          _ports:
+          - _name: 
+            _mode: 1
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: Text
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: System.String, mscorlib
+          - _name: 
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+    _fromNodePortLinksMap:
+      _entries:
+      - key: 17
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 1
+              portIndex: 0
+      - key: 1
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 20
+              portIndex: 0
+            - nodeId: 22
+              portIndex: 0
+            - nodeId: 35
+              portIndex: 0
+            - nodeId: 24
+              portIndex: 0
+            - nodeId: 38
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 42
+              portIndex: 0
+          - key: 3
+            value:
+            - nodeId: 43
+              portIndex: 0
+      - key: 22
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 45
+              portIndex: 0
+            - nodeId: 34
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 3
+              portIndex: 0
+      - key: 24
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 47
+              portIndex: 0
+            - nodeId: 30
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 3
+              portIndex: 0
+      - key: 20
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 44
+              portIndex: 0
+            - nodeId: 29
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 3
+              portIndex: 0
+      - key: 30
+        value:
+          _entries:
+          - key: 2
+            value:
+            - nodeId: 3
+              portIndex: 0
+          - key: 5
+            value:
+            - nodeId: 25
+              portIndex: 0
+      - key: 34
+        value:
+          _entries:
+          - key: 5
+            value:
+            - nodeId: 23
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 3
+              portIndex: 0
+      - key: 35
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 46
+              portIndex: 0
+            - nodeId: 36
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 3
+              portIndex: 0
+      - key: 36
+        value:
+          _entries:
+          - key: 5
+            value:
+            - nodeId: 37
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 3
+              portIndex: 0
+      - key: 38
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 48
+              portIndex: 0
+            - nodeId: 39
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 3
+              portIndex: 0
+      - key: 39
+        value:
+          _entries:
+          - key: 5
+            value:
+            - nodeId: 40
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 3
+              portIndex: 0
+    _addedNodesTotalCount: 49
+    _toNodePortLinksMap:
+      _entries:
+      - key: 1
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 17
+              portIndex: 0
+      - key: 3
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 30
+              portIndex: 2
+            - nodeId: 22
+              portIndex: 2
+            - nodeId: 24
+              portIndex: 2
+            - nodeId: 34
+              portIndex: 2
+            - nodeId: 35
+              portIndex: 2
+            - nodeId: 36
+              portIndex: 2
+            - nodeId: 38
+              portIndex: 2
+            - nodeId: 39
+              portIndex: 2
+            - nodeId: 20
+              portIndex: 2
+      - key: 20
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 1
+              portIndex: 1
+      - key: 34
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 22
+              portIndex: 1
+      - key: 30
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 24
+              portIndex: 1
+      - key: 25
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 30
+              portIndex: 5
+      - key: 23
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 34
+              portIndex: 5
+      - key: 22
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 1
+              portIndex: 1
+      - key: 24
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 1
+              portIndex: 1
+      - key: 36
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 35
+              portIndex: 1
+      - key: 37
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 36
+              portIndex: 5
+      - key: 35
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 1
+              portIndex: 1
+      - key: 39
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 38
+              portIndex: 1
+      - key: 40
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 39
+              portIndex: 5
+      - key: 38
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 1
+              portIndex: 1
+      - key: 29
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 20
+              portIndex: 1
+      - key: 42
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 1
+              portIndex: 2
+      - key: 43
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 1
+              portIndex: 3
+      - key: 44
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 20
+              portIndex: 1
+      - key: 45
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 22
+              portIndex: 1
+      - key: 46
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 35
+              portIndex: 1
+      - key: 47
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 24
+              portIndex: 1
+      - key: 48
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 38
+              portIndex: 1
+    _subgraphReferencesMap:
+      _entries: []
+  _blackboard:
+    _properties: ddb57901
+    _propertiesMap:
+      _entries:
+      - key: 24753629
+        value:
+          name: CharacterAccess
+          type:
+            _type: MisterGames.Character.Core2.Access.CharacterAccess, MisterGames.Character
+    _bools:
+      _entries: []
+    _ints:
+      _entries: []
+    _longs:
+      _entries: []
+    _floats:
+      _entries: []
+    _doubles:
+      _entries: []
+    _strings:
+      _entries: []
+    _vectors2Int:
+      _entries: []
+    _vectors3Int:
+      _entries: []
+    _vectors2:
+      _entries: []
+    _vectors3:
+      _entries: []
+    _vectors4:
+      _entries: []
+    _quaternions:
+      _entries: []
+    _colors:
+      _entries: []
+    _layerMasks:
+      _entries: []
+    _curves:
+      _entries: []
+    _objects:
+      _entries:
+      - key: 24753629
+        value:
+          value: {fileID: 0}
+    _enums:
+      _entries: []
+    _references:
+      _entries: []
+    _boolArrays:
+      _entries: []
+    _intArrays:
+      _entries: []
+    _longArrays:
+      _entries: []
+    _floatArrays:
+      _entries: []
+    _doubleArrays:
+      _entries: []
+    _stringArrays:
+      _entries: []
+    _vectors2IntArrays:
+      _entries: []
+    _vectors3IntArrays:
+      _entries: []
+    _vectors2Arrays:
+      _entries: []
+    _vectors3Arrays:
+      _entries: []
+    _vectors4Arrays:
+      _entries: []
+    _quaternionArrays:
+      _entries: []
+    _colorArrays:
+      _entries: []
+    _layerMaskArrays:
+      _entries: []
+    _curveArrays:
+      _entries: []
+    _objectArrays:
+      _entries: []
+    _enumArrays:
+      _entries: []
+    _referenceArrays:
+      _entries: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 6196715892176322561
+      type: {class: BlueprintNodeFsmState, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+    - rid: 6196715892176322564
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: 24753629
+    - rid: 6196715892176322584
+      type: {class: BlueprintNodeEnter, ns: MisterGames.Blueprints.Nodes, asm: MisterGames.Blueprints}
+      data:
+        _port: Want_Stand
+    - rid: 6196715892176322593
+      type: {class: BlueprintNodeFsmTransition, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _checkImmediatelyAfterArmed: 1
+        _condition:
+          rid: 6196715892176322651
+    - rid: 6196715892176322596
+      type: {class: BlueprintNodeFsmTransition, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _checkImmediatelyAfterArmed: 1
+        _condition:
+          rid: 6196715892176322633
+    - rid: 6196715892176322598
+      type: {class: BlueprintNodeExit, ns: MisterGames.Blueprints.Nodes, asm: MisterGames.Blueprints}
+      data:
+        _port: Walk
+    - rid: 6196715892176322599
+      type: {class: BlueprintNodeFsmTransition, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _checkImmediatelyAfterArmed: 1
+        _condition:
+          rid: 6196715892176322636
+    - rid: 6196715892176322601
+      type: {class: BlueprintNodeExit, ns: MisterGames.Blueprints.Nodes, asm: MisterGames.Blueprints}
+      data:
+        _port: InAir_Stand
+    - rid: 6196715892176322612
+      type: {class: BlueprintNodeExit, ns: MisterGames.Blueprints.Nodes, asm: MisterGames.Blueprints}
+      data:
+        _port: Crouch
+    - rid: 6196715892176322613
+      type: {class: BlueprintNodeCharacterActions, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _applyActions:
+        - {fileID: 11400000, guid: c3dd919a540e8c44685d9aaf19cd047c, type: 2}
+        _releaseActions: []
+    - rid: 6196715892176322633
+      type: {class: ConditionGroupAll, ns: MisterGames.Common.Conditions, asm: MisterGames.Common}
+      data:
+        conditions:
+        - rid: 6196715892176322654
+        - rid: 6196715892176322649
+        - rid: 6196715892176322646
+        - rid: 6196715892176322712
+    - rid: 6196715892176322636
+      type: {class: ConditionGroupAll, ns: MisterGames.Common.Conditions, asm: MisterGames.Common}
+      data:
+        conditions:
+        - rid: 6196715892176322637
+        - rid: 6196715892176322664
+    - rid: 6196715892176322637
+      type: {class: CharacterConditionIsGrounded, ns: MisterGames.Character.Core2.Collisions, asm: MisterGames.Character}
+      data:
+        isGrounded: 0
+    - rid: 6196715892176322642
+      type: {class: BlueprintNodeCharacterActions, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _applyActions:
+        - {fileID: 11400000, guid: fb2af0ff37d685c418c7836758e5ad4c, type: 2}
+        _releaseActions: []
+    - rid: 6196715892176322646
+      type: {class: CharacterConditionCrouchInput, ns: MisterGames.Character.Core2.Input, asm: MisterGames.Character}
+      data:
+        _isCrouchInputActive:
+          _hasValue: 1
+          _value: 0
+        _isCrouchInputPressed:
+          _hasValue: 1
+          _value: 0
+        _isCrouchInputReleased:
+          _hasValue: 0
+          _value: 0
+        _isCrouchInputToggled:
+          _hasValue: 1
+          _value: 0
+    - rid: 6196715892176322649
+      type: {class: CharacterConditionHasCeiling, ns: MisterGames.Character.Core2.Collisions, asm: MisterGames.Character}
+      data:
+        hasCeiling: 0
+    - rid: 6196715892176322651
+      type: {class: ConditionGroupAll, ns: MisterGames.Common.Conditions, asm: MisterGames.Common}
+      data:
+        conditions:
+        - rid: 6196715892176322652
+        - rid: 6196715892176322653
+    - rid: 6196715892176322652
+      type: {class: CharacterConditionIsGrounded, ns: MisterGames.Character.Core2.Collisions, asm: MisterGames.Character}
+      data:
+        isGrounded: 1
+    - rid: 6196715892176322653
+      type: {class: CharacterConditionCrouchInput, ns: MisterGames.Character.Core2.Input, asm: MisterGames.Character}
+      data:
+        _isCrouchInputActive:
+          _hasValue: 1
+          _value: 1
+        _isCrouchInputPressed:
+          _hasValue: 1
+          _value: 1
+        _isCrouchInputReleased:
+          _hasValue: 0
+          _value: 0
+        _isCrouchInputToggled:
+          _hasValue: 0
+          _value: 0
+    - rid: 6196715892176322654
+      type: {class: CharacterConditionIsGrounded, ns: MisterGames.Character.Core2.Collisions, asm: MisterGames.Character}
+      data:
+        isGrounded: 1
+    - rid: 6196715892176322655
+      type: {class: BlueprintNodeFsmTransition, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _checkImmediatelyAfterArmed: 0
+        _condition:
+          rid: 6196715892176322656
+    - rid: 6196715892176322656
+      type: {class: ConditionGroupAll, ns: MisterGames.Common.Conditions, asm: MisterGames.Common}
+      data:
+        conditions:
+        - rid: 6196715892176322657
+        - rid: 6196715892176322658
+        - rid: 6196715892176322659
+        - rid: 6196715892176322660
+        - rid: 6196715892176322663
+    - rid: 6196715892176322657
+      type: {class: CharacterConditionIsGrounded, ns: MisterGames.Character.Core2.Collisions, asm: MisterGames.Character}
+      data:
+        isGrounded: 1
+    - rid: 6196715892176322658
+      type: {class: CharacterConditionHasCeiling, ns: MisterGames.Character.Core2.Collisions, asm: MisterGames.Character}
+      data:
+        hasCeiling: 0
+    - rid: 6196715892176322659
+      type: {class: CharacterConditionCrouchInput, ns: MisterGames.Character.Core2.Input, asm: MisterGames.Character}
+      data:
+        _isCrouchInputActive:
+          _hasValue: 1
+          _value: 0
+        _isCrouchInputPressed:
+          _hasValue: 1
+          _value: 0
+        _isCrouchInputReleased:
+          _hasValue: 0
+          _value: 0
+        _isCrouchInputToggled:
+          _hasValue: 1
+          _value: 0
+    - rid: 6196715892176322660
+      type: {class: CharacterConditionRunInput, ns: MisterGames.Character.Core2.Input, asm: MisterGames.Character}
+      data:
+        _isRunInputToggled: 1
+    - rid: 6196715892176322661
+      type: {class: BlueprintNodeCharacterActions, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _applyActions:
+        - {fileID: 11400000, guid: fb2af0ff37d685c418c7836758e5ad4c, type: 2}
+        _releaseActions: []
+    - rid: 6196715892176322662
+      type: {class: BlueprintNodeExit, ns: MisterGames.Blueprints.Nodes, asm: MisterGames.Blueprints}
+      data:
+        _port: Run
+    - rid: 6196715892176322663
+      type: {class: CharacterConditionMotionInput, ns: MisterGames.Character.Core2.Input, asm: MisterGames.Character}
+      data:
+        _isMotionInputActive:
+          _hasValue: 0
+          _value: 0
+        _isMovingForward:
+          _hasValue: 1
+          _value: 1
+    - rid: 6196715892176322664
+      type: {class: CharacterConditionCrouchInput, ns: MisterGames.Character.Core2.Input, asm: MisterGames.Character}
+      data:
+        _isCrouchInputActive:
+          _hasValue: 1
+          _value: 0
+        _isCrouchInputPressed:
+          _hasValue: 1
+          _value: 0
+        _isCrouchInputReleased:
+          _hasValue: 0
+          _value: 0
+        _isCrouchInputToggled:
+          _hasValue: 0
+          _value: 0
+    - rid: 6196715892176322665
+      type: {class: BlueprintNodeFsmTransition, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _checkImmediatelyAfterArmed: 1
+        _condition:
+          rid: 6196715892176322666
+    - rid: 6196715892176322666
+      type: {class: ConditionGroupAll, ns: MisterGames.Common.Conditions, asm: MisterGames.Common}
+      data:
+        conditions:
+        - rid: 6196715892176322667
+        - rid: 6196715892176322668
+    - rid: 6196715892176322667
+      type: {class: CharacterConditionIsGrounded, ns: MisterGames.Character.Core2.Collisions, asm: MisterGames.Character}
+      data:
+        isGrounded: 0
+    - rid: 6196715892176322668
+      type: {class: CharacterConditionCrouchInput, ns: MisterGames.Character.Core2.Input, asm: MisterGames.Character}
+      data:
+        _isCrouchInputActive:
+          _hasValue: 1
+          _value: 1
+        _isCrouchInputPressed:
+          _hasValue: 1
+          _value: 1
+        _isCrouchInputReleased:
+          _hasValue: 0
+          _value: 0
+        _isCrouchInputToggled:
+          _hasValue: 0
+          _value: 0
+    - rid: 6196715892176322669
+      type: {class: BlueprintNodeCharacterActions, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _applyActions:
+        - {fileID: 11400000, guid: 8400d14b486655a4d8e8b1e00b9f4040, type: 2}
+        _releaseActions: []
+    - rid: 6196715892176322670
+      type: {class: BlueprintNodeExit, ns: MisterGames.Blueprints.Nodes, asm: MisterGames.Blueprints}
+      data:
+        _port: InAir_Crouch
+    - rid: 6196715892176322712
+      type: {class: ConditionGroupAny, ns: MisterGames.Common.Conditions, asm: MisterGames.Common}
+      data:
+        conditions:
+        - rid: 6196715892176322713
+        - rid: 6196715892176322714
+    - rid: 6196715892176322713
+      type: {class: CharacterConditionRunInput, ns: MisterGames.Character.Core2.Input, asm: MisterGames.Character}
+      data:
+        _isRunInputToggled: 0
+    - rid: 6196715892176322714
+      type: {class: CharacterConditionMotionInput, ns: MisterGames.Character.Core2.Input, asm: MisterGames.Character}
+      data:
+        _isMotionInputActive:
+          _hasValue: 0
+          _value: 0
+        _isMovingForward:
+          _hasValue: 1
+          _value: 0
+    - rid: 6196715892176322767
+      type: {class: BlueprintNodeLog, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _level: 0
+        _color: {r: 1, g: 1, b: 1, a: 1}
+        _defaultText: 'State entered: Want_Stand'
+    - rid: 6196715892176322768
+      type: {class: BlueprintNodeLog, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _level: 0
+        _color: {r: 1, g: 1, b: 1, a: 1}
+        _defaultText: 'State exited: Want_Stand'
+    - rid: 6196715892176322769
+      type: {class: BlueprintNodeLog, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _level: 0
+        _color: {r: 1, g: 1, b: 1, a: 1}
+        _defaultText: 'Transition fired: Want_Stand to Crouch'
+    - rid: 6196715892176322770
+      type: {class: BlueprintNodeLog, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _level: 0
+        _color: {r: 1, g: 1, b: 1, a: 1}
+        _defaultText: 'Transition fired: Want_Stand to Walk'
+    - rid: 6196715892176322771
+      type: {class: BlueprintNodeLog, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _level: 0
+        _color: {r: 1, g: 1, b: 1, a: 1}
+        _defaultText: 'Transition fired: Want_Stand to Run'
+    - rid: 6196715892176322772
+      type: {class: BlueprintNodeLog, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _level: 0
+        _color: {r: 1, g: 1, b: 1, a: 1}
+        _defaultText: 'Transition fired: Want_Stand to InAir_Stand'
+    - rid: 6196715892176322773
+      type: {class: BlueprintNodeLog, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _level: 0
+        _color: {r: 1, g: 1, b: 1, a: 1}
+        _defaultText: 'Transition fired: Want_Stand to InAir_Crouch'
