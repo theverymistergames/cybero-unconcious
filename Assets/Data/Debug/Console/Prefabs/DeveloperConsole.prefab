@@ -93,22 +93,22 @@ MonoBehaviour:
   _greeting: MisterGames Debug Console
   _activationInput: {fileID: 11400000, guid: cc25600298f40554a9241809af3f877c, type: 2}
   _consoleModules:
-  - rid: 1728865909098151936
-  - rid: 1728865909098151937
-  - rid: 1728865909098151938
-  - rid: 1728865909098151939
+  - rid: 6196715897464291347
+  - rid: 6196715897464291348
+  - rid: 6196715897464291349
+  - rid: 6196715897464291350
   references:
     version: 2
     RefIds:
-    - rid: 1728865909098151936
+    - rid: 6196715897464291347
       type: {class: HeroConsoleModule, ns: MisterGames.ConsoleCommandsLib.Modules, asm: MisterGames.ConsoleCommandsLib}
       data:
         _heroPrefab: {fileID: 7205586870401899322, guid: 8eb4ea36122b5da4da483a1b605c6cda, type: 3}
-    - rid: 1728865909098151937
+    - rid: 6196715897464291348
       type: {class: SceneConsoleModule, ns: MisterGames.ConsoleCommandsLib.Modules, asm: MisterGames.ConsoleCommandsLib}
-    - rid: 1728865909098151938
+    - rid: 6196715897464291349
       type: {class: HelpConsoleModule, ns: MisterGames.Dbg.Console.Modules, asm: MisterGames.Dbg}
-    - rid: 1728865909098151939
+    - rid: 6196715897464291350
       type: {class: TextConsoleModule, ns: MisterGames.Dbg.Console.Modules, asm: MisterGames.Dbg}
 --- !u!114 &-8721823811315351641
 MonoBehaviour:
@@ -218,6 +218,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 10000
   m_TargetDisplay: 0

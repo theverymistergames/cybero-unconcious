@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da84188c8ef43ad9337f6ac5059524e, type: 3}
+  m_Name: CharacterMotionState_Run
+  m_EditorClassIdentifier: 
+  _actions:
+  - rid: 6196715832316526592
+  - rid: 6196715832316526593
+  - rid: 6196715832316526594
+  references:
+    version: 2
+    RefIds:
+    - rid: 6196715832316526592
+      type: {class: CharacterActionSetSpeedMultiplier, ns: MisterGames.Character.Motion, asm: MisterGames.Character}
+      data:
+        speed: 4
+    - rid: 6196715832316526593
+      type: {class: CharacterActionSetSpeedCorrection, ns: MisterGames.Character.Motion, asm: MisterGames.Character}
+      data:
+        sideCorrection: 0.8
+        backCorrection: 0.6
+    - rid: 6196715832316526594
+      type: {class: CharacterActionSetJumpForceMultiplier, ns: MisterGames.Character.Jump, asm: MisterGames.Character}
+      data:
+        jumpForceMultiplier: 5
