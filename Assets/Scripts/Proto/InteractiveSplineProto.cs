@@ -1,5 +1,5 @@
 ﻿using Cysharp.Threading.Tasks;
-using MisterGames.Character.Adapters;
+using MisterGames.Character.Access;
 using MisterGames.Interact.Core;
 using MisterGames.Splines.Utils;
 using MisterGames.Tick.Core;
@@ -13,17 +13,22 @@ namespace Proto {
 
         [SerializeField] private SplineContainer _splineContainer;
         [SerializeField] private Interactive _interactive;
+
+        [Header("Start interaction")]
         [SerializeField] [Min(0f)] private float _enterDuration;
-        [SerializeField] [Min(0f)] private float _enterReserveBoundLength;
+
+        [Header("Bounds")]
+        [SerializeField] [Min(0f)] private float _startReserveBoundLength;
+        [SerializeField] [Min(0f)] private float _endReserveBoundLength;
 
         private ITimeSource _timeSource;
-        private float _t;
+        private float _progress;
 
         private void Awake() {
             _timeSource = TimeSources.Get(PlayerLoopStage.Update);
         }
-
-        private void OnEnable() {
+        /*
+        private  void OnEnable() {
             _interactive.OnStartInteract += OnStartInteract;
             _interactive.OnStopInteract += OnStopInteract;
         }
@@ -42,28 +47,18 @@ namespace Proto {
             adapter.SetMotionOverride(_ => { });
 
             var position = adapter.Position;
-            var startPosition = _splineContainer.GetNearestPoint(position, out float t);
+            _progress = GetClosestSplineInterpolation(position);
+            var startPosition = _splineContainer.EvaluatePosition(_progress);
 
-            float progress = 0f;
-            while (true) {
-                progress = Mathf.Clamp01(_enterDuration > 0f ? progress + _timeSource.DeltaTime / _enterDuration : 1f);
-                adapter.Position = Vector3.Lerp(position, startPosition, progress);
-
-                if (progress >= 1f) break;
-                await UniTask.Yield();
-            }
-
-            float splineLength = _splineContainer.CalculateLength();
-            float reserveOffsetT = splineLength > 0f ? math.clamp(_enterReserveBoundLength / splineLength, 0f, 0.5f) : 0f;
-            _t = math.min(math.max(reserveOffsetT, t), 1 - reserveOffsetT);
+            await MoveToStartPosition(startPosition, _enterDuration);
 
             adapter.SetMotionOverride(delta => {
-                float prevT = _t;
-                _t = _splineContainer.MoveAlongSpline(delta, _t);
+                float prevT = _progress;
+                _progress = _splineContainer.MoveAlongSpline(delta, _progress);
 
-                if (prevT < 1f && _t >= 1f || prevT > 0f && _t <= 0f) _interactive.StopInteractByUser(user);
+                if (prevT < 1f && _progress >= 1f || prevT > 0f && _progress <= 0f) _interactive.StopInteractByUser(user);
 
-                adapter.Position = _splineContainer.EvaluatePosition(_t);
+                adapter.Position = _splineContainer.EvaluatePosition(_progress);
             });
         }
 
@@ -74,6 +69,33 @@ namespace Proto {
             adapter.EnableCharacterController(true);
             adapter.SetMotionOverride(null);
         }
+
+        private float GetClosestSplineInterpolation(Vector3 position) {
+            float splineLength = _splineContainer.CalculateLength();
+            if (splineLength <= 0f) return 0f;
+
+            _splineContainer.GetNearestPoint(position, out float t);
+
+            float inverseSplineLength = 1f / splineLength;
+            float startReserveT = math.clamp(_startReserveBoundLength * inverseSplineLength, 0f, 0.5f);
+            float endReserveT = math.clamp((splineLength - _endReserveBoundLength) * inverseSplineLength, 0.5f, 1f);
+
+            return math.clamp(t, startReserveT, endReserveT);
+        }
+
+        private async UniTask MoveToStartPosition(Vector3 position, float duration) {
+            var fromPosition = adapter.Position;
+
+            float progress = 0f;
+            while (true) {
+                progress = Mathf.Clamp01(duration > 0f ? progress + _timeSource.DeltaTime / duration : 1f);
+                adapter.Position = Vector3.Lerp(fromPosition, position, progress);
+
+                if (progress >= 1f) break;
+                await UniTask.Yield();
+            }
+        }
+        */
     }
 
 }
