@@ -24,18 +24,22 @@ MonoBehaviour:
           _ports:
           - _name: 
             _mode: 1
+            _options: 0
             _dataType:
               _type: 
           - _name: Images
             _mode: 11
+            _options: 0
             _dataType:
               _type: UnityEngine.UI.Image, UnityEngine.UI
           - _name: Material
             _mode: 3
+            _options: 0
             _dataType:
               _type: UnityEngine.Material, UnityEngine.CoreModule
           - _name: 
             _mode: 0
+            _options: 0
             _dataType:
               _type: 
       - key: 5
@@ -47,6 +51,7 @@ MonoBehaviour:
           _ports:
           - _name: 
             _mode: 2
+            _options: 0
             _dataType:
               _type: UnityEngine.UI.Image, UnityEngine.UI
       - key: 6
@@ -58,6 +63,7 @@ MonoBehaviour:
           _ports:
           - _name: 
             _mode: 2
+            _options: 0
             _dataType:
               _type: System.Boolean, mscorlib
       - key: 7
@@ -69,6 +75,7 @@ MonoBehaviour:
           _ports:
           - _name: 
             _mode: 2
+            _options: 0
             _dataType:
               _type: UnityEngine.Material, UnityEngine.CoreModule
       - key: 8
@@ -80,18 +87,22 @@ MonoBehaviour:
           _ports:
           - _name: Condition
             _mode: 3
+            _options: 0
             _dataType:
               _type: System.Boolean, mscorlib
           - _name: On True
             _mode: 3
+            _options: 0
             _dataType:
               _type: UnityEngine.Material, UnityEngine.CoreModule
           - _name: On False
             _mode: 3
+            _options: 0
             _dataType:
               _type: UnityEngine.Material, UnityEngine.CoreModule
           - _name: 
             _mode: 2
+            _options: 0
             _dataType:
               _type: UnityEngine.Material, UnityEngine.CoreModule
       - key: 9
@@ -103,6 +114,7 @@ MonoBehaviour:
           _ports:
           - _name: 
             _mode: 2
+            _options: 0
             _dataType:
               _type: UnityEngine.Material, UnityEngine.CoreModule
       - key: 10
@@ -114,10 +126,12 @@ MonoBehaviour:
           _ports:
           - _name: 
             _mode: 0
+            _options: 0
             _dataType:
               _type: 
           - _name: On Start
-            _mode: 193
+            _mode: 1
+            _options: 3
             _dataType:
               _type: 
       - key: 11
@@ -129,42 +143,52 @@ MonoBehaviour:
           _ports:
           - _name: Init
             _mode: 1
+            _options: 0
             _dataType:
               _type: 
           - _name: Play
             _mode: 1
+            _options: 0
             _dataType:
               _type: 
           - _name: Pause
             _mode: 1
+            _options: 0
             _dataType:
               _type: 
           - _name: Wind
             _mode: 1
+            _options: 0
             _dataType:
               _type: 
           - _name: Rewind
             _mode: 1
+            _options: 0
             _dataType:
               _type: 
           - _name: Invert
             _mode: 1
+            _options: 0
             _dataType:
               _type: 
           - _name: Tweens
             _mode: 43
+            _options: 0
             _dataType:
               _type: MisterGames.BlueprintLib.IBlueprintNodeTween, MisterGames.BlueprintsLib
           - _name: On Start
             _mode: 0
+            _options: 0
             _dataType:
               _type: 
           - _name: On Cancelled
             _mode: 0
+            _options: 0
             _dataType:
               _type: 
           - _name: On Finished
             _mode: 0
+            _options: 0
             _dataType:
               _type: 
       - key: 12
@@ -176,26 +200,32 @@ MonoBehaviour:
           _ports:
           - _name: Self
             _mode: 22
+            _options: 0
             _dataType:
               _type: MisterGames.BlueprintLib.IBlueprintNodeTween, MisterGames.BlueprintsLib
           - _name: Next Tweens
             _mode: 43
+            _options: 0
             _dataType:
               _type: MisterGames.BlueprintLib.IBlueprintNodeTween, MisterGames.BlueprintsLib
           - _name: 
             _mode: 3
+            _options: 0
             _dataType:
               _type: MisterGames.Tweens.Core.ITween, MisterGames.Tweens
           - _name: On Start
             _mode: 0
+            _options: 0
             _dataType:
               _type: 
           - _name: On Cancelled
             _mode: 0
+            _options: 0
             _dataType:
               _type: 
           - _name: On Finished
             _mode: 0
+            _options: 0
             _dataType:
               _type: 
       - key: 13
@@ -207,6 +237,7 @@ MonoBehaviour:
           _ports:
           - _name: 
             _mode: 2
+            _options: 0
             _dataType:
               _type: MisterGames.Tweens.Core.ITween, MisterGames.Tweens
       - key: 14
@@ -218,6 +249,7 @@ MonoBehaviour:
           _ports:
           - _name: 
             _mode: 2
+            _options: 0
             _dataType:
               _type: UnityEngine.UI.Image, UnityEngine.UI
       - key: 15
@@ -229,28 +261,34 @@ MonoBehaviour:
           _ports:
           - _name: Set Interactive
             _mode: 1
+            _options: 0
             _dataType:
               _type: 
           - _name: Interactive
             _mode: 3
+            _options: 0
             _dataType:
               _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact
           - _name: On Start Interact
             _mode: 0
+            _options: 0
             _dataType:
               _type: 
           - _name: On Stop Interact
             _mode: 0
+            _options: 0
             _dataType:
               _type: 
           - _name: Is Interacting
             _mode: 2
+            _options: 0
             _dataType:
               _type: System.Boolean, mscorlib
-          - _name: User
+          - _name: 
             _mode: 2
+            _options: 0
             _dataType:
-              _type: MisterGames.Interact.Core.InteractiveUser, MisterGames.Interact
+              _type: MisterGames.Interact.Core.IInteractiveUser, MisterGames.Interact
       - key: 16
         value:
           _nodeId: 16
@@ -260,6 +298,7 @@ MonoBehaviour:
           _ports:
           - _name: 
             _mode: 2
+            _options: 0
             _dataType:
               _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact
       - key: 17
@@ -271,18 +310,22 @@ MonoBehaviour:
           _ports:
           - _name: 
             _mode: 1
+            _options: 0
             _dataType:
               _type: 
           - _name: Condition
             _mode: 3
+            _options: 0
             _dataType:
               _type: System.Boolean, mscorlib
           - _name: On True
             _mode: 0
+            _options: 0
             _dataType:
               _type: 
           - _name: On False
             _mode: 0
+            _options: 0
             _dataType:
               _type: 
       - key: 18
@@ -294,6 +337,7 @@ MonoBehaviour:
           _ports:
           - _name: 
             _mode: 2
+            _options: 0
             _dataType:
               _type: System.Boolean, mscorlib
       - key: 19
@@ -305,10 +349,12 @@ MonoBehaviour:
           _ports:
           - _name: 
             _mode: 0
+            _options: 0
             _dataType:
               _type: 
           - _name: On Start
-            _mode: 193
+            _mode: 1
+            _options: 3
             _dataType:
               _type: 
       - key: 20
@@ -320,28 +366,34 @@ MonoBehaviour:
           _ports:
           - _name: Set Interactive
             _mode: 1
+            _options: 0
             _dataType:
               _type: 
           - _name: Interactive
             _mode: 3
+            _options: 0
             _dataType:
               _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact
           - _name: On Start Interact
             _mode: 0
+            _options: 0
             _dataType:
               _type: 
           - _name: On Stop Interact
             _mode: 0
+            _options: 0
             _dataType:
               _type: 
           - _name: Is Interacting
             _mode: 2
+            _options: 0
             _dataType:
               _type: System.Boolean, mscorlib
-          - _name: User
+          - _name: 
             _mode: 2
+            _options: 0
             _dataType:
-              _type: MisterGames.Interact.Core.InteractiveUser, MisterGames.Interact
+              _type: MisterGames.Interact.Core.IInteractiveUser, MisterGames.Interact
       - key: 21
         value:
           _nodeId: 21
@@ -351,6 +403,7 @@ MonoBehaviour:
           _ports:
           - _name: 
             _mode: 2
+            _options: 0
             _dataType:
               _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact
       - key: 23
@@ -362,18 +415,22 @@ MonoBehaviour:
           _ports:
           - _name: 
             _mode: 1
+            _options: 0
             _dataType:
               _type: 
           - _name: Condition
             _mode: 3
+            _options: 0
             _dataType:
               _type: System.Boolean, mscorlib
           - _name: On True
             _mode: 0
+            _options: 0
             _dataType:
               _type: 
           - _name: On False
             _mode: 0
+            _options: 0
             _dataType:
               _type: 
       - key: 24
@@ -385,6 +442,7 @@ MonoBehaviour:
           _ports:
           - _name: 
             _mode: 2
+            _options: 0
             _dataType:
               _type: System.Boolean, mscorlib
       - key: 25
@@ -396,14 +454,17 @@ MonoBehaviour:
           _ports:
           - _name: 
             _mode: 1
+            _options: 0
             _dataType:
               _type: 
           - _name: 
             _mode: 0
+            _options: 0
             _dataType:
               _type: 
           - _name: 
             _mode: 0
+            _options: 0
             _dataType:
               _type: 
       - key: 27
@@ -415,18 +476,22 @@ MonoBehaviour:
           _ports:
           - _name: 
             _mode: 3
+            _options: 0
             _dataType:
               _type: MisterGames.Input.Actions.InputActionKey, MisterGames.Input
           - _name: On Use
             _mode: 0
+            _options: 0
             _dataType:
               _type: 
           - _name: On Press
             _mode: 0
+            _options: 0
             _dataType:
               _type: 
           - _name: On Release
             _mode: 0
+            _options: 0
             _dataType:
               _type: 
     _fromNodePortLinksMap:
