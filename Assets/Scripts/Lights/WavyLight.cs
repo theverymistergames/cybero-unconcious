@@ -22,7 +22,7 @@ namespace Lights
         public float maxDelayBase;
     }
 
-    // [ExecuteInEditMode]
+    [ExecuteInEditMode]
     public class WavyLight : AnimatedLightWithMeshBase
     {
         public AnimationCurve curve;
