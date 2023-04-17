@@ -1,6 +1,6 @@
 //UNITY_SHADER_NO_UPGRADE
-#ifndef MYHLSLINCLUDE_INCLUDED
-#define MYHLSLINCLUDE_INCLUDED
+#ifndef RIPPLES
+#define RIPPLES
 
 void GetRipples_float(
     const float2 uv,
@@ -16,4 +16,18 @@ void GetRipples_float(
     output = sin(t * speed - inverted_radial_gradient * max_frequency) * multiplier;
 }
 
-#endif //MYHLSLINCLUDE_INCLUDED
+void GetRipples_half(
+    const half2 uv,
+    const half t,
+    const half multiplier,
+    const half max_frequency,
+    const half speed,
+    out half output
+) {
+    const half l = length(uv);
+    const half inverted_radial_gradient = l * l;
+
+    output = sin(t * speed - inverted_radial_gradient * max_frequency) * multiplier;
+}
+
+#endif //RIPPLES

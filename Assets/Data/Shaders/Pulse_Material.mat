@@ -24,18 +24,18 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Pulse_Material
-  m_Shader: {fileID: 4800000, guid: 5794bf0983e71004397087758ad55bfb, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: aab1f5f1afab33747ae6352e8c235b2b, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords:
+  m_ValidKeywords:
   - _DISABLE_SSR_TRANSPARENT
-  - _NORMALMAP_TANGENT_SPACE
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
+  m_CustomRenderQueue: 2225
+  stringTagMap:
+    MotionVector: User
   disabledShaderPasses:
   - TransparentDepthPrepass
   - TransparentDepthPostpass
@@ -46,6 +46,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _Albedo_Texture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _AnisotropyMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -110,6 +114,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Normal_Map:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SpecularColorMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -157,6 +165,7 @@ Material:
     - _ATDistance: 1
     - _AddPrecomputedVelocity: 0
     - _AlbedoAffectEmissive: 0
+    - _Albedo_Intensity: 1.58
     - _AlphaCutoff: 0.5
     - _AlphaCutoffEnable: 0
     - _AlphaCutoffPostpass: 0.5
@@ -166,9 +175,15 @@ Material:
     - _AlphaRemapMax: 1
     - _AlphaRemapMin: 0
     - _AlphaSrcBlend: 1
+    - _Ambient_Occlusion_Strength: 0
     - _Anisotropy: 0
+    - _Blend: 0
     - _BlendMode: 0
+    - _Brightness: 6.21
     - _CoatMask: 0
+    - _ConservativeDepthOffsetEnable: 0
+    - _Contrast: 0.08
+    - _Contrast_Blend: 0.7
     - _CullMode: 2
     - _CullModeForward: 2
     - _Cutoff: 0.5
@@ -193,6 +208,13 @@ Material:
     - _EnableFogOnTransparent: 1
     - _EnableGeometricSpecularAA: 0
     - _EnergyConservingSpecularColor: 1
+    - _Float: 0
+    - _Fractal_Intensity: 1
+    - _Fractal_Mask_Brightness: 0
+    - _Fractal_Mask_Normal_Strength: 1
+    - _Fractal_Normal_Strength: 1
+    - _Fractal_Strength: 0.75
+    - _Fractal_to_Normal_Remap: 5279.5
     - _HeightAmplitude: 0.02
     - _HeightCenter: 0.5
     - _HeightMapParametrization: 0
@@ -206,13 +228,29 @@ Material:
     - _Ior: 1.5
     - _IridescenceMask: 1
     - _IridescenceThickness: 1
+    - _Iterations: 22.4
     - _LinkDetailsWithBase: 1
+    - _Mask_Blend: 0
+    - _Mask_Blend_Multiplier: 0.49
+    - _Mask_Brightness: 0.52
+    - _Mask_Iterations: 6.5
+    - _Mask_Normal_Strength: 0.21
+    - _Mask_Radial_Power: 0.5
+    - _Mask_Remap_Max: 0.97
+    - _Mask_Remap_Min: 0
+    - _Mask_Remap_Min_1: 0
+    - _Mask_Remap_Min_2: 0
+    - _Mask_Remap_Min_3: 0
+    - _Mask_Remap_Min_4: 0
+    - _Mask_Strength: 3.09
     - _MaterialID: 1
-    - _Metallic: 0
+    - _Max_Brightness: 15.17
+    - _Metallic: 0.5
     - _MetallicRemapMax: 1
     - _MetallicRemapMin: 0
     - _NormalMapSpace: 0
     - _NormalScale: 1
+    - _Normal_Strength: 1
     - _ObjectSpaceUVMapping: 0
     - _ObjectSpaceUVMappingEmissive: 0
     - _OpaqueCullMode: 2
@@ -221,11 +259,20 @@ Material:
     - _PPDMinSamples: 5
     - _PPDPrimitiveLength: 1
     - _PPDPrimitiveWidth: 1
+    - _Range: 1.05
     - _RayTracing: 0
     - _ReceivesSSR: 1
     - _ReceivesSSRTransparent: 0
     - _RefractionModel: 0
-    - _Smoothness: 0.5
+    - _RenderQueueType: 1
+    - _RequireSplitLighting: 0
+    - _Ripples_Max_Frequency: 1.4
+    - _Ripples_Speed: 0.37
+    - _Ripples_Strength: 0.9
+    - _Rotation_Step: 5.2
+    - _Scale: 7
+    - _Scale_Step: 1.2
+    - _Smoothness: 0.8
     - _SmoothnessRemapMax: 1
     - _SmoothnessRemapMin: 0
     - _SpecularAAScreenSpaceVariance: 0.1
@@ -234,10 +281,12 @@ Material:
     - _SrcBlend: 1
     - _StencilRef: 0
     - _StencilRefDepth: 8
+    - _StencilRefDistortionVec: 4
     - _StencilRefGBuffer: 10
     - _StencilRefMV: 40
     - _StencilWriteMask: 6
     - _StencilWriteMaskDepth: 9
+    - _StencilWriteMaskDistortionVec: 4
     - _StencilWriteMaskGBuffer: 15
     - _StencilWriteMaskMV: 41
     - _SubsurfaceMask: 1
@@ -260,6 +309,7 @@ Material:
     - _UVEmissive: 0
     - _UseEmissiveIntensity: 0
     - _UseShadowThreshold: 0
+    - _Uv_Animation_Speed: 0.1
     - _ZTestDepthEqualForOpaque: 3
     - _ZTestGBuffer: 4
     - _ZTestTransparent: 4
@@ -282,6 +332,7 @@ Material:
     - _scaleStep: 1.13
     - _uvAnimationSpeed: 0.4
     m_Colors:
+    - _Albedo: {r: 0.024563905, g: 0.03497389, b: 0.084905684, a: 1}
     - _BaseColor: {r: 0.7075472, g: 0.19134918, b: 0.19134918, a: 0}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 0.45911944, g: 0.5570199, b: 0.6886792, a: 1}
@@ -290,12 +341,21 @@ Material:
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
     - _EmissiveColorLDR: {r: 0, g: 0, b: 0, a: 1}
+    - _Fractal_Color: {r: 4.686672, g: 1.2229455, b: 0.38318673, a: 1}
+    - _Fractal_Color_1: {r: 0, g: 0, b: 0, a: 0}
+    - _Fractal_Color_2: {r: 0, g: 0, b: 0, a: 0}
+    - _Fractal_Offset: {r: 0, g: 0, b: 0, a: 0}
+    - _Fractal_Tiling: {r: 1, g: 1, b: 0, a: 0}
+    - _Fractal_to_Normal_Remap_in: {r: 0, g: 311.65, b: 0, a: 0}
+    - _Fractal_to_Normal_Remap_out: {r: 0, g: 1, b: 0, a: 0}
     - _InvPrimScale: {r: 1, g: 1, b: 0, a: 0}
     - _IridescenceThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
     - _MainColor: {r: 0.12293812, g: 0.3633417, b: 0.6981132, a: 1}
     - _MaskColor: {r: 0.18253826, g: 0.18602125, b: 0.1981132, a: 255}
+    - _Offset: {r: 0, g: 0, b: 0, a: 0}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _ThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
+    - _Tiling: {r: 1, g: 1, b: 0, a: 0}
     - _TransmittanceColor: {r: 1, g: 1, b: 1, a: 1}
     - _UVDetailsMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMask: {r: 1, g: 0, b: 0, a: 0}
