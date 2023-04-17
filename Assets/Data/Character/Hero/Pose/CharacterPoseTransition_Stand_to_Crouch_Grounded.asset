@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da84188c8ef43ad9337f6ac5059524e, type: 3}
+  m_Name: CharacterPoseTransition_Stand_to_Crouch_Grounded
+  m_EditorClassIdentifier: 
+  _actions:
+  - rid: 6196715847878180897
+  references:
+    version: 2
+    RefIds:
+    - rid: 6196715847878180897
+      type: {class: CharacterActionChangeColliderHeight, ns: MisterGames.Character.Height, asm: MisterGames.Character}
+      data:
+        targetHeight:
+          _hasValue: 1
+          _value: 0.8
+        targetRadius:
+          _hasValue: 1
+          _value: 0.3
+        duration: 0.4
+        scaleDuration: 1
+        pattern:
+          rid: 6196715847878180898
+    - rid: 6196715847878180898
+      type: {class: CharacterHeightChangePatternLinear, ns: MisterGames.Character.Height, asm: MisterGames.Character}

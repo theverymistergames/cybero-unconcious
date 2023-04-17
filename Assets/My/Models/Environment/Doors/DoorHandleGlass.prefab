@@ -371,6 +371,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 6870629163322778809}
     m_Modifications:
     - target: {fileID: 2161252216037043124, guid: b3f05c3fb29921a459f471a1928ec384, type: 3}
@@ -434,6 +435,18 @@ PrefabInstance:
       value: Door_2_1_LP
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3361478921824488428, guid: b3f05c3fb29921a459f471a1928ec384, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2131840927}
+    - targetCorrespondingSourceObject: {fileID: 3361478921824488428, guid: b3f05c3fb29921a459f471a1928ec384, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2131840926}
+    - targetCorrespondingSourceObject: {fileID: 3361478921824488428, guid: b3f05c3fb29921a459f471a1928ec384, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 471120546913492436}
   m_SourcePrefab: {fileID: 100100000, guid: b3f05c3fb29921a459f471a1928ec384, type: 3}
 --- !u!4 &393982020410862111 stripped
 Transform:
@@ -453,9 +466,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3904520525419694663}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 0.14750202, y: 1.3296522, z: 2.1512012}
   m_Center: {x: -0.00000043097282, y: -0.6973637, z: -1.0756227}
 --- !u!114 &2131840926
@@ -471,4 +492,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _timeSourceStage: 1
-  _strategy: {fileID: 11400000, guid: 87f3cf7412d28fe4ea8abe9f95f6f48d, type: 2}
+  _strategy: {fileID: 11400000, guid: 3e44b5b53bd4e5346bade11f43de6f95, type: 2}
+--- !u!114 &471120546913492436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3904520525419694663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffecc3551aab4ea48912b4e53b1e15ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactive: {fileID: 2131840926}
+  _cursorIconOnHover: {fileID: 11400000, guid: a3116495fe10a084db1793e13755f30a, type: 2}
+  _cursorIconWhileInteracting: {fileID: 0}

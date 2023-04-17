@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 32
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _enablePlayModeStartSceneOverride: 1
   _searchScenesInFolders:
-  - Assets/
+  - Assets
   _sceneRoot:
     scene: Scene_Global_Root
-  _sceneStart: Station
+  _sceneStart:
+    scene: TestScene_Props
   _sceneNames:
   - Scene_Global_Root
   - Dance Animations - Example Scene
@@ -31,7 +32,6 @@ MonoBehaviour:
   - Proto
   - Station
   - Station_v
-  - Wagon
   - Level0
   - Level1 pipes hall new
   - Level1_0
@@ -53,4 +53,6 @@ MonoBehaviour:
   - Level7
   - Level8
   - House
+  - TestScene_Empty_Template
   - TestScene_Props
+  - TestScene_0
