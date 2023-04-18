@@ -20,7 +20,7 @@ MonoBehaviour:
           _nodeId: 17
           _node:
             rid: 6196715892176322584
-          _position: {x: 73.9841, y: 262.1726}
+          _position: {x: 291.01575, y: 140.25081}
           _ports:
           - _name: 
             _mode: 0
@@ -37,18 +37,18 @@ MonoBehaviour:
           _nodeId: 1
           _node:
             rid: 6196715892176322561
-          _position: {x: 342.65076, y: 262.1726}
+          _position: {x: 560.45, y: 152.70003}
           _ports:
           - _name: Enter
             _mode: 1
             _options: 0
             _dataType:
               _type: 
-          - _name: Transitions
-            _mode: 43
+          - _name: Exit
+            _mode: 1
             _options: 0
             _dataType:
-              _type: MisterGames.Common.Conditions.ICondition, MisterGames.Common
+              _type: 
           - _name: On Enter
             _mode: 0
             _options: 0
@@ -59,12 +59,17 @@ MonoBehaviour:
             _options: 0
             _dataType:
               _type: 
+          - _name: Transitions
+            _mode: 43
+            _options: 0
+            _dataType:
+              _type: MisterGames.Common.Conditions.ICondition, MisterGames.Common
       - key: 3
         value:
           _nodeId: 3
           _node:
             rid: 6196715892176322564
-          _position: {x: 562.80005, y: 201.95001}
+          _position: {x: 175.06674, y: 259.45}
           _ports:
           - _name: 
             _mode: 2
@@ -76,7 +81,7 @@ MonoBehaviour:
           _nodeId: 6
           _node:
             rid: 6196715892176322567
-          _position: {x: 556.95825, y: 1862.438}
+          _position: {x: 766.0834, y: 105.266685}
           _ports:
           - _name: Apply
             _mode: 1
@@ -395,12 +400,33 @@ MonoBehaviour:
             _options: 0
             _dataType:
               _type: 
+      - key: 43
+        value:
+          _nodeId: 43
+          _node:
+            rid: 6196716009706225704
+          _position: {x: 287.52234, y: 201.49591}
+          _ports:
+          - _name: 
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: Exit
+            _mode: 1
+            _options: 3
+            _dataType:
+              _type: 
     _fromNodePortLinksMap:
       _entries:
       - key: 1
         value:
           _entries:
-          - key: 1
+          - key: 2
+            value:
+            - nodeId: 6
+              portIndex: 0
+          - key: 4
             value:
             - nodeId: 20
               portIndex: 0
@@ -409,10 +435,6 @@ MonoBehaviour:
             - nodeId: 22
               portIndex: 0
             - nodeId: 24
-              portIndex: 0
-          - key: 2
-            value:
-            - nodeId: 6
               portIndex: 0
       - key: 6
         value:
@@ -505,7 +527,14 @@ MonoBehaviour:
             value:
             - nodeId: 1
               portIndex: 0
-    _addedNodesTotalCount: 43
+      - key: 43
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 1
+              portIndex: 1
+    _addedNodesTotalCount: 44
     _toNodePortLinksMap:
       _entries:
       - key: 3
@@ -542,7 +571,7 @@ MonoBehaviour:
           - key: 0
             value:
             - nodeId: 1
-              portIndex: 1
+              portIndex: 4
       - key: 36
         value:
           _entries:
@@ -591,7 +620,7 @@ MonoBehaviour:
           - key: 0
             value:
             - nodeId: 1
-              portIndex: 1
+              portIndex: 4
       - key: 23
         value:
           _entries:
@@ -606,20 +635,24 @@ MonoBehaviour:
             value:
             - nodeId: 17
               portIndex: 0
+          - key: 1
+            value:
+            - nodeId: 43
+              portIndex: 0
       - key: 22
         value:
           _entries:
           - key: 0
             value:
             - nodeId: 1
-              portIndex: 1
+              portIndex: 4
       - key: 24
         value:
           _entries:
           - key: 0
             value:
             - nodeId: 1
-              portIndex: 1
+              portIndex: 4
     _subgraphReferencesMap:
       _entries: []
   _blackboard:
@@ -945,3 +978,7 @@ MonoBehaviour:
         _applyActions:
         - {fileID: 11400000, guid: c3dd919a540e8c44685d9aaf19cd047c, type: 2}
         _releaseActions: []
+    - rid: 6196716009706225704
+      type: {class: BlueprintNodeEnter, ns: MisterGames.Blueprints.Nodes, asm: MisterGames.Blueprints}
+      data:
+        _port: Exit
