@@ -417,72 +417,6 @@ MonoBehaviour:
             _options: 3
             _dataType:
               _type: 
-      - key: 44
-        value:
-          _nodeId: 44
-          _node:
-            rid: 6196716009706225720
-          _position: {x: 813.3334, y: -113.30675}
-          _ports:
-          - _name: 
-            _mode: 1
-            _options: 0
-            _dataType:
-              _type: 
-          - _name: Text
-            _mode: 3
-            _options: 0
-            _dataType:
-              _type: System.String, mscorlib
-          - _name: 
-            _mode: 0
-            _options: 0
-            _dataType:
-              _type: 
-      - key: 45
-        value:
-          _nodeId: 45
-          _node:
-            rid: 6196716009706225721
-          _position: {x: 808.3334, y: -11.666672}
-          _ports:
-          - _name: 
-            _mode: 1
-            _options: 0
-            _dataType:
-              _type: 
-          - _name: Text
-            _mode: 3
-            _options: 0
-            _dataType:
-              _type: System.String, mscorlib
-          - _name: 
-            _mode: 0
-            _options: 0
-            _dataType:
-              _type: 
-      - key: 46
-        value:
-          _nodeId: 46
-          _node:
-            rid: 6196716014302658565
-          _position: {x: 1457.875, y: 156.82335}
-          _ports:
-          - _name: 
-            _mode: 1
-            _options: 0
-            _dataType:
-              _type: 
-          - _name: Text
-            _mode: 3
-            _options: 0
-            _dataType:
-              _type: System.String, mscorlib
-          - _name: 
-            _mode: 0
-            _options: 0
-            _dataType:
-              _type: 
     _fromNodePortLinksMap:
       _entries:
       - key: 17
@@ -497,8 +431,6 @@ MonoBehaviour:
           _entries:
           - key: 2
             value:
-            - nodeId: 44
-              portIndex: 0
             - nodeId: 6
               portIndex: 0
           - key: 4
@@ -510,10 +442,6 @@ MonoBehaviour:
             - nodeId: 22
               portIndex: 0
             - nodeId: 24
-              portIndex: 0
-          - key: 3
-            value:
-            - nodeId: 45
               portIndex: 0
       - key: 6
         value:
@@ -549,8 +477,6 @@ MonoBehaviour:
           _entries:
           - key: 1
             value:
-            - nodeId: 46
-              portIndex: 0
             - nodeId: 31
               portIndex: 0
           - key: 2
@@ -727,27 +653,6 @@ MonoBehaviour:
             value:
             - nodeId: 1
               portIndex: 4
-      - key: 44
-        value:
-          _entries:
-          - key: 0
-            value:
-            - nodeId: 1
-              portIndex: 2
-      - key: 45
-        value:
-          _entries:
-          - key: 0
-            value:
-            - nodeId: 1
-              portIndex: 3
-      - key: 46
-        value:
-          _entries:
-          - key: 0
-            value:
-            - nodeId: 20
-              portIndex: 1
     _subgraphReferencesMap:
       _entries: []
   _blackboard:
@@ -1072,21 +977,3 @@ MonoBehaviour:
       type: {class: BlueprintNodeEnter, ns: MisterGames.Blueprints.Nodes, asm: MisterGames.Blueprints}
       data:
         _port: Exit
-    - rid: 6196716009706225720
-      type: {class: BlueprintNodeLog, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
-      data:
-        _level: 0
-        _color: {r: 1, g: 1, b: 1, a: 1}
-        _defaultText: enter Walk
-    - rid: 6196716009706225721
-      type: {class: BlueprintNodeLog, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
-      data:
-        _level: 0
-        _color: {r: 1, g: 1, b: 1, a: 1}
-        _defaultText: exit Walk
-    - rid: 6196716014302658565
-      type: {class: BlueprintNodeLog, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
-      data:
-        _level: 0
-        _color: {r: 1, g: 1, b: 1, a: 1}
-        _defaultText: transit from Walk to Crouch
