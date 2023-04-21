@@ -198,6 +198,7 @@ GameObject:
   - component: {fileID: 7578353388239901002}
   - component: {fileID: 1945155924886961644}
   - component: {fileID: 6147633684654235845}
+  - component: {fileID: 983131359972434345}
   m_Layer: 0
   m_Name: Interactive
   m_TagString: Untagged
@@ -253,8 +254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15607a9816044bc7b2548f343182030f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeSourceStage: 1
-  _strategy: {fileID: 11400000, guid: 4eb467409f50e0f4890dd94b6c2f68bf, type: 2}
+  _strategy: {fileID: 11400000, guid: 2f455542cffb7924c9ea82a9c841a494, type: 2}
 --- !u!114 &6147633684654235845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,8 +268,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactive: {fileID: 1945155924886961644}
-  _cursorIconOnHover: {fileID: 11400000, guid: a3116495fe10a084db1793e13755f30a, type: 2}
-  _cursorIconWhileInteracting: {fileID: 0}
+  _strategy: {fileID: 11400000, guid: 2ef8e637213508440a44520645625afe, type: 2}
+--- !u!114 &983131359972434345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525220482827623355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5be675038ae43e5b1e2068e95788361, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _strategy: {fileID: 11400000, guid: 866b0e22a3cebe944a1168130ef167e7, type: 2}
+  _debugDrawDetectable: 0
 --- !u!1 &2046154143754619430
 GameObject:
   m_ObjectHideFlags: 0
