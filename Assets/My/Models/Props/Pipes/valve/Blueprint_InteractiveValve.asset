@@ -1,0 +1,551 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95aa8f7d5aa490e9877070cd957eaff, type: 3}
+  m_Name: Blueprint_InteractiveValve
+  m_EditorClassIdentifier: 
+  _blueprintMeta:
+    _nodesMap:
+      _entries:
+      - key: 8
+        value:
+          _nodeId: 8
+          _node:
+            rid: 6507890060984582154
+          _position: {x: 2596.8, y: 863.8}
+          _ports:
+          - _name: Init
+            _mode: 1
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: Play
+            _mode: 1
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: Pause
+            _mode: 1
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: Wind
+            _mode: 1
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: Rewind
+            _mode: 1
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: Invert
+            _mode: 1
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: Tweens
+            _mode: 43
+            _options: 0
+            _dataType:
+              _type: MisterGames.BlueprintLib.IBlueprintNodeTween, MisterGames.BlueprintsLib
+          - _name: On Start
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: On Cancelled
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: On Finished
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+      - key: 28
+        value:
+          _nodeId: 28
+          _node:
+            rid: 6507890060984582175
+          _position: {x: 1949.8898, y: 1121.134}
+          _ports:
+          - _name: 
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: UnityEngine.Transform, UnityEngine.CoreModule
+      - key: 17
+        value:
+          _nodeId: 17
+          _node:
+            rid: 6507890060984582163
+          _position: {x: 2115.6, y: 665}
+          _ports:
+          - _name: Set Interactive
+            _mode: 1
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: Interactive
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact
+          - _name: On Start Interact
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: On Stop Interact
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: Is Interacting
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: System.Boolean, mscorlib
+          - _name: 
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: MisterGames.Interact.Core.IInteractiveUser, MisterGames.Interact
+      - key: 23
+        value:
+          _nodeId: 23
+          _node:
+            rid: 6507890060984582170
+          _position: {x: 2307.4, y: 1231.8}
+          _ports:
+          - _name: 
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: UnityEngine.Transform, UnityEngine.CoreModule
+          - _name: Start Euler Angles
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: UnityEngine.Vector3, UnityEngine.CoreModule
+          - _name: End Euler Angles
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: UnityEngine.Vector3, UnityEngine.CoreModule
+          - _name: 
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: MisterGames.Tweens.Core.ITweenProgressAction, MisterGames.Tweens
+      - key: 27
+        value:
+          _nodeId: 27
+          _node:
+            rid: 6507890060984582174
+          _position: {x: 2666.8, y: 1061.6}
+          _ports:
+          - _name: 
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: System.Single, mscorlib
+      - key: 26
+        value:
+          _nodeId: 26
+          _node:
+            rid: 6507890060984582173
+          _position: {x: 3100, y: 950.8}
+          _ports:
+          - _name: Self
+            _mode: 22
+            _options: 0
+            _dataType:
+              _type: MisterGames.BlueprintLib.IBlueprintNodeTween, MisterGames.BlueprintsLib
+          - _name: Next Tweens
+            _mode: 43
+            _options: 0
+            _dataType:
+              _type: MisterGames.BlueprintLib.IBlueprintNodeTween, MisterGames.BlueprintsLib
+          - _name: Duration
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: System.Single, mscorlib
+          - _name: Curve
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: UnityEngine.AnimationCurve, UnityEngine.CoreModule
+          - _name: 
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: MisterGames.Tweens.Core.ITweenProgressAction, MisterGames.Tweens
+          - _name: On Start
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: On Cancelled
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: On Finished
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+      - key: 30
+        value:
+          _nodeId: 30
+          _node:
+            rid: 6507890060984582177
+          _position: {x: 1778.5999, y: 846.4}
+          _ports:
+          - _name: 
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact
+      - key: 36
+        value:
+          _nodeId: 36
+          _node:
+            rid: 6507890062266728448
+          _position: {x: 2357.8, y: 839.2}
+          _ports:
+          - _name: 
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: On Start
+            _mode: 1
+            _options: 3
+            _dataType:
+              _type: 
+      - key: 39
+        value:
+          _nodeId: 39
+          _node:
+            rid: 6507890062266728451
+          _position: {x: 2609, y: 1151}
+          _ports:
+          - _name: 
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: UnityEngine.AnimationCurve, UnityEngine.CoreModule
+    _fromNodePortLinksMap:
+      _entries:
+      - key: 17
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 30
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 8
+              portIndex: 1
+      - key: 8
+        value:
+          _entries:
+          - key: 6
+            value:
+            - nodeId: 26
+              portIndex: 0
+      - key: 26
+        value:
+          _entries:
+          - key: 4
+            value:
+            - nodeId: 23
+              portIndex: 3
+          - key: 2
+            value:
+            - nodeId: 27
+              portIndex: 0
+          - key: 3
+            value:
+            - nodeId: 39
+              portIndex: 0
+      - key: 23
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 28
+              portIndex: 0
+      - key: 36
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 8
+              portIndex: 0
+    _addedNodesTotalCount: 41
+    _toNodePortLinksMap:
+      _entries:
+      - key: 26
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 8
+              portIndex: 6
+      - key: 8
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 17
+              portIndex: 2
+          - key: 0
+            value:
+            - nodeId: 36
+              portIndex: 0
+      - key: 23
+        value:
+          _entries:
+          - key: 3
+            value:
+            - nodeId: 26
+              portIndex: 4
+      - key: 27
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 26
+              portIndex: 2
+      - key: 28
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 23
+              portIndex: 0
+      - key: 30
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 17
+              portIndex: 1
+      - key: 39
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 26
+              portIndex: 3
+    _subgraphReferencesMap:
+      _entries: []
+  _blackboard:
+    _properties: ccded45156688749c05744faed54acbc
+    _propertiesMap:
+      _entries:
+      - key: 1372905164
+        value:
+          name: ValveInteractive
+          type:
+            _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact
+      - key: 1233610838
+        value:
+          name: Duration
+          type:
+            _type: System.Single, mscorlib
+      - key: -96184384
+        value:
+          name: ValveTransform
+          type:
+            _type: UnityEngine.Transform, UnityEngine.CoreModule
+      - key: -1129556755
+        value:
+          name: New AnimationCurve
+          type:
+            _type: UnityEngine.AnimationCurve, UnityEngine.CoreModule
+    _bools:
+      _entries: []
+    _ints:
+      _entries: []
+    _longs:
+      _entries: []
+    _floats:
+      _entries:
+      - key: 1233610838
+        value: 0
+    _doubles:
+      _entries: []
+    _strings:
+      _entries: []
+    _vectors2Int:
+      _entries: []
+    _vectors3Int:
+      _entries: []
+    _vectors2:
+      _entries: []
+    _vectors3:
+      _entries: []
+    _vectors4:
+      _entries: []
+    _quaternions:
+      _entries: []
+    _colors:
+      _entries: []
+    _layerMasks:
+      _entries: []
+    _curves:
+      _entries:
+      - key: -1129556755
+        value:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 1
+            outSlope: 1
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 1
+            outSlope: 1
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+    _objects:
+      _entries:
+      - key: 1372905164
+        value:
+          value: {fileID: 0}
+      - key: -96184384
+        value:
+          value: {fileID: 0}
+    _enums:
+      _entries: []
+    _references:
+      _entries: []
+    _boolArrays:
+      _entries: []
+    _intArrays:
+      _entries: []
+    _longArrays:
+      _entries: []
+    _floatArrays:
+      _entries: []
+    _doubleArrays:
+      _entries: []
+    _stringArrays:
+      _entries: []
+    _vectors2IntArrays:
+      _entries: []
+    _vectors3IntArrays:
+      _entries: []
+    _vectors2Arrays:
+      _entries: []
+    _vectors3Arrays:
+      _entries: []
+    _vectors4Arrays:
+      _entries: []
+    _quaternionArrays:
+      _entries: []
+    _colorArrays:
+      _entries: []
+    _layerMaskArrays:
+      _entries: []
+    _curveArrays:
+      _entries: []
+    _objectArrays:
+      _entries: []
+    _enumArrays:
+      _entries: []
+    _referenceArrays:
+      _entries: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 6507890060984582154
+      type: {class: BlueprintNodeRunTween, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _autoInitOnStart: 0
+        _autoInvertNextPlay: 0
+    - rid: 6507890060984582163
+      type: {class: BlueprintNodeInteractiveEvents, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _autoSetInteractiveOnStart: 1
+    - rid: 6507890060984582170
+      type: {class: BlueprintNodeTweenProgressActionRotateTransform, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _transform: {fileID: 0}
+        _startEulerAngles: {x: -90, y: 0, z: 0}
+        _endEulerAngles: {x: -90, y: 100, z: 360}
+        _useLocal: 1
+    - rid: 6507890060984582173
+      type: {class: BlueprintNodeProgressTween, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _duration: 3
+        _curve:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 1
+            outSlope: 1
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 1
+            inSlope: 1
+            outSlope: 1
+            tangentMode: 34
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+    - rid: 6507890060984582174
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: 1233610838
+    - rid: 6507890060984582175
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: -96184384
+    - rid: 6507890060984582177
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: 1372905164
+    - rid: 6507890062266728448
+      type: {class: BlueprintNodeStart, ns: MisterGames.Blueprints.Nodes, asm: MisterGames.Blueprints}
+    - rid: 6507890062266728451
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: -1129556755
