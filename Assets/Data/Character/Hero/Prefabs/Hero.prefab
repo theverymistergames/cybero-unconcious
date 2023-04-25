@@ -511,6 +511,225 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &587535004861309006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6911922390057263876}
+  m_Layer: 2
+  m_Name: Debug_HeadForward
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &6911922390057263876
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587535004861309006}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 316555329901666186}
+  - {fileID: 3700699715543916967}
+  m_Father: {fileID: 7205586869398250320}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1652185412553511986
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8965563844700577084}
+  m_Layer: 2
+  m_Name: Debug_BodyForward
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &8965563844700577084
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652185412553511986}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7334716667041650443}
+  - {fileID: 5676646666442861942}
+  m_Father: {fileID: 7205586870401899320}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1662950266165396430
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2236722660689622430}
+  - component: {fileID: 6169025681448676973}
+  m_Layer: 2
+  m_Name: Collisions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2236722660689622430
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662950266165396430}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7205586870401899320}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6169025681448676973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662950266165396430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3313713ebe6e4514976c90fc0d80ae74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _characterController: {fileID: 7205586870401899302}
+  _hitDetector: {fileID: 2001994226625679391}
+  _ceilingDetector: {fileID: 7205586868961636116}
+  _groundDetector: {fileID: 7205586868961636115}
+--- !u!1 &1727031898436235196
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3700699715543916967}
+  - component: {fileID: 1661253294867221187}
+  - component: {fileID: 396524150430210771}
+  - component: {fileID: 6024769393105472373}
+  m_Layer: 2
+  m_Name: Cube (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3700699715543916967
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727031898436235196}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.16, y: 0.25, z: 0.12}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6911922390057263876}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &1661253294867221187
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727031898436235196}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &396524150430210771
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727031898436235196}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 257
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 13d1d49a996bea243ba3fad403169bb1, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6024769393105472373
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727031898436235196}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3291540060036740798
 GameObject:
   m_ObjectHideFlags: 0
@@ -558,6 +777,111 @@ MonoBehaviour:
   _characterAccess: {fileID: 1207123948819953879}
   _direction: {x: 0, y: 1, z: 0}
   _force: 1
+--- !u!1 &4422048062012394561
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5676646666442861942}
+  - component: {fileID: 7746218487168468889}
+  - component: {fileID: 3605202451569269613}
+  - component: {fileID: 2740844020902405386}
+  m_Layer: 2
+  m_Name: Cube (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5676646666442861942
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4422048062012394561}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.2, z: 0.11}
+  m_LocalScale: {x: 0.3, y: 0.5, z: 0.02}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8965563844700577084}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &7746218487168468889
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4422048062012394561}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &3605202451569269613
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4422048062012394561}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 257
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: c8988044bed02cb43a769d175ad32c8a, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2740844020902405386
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4422048062012394561}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4763195552041168012
 GameObject:
   m_ObjectHideFlags: 0
@@ -606,7 +930,7 @@ MonoBehaviour:
   _move: {fileID: 11400000, guid: 97fe08561f26e614ab227daf3f3ad5c5, type: 2}
   _crouch: {fileID: 11400000, guid: 7edb63238e0076447b015745b0759ca6, type: 2}
   _crouchToggle: {fileID: 11400000, guid: fd8ec366fa1b3664bb88771fd3e89974, type: 2}
-  _runToggle: {fileID: 11400000, guid: 21cba7bc0accd854d955cb98fd34731a, type: 2}
+  _run: {fileID: 11400000, guid: 21cba7bc0accd854d955cb98fd34731a, type: 2}
   _jump: {fileID: 11400000, guid: 84a48fff07c662845a775669189adc58, type: 2}
 --- !u!1 &5045204662872105976
 GameObject:
@@ -656,6 +980,998 @@ MonoBehaviour:
   _startupActions:
   - {fileID: 11400000, guid: d352a7826776e8b40a4237fc707e6412, type: 2}
   - {fileID: 11400000, guid: ea3e287881d73ba4eb0ea92881243975, type: 2}
+--- !u!1 &5404321588362709764
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2515480883230301455}
+  - component: {fileID: 2243419931141208573}
+  m_Layer: 2
+  m_Name: Interactives
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2515480883230301455
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5404321588362709764}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7205586870401899320}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2243419931141208573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5404321588362709764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bccae36a913d42168f805a9538c9e8bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _detector: {fileID: 2425128053471703627}
+  _interactiveUser: {fileID: 8016680816859197842}
+--- !u!1 &6131280029188146141
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4693590438674305861}
+  - component: {fileID: 169266017175554870}
+  - component: {fileID: 7809884102165839556}
+  m_Layer: 2
+  m_Name: MotionFsm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4693590438674305861
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6131280029188146141}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7205586870401899320}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &169266017175554870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6131280029188146141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39db840a6b9a49c187725e53b907b113, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _motionFsm: {fileID: 7809884102165839556}
+--- !u!114 &7809884102165839556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6131280029188146141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14e6e69af36349bf9f40d0c82e5f80d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _blueprintAsset: {fileID: 11400000, guid: e0fe7d5640ea9c944a213fe914375ed1, type: 2}
+  _blackboardOverridesMap:
+    _entries:
+    - key: {fileID: 11400000, guid: e0fe7d5640ea9c944a213fe914375ed1, type: 2}
+      value:
+        _properties: 
+        _propertiesMap:
+          _entries: []
+        _bools:
+          _entries: []
+        _ints:
+          _entries: []
+        _longs:
+          _entries: []
+        _floats:
+          _entries: []
+        _doubles:
+          _entries: []
+        _strings:
+          _entries: []
+        _vectors2Int:
+          _entries: []
+        _vectors3Int:
+          _entries: []
+        _vectors2:
+          _entries: []
+        _vectors3:
+          _entries: []
+        _vectors4:
+          _entries: []
+        _quaternions:
+          _entries: []
+        _colors:
+          _entries: []
+        _layerMasks:
+          _entries: []
+        _curves:
+          _entries: []
+        _objects:
+          _entries: []
+        _enums:
+          _entries: []
+        _references:
+          _entries: []
+        _boolArrays:
+          _entries: []
+        _intArrays:
+          _entries: []
+        _longArrays:
+          _entries: []
+        _floatArrays:
+          _entries: []
+        _doubleArrays:
+          _entries: []
+        _stringArrays:
+          _entries: []
+        _vectors2IntArrays:
+          _entries: []
+        _vectors3IntArrays:
+          _entries: []
+        _vectors2Arrays:
+          _entries: []
+        _vectors3Arrays:
+          _entries: []
+        _vectors4Arrays:
+          _entries: []
+        _quaternionArrays:
+          _entries: []
+        _colorArrays:
+          _entries: []
+        _layerMaskArrays:
+          _entries: []
+        _curveArrays:
+          _entries: []
+        _objectArrays:
+          _entries: []
+        _enumArrays:
+          _entries: []
+        _referenceArrays:
+          _entries: []
+    - key: {fileID: 11400000, guid: fe506e587f8ace14aad92455bbcdcd71, type: 2}
+      value:
+        _properties: ddb57901
+        _propertiesMap:
+          _entries:
+          - key: 24753629
+            value:
+              name: CharacterAccess
+              type:
+                _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
+        _bools:
+          _entries: []
+        _ints:
+          _entries: []
+        _longs:
+          _entries: []
+        _floats:
+          _entries: []
+        _doubles:
+          _entries: []
+        _strings:
+          _entries: []
+        _vectors2Int:
+          _entries: []
+        _vectors3Int:
+          _entries: []
+        _vectors2:
+          _entries: []
+        _vectors3:
+          _entries: []
+        _vectors4:
+          _entries: []
+        _quaternions:
+          _entries: []
+        _colors:
+          _entries: []
+        _layerMasks:
+          _entries: []
+        _curves:
+          _entries: []
+        _objects:
+          _entries:
+          - key: 24753629
+            value:
+              value: {fileID: 1207123948819953879}
+        _enums:
+          _entries: []
+        _references:
+          _entries: []
+        _boolArrays:
+          _entries: []
+        _intArrays:
+          _entries: []
+        _longArrays:
+          _entries: []
+        _floatArrays:
+          _entries: []
+        _doubleArrays:
+          _entries: []
+        _stringArrays:
+          _entries: []
+        _vectors2IntArrays:
+          _entries: []
+        _vectors3IntArrays:
+          _entries: []
+        _vectors2Arrays:
+          _entries: []
+        _vectors3Arrays:
+          _entries: []
+        _vectors4Arrays:
+          _entries: []
+        _quaternionArrays:
+          _entries: []
+        _colorArrays:
+          _entries: []
+        _layerMaskArrays:
+          _entries: []
+        _curveArrays:
+          _entries: []
+        _objectArrays:
+          _entries: []
+        _enumArrays:
+          _entries: []
+        _referenceArrays:
+          _entries: []
+    - key: {fileID: 11400000, guid: dec3019ebe9493a4a89d668b8f6d527d, type: 2}
+      value:
+        _properties: ddb57901
+        _propertiesMap:
+          _entries:
+          - key: 24753629
+            value:
+              name: CharacterAccess
+              type:
+                _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
+        _bools:
+          _entries: []
+        _ints:
+          _entries: []
+        _longs:
+          _entries: []
+        _floats:
+          _entries: []
+        _doubles:
+          _entries: []
+        _strings:
+          _entries: []
+        _vectors2Int:
+          _entries: []
+        _vectors3Int:
+          _entries: []
+        _vectors2:
+          _entries: []
+        _vectors3:
+          _entries: []
+        _vectors4:
+          _entries: []
+        _quaternions:
+          _entries: []
+        _colors:
+          _entries: []
+        _layerMasks:
+          _entries: []
+        _curves:
+          _entries: []
+        _objects:
+          _entries:
+          - key: 24753629
+            value:
+              value: {fileID: 1207123948819953879}
+        _enums:
+          _entries: []
+        _references:
+          _entries: []
+        _boolArrays:
+          _entries: []
+        _intArrays:
+          _entries: []
+        _longArrays:
+          _entries: []
+        _floatArrays:
+          _entries: []
+        _doubleArrays:
+          _entries: []
+        _stringArrays:
+          _entries: []
+        _vectors2IntArrays:
+          _entries: []
+        _vectors3IntArrays:
+          _entries: []
+        _vectors2Arrays:
+          _entries: []
+        _vectors3Arrays:
+          _entries: []
+        _vectors4Arrays:
+          _entries: []
+        _quaternionArrays:
+          _entries: []
+        _colorArrays:
+          _entries: []
+        _layerMaskArrays:
+          _entries: []
+        _curveArrays:
+          _entries: []
+        _objectArrays:
+          _entries: []
+        _enumArrays:
+          _entries: []
+        _referenceArrays:
+          _entries: []
+    - key: {fileID: 11400000, guid: 348cfedaf3449e34cb3ff08293a1d2fa, type: 2}
+      value:
+        _properties: ddb57901
+        _propertiesMap:
+          _entries:
+          - key: 24753629
+            value:
+              name: CharacterAccess
+              type:
+                _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
+        _bools:
+          _entries: []
+        _ints:
+          _entries: []
+        _longs:
+          _entries: []
+        _floats:
+          _entries: []
+        _doubles:
+          _entries: []
+        _strings:
+          _entries: []
+        _vectors2Int:
+          _entries: []
+        _vectors3Int:
+          _entries: []
+        _vectors2:
+          _entries: []
+        _vectors3:
+          _entries: []
+        _vectors4:
+          _entries: []
+        _quaternions:
+          _entries: []
+        _colors:
+          _entries: []
+        _layerMasks:
+          _entries: []
+        _curves:
+          _entries: []
+        _objects:
+          _entries:
+          - key: 24753629
+            value:
+              value: {fileID: 1207123948819953879}
+        _enums:
+          _entries: []
+        _references:
+          _entries: []
+        _boolArrays:
+          _entries: []
+        _intArrays:
+          _entries: []
+        _longArrays:
+          _entries: []
+        _floatArrays:
+          _entries: []
+        _doubleArrays:
+          _entries: []
+        _stringArrays:
+          _entries: []
+        _vectors2IntArrays:
+          _entries: []
+        _vectors3IntArrays:
+          _entries: []
+        _vectors2Arrays:
+          _entries: []
+        _vectors3Arrays:
+          _entries: []
+        _vectors4Arrays:
+          _entries: []
+        _quaternionArrays:
+          _entries: []
+        _colorArrays:
+          _entries: []
+        _layerMaskArrays:
+          _entries: []
+        _curveArrays:
+          _entries: []
+        _objectArrays:
+          _entries: []
+        _enumArrays:
+          _entries: []
+        _referenceArrays:
+          _entries: []
+    - key: {fileID: 11400000, guid: 6f3cf282843e02d4fae6eaa3cff5f040, type: 2}
+      value:
+        _properties: ddb57901
+        _propertiesMap:
+          _entries:
+          - key: 24753629
+            value:
+              name: CharacterAccess
+              type:
+                _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
+        _bools:
+          _entries: []
+        _ints:
+          _entries: []
+        _longs:
+          _entries: []
+        _floats:
+          _entries: []
+        _doubles:
+          _entries: []
+        _strings:
+          _entries: []
+        _vectors2Int:
+          _entries: []
+        _vectors3Int:
+          _entries: []
+        _vectors2:
+          _entries: []
+        _vectors3:
+          _entries: []
+        _vectors4:
+          _entries: []
+        _quaternions:
+          _entries: []
+        _colors:
+          _entries: []
+        _layerMasks:
+          _entries: []
+        _curves:
+          _entries: []
+        _objects:
+          _entries:
+          - key: 24753629
+            value:
+              value: {fileID: 1207123948819953879}
+        _enums:
+          _entries: []
+        _references:
+          _entries: []
+        _boolArrays:
+          _entries: []
+        _intArrays:
+          _entries: []
+        _longArrays:
+          _entries: []
+        _floatArrays:
+          _entries: []
+        _doubleArrays:
+          _entries: []
+        _stringArrays:
+          _entries: []
+        _vectors2IntArrays:
+          _entries: []
+        _vectors3IntArrays:
+          _entries: []
+        _vectors2Arrays:
+          _entries: []
+        _vectors3Arrays:
+          _entries: []
+        _vectors4Arrays:
+          _entries: []
+        _quaternionArrays:
+          _entries: []
+        _colorArrays:
+          _entries: []
+        _layerMaskArrays:
+          _entries: []
+        _curveArrays:
+          _entries: []
+        _objectArrays:
+          _entries: []
+        _enumArrays:
+          _entries: []
+        _referenceArrays:
+          _entries: []
+    - key: {fileID: 11400000, guid: c4f7b2a5275d7534785ebdd1067323f4, type: 2}
+      value:
+        _properties: ddb57901
+        _propertiesMap:
+          _entries:
+          - key: 24753629
+            value:
+              name: CharacterAccess
+              type:
+                _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
+        _bools:
+          _entries: []
+        _ints:
+          _entries: []
+        _longs:
+          _entries: []
+        _floats:
+          _entries: []
+        _doubles:
+          _entries: []
+        _strings:
+          _entries: []
+        _vectors2Int:
+          _entries: []
+        _vectors3Int:
+          _entries: []
+        _vectors2:
+          _entries: []
+        _vectors3:
+          _entries: []
+        _vectors4:
+          _entries: []
+        _quaternions:
+          _entries: []
+        _colors:
+          _entries: []
+        _layerMasks:
+          _entries: []
+        _curves:
+          _entries: []
+        _objects:
+          _entries:
+          - key: 24753629
+            value:
+              value: {fileID: 1207123948819953879}
+        _enums:
+          _entries: []
+        _references:
+          _entries: []
+        _boolArrays:
+          _entries: []
+        _intArrays:
+          _entries: []
+        _longArrays:
+          _entries: []
+        _floatArrays:
+          _entries: []
+        _doubleArrays:
+          _entries: []
+        _stringArrays:
+          _entries: []
+        _vectors2IntArrays:
+          _entries: []
+        _vectors3IntArrays:
+          _entries: []
+        _vectors2Arrays:
+          _entries: []
+        _vectors3Arrays:
+          _entries: []
+        _vectors4Arrays:
+          _entries: []
+        _quaternionArrays:
+          _entries: []
+        _colorArrays:
+          _entries: []
+        _layerMaskArrays:
+          _entries: []
+        _curveArrays:
+          _entries: []
+        _objectArrays:
+          _entries: []
+        _enumArrays:
+          _entries: []
+        _referenceArrays:
+          _entries: []
+    - key: {fileID: 11400000, guid: 22ce124a33d1a81449ea07e01d842389, type: 2}
+      value:
+        _properties: ddb57901
+        _propertiesMap:
+          _entries:
+          - key: 24753629
+            value:
+              name: CharacterAccess
+              type:
+                _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
+        _bools:
+          _entries: []
+        _ints:
+          _entries: []
+        _longs:
+          _entries: []
+        _floats:
+          _entries: []
+        _doubles:
+          _entries: []
+        _strings:
+          _entries: []
+        _vectors2Int:
+          _entries: []
+        _vectors3Int:
+          _entries: []
+        _vectors2:
+          _entries: []
+        _vectors3:
+          _entries: []
+        _vectors4:
+          _entries: []
+        _quaternions:
+          _entries: []
+        _colors:
+          _entries: []
+        _layerMasks:
+          _entries: []
+        _curves:
+          _entries: []
+        _objects:
+          _entries:
+          - key: 24753629
+            value:
+              value: {fileID: 1207123948819953879}
+        _enums:
+          _entries: []
+        _references:
+          _entries: []
+        _boolArrays:
+          _entries: []
+        _intArrays:
+          _entries: []
+        _longArrays:
+          _entries: []
+        _floatArrays:
+          _entries: []
+        _doubleArrays:
+          _entries: []
+        _stringArrays:
+          _entries: []
+        _vectors2IntArrays:
+          _entries: []
+        _vectors3IntArrays:
+          _entries: []
+        _vectors2Arrays:
+          _entries: []
+        _vectors3Arrays:
+          _entries: []
+        _vectors4Arrays:
+          _entries: []
+        _quaternionArrays:
+          _entries: []
+        _colorArrays:
+          _entries: []
+        _layerMaskArrays:
+          _entries: []
+        _curveArrays:
+          _entries: []
+        _objectArrays:
+          _entries: []
+        _enumArrays:
+          _entries: []
+        _referenceArrays:
+          _entries: []
+    - key: {fileID: 11400000, guid: 8d0e0a75bf3dbe543aac8eff769417c6, type: 2}
+      value:
+        _properties: ddb57901
+        _propertiesMap:
+          _entries:
+          - key: 24753629
+            value:
+              name: CharacterAccess
+              type:
+                _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
+        _bools:
+          _entries: []
+        _ints:
+          _entries: []
+        _longs:
+          _entries: []
+        _floats:
+          _entries: []
+        _doubles:
+          _entries: []
+        _strings:
+          _entries: []
+        _vectors2Int:
+          _entries: []
+        _vectors3Int:
+          _entries: []
+        _vectors2:
+          _entries: []
+        _vectors3:
+          _entries: []
+        _vectors4:
+          _entries: []
+        _quaternions:
+          _entries: []
+        _colors:
+          _entries: []
+        _layerMasks:
+          _entries: []
+        _curves:
+          _entries: []
+        _objects:
+          _entries:
+          - key: 24753629
+            value:
+              value: {fileID: 1207123948819953879}
+        _enums:
+          _entries: []
+        _references:
+          _entries: []
+        _boolArrays:
+          _entries: []
+        _intArrays:
+          _entries: []
+        _longArrays:
+          _entries: []
+        _floatArrays:
+          _entries: []
+        _doubleArrays:
+          _entries: []
+        _stringArrays:
+          _entries: []
+        _vectors2IntArrays:
+          _entries: []
+        _vectors3IntArrays:
+          _entries: []
+        _vectors2Arrays:
+          _entries: []
+        _vectors3Arrays:
+          _entries: []
+        _vectors4Arrays:
+          _entries: []
+        _quaternionArrays:
+          _entries: []
+        _colorArrays:
+          _entries: []
+        _layerMaskArrays:
+          _entries: []
+        _curveArrays:
+          _entries: []
+        _objectArrays:
+          _entries: []
+        _enumArrays:
+          _entries: []
+        _referenceArrays:
+          _entries: []
+  references:
+    version: 2
+    RefIds: []
+--- !u!1 &6164463367444352710
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7334716667041650443}
+  - component: {fileID: 3065865101151487097}
+  - component: {fileID: 8050060442515522144}
+  - component: {fileID: 245661434573261533}
+  m_Layer: 2
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7334716667041650443
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6164463367444352710}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.2, z: 0}
+  m_LocalScale: {x: 0.4, y: 0.7, z: 0.2}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8965563844700577084}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &3065865101151487097
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6164463367444352710}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &8050060442515522144
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6164463367444352710}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 257
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 13d1d49a996bea243ba3fad403169bb1, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &245661434573261533
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6164463367444352710}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &6199422921748495364
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 316555329901666186}
+  - component: {fileID: 2783521132316217076}
+  - component: {fileID: 9029351700012663908}
+  - component: {fileID: 4157112709543369175}
+  m_Layer: 2
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &316555329901666186
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6199422921748495364}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.12, z: 0.05}
+  m_LocalScale: {x: 0.1, y: 0.01, z: 0.1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6911922390057263876}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &2783521132316217076
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6199422921748495364}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &9029351700012663908
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6199422921748495364}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 257
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: c8988044bed02cb43a769d175ad32c8a, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4157112709543369175
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6199422921748495364}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7143888465385312374
 GameObject:
   m_ObjectHideFlags: 0
@@ -700,18 +2016,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d3ec7d6a46444f7b150311ae08bf98e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _input: {fileID: 2252703057486833798}
-  _cameraController: {fileID: 4741229143266635619}
-  _characterController: {fileID: 7205586870401899302}
   headAdapter: {fileID: 4283694202728951010}
   _bodyAdapter: {fileID: 150641572023669722}
-  _viewPipeline: {fileID: 9028569536951359156}
-  _motionPipeline: {fileID: 137295681341058935}
-  _jumpPipeline: {fileID: 7953495498895512114}
-  _heightPipeline: {fileID: 4560268376781457666}
-  _hitDetector: {fileID: 2001994226625679391}
-  _ceilingDetector: {fileID: 7205586868961636116}
-  _groundDetector: {fileID: 7205586868961636115}
+  _pipelines:
+  - {fileID: 7309461021355576228}
+  - {fileID: 6169025681448676973}
+  - {fileID: 4560268376781457666}
+  - {fileID: 2252703057486833798}
+  - {fileID: 2243419931141208573}
+  - {fileID: 7953495498895512114}
+  - {fileID: 137295681341058935}
+  - {fileID: 169266017175554870}
+  - {fileID: 9028569536951359156}
 --- !u!1 &7205586868813128952
 GameObject:
   m_ObjectHideFlags: 0
@@ -757,6 +2073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _characterAccess: {fileID: 1207123948819953879}
+  _camera: {fileID: 7205586869398250334}
   _playerLoopStage: 1
   _inputProcessors:
   - rid: 6196715897464291334
@@ -878,7 +2195,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7205586869188020230}
   - component: {fileID: 137295681341058935}
-  - component: {fileID: 4871553850246391415}
   m_Layer: 2
   m_Name: Motion
   m_TagString: Untagged
@@ -949,696 +2265,6 @@ MonoBehaviour:
         forceInfluenceFactor: 0.5
         gravityForce: 15
         isGravityEnabled: 1
---- !u!114 &4871553850246391415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7205586869188020231}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14e6e69af36349bf9f40d0c82e5f80d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _blueprintAsset: {fileID: 11400000, guid: e0fe7d5640ea9c944a213fe914375ed1, type: 2}
-  _blackboardOverridesMap:
-    _entries:
-    - key: {fileID: 11400000, guid: e0fe7d5640ea9c944a213fe914375ed1, type: 2}
-      value:
-        _properties: 
-        _propertiesMap:
-          _entries: []
-        _bools:
-          _entries: []
-        _ints:
-          _entries: []
-        _longs:
-          _entries: []
-        _floats:
-          _entries: []
-        _doubles:
-          _entries: []
-        _strings:
-          _entries: []
-        _vectors2Int:
-          _entries: []
-        _vectors3Int:
-          _entries: []
-        _vectors2:
-          _entries: []
-        _vectors3:
-          _entries: []
-        _vectors4:
-          _entries: []
-        _quaternions:
-          _entries: []
-        _colors:
-          _entries: []
-        _layerMasks:
-          _entries: []
-        _curves:
-          _entries: []
-        _objects:
-          _entries: []
-        _enums:
-          _entries: []
-        _references:
-          _entries: []
-        _boolArrays:
-          _entries: []
-        _intArrays:
-          _entries: []
-        _longArrays:
-          _entries: []
-        _floatArrays:
-          _entries: []
-        _doubleArrays:
-          _entries: []
-        _stringArrays:
-          _entries: []
-        _vectors2IntArrays:
-          _entries: []
-        _vectors3IntArrays:
-          _entries: []
-        _vectors2Arrays:
-          _entries: []
-        _vectors3Arrays:
-          _entries: []
-        _vectors4Arrays:
-          _entries: []
-        _quaternionArrays:
-          _entries: []
-        _colorArrays:
-          _entries: []
-        _layerMaskArrays:
-          _entries: []
-        _curveArrays:
-          _entries: []
-        _objectArrays:
-          _entries: []
-        _enumArrays:
-          _entries: []
-        _referenceArrays:
-          _entries: []
-    - key: {fileID: 11400000, guid: fe506e587f8ace14aad92455bbcdcd71, type: 2}
-      value:
-        _properties: ddb57901
-        _propertiesMap:
-          _entries:
-          - key: 24753629
-            value:
-              name: CharacterAccess
-              type:
-                _type: MisterGames.Character.Access.CharacterAccess, MisterGames.Character
-        _bools:
-          _entries: []
-        _ints:
-          _entries: []
-        _longs:
-          _entries: []
-        _floats:
-          _entries: []
-        _doubles:
-          _entries: []
-        _strings:
-          _entries: []
-        _vectors2Int:
-          _entries: []
-        _vectors3Int:
-          _entries: []
-        _vectors2:
-          _entries: []
-        _vectors3:
-          _entries: []
-        _vectors4:
-          _entries: []
-        _quaternions:
-          _entries: []
-        _colors:
-          _entries: []
-        _layerMasks:
-          _entries: []
-        _curves:
-          _entries: []
-        _objects:
-          _entries:
-          - key: 24753629
-            value:
-              value: {fileID: 1207123948819953879}
-        _enums:
-          _entries: []
-        _references:
-          _entries: []
-        _boolArrays:
-          _entries: []
-        _intArrays:
-          _entries: []
-        _longArrays:
-          _entries: []
-        _floatArrays:
-          _entries: []
-        _doubleArrays:
-          _entries: []
-        _stringArrays:
-          _entries: []
-        _vectors2IntArrays:
-          _entries: []
-        _vectors3IntArrays:
-          _entries: []
-        _vectors2Arrays:
-          _entries: []
-        _vectors3Arrays:
-          _entries: []
-        _vectors4Arrays:
-          _entries: []
-        _quaternionArrays:
-          _entries: []
-        _colorArrays:
-          _entries: []
-        _layerMaskArrays:
-          _entries: []
-        _curveArrays:
-          _entries: []
-        _objectArrays:
-          _entries: []
-        _enumArrays:
-          _entries: []
-        _referenceArrays:
-          _entries: []
-    - key: {fileID: 11400000, guid: dec3019ebe9493a4a89d668b8f6d527d, type: 2}
-      value:
-        _properties: ddb57901
-        _propertiesMap:
-          _entries:
-          - key: 24753629
-            value:
-              name: CharacterAccess
-              type:
-                _type: MisterGames.Character.Access.CharacterAccess, MisterGames.Character
-        _bools:
-          _entries: []
-        _ints:
-          _entries: []
-        _longs:
-          _entries: []
-        _floats:
-          _entries: []
-        _doubles:
-          _entries: []
-        _strings:
-          _entries: []
-        _vectors2Int:
-          _entries: []
-        _vectors3Int:
-          _entries: []
-        _vectors2:
-          _entries: []
-        _vectors3:
-          _entries: []
-        _vectors4:
-          _entries: []
-        _quaternions:
-          _entries: []
-        _colors:
-          _entries: []
-        _layerMasks:
-          _entries: []
-        _curves:
-          _entries: []
-        _objects:
-          _entries:
-          - key: 24753629
-            value:
-              value: {fileID: 1207123948819953879}
-        _enums:
-          _entries: []
-        _references:
-          _entries: []
-        _boolArrays:
-          _entries: []
-        _intArrays:
-          _entries: []
-        _longArrays:
-          _entries: []
-        _floatArrays:
-          _entries: []
-        _doubleArrays:
-          _entries: []
-        _stringArrays:
-          _entries: []
-        _vectors2IntArrays:
-          _entries: []
-        _vectors3IntArrays:
-          _entries: []
-        _vectors2Arrays:
-          _entries: []
-        _vectors3Arrays:
-          _entries: []
-        _vectors4Arrays:
-          _entries: []
-        _quaternionArrays:
-          _entries: []
-        _colorArrays:
-          _entries: []
-        _layerMaskArrays:
-          _entries: []
-        _curveArrays:
-          _entries: []
-        _objectArrays:
-          _entries: []
-        _enumArrays:
-          _entries: []
-        _referenceArrays:
-          _entries: []
-    - key: {fileID: 11400000, guid: 348cfedaf3449e34cb3ff08293a1d2fa, type: 2}
-      value:
-        _properties: ddb57901
-        _propertiesMap:
-          _entries:
-          - key: 24753629
-            value:
-              name: CharacterAccess
-              type:
-                _type: MisterGames.Character.Access.CharacterAccess, MisterGames.Character
-        _bools:
-          _entries: []
-        _ints:
-          _entries: []
-        _longs:
-          _entries: []
-        _floats:
-          _entries: []
-        _doubles:
-          _entries: []
-        _strings:
-          _entries: []
-        _vectors2Int:
-          _entries: []
-        _vectors3Int:
-          _entries: []
-        _vectors2:
-          _entries: []
-        _vectors3:
-          _entries: []
-        _vectors4:
-          _entries: []
-        _quaternions:
-          _entries: []
-        _colors:
-          _entries: []
-        _layerMasks:
-          _entries: []
-        _curves:
-          _entries: []
-        _objects:
-          _entries:
-          - key: 24753629
-            value:
-              value: {fileID: 1207123948819953879}
-        _enums:
-          _entries: []
-        _references:
-          _entries: []
-        _boolArrays:
-          _entries: []
-        _intArrays:
-          _entries: []
-        _longArrays:
-          _entries: []
-        _floatArrays:
-          _entries: []
-        _doubleArrays:
-          _entries: []
-        _stringArrays:
-          _entries: []
-        _vectors2IntArrays:
-          _entries: []
-        _vectors3IntArrays:
-          _entries: []
-        _vectors2Arrays:
-          _entries: []
-        _vectors3Arrays:
-          _entries: []
-        _vectors4Arrays:
-          _entries: []
-        _quaternionArrays:
-          _entries: []
-        _colorArrays:
-          _entries: []
-        _layerMaskArrays:
-          _entries: []
-        _curveArrays:
-          _entries: []
-        _objectArrays:
-          _entries: []
-        _enumArrays:
-          _entries: []
-        _referenceArrays:
-          _entries: []
-    - key: {fileID: 11400000, guid: 6f3cf282843e02d4fae6eaa3cff5f040, type: 2}
-      value:
-        _properties: ddb57901
-        _propertiesMap:
-          _entries:
-          - key: 24753629
-            value:
-              name: CharacterAccess
-              type:
-                _type: MisterGames.Character.Access.CharacterAccess, MisterGames.Character
-        _bools:
-          _entries: []
-        _ints:
-          _entries: []
-        _longs:
-          _entries: []
-        _floats:
-          _entries: []
-        _doubles:
-          _entries: []
-        _strings:
-          _entries: []
-        _vectors2Int:
-          _entries: []
-        _vectors3Int:
-          _entries: []
-        _vectors2:
-          _entries: []
-        _vectors3:
-          _entries: []
-        _vectors4:
-          _entries: []
-        _quaternions:
-          _entries: []
-        _colors:
-          _entries: []
-        _layerMasks:
-          _entries: []
-        _curves:
-          _entries: []
-        _objects:
-          _entries:
-          - key: 24753629
-            value:
-              value: {fileID: 1207123948819953879}
-        _enums:
-          _entries: []
-        _references:
-          _entries: []
-        _boolArrays:
-          _entries: []
-        _intArrays:
-          _entries: []
-        _longArrays:
-          _entries: []
-        _floatArrays:
-          _entries: []
-        _doubleArrays:
-          _entries: []
-        _stringArrays:
-          _entries: []
-        _vectors2IntArrays:
-          _entries: []
-        _vectors3IntArrays:
-          _entries: []
-        _vectors2Arrays:
-          _entries: []
-        _vectors3Arrays:
-          _entries: []
-        _vectors4Arrays:
-          _entries: []
-        _quaternionArrays:
-          _entries: []
-        _colorArrays:
-          _entries: []
-        _layerMaskArrays:
-          _entries: []
-        _curveArrays:
-          _entries: []
-        _objectArrays:
-          _entries: []
-        _enumArrays:
-          _entries: []
-        _referenceArrays:
-          _entries: []
-    - key: {fileID: 11400000, guid: c4f7b2a5275d7534785ebdd1067323f4, type: 2}
-      value:
-        _properties: ddb57901
-        _propertiesMap:
-          _entries:
-          - key: 24753629
-            value:
-              name: CharacterAccess
-              type:
-                _type: MisterGames.Character.Access.CharacterAccess, MisterGames.Character
-        _bools:
-          _entries: []
-        _ints:
-          _entries: []
-        _longs:
-          _entries: []
-        _floats:
-          _entries: []
-        _doubles:
-          _entries: []
-        _strings:
-          _entries: []
-        _vectors2Int:
-          _entries: []
-        _vectors3Int:
-          _entries: []
-        _vectors2:
-          _entries: []
-        _vectors3:
-          _entries: []
-        _vectors4:
-          _entries: []
-        _quaternions:
-          _entries: []
-        _colors:
-          _entries: []
-        _layerMasks:
-          _entries: []
-        _curves:
-          _entries: []
-        _objects:
-          _entries:
-          - key: 24753629
-            value:
-              value: {fileID: 1207123948819953879}
-        _enums:
-          _entries: []
-        _references:
-          _entries: []
-        _boolArrays:
-          _entries: []
-        _intArrays:
-          _entries: []
-        _longArrays:
-          _entries: []
-        _floatArrays:
-          _entries: []
-        _doubleArrays:
-          _entries: []
-        _stringArrays:
-          _entries: []
-        _vectors2IntArrays:
-          _entries: []
-        _vectors3IntArrays:
-          _entries: []
-        _vectors2Arrays:
-          _entries: []
-        _vectors3Arrays:
-          _entries: []
-        _vectors4Arrays:
-          _entries: []
-        _quaternionArrays:
-          _entries: []
-        _colorArrays:
-          _entries: []
-        _layerMaskArrays:
-          _entries: []
-        _curveArrays:
-          _entries: []
-        _objectArrays:
-          _entries: []
-        _enumArrays:
-          _entries: []
-        _referenceArrays:
-          _entries: []
-    - key: {fileID: 11400000, guid: 22ce124a33d1a81449ea07e01d842389, type: 2}
-      value:
-        _properties: ddb57901
-        _propertiesMap:
-          _entries:
-          - key: 24753629
-            value:
-              name: CharacterAccess
-              type:
-                _type: MisterGames.Character.Access.CharacterAccess, MisterGames.Character
-        _bools:
-          _entries: []
-        _ints:
-          _entries: []
-        _longs:
-          _entries: []
-        _floats:
-          _entries: []
-        _doubles:
-          _entries: []
-        _strings:
-          _entries: []
-        _vectors2Int:
-          _entries: []
-        _vectors3Int:
-          _entries: []
-        _vectors2:
-          _entries: []
-        _vectors3:
-          _entries: []
-        _vectors4:
-          _entries: []
-        _quaternions:
-          _entries: []
-        _colors:
-          _entries: []
-        _layerMasks:
-          _entries: []
-        _curves:
-          _entries: []
-        _objects:
-          _entries:
-          - key: 24753629
-            value:
-              value: {fileID: 1207123948819953879}
-        _enums:
-          _entries: []
-        _references:
-          _entries: []
-        _boolArrays:
-          _entries: []
-        _intArrays:
-          _entries: []
-        _longArrays:
-          _entries: []
-        _floatArrays:
-          _entries: []
-        _doubleArrays:
-          _entries: []
-        _stringArrays:
-          _entries: []
-        _vectors2IntArrays:
-          _entries: []
-        _vectors3IntArrays:
-          _entries: []
-        _vectors2Arrays:
-          _entries: []
-        _vectors3Arrays:
-          _entries: []
-        _vectors4Arrays:
-          _entries: []
-        _quaternionArrays:
-          _entries: []
-        _colorArrays:
-          _entries: []
-        _layerMaskArrays:
-          _entries: []
-        _curveArrays:
-          _entries: []
-        _objectArrays:
-          _entries: []
-        _enumArrays:
-          _entries: []
-        _referenceArrays:
-          _entries: []
-    - key: {fileID: 11400000, guid: 8d0e0a75bf3dbe543aac8eff769417c6, type: 2}
-      value:
-        _properties: ddb57901
-        _propertiesMap:
-          _entries:
-          - key: 24753629
-            value:
-              name: CharacterAccess
-              type:
-                _type: MisterGames.Character.Access.CharacterAccess, MisterGames.Character
-        _bools:
-          _entries: []
-        _ints:
-          _entries: []
-        _longs:
-          _entries: []
-        _floats:
-          _entries: []
-        _doubles:
-          _entries: []
-        _strings:
-          _entries: []
-        _vectors2Int:
-          _entries: []
-        _vectors3Int:
-          _entries: []
-        _vectors2:
-          _entries: []
-        _vectors3:
-          _entries: []
-        _vectors4:
-          _entries: []
-        _quaternions:
-          _entries: []
-        _colors:
-          _entries: []
-        _layerMasks:
-          _entries: []
-        _curves:
-          _entries: []
-        _objects:
-          _entries:
-          - key: 24753629
-            value:
-              value: {fileID: 1207123948819953879}
-        _enums:
-          _entries: []
-        _references:
-          _entries: []
-        _boolArrays:
-          _entries: []
-        _intArrays:
-          _entries: []
-        _longArrays:
-          _entries: []
-        _floatArrays:
-          _entries: []
-        _doubleArrays:
-          _entries: []
-        _stringArrays:
-          _entries: []
-        _vectors2IntArrays:
-          _entries: []
-        _vectors3IntArrays:
-          _entries: []
-        _vectors2Arrays:
-          _entries: []
-        _vectors3Arrays:
-          _entries: []
-        _vectors4Arrays:
-          _entries: []
-        _quaternionArrays:
-          _entries: []
-        _colorArrays:
-          _entries: []
-        _layerMaskArrays:
-          _entries: []
-        _curveArrays:
-          _entries: []
-        _objectArrays:
-          _entries: []
-        _enumArrays:
-          _entries: []
-        _referenceArrays:
-          _entries: []
-  references:
-    version: 2
-    RefIds: []
 --- !u!1 &7205586869398250321
 GameObject:
   m_ObjectHideFlags: 0
@@ -1674,6 +2300,7 @@ Transform:
   m_Children:
   - {fileID: 8993632890533737768}
   - {fileID: 2027359104}
+  - {fileID: 6911922390057263876}
   m_Father: {fileID: 7205586870401899320}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1891,7 +2518,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88e9768dc7574a6a9ad559369bbd161f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _characterAccess: {fileID: 1207123948819953879}
+  _cameraController: {fileID: 4741229143266635619}
 --- !u!1 &7205586870386989442
 GameObject:
   m_ObjectHideFlags: 0
@@ -1937,8 +2564,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _characterAccess: {fileID: 1207123948819953879}
+  _cameraController: {fileID: 4741229143266635619}
+  _characterController: {fileID: 7205586870401899302}
   _playerLoopStage: 1
-  _edgeInterpolationWeight: 0.1
 --- !u!1 &7205586870401899322
 GameObject:
   m_ObjectHideFlags: 0
@@ -1971,14 +2599,19 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 8965563844700577084}
   - {fileID: 8908396396791605977}
+  - {fileID: 5330041459638592098}
+  - {fileID: 2236722660689622430}
   - {fileID: 7205586868961636114}
   - {fileID: 7205586869398250320}
   - {fileID: 7205586870386989441}
   - {fileID: 6242859819234470736}
   - {fileID: 1653988782909861753}
+  - {fileID: 2515480883230301455}
   - {fileID: 6504140747344493820}
   - {fileID: 7205586869188020230}
+  - {fileID: 4693590438674305861}
   - {fileID: 1668132340117076409}
   - {fileID: 7205586868813128935}
   m_Father: {fileID: 0}
@@ -2023,6 +2656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _characterAccess: {fileID: 1207123948819953879}
+  _characterController: {fileID: 7205586870401899302}
 --- !u!114 &2001994226625679391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2050,6 +2684,54 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _light: {fileID: 2027359103}
   _flashlightMesh: {fileID: 1308605269}
+--- !u!1 &8034314636682606040
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5330041459638592098}
+  - component: {fileID: 7309461021355576228}
+  m_Layer: 2
+  m_Name: Animation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5330041459638592098
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8034314636682606040}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7205586870401899320}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7309461021355576228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8034314636682606040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edca38a43b7c47d99fbec8b08ad6c804, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _characterAccess: {fileID: 1207123948819953879}
+  _cameraController: {fileID: 4741229143266635619}
+  _playerLoopStage: 1
+  _edgeInterpolationWeight: 0.05
 --- !u!1001 &914670650207916062
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2058,6 +2740,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7205586869398250320}
     m_Modifications:
+    - target: {fileID: 1387130771659247304, guid: 3197c3c2ccd50b249a7b3ef86a4980c3, type: 3}
+      propertyPath: _characterAccess
+      value: 
+      objectReference: {fileID: 1207123948819953879}
     - target: {fileID: 1842259765735774900, guid: 3197c3c2ccd50b249a7b3ef86a4980c3, type: 3}
       propertyPath: _cursorImage
       value: 
@@ -2115,6 +2801,28 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3197c3c2ccd50b249a7b3ef86a4980c3, type: 3}
+--- !u!114 &2425128053471703627 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3248882044609864277, guid: 3197c3c2ccd50b249a7b3ef86a4980c3, type: 3}
+  m_PrefabInstance: {fileID: 914670650207916062}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b037da6e34724cbc9af875a3571dc2b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8016680816859197842 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7201652344378548620, guid: 3197c3c2ccd50b249a7b3ef86a4980c3, type: 3}
+  m_PrefabInstance: {fileID: 914670650207916062}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8cb8e6afd38428a89598acf1fff6686, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8993632890533737768 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8106019091452929334, guid: 3197c3c2ccd50b249a7b3ef86a4980c3, type: 3}

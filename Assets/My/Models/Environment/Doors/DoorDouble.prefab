@@ -254,7 +254,7 @@ MonoBehaviour:
             value:
               name: Interactive 0
               type:
-                _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact
+                _type: MisterGames.Interact.Interactives.Interactive, MisterGames.Interact
           - key: 291680248
             value:
               name: Indicator 1
@@ -264,7 +264,7 @@ MonoBehaviour:
             value:
               name: Interactive 1
               type:
-                _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact
+                _type: MisterGames.Interact.Interactives.Interactive, MisterGames.Interact
         _bools:
           _entries:
           - key: -1577222989
@@ -1766,6 +1766,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6245961607935014007, guid: d433da2e9593ad6469e6bbe83b69d365, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2814034182591148817}
+    - targetCorrespondingSourceObject: {fileID: 6245961607935014007, guid: d433da2e9593ad6469e6bbe83b69d365, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3250199313326630626}
   m_SourcePrefab: {fileID: 100100000, guid: d433da2e9593ad6469e6bbe83b69d365, type: 3}
 --- !u!4 &4723555130281396294 stripped
 Transform:
@@ -1789,7 +1792,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15607a9816044bc7b2548f343182030f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeSourceStage: 1
   _strategy: {fileID: 11400000, guid: 3e44b5b53bd4e5346bade11f43de6f95, type: 2}
 --- !u!114 &2814034182591148817
 MonoBehaviour:
@@ -1804,8 +1806,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactive: {fileID: 4692234100612762904}
-  _cursorIconOnHover: {fileID: 11400000, guid: a3116495fe10a084db1793e13755f30a, type: 2}
-  _cursorIconWhileInteracting: {fileID: 0}
+  _strategy: {fileID: 11400000, guid: 2ef8e637213508440a44520645625afe, type: 2}
+--- !u!114 &3250199313326630626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6245961606273251345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5be675038ae43e5b1e2068e95788361, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _strategy: {fileID: 11400000, guid: 866b0e22a3cebe944a1168130ef167e7, type: 2}
+  _debugDrawDetectable: 0
 --- !u!114 &6245961606273251567 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6245961607935014025, guid: d433da2e9593ad6469e6bbe83b69d365, type: 3}
@@ -1947,6 +1962,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6245961607935014007, guid: d433da2e9593ad6469e6bbe83b69d365, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5977086544145820898}
+    - targetCorrespondingSourceObject: {fileID: 6245961607935014007, guid: d433da2e9593ad6469e6bbe83b69d365, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5901546728359316868}
   m_SourcePrefab: {fileID: 100100000, guid: d433da2e9593ad6469e6bbe83b69d365, type: 3}
 --- !u!114 &364826473 stripped
 MonoBehaviour:
@@ -1976,7 +1994,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15607a9816044bc7b2548f343182030f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeSourceStage: 1
   _strategy: {fileID: 11400000, guid: 3e44b5b53bd4e5346bade11f43de6f95, type: 2}
 --- !u!114 &5977086544145820898
 MonoBehaviour:
@@ -1991,8 +2008,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactive: {fileID: 3830931403225376943}
-  _cursorIconOnHover: {fileID: 11400000, guid: a3116495fe10a084db1793e13755f30a, type: 2}
-  _cursorIconWhileInteracting: {fileID: 0}
+  _strategy: {fileID: 11400000, guid: 2ef8e637213508440a44520645625afe, type: 2}
+--- !u!114 &5901546728359316868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364826519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5be675038ae43e5b1e2068e95788361, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _strategy: {fileID: 11400000, guid: 866b0e22a3cebe944a1168130ef167e7, type: 2}
+  _debugDrawDetectable: 0
 --- !u!1 &2089291750 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6245961606170637318, guid: d433da2e9593ad6469e6bbe83b69d365, type: 3}

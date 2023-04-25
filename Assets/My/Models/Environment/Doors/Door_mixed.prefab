@@ -1131,6 +1131,7 @@ GameObject:
   - component: {fileID: 3218984535136781044}
   - component: {fileID: 8663574614422119522}
   - component: {fileID: 4306184502033600556}
+  - component: {fileID: 2282753032313697883}
   m_Layer: 5
   m_Name: Fish
   m_TagString: Untagged
@@ -1208,7 +1209,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15607a9816044bc7b2548f343182030f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeSourceStage: 1
   _strategy: {fileID: 11400000, guid: 3e44b5b53bd4e5346bade11f43de6f95, type: 2}
 --- !u!114 &4306184502033600556
 MonoBehaviour:
@@ -1223,8 +1223,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactive: {fileID: 8663574614422119522}
-  _cursorIconOnHover: {fileID: 11400000, guid: a3116495fe10a084db1793e13755f30a, type: 2}
-  _cursorIconWhileInteracting: {fileID: 0}
+  _strategy: {fileID: 11400000, guid: 2ef8e637213508440a44520645625afe, type: 2}
+--- !u!114 &2282753032313697883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3218984535136780810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5be675038ae43e5b1e2068e95788361, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _strategy: {fileID: 11400000, guid: 866b0e22a3cebe944a1168130ef167e7, type: 2}
+  _debugDrawDetectable: 0
 --- !u!1 &3218984535559176827
 GameObject:
   m_ObjectHideFlags: 0
@@ -1354,6 +1367,7 @@ GameObject:
   - component: {fileID: 3218984536241175031}
   - component: {fileID: 4396899425137737766}
   - component: {fileID: 7860729337291219707}
+  - component: {fileID: 8873572897656224246}
   m_Layer: 5
   m_Name: Fish
   m_TagString: Untagged
@@ -1431,7 +1445,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15607a9816044bc7b2548f343182030f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeSourceStage: 1
   _strategy: {fileID: 11400000, guid: 3e44b5b53bd4e5346bade11f43de6f95, type: 2}
 --- !u!114 &7860729337291219707
 MonoBehaviour:
@@ -1446,8 +1459,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactive: {fileID: 4396899425137737766}
-  _cursorIconOnHover: {fileID: 11400000, guid: a3116495fe10a084db1793e13755f30a, type: 2}
-  _cursorIconWhileInteracting: {fileID: 0}
+  _strategy: {fileID: 11400000, guid: 2ef8e637213508440a44520645625afe, type: 2}
+--- !u!114 &8873572897656224246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3218984536241174793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5be675038ae43e5b1e2068e95788361, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _strategy: {fileID: 11400000, guid: 866b0e22a3cebe944a1168130ef167e7, type: 2}
+  _debugDrawDetectable: 0
 --- !u!1 &3247942821172093376
 GameObject:
   m_ObjectHideFlags: 0
@@ -2060,12 +2086,12 @@ MonoBehaviour:
             value:
               name: Interactive 0
               type:
-                _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact
+                _type: MisterGames.Interact.Interactives.Interactive, MisterGames.Interact
           - key: -1164085003
             value:
               name: Interactive 1
               type:
-                _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact
+                _type: MisterGames.Interact.Interactives.Interactive, MisterGames.Interact
         _bools:
           _entries:
           - key: -1577222989

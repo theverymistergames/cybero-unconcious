@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8106019091452929334}
+  - component: {fileID: 3248882044609864277}
   - component: {fileID: 7201652344378548620}
   - component: {fileID: 1842259765735774900}
   m_Layer: 2
@@ -32,8 +33,29 @@ Transform:
   m_Children:
   - {fileID: 8707077191589205302}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3248882044609864277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3539474951015124131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b037da6e34724cbc9af875a3571dc2b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _timeSourceStage: 1
+  _directViewDetector: {fileID: 643996480201117138}
+  _collisionDetector: {fileID: 643996480201117138}
+  _collisionFilter:
+    maxDistance: 10
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 33
+  _debugDrawDetectables: 0
 --- !u!114 &7201652344378548620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47,10 +69,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _timeSourceStage: 1
-  _collisionDetector: {fileID: 643996480201117138}
-  _collisionFilter:
-    maxDistance: 1.7
-  _debugDrawRaycastHit: 0
+  _interactivesDetector: {fileID: 3248882044609864277}
+  _directViewDetector: {fileID: 643996480201117138}
 --- !u!114 &1842259765735774900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64,6 +84,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _timeSourceStage: 1
+  _enableCursorOverride: 1
   _cursorImage: {fileID: 0}
   _initialCursorIcon: {fileID: 11400000, guid: 4cc5a8788650e9d49a46aebb7a155a40, type: 2}
   _isAlphaControlledByDistance: 1
@@ -93,8 +114,10 @@ MonoBehaviour:
     m_RotationOrder: 4
   _collisionFilter:
     maxDistance: 10
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 1
   _transparencyRaycaster: {fileID: 643996480201117138}
-  _debugDrawRaycastHit: 0
 --- !u!1 &5980107925551031172
 GameObject:
   m_ObjectHideFlags: 0
@@ -107,7 +130,7 @@ GameObject:
   - component: {fileID: 643996480201117138}
   - component: {fileID: 209711430486026954}
   - component: {fileID: 2348077145790693796}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Detectors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,11 +165,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _timeSourceStage: 1
-  _detectorGroup:
+  _detectors:
   - {fileID: 209711430486026954}
   - {fileID: 2348077145790693796}
   _collisionFilter:
     maxDistance: 10
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 33
 --- !u!114 &209711430486026954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,5 +206,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _timeSourceStage: 1
+  _maxHits: 6
   _collisionFilter:
     maxDistance: 10
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 32

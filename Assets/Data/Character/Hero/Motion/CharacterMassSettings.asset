@@ -11,13 +11,17 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7da84188c8ef43ad9337f6ac5059524e, type: 3}
   m_Name: CharacterMassSettings
-  m_EditorClassIdentifier: 
-  _actions:
-  - rid: 6196715832316526595
+  m_EditorClassIdentifier:
+  _action:
+    rid: 6196716168534294528
+  _asyncAction:
+    rid: -2
   references:
     version: 2
     RefIds:
-    - rid: 6196715832316526595
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 6196716168534294528
       type: {class: CharacterActionSetMassSettings, ns: MisterGames.Character.Motion, asm: MisterGames.Character}
       data:
         gravityForce: 15

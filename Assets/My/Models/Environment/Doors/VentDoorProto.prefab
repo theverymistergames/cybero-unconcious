@@ -140,7 +140,7 @@ MonoBehaviour:
             value:
               name: Interactive 0
               type:
-                _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact
+                _type: MisterGames.Interact.Interactives.Interactive, MisterGames.Interact
           - key: 2000765251
             value:
               name: Material Blocked
@@ -150,7 +150,7 @@ MonoBehaviour:
             value:
               name: Interactive 1
               type:
-                _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact
+                _type: MisterGames.Interact.Interactives.Interactive, MisterGames.Interact
         _bools:
           _entries:
           - key: 1061466026
@@ -385,6 +385,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6245961607935014007, guid: d433da2e9593ad6469e6bbe83b69d365, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4773678886467813865}
+    - targetCorrespondingSourceObject: {fileID: 6245961607935014007, guid: d433da2e9593ad6469e6bbe83b69d365, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7794899907946479097}
   m_SourcePrefab: {fileID: 100100000, guid: d433da2e9593ad6469e6bbe83b69d365, type: 3}
 --- !u!4 &844214074554967423 stripped
 Transform:
@@ -408,7 +411,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15607a9816044bc7b2548f343182030f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timeSourceStage: 1
   _strategy: {fileID: 11400000, guid: 3e44b5b53bd4e5346bade11f43de6f95, type: 2}
 --- !u!114 &4773678886467813865
 MonoBehaviour:
@@ -423,8 +425,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactive: {fileID: 7859231628411478567}
-  _cursorIconOnHover: {fileID: 11400000, guid: a3116495fe10a084db1793e13755f30a, type: 2}
-  _cursorIconWhileInteracting: {fileID: 0}
+  _strategy: {fileID: 11400000, guid: 2ef8e637213508440a44520645625afe, type: 2}
+--- !u!114 &7794899907946479097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2059319969752765736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5be675038ae43e5b1e2068e95788361, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _strategy: {fileID: 11400000, guid: 866b0e22a3cebe944a1168130ef167e7, type: 2}
+  _debugDrawDetectable: 0
 --- !u!114 &2059319969752765910 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6245961607935014025, guid: d433da2e9593ad6469e6bbe83b69d365, type: 3}
