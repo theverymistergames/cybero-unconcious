@@ -75,7 +75,7 @@ MonoBehaviour:
             _mode: 2
             _options: 0
             _dataType:
-              _type: MisterGames.Character.Access.CharacterAccess, MisterGames.Character
+              _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
       - key: 20
         value:
           _nodeId: 20
@@ -97,13 +97,13 @@ MonoBehaviour:
             _mode: 3
             _options: 0
             _dataType:
-              _type: MisterGames.Character.Access.CharacterAccess, MisterGames.Character
+              _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
       - key: 34
         value:
           _nodeId: 34
           _node:
             rid: 6196715892176322642
-          _position: {x: 1540.2509, y: 648.17267}
+          _position: {x: 1549.9165, y: 711.64545}
           _ports:
           - _name: Apply
             _mode: 1
@@ -119,17 +119,17 @@ MonoBehaviour:
             _mode: 3
             _options: 0
             _dataType:
-              _type: MisterGames.Character.Access.CharacterAccess, MisterGames.Character
+              _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
           - _name: Apply Set
             _mode: 11
             _options: 0
             _dataType:
-              _type: MisterGames.Character.Actions.CharacterChangeSet, MisterGames.Character
+              _type: MisterGames.Character.Actions.CharacterActionSet, MisterGames.Character
           - _name: Release Set
             _mode: 11
             _options: 0
             _dataType:
-              _type: MisterGames.Character.Actions.CharacterChangeSet, MisterGames.Character
+              _type: MisterGames.Character.Actions.CharacterActionSet, MisterGames.Character
           - _name: On Apply
             _mode: 0
             _options: 0
@@ -178,13 +178,13 @@ MonoBehaviour:
             _mode: 3
             _options: 0
             _dataType:
-              _type: MisterGames.Character.Access.CharacterAccess, MisterGames.Character
+              _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
       - key: 54
         value:
           _nodeId: 54
           _node:
             rid: 6196716009706225699
-          _position: {x: 2207.49, y: 648.69336}
+          _position: {x: 1546.5613, y: 651.2498}
           _ports:
           - _name: 
             _mode: 1
@@ -249,10 +249,6 @@ MonoBehaviour:
             value:
             - nodeId: 3
               portIndex: 0
-          - key: 5
-            value:
-            - nodeId: 54
-              portIndex: 0
       - key: 50
         value:
           _entries:
@@ -262,6 +258,8 @@ MonoBehaviour:
               portIndex: 0
           - key: 1
             value:
+            - nodeId: 54
+              portIndex: 0
             - nodeId: 34
               portIndex: 0
       - key: 55
@@ -329,8 +327,8 @@ MonoBehaviour:
           _entries:
           - key: 0
             value:
-            - nodeId: 34
-              portIndex: 5
+            - nodeId: 50
+              portIndex: 1
     _subgraphReferencesMap:
       _entries: []
   _blackboard:
@@ -341,7 +339,7 @@ MonoBehaviour:
         value:
           name: CharacterAccess
           type:
-            _type: MisterGames.Character.Access.CharacterAccess, MisterGames.Character
+            _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
     _bools:
       _entries: []
     _ints:

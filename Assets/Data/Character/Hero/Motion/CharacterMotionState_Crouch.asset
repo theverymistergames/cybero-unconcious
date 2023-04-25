@@ -11,24 +11,33 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7da84188c8ef43ad9337f6ac5059524e, type: 3}
   m_Name: CharacterMotionState_Crouch
-  m_EditorClassIdentifier: 
-  _actions:
-  - rid: 6196715832316526592
-  - rid: 6196715832316526593
-  - rid: 6196715832316526594
+  m_EditorClassIdentifier:
+  _action:
+    rid: 6196716168534294529
+  _asyncAction:
+    rid: -2
   references:
     version: 2
     RefIds:
-    - rid: 6196715832316526592
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 6196716168534294529
+      type: {class: CharacterActions, ns: MisterGames.Character.Actions, asm: MisterGames.Character}
+      data:
+        actions:
+        - rid: 6196716168534294530
+        - rid: 6196716168534294531
+        - rid: 6196716168534294532
+    - rid: 6196716168534294530
       type: {class: CharacterActionSetSpeedMultiplier, ns: MisterGames.Character.Motion, asm: MisterGames.Character}
       data:
         speed: 1.5
-    - rid: 6196715832316526593
+    - rid: 6196716168534294531
       type: {class: CharacterActionSetSpeedCorrection, ns: MisterGames.Character.Motion, asm: MisterGames.Character}
       data:
         sideCorrection: 0.9
         backCorrection: 0.7
-    - rid: 6196715832316526594
+    - rid: 6196716168534294532
       type: {class: CharacterActionSetJumpForceMultiplier, ns: MisterGames.Character.Jump, asm: MisterGames.Character}
       data:
         jumpForceMultiplier: 3

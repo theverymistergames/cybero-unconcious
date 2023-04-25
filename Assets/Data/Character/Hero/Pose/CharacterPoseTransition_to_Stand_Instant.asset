@@ -12,23 +12,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7da84188c8ef43ad9337f6ac5059524e, type: 3}
   m_Name: CharacterPoseTransition_to_Stand_Instant
   m_EditorClassIdentifier: 
-  _actions:
-  - rid: 6196715847878180897
+  _action:
+    rid: -2
+  _asyncAction:
+    rid: 6196716168534294551
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 6196715847878180897
+    - rid: 6196716168534294551
       type: {class: CharacterActionChangeColliderHeight, ns: MisterGames.Character.Height, asm: MisterGames.Character}
       data:
+        sourceHeight:
+          _hasValue: 0
+          _value: 0
         targetHeight:
           _hasValue: 1
           _value: 1.7
         targetRadius:
           _hasValue: 1
           _value: 0.3
-        duration: 0
-        scaleDuration: 0
-        pattern:
-          rid: -2
+        metersPerSecond: 0

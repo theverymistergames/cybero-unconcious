@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3248882044609864277}
   - component: {fileID: 7201652344378548620}
   - component: {fileID: 1842259765735774900}
-  - component: {fileID: 1387130771659247304}
   m_Layer: 2
   m_Name: InteractiveUser
   m_TagString: Untagged
@@ -34,7 +33,7 @@ Transform:
   m_Children:
   - {fileID: 8707077191589205302}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3248882044609864277
 MonoBehaviour:
@@ -56,7 +55,7 @@ MonoBehaviour:
     layerMask:
       serializedVersion: 2
       m_Bits: 33
-  _debugDrawDetectables: 1
+  _debugDrawDetectables: 0
 --- !u!114 &7201652344378548620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,7 +69,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _timeSourceStage: 1
-  _allowMultiplesInteractions: 0
   _interactivesDetector: {fileID: 3248882044609864277}
   _directViewDetector: {fileID: 643996480201117138}
 --- !u!114 &1842259765735774900
@@ -120,19 +118,6 @@ MonoBehaviour:
       serializedVersion: 2
       m_Bits: 1
   _transparencyRaycaster: {fileID: 643996480201117138}
---- !u!114 &1387130771659247304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3539474951015124131}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48c0da6ce98f4271b02321351a315c3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _characterAccess: {fileID: 0}
 --- !u!1 &5980107925551031172
 GameObject:
   m_ObjectHideFlags: 0
