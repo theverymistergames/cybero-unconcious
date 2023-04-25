@@ -467,33 +467,6 @@ MonoBehaviour:
             _options: 0
             _dataType:
               _type: 
-      - key: 27
-        value:
-          _nodeId: 27
-          _node:
-            rid: 8965086267122909197
-          _position: {x: 1087.2762, y: 106.22714}
-          _ports:
-          - _name: 
-            _mode: 3
-            _options: 0
-            _dataType:
-              _type: MisterGames.Input.Actions.InputActionKey, MisterGames.Input
-          - _name: On Use
-            _mode: 0
-            _options: 0
-            _dataType:
-              _type: 
-          - _name: On Press
-            _mode: 0
-            _options: 0
-            _dataType:
-              _type: 
-          - _name: On Release
-            _mode: 0
-            _options: 0
-            _dataType:
-              _type: 
     _fromNodePortLinksMap:
       _entries:
       - key: 4
@@ -617,13 +590,6 @@ MonoBehaviour:
             value:
             - nodeId: 23
               portIndex: 0
-      - key: 27
-        value:
-          _entries:
-          - key: 2
-            value:
-            - nodeId: 11
-              portIndex: 1
     _addedNodesTotalCount: 28
     _toNodePortLinksMap:
       _entries:
@@ -719,8 +685,6 @@ MonoBehaviour:
             - nodeId: 15
               portIndex: 2
             - nodeId: 20
-              portIndex: 2
-            - nodeId: 27
               portIndex: 2
           - key: 0
             value:
@@ -1050,7 +1014,3 @@ MonoBehaviour:
       type: {class: BlueprintNodePipe, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
         _exits: 2
-    - rid: 8965086267122909197
-      type: {class: BlueprintNodeInputActionKey, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
-      data:
-        _inputActionKey: {fileID: 11400000, guid: fd8ec366fa1b3664bb88771fd3e89974, type: 2}

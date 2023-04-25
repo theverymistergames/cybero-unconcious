@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: InteractionStrategy_InstantClick
   m_EditorClassIdentifier: 
   _allowStopImmediatelyAfterStart: 1
+  _readyConstraint:
+    rid: 6196716169574481931
   _startConstraint:
-    rid: 6196716078114537487
+    rid: 6196716169574481930
   _continueConstraint:
     rid: -2
   references:
@@ -22,14 +24,7 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 6196716078114537487
-      type: {class: InteractionConstraintAll, ns: MisterGames.Interact.Interactives, asm: MisterGames.Interact}
-      data:
-        constraints:
-        - rid: 6196716078114537488
-        - rid: 6196716078114537489
-        - rid: 6196716078114537497
-    - rid: 6196716078114537488
+    - rid: 6196716169574481930
       type: {class: InteractionConstraintInputKey, ns: MisterGames.Interact.Interactives, asm: MisterGames.Interact}
       data:
         keyEvent:
@@ -41,11 +36,7 @@ MonoBehaviour:
         shouldBePressed:
           _hasValue: 0
           _value: 0
-    - rid: 6196716078114537489
+    - rid: 6196716169574481931
       type: {class: InteractionConstraintIsDetected, ns: MisterGames.Interact.Interactives, asm: MisterGames.Interact}
       data:
         shouldBeDetected: 1
-    - rid: 6196716078114537497
-      type: {class: InteractionConstraintMaxDirectViewDistance, ns: MisterGames.Interact.Interactives, asm: MisterGames.Interact}
-      data:
-        maxDistance: 1.4

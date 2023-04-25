@@ -15,21 +15,29 @@ MonoBehaviour:
   _cases:
   - cursorIcon: {fileID: 11400000, guid: a3116495fe10a084db1793e13755f30a, type: 2}
     constraint:
-      rid: 6196716078114537472
+      rid: 6196716169574481923
   references:
     version: 2
     RefIds:
-    - rid: 6196716078114537472
+    - rid: 6196716169574481923
       type: {class: InteractionConstraintAll, ns: MisterGames.Interact.Interactives, asm: MisterGames.Interact}
       data:
         constraints:
-        - rid: 6196716078114537499
-        - rid: 6196716078114537479
-    - rid: 6196716078114537479
+        - rid: 6196716169574481924
+        - rid: 6196716169574481925
+    - rid: 6196716169574481924
+      type: {class: InteractionConstraintIsAllowedInteraction, ns: MisterGames.Interact.Interactives, asm: MisterGames.Interact}
+      data:
+        shouldBeReadyToStartInteract:
+          _hasValue: 1
+          _value: 1
+        shouldBeAllowedToStartInteract:
+          _hasValue: 0
+          _value: 0
+        shouldBeAllowedToContinueInteract:
+          _hasValue: 0
+          _value: 0
+    - rid: 6196716169574481925
       type: {class: InteractionConstraintIsInteracting, ns: MisterGames.Interact.Interactives, asm: MisterGames.Interact}
       data:
         shouldBeInInteraction: 0
-    - rid: 6196716078114537499
-      type: {class: InteractionConstraintMaxDirectViewDistance, ns: MisterGames.Interact.Interactives, asm: MisterGames.Interact}
-      data:
-        maxDistance: 1.4

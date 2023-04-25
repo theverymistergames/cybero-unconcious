@@ -34,7 +34,7 @@ Transform:
   - {fileID: 5861326307997081066}
   - {fileID: 7847618397789179142}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4942905867416125442
 MonoBehaviour:
@@ -49,9 +49,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _splineContainer: {fileID: 8637604740486279900}
-  _interactive: {fileID: 1945155924886961644}
-  _startReserveBound: 0.15
+  _startReserveBound: 0.1
   _endReserveBound: 0.8
+  _sections:
+  - start: 0
+    stop: 1
+    orientationWeights: {x: 0, y: 1, z: 0}
+    orientationOffset: {x: 0, y: 0, z: 0}
+    forwardWeights: {x: 1, y: 1, z: 1}
+    forwardOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &984921792824588151
 GameObject:
   m_ObjectHideFlags: 0

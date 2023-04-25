@@ -13,41 +13,15 @@ MonoBehaviour:
   m_Name: InteractionStrategy_ClickOnOff
   m_EditorClassIdentifier: 
   _allowStopImmediatelyAfterStart: 0
+  _readyConstraint:
+    rid: 6196716169574481926
   _startConstraint:
-    rid: 6196716078114537487
+    rid: 6196716169574481929
   _continueConstraint:
     rid: 6196716078114537496
   references:
     version: 2
     RefIds:
-    - rid: 6196716078114537487
-      type: {class: InteractionConstraintAll, ns: MisterGames.Interact.Interactives, asm: MisterGames.Interact}
-      data:
-        constraints:
-        - rid: 6196716078114537488
-        - rid: 6196716078114537489
-        - rid: 6196716078114537498
-        - rid: 6196716078114537492
-    - rid: 6196716078114537488
-      type: {class: InteractionConstraintInputKey, ns: MisterGames.Interact.Interactives, asm: MisterGames.Interact}
-      data:
-        keyEvent:
-          _mode: 0
-          _key: {fileID: 11400000, guid: 1c4e0374c3d852d4fb472c61d8b3bf12, type: 2}
-        shouldBeFired:
-          _hasValue: 1
-          _value: 1
-        shouldBePressed:
-          _hasValue: 0
-          _value: 0
-    - rid: 6196716078114537489
-      type: {class: InteractionConstraintIsDetected, ns: MisterGames.Interact.Interactives, asm: MisterGames.Interact}
-      data:
-        shouldBeDetected: 1
-    - rid: 6196716078114537492
-      type: {class: InteractionConstraintMaxUsers, ns: MisterGames.Interact.Interactives, asm: MisterGames.Interact}
-      data:
-        maxUsers: 0
     - rid: 6196716078114537496
       type: {class: InteractionConstraintInputKey, ns: MisterGames.Interact.Interactives, asm: MisterGames.Interact}
       data:
@@ -60,7 +34,29 @@ MonoBehaviour:
         shouldBePressed:
           _hasValue: 0
           _value: 0
-    - rid: 6196716078114537498
-      type: {class: InteractionConstraintMaxDirectViewDistance, ns: MisterGames.Interact.Interactives, asm: MisterGames.Interact}
+    - rid: 6196716169574481926
+      type: {class: InteractionConstraintAll, ns: MisterGames.Interact.Interactives, asm: MisterGames.Interact}
       data:
-        maxDistance: 1.4
+        constraints:
+        - rid: 6196716169574481927
+        - rid: 6196716169574481928
+    - rid: 6196716169574481927
+      type: {class: InteractionConstraintIsDetected, ns: MisterGames.Interact.Interactives, asm: MisterGames.Interact}
+      data:
+        shouldBeDetected: 1
+    - rid: 6196716169574481928
+      type: {class: InteractionConstraintMaxUsers, ns: MisterGames.Interact.Interactives, asm: MisterGames.Interact}
+      data:
+        maxUsers: 0
+    - rid: 6196716169574481929
+      type: {class: InteractionConstraintInputKey, ns: MisterGames.Interact.Interactives, asm: MisterGames.Interact}
+      data:
+        keyEvent:
+          _mode: 0
+          _key: {fileID: 11400000, guid: 1c4e0374c3d852d4fb472c61d8b3bf12, type: 2}
+        shouldBeFired:
+          _hasValue: 1
+          _value: 1
+        shouldBePressed:
+          _hasValue: 0
+          _value: 0
