@@ -92,9 +92,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 235208623}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3144599732459307641
@@ -189,9 +197,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3144599732459307641}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &7056909335312958888
@@ -199,6 +215,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 529048858, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
@@ -365,6 +382,30 @@ PrefabInstance:
       propertyPath: managedReferences[8965086267122909216].startPosition.z
       value: 0.923
       objectReference: {fileID: 0}
+    - target: {fileID: 120867503666608460, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
+      propertyPath: _blackboardOverridesMap._entries.Array.data[0].value._properties.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 120867503666608460, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
+      propertyPath: _blackboardOverridesMap._entries.Array.data[0].value._objects._entries.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 120867503666608460, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
+      propertyPath: _blackboardOverridesMap._entries.Array.data[0].value._propertiesMap._entries.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 120867503666608460, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
+      propertyPath: _blackboardOverridesMap._entries.Array.data[0].value._propertiesMap._entries.Array.data[6].key
+      value: 291680248
+      objectReference: {fileID: 0}
+    - target: {fileID: 120867503666608460, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
+      propertyPath: _blackboardOverridesMap._entries.Array.data[0].value._propertiesMap._entries.Array.data[6].value.name
+      value: Indicator 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 120867503666608460, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
+      propertyPath: _blackboardOverridesMap._entries.Array.data[0].value._propertiesMap._entries.Array.data[6].value.type._type
+      value: UnityEngine.UI.Image, UnityEngine.UI
+      objectReference: {fileID: 0}
     - target: {fileID: 365090271717367360, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
       propertyPath: m_Name
       value: DoorDouble_Glass Variant
@@ -490,6 +531,15 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 2412353892672851410, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 235208624}
+    - targetCorrespondingSourceObject: {fileID: 3357516128995015838, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1843866585764442134}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
 --- !u!4 &4653707923459688570 stripped
 Transform:

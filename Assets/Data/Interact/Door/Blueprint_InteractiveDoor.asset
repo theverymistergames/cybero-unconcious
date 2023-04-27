@@ -268,7 +268,7 @@ MonoBehaviour:
             _mode: 3
             _options: 0
             _dataType:
-              _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact
+              _type: MisterGames.Interact.Interactives.Interactive, MisterGames.Interact
           - _name: On Start Interact
             _mode: 0
             _options: 0
@@ -284,11 +284,11 @@ MonoBehaviour:
             _options: 0
             _dataType:
               _type: System.Boolean, mscorlib
-          - _name: 
+          - _name: Last User
             _mode: 2
             _options: 0
             _dataType:
-              _type: MisterGames.Interact.Core.IInteractiveUser, MisterGames.Interact
+              _type: MisterGames.Interact.Interactives.IInteractiveUser, MisterGames.Interact
       - key: 16
         value:
           _nodeId: 16
@@ -298,9 +298,9 @@ MonoBehaviour:
           _ports:
           - _name: 
             _mode: 2
-            _options: 0
+            _options: 2
             _dataType:
-              _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact
+              _type: 
       - key: 17
         value:
           _nodeId: 17
@@ -373,7 +373,7 @@ MonoBehaviour:
             _mode: 3
             _options: 0
             _dataType:
-              _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact
+              _type: MisterGames.Interact.Interactives.Interactive, MisterGames.Interact
           - _name: On Start Interact
             _mode: 0
             _options: 0
@@ -389,11 +389,11 @@ MonoBehaviour:
             _options: 0
             _dataType:
               _type: System.Boolean, mscorlib
-          - _name: 
+          - _name: Last User
             _mode: 2
             _options: 0
             _dataType:
-              _type: MisterGames.Interact.Core.IInteractiveUser, MisterGames.Interact
+              _type: MisterGames.Interact.Interactives.IInteractiveUser, MisterGames.Interact
       - key: 21
         value:
           _nodeId: 21
@@ -403,9 +403,9 @@ MonoBehaviour:
           _ports:
           - _name: 
             _mode: 2
-            _options: 0
+            _options: 2
             _dataType:
-              _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact
+              _type: 
       - key: 23
         value:
           _nodeId: 23
@@ -541,10 +541,6 @@ MonoBehaviour:
       - key: 15
         value:
           _entries:
-          - key: 1
-            value:
-            - nodeId: 16
-              portIndex: 0
           - key: 2
             value:
             - nodeId: 11
@@ -574,10 +570,6 @@ MonoBehaviour:
       - key: 20
         value:
           _entries:
-          - key: 1
-            value:
-            - nodeId: 21
-              portIndex: 0
           - key: 2
             value:
             - nodeId: 11
@@ -683,13 +675,6 @@ MonoBehaviour:
             value:
             - nodeId: 4
               portIndex: 1
-      - key: 16
-        value:
-          _entries:
-          - key: 0
-            value:
-            - nodeId: 15
-              portIndex: 1
       - key: 15
         value:
           _entries:
@@ -711,13 +696,6 @@ MonoBehaviour:
             value:
             - nodeId: 19
               portIndex: 0
-      - key: 21
-        value:
-          _entries:
-          - key: 0
-            value:
-            - nodeId: 20
-              portIndex: 1
       - key: 20
         value:
           _entries:
