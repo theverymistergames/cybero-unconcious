@@ -294,13 +294,13 @@ MonoBehaviour:
           _nodeId: 16
           _node:
             rid: 8965086267122909186
-          _position: {x: 753.2522, y: 245.98262}
+          _position: {x: 752.5614, y: 272.62558}
           _ports:
           - _name: 
             _mode: 2
-            _options: 2
+            _options: 0
             _dataType:
-              _type: 
+              _type: MisterGames.Interact.Interactives.Interactive, MisterGames.Interact
       - key: 17
         value:
           _nodeId: 17
@@ -399,13 +399,13 @@ MonoBehaviour:
           _nodeId: 21
           _node:
             rid: 8965086267122909191
-          _position: {x: 785.2763, y: 379.5605}
+          _position: {x: 748.56134, y: 408.6256}
           _ports:
           - _name: 
             _mode: 2
-            _options: 2
+            _options: 0
             _dataType:
-              _type: 
+              _type: MisterGames.Interact.Interactives.Interactive, MisterGames.Interact
       - key: 23
         value:
           _nodeId: 23
@@ -467,33 +467,6 @@ MonoBehaviour:
             _options: 0
             _dataType:
               _type: 
-      - key: 27
-        value:
-          _nodeId: 27
-          _node:
-            rid: 8965086267122909197
-          _position: {x: 1087.2762, y: 106.22714}
-          _ports:
-          - _name: 
-            _mode: 3
-            _options: 0
-            _dataType:
-              _type: MisterGames.Input.Actions.InputActionKey, MisterGames.Input
-          - _name: On Use
-            _mode: 0
-            _options: 0
-            _dataType:
-              _type: 
-          - _name: On Press
-            _mode: 0
-            _options: 0
-            _dataType:
-              _type: 
-          - _name: On Release
-            _mode: 0
-            _options: 0
-            _dataType:
-              _type: 
     _fromNodePortLinksMap:
       _entries:
       - key: 4
@@ -545,6 +518,10 @@ MonoBehaviour:
             value:
             - nodeId: 11
               portIndex: 1
+          - key: 1
+            value:
+            - nodeId: 16
+              portIndex: 0
       - key: 17
         value:
           _entries:
@@ -574,6 +551,10 @@ MonoBehaviour:
             value:
             - nodeId: 11
               portIndex: 1
+          - key: 1
+            value:
+            - nodeId: 21
+              portIndex: 0
       - key: 12
         value:
           _entries:
@@ -609,13 +590,6 @@ MonoBehaviour:
             value:
             - nodeId: 23
               portIndex: 0
-      - key: 27
-        value:
-          _entries:
-          - key: 2
-            value:
-            - nodeId: 11
-              portIndex: 1
     _addedNodesTotalCount: 28
     _toNodePortLinksMap:
       _entries:
@@ -712,8 +686,6 @@ MonoBehaviour:
               portIndex: 2
             - nodeId: 20
               portIndex: 2
-            - nodeId: 27
-              portIndex: 2
           - key: 0
             value:
             - nodeId: 25
@@ -758,6 +730,20 @@ MonoBehaviour:
             value:
             - nodeId: 25
               portIndex: 2
+      - key: 16
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 15
+              portIndex: 1
+      - key: 21
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 20
+              portIndex: 1
     _subgraphReferencesMap:
       _entries: []
   _blackboard:
@@ -798,7 +784,7 @@ MonoBehaviour:
         value:
           name: Interactive 0
           type:
-            _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact
+            _type: MisterGames.Interact.Interactives.Interactive, MisterGames.Interact
       - key: 291680248
         value:
           name: Indicator 1
@@ -808,7 +794,7 @@ MonoBehaviour:
         value:
           name: Interactive 1
           type:
-            _type: MisterGames.Interact.Core.Interactive, MisterGames.Interact
+            _type: MisterGames.Interact.Interactives.Interactive, MisterGames.Interact
     _bools:
       _entries:
       - key: -1577222989
@@ -1028,7 +1014,3 @@ MonoBehaviour:
       type: {class: BlueprintNodePipe, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
         _exits: 2
-    - rid: 8965086267122909197
-      type: {class: BlueprintNodeInputActionKey, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
-      data:
-        _inputActionKey: {fileID: 11400000, guid: fd8ec366fa1b3664bb88771fd3e89974, type: 2}
