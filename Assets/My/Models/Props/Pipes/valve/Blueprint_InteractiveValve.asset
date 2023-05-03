@@ -311,52 +311,6 @@ MonoBehaviour:
             _options: 0
             _dataType:
               _type: System.Boolean, mscorlib
-      - key: 64
-        value:
-          _nodeId: 64
-          _node:
-            rid: 6507890120617623552
-          _position: {x: 2870.3499, y: 483.35}
-          _ports:
-          - _name: 
-            _mode: 2
-            _options: 0
-            _dataType:
-              _type: UnityEngine.GameObject[], UnityEngine.CoreModule
-      - key: 65
-        value:
-          _nodeId: 65
-          _node:
-            rid: 6507890120617623553
-          _position: {x: 3373.6624, y: 612.73004}
-          _ports:
-          - _name: 
-            _mode: 3
-            _options: 0
-            _dataType:
-              _type: UnityEngine.GameObject, UnityEngine.CoreModule
-          - _name: 
-            _mode: 2
-            _options: 4
-            _dataType:
-              _type: UnityEngine.Component, UnityEngine.CoreModule
-      - key: 66
-        value:
-          _nodeId: 66
-          _node:
-            rid: 6507890120617623554
-          _position: {x: 3329.8, y: 466.2}
-          _ports:
-          - _name: 
-            _mode: 1
-            _options: 0
-            _dataType:
-              _type: 
-          - _name: Array
-            _mode: 3
-            _options: 0
-            _dataType:
-              _type: System.Array, mscorlib
     _fromNodePortLinksMap:
       _entries:
       - key: 17
@@ -423,7 +377,7 @@ MonoBehaviour:
             value:
             - nodeId: 63
               portIndex: 0
-    _addedNodesTotalCount: 67
+    _addedNodesTotalCount: 72
     _toNodePortLinksMap:
       _entries:
       - key: 26
@@ -715,13 +669,3 @@ MonoBehaviour:
       type: {class: BlueprintNodeBoolean, ns: MisterGames.BlueprintLib, asm: Assembly-CSharp}
       data:
         _value: 1
-    - rid: 6507890120617623552
-      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
-      data:
-        _property: -1683621955
-    - rid: 6507890120617623553
-      type: {class: BlueprintNodeGetComponent, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
-      data:
-        _input: 0
-    - rid: 6507890120617623554
-      type: {class: BlueprintNodeIterate, ns: MisterGames.BlueprintLib, asm: Assembly-CSharp}
