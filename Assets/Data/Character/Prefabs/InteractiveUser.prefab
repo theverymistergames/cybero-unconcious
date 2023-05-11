@@ -33,7 +33,7 @@ Transform:
   m_Children:
   - {fileID: 8707077191589205302}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3248882044609864277
 MonoBehaviour:
@@ -165,14 +165,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _timeSourceStage: 1
+  _maxDistance: 10
+  _layerMask:
+    serializedVersion: 2
+    m_Bits: 33
   _detectors:
   - {fileID: 209711430486026954}
   - {fileID: 2348077145790693796}
-  _collisionFilter:
-    maxDistance: 10
-    layerMask:
-      serializedVersion: 2
-      m_Bits: 33
 --- !u!114 &209711430486026954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,8 +206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _timeSourceStage: 1
   _maxHits: 6
-  _collisionFilter:
-    maxDistance: 10
-    layerMask:
-      serializedVersion: 2
-      m_Bits: 32
+  _maxDistance: 10
+  _layerMask:
+    serializedVersion: 2
+    m_Bits: 32
