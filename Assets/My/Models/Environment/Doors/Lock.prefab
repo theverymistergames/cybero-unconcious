@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 5033047011868405089}
   - component: {fileID: 4614125218558567689}
   - component: {fileID: 3171330086984869009}
-  - component: {fileID: 4191671597116484439}
   m_Layer: 0
   m_Name: Cube (7)
   m_TagString: Untagged
@@ -84,27 +83,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4191671597116484439
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2583178395574869388}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2590356977075125256
 GameObject:
   m_ObjectHideFlags: 0
@@ -114,7 +92,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9003571914644465603}
-  - component: {fileID: 9164705988921116374}
   m_Layer: 0
   m_Name: Lock
   m_TagString: Untagged
@@ -143,300 +120,8 @@ Transform:
   - {fileID: 5013617070503893415}
   - {fileID: 7700370886449296661}
   m_Father: {fileID: 0}
-  m_RootOrder: 697
+  m_RootOrder: 698
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9164705988921116374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2590356977075125256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14e6e69af36349bf9f40d0c82e5f80d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _blueprintAsset: {fileID: 11400000, guid: 26fd2a60c7e788e409aaf8676f6cfae1, type: 2}
-  _blackboardOverridesMap:
-    _entries:
-    - key: {fileID: 11400000, guid: 26fd2a60c7e788e409aaf8676f6cfae1, type: 2}
-      value:
-        _properties: 0b0f93f3
-        _propertiesMap:
-          _entries:
-          - key: -208466165
-            value:
-              name: New BlueprintRunner
-              type:
-                _type: MisterGames.Blueprints.BlueprintRunner, MisterGames.Blueprints
-        _bools:
-          _entries: []
-        _ints:
-          _entries: []
-        _longs:
-          _entries: []
-        _floats:
-          _entries: []
-        _doubles:
-          _entries: []
-        _strings:
-          _entries: []
-        _vectors2Int:
-          _entries: []
-        _vectors3Int:
-          _entries: []
-        _vectors2:
-          _entries: []
-        _vectors3:
-          _entries: []
-        _vectors4:
-          _entries: []
-        _quaternions:
-          _entries: []
-        _colors:
-          _entries: []
-        _layerMasks:
-          _entries: []
-        _curves:
-          _entries: []
-        _objects:
-          _entries:
-          - key: -208466165
-            value:
-              value: {fileID: 0}
-        _enums:
-          _entries: []
-        _references:
-          _entries: []
-        _boolArrays:
-          _entries: []
-        _intArrays:
-          _entries: []
-        _longArrays:
-          _entries: []
-        _floatArrays:
-          _entries: []
-        _doubleArrays:
-          _entries: []
-        _stringArrays:
-          _entries: []
-        _vectors2IntArrays:
-          _entries: []
-        _vectors3IntArrays:
-          _entries: []
-        _vectors2Arrays:
-          _entries: []
-        _vectors3Arrays:
-          _entries: []
-        _vectors4Arrays:
-          _entries: []
-        _quaternionArrays:
-          _entries: []
-        _colorArrays:
-          _entries: []
-        _layerMaskArrays:
-          _entries: []
-        _curveArrays:
-          _entries: []
-        _objectArrays:
-          _entries: []
-        _enumArrays:
-          _entries: []
-        _referenceArrays:
-          _entries: []
-    - key: {fileID: 11400000, guid: 13dccdc4e304d26429daf94f83c74991, type: 2}
-      value:
-        _properties: 8dfec9a243414177ae0d52f6aaaf443fb37cfda1f9af6211f8af6211f6789dbaf5789dba
-        _propertiesMap:
-          _entries:
-          - key: -1577222989
-            value:
-              name: Is Opened
-              type:
-                _type: System.Boolean, mscorlib
-          - key: 1061466026
-            value:
-              name: Is Blocked
-              type:
-                _type: System.Boolean, mscorlib
-          - key: -162394706
-            value:
-              name: Material Enabled
-              type:
-                _type: UnityEngine.Material, UnityEngine.CoreModule
-          - key: 2000765251
-            value:
-              name: Material Blocked
-              type:
-                _type: UnityEngine.Material, UnityEngine.CoreModule
-          - key: -1563820403
-            value:
-              name: Tween
-              type:
-                _type: MisterGames.Tweens.Core.ITween, MisterGames.Tweens
-          - key: 291680249
-            value:
-              name: Indicator 0
-              type:
-                _type: UnityEngine.UI.Image, UnityEngine.UI
-          - key: -1164085002
-            value:
-              name: Interactive 0
-              type:
-                _type: MisterGames.Interact.Interactives.Interactive, MisterGames.Interact
-          - key: 291680248
-            value:
-              name: Indicator 1
-              type:
-                _type: UnityEngine.UI.Image, UnityEngine.UI
-          - key: -1164085003
-            value:
-              name: Interactive 1
-              type:
-                _type: MisterGames.Interact.Interactives.Interactive, MisterGames.Interact
-        _bools:
-          _entries:
-          - key: -1577222989
-            value: 0
-          - key: 1061466026
-            value: 0
-        _ints:
-          _entries: []
-        _longs:
-          _entries: []
-        _floats:
-          _entries: []
-        _doubles:
-          _entries: []
-        _strings:
-          _entries: []
-        _vectors2Int:
-          _entries: []
-        _vectors3Int:
-          _entries: []
-        _vectors2:
-          _entries: []
-        _vectors3:
-          _entries: []
-        _vectors4:
-          _entries: []
-        _quaternions:
-          _entries: []
-        _colors:
-          _entries: []
-        _layerMasks:
-          _entries: []
-        _curves:
-          _entries: []
-        _objects:
-          _entries:
-          - key: -162394706
-            value:
-              value: {fileID: 2100000, guid: 41d77e9f51a84af4d8033b259ce43acf, type: 2}
-          - key: 2000765251
-            value:
-              value: {fileID: 2100000, guid: 58e95ee5214d260419ee04e5685a303e, type: 2}
-          - key: 291680249
-            value:
-              value: {fileID: 0}
-          - key: 291680248
-            value:
-              value: {fileID: 0}
-          - key: -1164085002
-            value:
-              value: {fileID: 0}
-          - key: -1164085003
-            value:
-              value: {fileID: 0}
-        _enums:
-          _entries: []
-        _references:
-          _entries:
-          - key: -1563820403
-            value:
-              value:
-                rid: 6507890123770691592
-        _boolArrays:
-          _entries: []
-        _intArrays:
-          _entries: []
-        _longArrays:
-          _entries: []
-        _floatArrays:
-          _entries: []
-        _doubleArrays:
-          _entries: []
-        _stringArrays:
-          _entries: []
-        _vectors2IntArrays:
-          _entries: []
-        _vectors3IntArrays:
-          _entries: []
-        _vectors2Arrays:
-          _entries: []
-        _vectors3Arrays:
-          _entries: []
-        _vectors4Arrays:
-          _entries: []
-        _quaternionArrays:
-          _entries: []
-        _colorArrays:
-          _entries: []
-        _layerMaskArrays:
-          _entries: []
-        _curveArrays:
-          _entries: []
-        _objectArrays:
-          _entries: []
-        _enumArrays:
-          _entries: []
-        _referenceArrays:
-          _entries: []
-  references:
-    version: 2
-    RefIds:
-    - rid: -2
-      type: {class: , ns: , asm: }
-    - rid: 6507890123770691592
-      type: {class: ProgressTween, ns: MisterGames.Tweens, asm: MisterGames.Tweens}
-      data:
-        duration: 2
-        curve:
-          serializedVersion: 2
-          m_Curve:
-          - serializedVersion: 3
-            time: 0
-            value: 0
-            inSlope: 0
-            outSlope: -0.0012029491
-            tangentMode: 0
-            weightedMode: 3
-            inWeight: 0
-            outWeight: 0.36078
-          - serializedVersion: 3
-            time: 0.5
-            value: 0.5
-            inSlope: 1.5725082
-            outSlope: 1.5733721
-            tangentMode: 0
-            weightedMode: 3
-            inWeight: 0.326514
-            outWeight: 0.33093
-          - serializedVersion: 3
-            time: 1
-            value: 1
-            inSlope: -0.0009312395
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 3
-            inWeight: 0.358688
-            outWeight: 0
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        action:
-          rid: -2
 --- !u!1 &3249612614453788034
 GameObject:
   m_ObjectHideFlags: 0
@@ -448,7 +133,6 @@ GameObject:
   - component: {fileID: 8187443716597294802}
   - component: {fileID: 5687970741826378749}
   - component: {fileID: 570063989464670496}
-  - component: {fileID: 1377270579197057474}
   m_Layer: 0
   m_Name: Cube (8)
   m_TagString: Untagged
@@ -521,27 +205,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1377270579197057474
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3249612614453788034}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3830958200908554974
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,7 +216,6 @@ GameObject:
   - component: {fileID: 8502064423761983383}
   - component: {fileID: 8867121466040391942}
   - component: {fileID: 1994385823292567534}
-  - component: {fileID: 8327349102388830279}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -626,29 +288,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &8327349102388830279
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3830958200908554974}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1001 &106665236873328265
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -715,7 +354,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7543143790953396715, guid: c6c264e57a110d64fbd8ae5fccf4e3a9, type: 3}
       propertyPath: m_VersionIndex
-      value: 151
+      value: 175
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -813,13 +452,230 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7975579486992805797, guid: dc6ad7c9ad053a14e9eca052330cf859, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8502064423761983383}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9013947014197385421, guid: dc6ad7c9ad053a14e9eca052330cf859, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6011571032968205112}
+    - targetCorrespondingSourceObject: {fileID: 9013947014197385421, guid: dc6ad7c9ad053a14e9eca052330cf859, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4789339463489269844}
+    - targetCorrespondingSourceObject: {fileID: 9013947014197385421, guid: dc6ad7c9ad053a14e9eca052330cf859, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5691573500331875781}
+    - targetCorrespondingSourceObject: {fileID: 9013947014197385421, guid: dc6ad7c9ad053a14e9eca052330cf859, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 537156921325831925}
+    - targetCorrespondingSourceObject: {fileID: 9013947014197385421, guid: dc6ad7c9ad053a14e9eca052330cf859, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4075676797889789802}
   m_SourcePrefab: {fileID: 100100000, guid: dc6ad7c9ad053a14e9eca052330cf859, type: 3}
 --- !u!4 &7700370886449296661 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7975579486992805797, guid: dc6ad7c9ad053a14e9eca052330cf859, type: 3}
   m_PrefabInstance: {fileID: 320817481214646960}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8747183178183426685 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9013947014197385421, guid: dc6ad7c9ad053a14e9eca052330cf859, type: 3}
+  m_PrefabInstance: {fileID: 320817481214646960}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &6011571032968205112
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8747183178183426685}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.029325824, y: 0.03159794, z: 0.020000001}
+  m_Center: {x: 0.00062142726, y: -0.00022722241, z: 0.00000023815353}
+--- !u!114 &4789339463489269844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8747183178183426685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15607a9816044bc7b2548f343182030f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _strategy: {fileID: 11400000, guid: 3e44b5b53bd4e5346bade11f43de6f95, type: 2}
+--- !u!114 &5691573500331875781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8747183178183426685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5be675038ae43e5b1e2068e95788361, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _strategy: {fileID: 11400000, guid: 866b0e22a3cebe944a1168130ef167e7, type: 2}
+  _debugDrawDetectable: 0
+--- !u!114 &537156921325831925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8747183178183426685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffecc3551aab4ea48912b4e53b1e15ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactive: {fileID: 4789339463489269844}
+  _strategy: {fileID: 11400000, guid: 2ef8e637213508440a44520645625afe, type: 2}
+--- !u!114 &4075676797889789802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8747183178183426685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14e6e69af36349bf9f40d0c82e5f80d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _blueprintAsset: {fileID: 11400000, guid: eff01ebabd1b78c4fb97320cfb4f8281, type: 2}
+  _blackboardOverridesMap:
+    _entries:
+    - key: {fileID: 11400000, guid: eff01ebabd1b78c4fb97320cfb4f8281, type: 2}
+      value:
+        _properties: 349ecffd661f883e683ce258af0f74392ce14c0c
+        _propertiesMap:
+          _entries:
+          - key: -36725196
+            value:
+              name: DoorBP
+              type:
+                _type: MisterGames.Blueprints.BlueprintRunner, MisterGames.Blueprints
+          - key: 1049108326
+            value:
+              name: Interactive
+              type:
+                _type: MisterGames.Interact.Interactives.Interactive, MisterGames.Interact
+          - key: 1491221608
+            value:
+              name: Handle
+              type:
+                _type: UnityEngine.GameObject, UnityEngine.CoreModule
+          - key: 963907503
+            value:
+              name: Lock
+              type:
+                _type: UnityEngine.GameObject, UnityEngine.CoreModule
+          - key: 206364972
+            value:
+              name: HandleTransform
+              type:
+                _type: UnityEngine.Transform, UnityEngine.CoreModule
+        _bools:
+          _entries: []
+        _ints:
+          _entries: []
+        _longs:
+          _entries: []
+        _floats:
+          _entries: []
+        _doubles:
+          _entries: []
+        _strings:
+          _entries: []
+        _vectors2Int:
+          _entries: []
+        _vectors3Int:
+          _entries: []
+        _vectors2:
+          _entries: []
+        _vectors3:
+          _entries: []
+        _vectors4:
+          _entries: []
+        _quaternions:
+          _entries: []
+        _colors:
+          _entries: []
+        _layerMasks:
+          _entries: []
+        _curves:
+          _entries: []
+        _objects:
+          _entries:
+          - key: -36725196
+            value:
+              value: {fileID: 0}
+          - key: 1049108326
+            value:
+              value: {fileID: 4789339463489269844}
+          - key: 1491221608
+            value:
+              value: {fileID: 3164009811550483063}
+          - key: 963907503
+            value:
+              value: {fileID: 2590356977075125256}
+          - key: 206364972
+            value:
+              value: {fileID: 6753408651254720653}
+        _enums:
+          _entries: []
+        _references:
+          _entries: []
+        _boolArrays:
+          _entries: []
+        _intArrays:
+          _entries: []
+        _longArrays:
+          _entries: []
+        _floatArrays:
+          _entries: []
+        _doubleArrays:
+          _entries: []
+        _stringArrays:
+          _entries: []
+        _vectors2IntArrays:
+          _entries: []
+        _vectors3IntArrays:
+          _entries: []
+        _vectors2Arrays:
+          _entries: []
+        _vectors3Arrays:
+          _entries: []
+        _vectors4Arrays:
+          _entries: []
+        _quaternionArrays:
+          _entries: []
+        _colorArrays:
+          _entries: []
+        _layerMaskArrays:
+          _entries: []
+        _curveArrays:
+          _entries: []
+        _objectArrays:
+          _entries: []
+        _enumArrays:
+          _entries: []
+        _referenceArrays:
+          _entries: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!1001 &1256083665167776932
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -886,7 +742,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7543143790953396715, guid: c6c264e57a110d64fbd8ae5fccf4e3a9, type: 3}
       propertyPath: m_VersionIndex
-      value: 148
+      value: 169
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -964,7 +820,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7543143790953396715, guid: c6c264e57a110d64fbd8ae5fccf4e3a9, type: 3}
       propertyPath: m_VersionIndex
-      value: 151
+      value: 178
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1042,7 +898,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7543143790953396715, guid: c6c264e57a110d64fbd8ae5fccf4e3a9, type: 3}
       propertyPath: m_VersionIndex
-      value: 154
+      value: 178
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1119,6 +975,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56b3ecfa8c8b14243b083a0290a3acea, type: 3}
+--- !u!1 &3164009811550483063 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6272622615314790720, guid: 56b3ecfa8c8b14243b083a0290a3acea, type: 3}
+  m_PrefabInstance: {fileID: 8999325789828303671}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6753408651254720653 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2404053875560293306, guid: 56b3ecfa8c8b14243b083a0290a3acea, type: 3}

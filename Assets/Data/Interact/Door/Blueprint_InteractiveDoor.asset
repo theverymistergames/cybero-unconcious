@@ -20,7 +20,7 @@ MonoBehaviour:
           _nodeId: 4
           _node:
             rid: 8965086244798988288
-          _position: {x: 916, y: -212.66667}
+          _position: {x: 261.39877, y: -215.1609}
           _ports:
           - _name: 
             _mode: 1
@@ -47,31 +47,19 @@ MonoBehaviour:
           _nodeId: 5
           _node:
             rid: 8965086244798988289
-          _position: {x: 551.6667, y: -220.33333}
+          _position: {x: -129.00122, y: -227.16093}
           _ports:
           - _name: 
             _mode: 2
             _options: 0
             _dataType:
               _type: UnityEngine.UI.Image, UnityEngine.UI
-      - key: 6
-        value:
-          _nodeId: 6
-          _node:
-            rid: 8965086244798988290
-          _position: {x: 219.7775, y: -116.60168}
-          _ports:
-          - _name: 
-            _mode: 2
-            _options: 0
-            _dataType:
-              _type: System.Boolean, mscorlib
       - key: 7
         value:
           _nodeId: 7
           _node:
             rid: 8965086244798988291
-          _position: {x: 220.44415, y: -57.93501}
+          _position: {x: -487.9384, y: -86.1626}
           _ports:
           - _name: 
             _mode: 2
@@ -83,7 +71,7 @@ MonoBehaviour:
           _nodeId: 8
           _node:
             rid: 8965086244798988292
-          _position: {x: 565.6667, y: -81.66666}
+          _position: {x: -115.40126, y: -88.76095}
           _ports:
           - _name: Condition
             _mode: 3
@@ -110,26 +98,26 @@ MonoBehaviour:
           _nodeId: 9
           _node:
             rid: 8965086244798988293
-          _position: {x: 221.11081, y: 5.398324}
+          _position: {x: -464.20123, y: -12.760948}
           _ports:
           - _name: 
             _mode: 2
             _options: 0
             _dataType:
               _type: UnityEngine.Material, UnityEngine.CoreModule
-      - key: 10
+      - key: 63
         value:
-          _nodeId: 10
+          _nodeId: 63
           _node:
-            rid: 8965086244798988294
-          _position: {x: 781.3334, y: -282.96}
+            rid: 3199185295503523842
+          _position: {x: 981.4796, y: -366.48138}
           _ports:
           - _name: 
             _mode: 0
             _options: 0
             _dataType:
               _type: 
-          - _name: On Start
+          - _name: SetBlocked
             _mode: 1
             _options: 3
             _dataType:
@@ -245,7 +233,7 @@ MonoBehaviour:
           _nodeId: 14
           _node:
             rid: 8965086267122909184
-          _position: {x: 553, y: -155.33334}
+          _position: {x: -127.40123, y: -162.36092}
           _ports:
           - _name: 
             _mode: 2
@@ -306,7 +294,7 @@ MonoBehaviour:
           _nodeId: 17
           _node:
             rid: 8965086267122909187
-          _position: {x: 602.6096, y: 530.2272}
+          _position: {x: -44.84999, y: 480.85}
           _ports:
           - _name: 
             _mode: 1
@@ -333,7 +321,7 @@ MonoBehaviour:
           _nodeId: 18
           _node:
             rid: 8965086267122909188
-          _position: {x: 245.94296, y: 570.8938}
+          _position: {x: -401.65, y: 521.65}
           _ports:
           - _name: 
             _mode: 2
@@ -345,7 +333,7 @@ MonoBehaviour:
           _nodeId: 19
           _node:
             rid: 8965086267122909189
-          _position: {x: 489.94296, y: 514.8938}
+          _position: {x: -142, y: 464.59998}
           _ports:
           - _name: 
             _mode: 0
@@ -467,6 +455,485 @@ MonoBehaviour:
             _options: 0
             _dataType:
               _type: 
+      - key: 29
+        value:
+          _nodeId: 29
+          _node:
+            rid: 3199185288725266434
+          _position: {x: 336.8501, y: 440.9709}
+          _ports:
+          - _name: 
+            _mode: 1
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: 
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+      - key: 30
+        value:
+          _nodeId: 30
+          _node:
+            rid: 3199185288725266436
+          _position: {x: -542.6662, y: 345.31787}
+          _ports:
+          - _name: 
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: System.Boolean, mscorlib
+          - _name: IsBlocked
+            _mode: 3
+            _options: 3
+            _dataType:
+              _type: System.Boolean, mscorlib
+      - key: 31
+        value:
+          _nodeId: 31
+          _node:
+            rid: 3199185288725266437
+          _position: {x: -91.78015, y: 257.09073}
+          _ports:
+          - _name: 
+            _mode: 1
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: Condition
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: System.Boolean, mscorlib
+          - _name: On True
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: On False
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+      - key: 34
+        value:
+          _nodeId: 34
+          _node:
+            rid: 3199185288725266440
+          _position: {x: -536.18445, y: 269.36264}
+          _ports:
+          - _name: 
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: SetBlocked
+            _mode: 1
+            _options: 3
+            _dataType:
+              _type: 
+      - key: 35
+        value:
+          _nodeId: 35
+          _node:
+            rid: 3199185294528348217
+          _position: {x: 254.50212, y: -613.00024}
+          _ports:
+          - _name: 
+            _mode: 1
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: Images
+            _mode: 11
+            _options: 0
+            _dataType:
+              _type: UnityEngine.UI.Image, UnityEngine.UI
+          - _name: Material
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: UnityEngine.Material, UnityEngine.CoreModule
+          - _name: 
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+      - key: 36
+        value:
+          _nodeId: 36
+          _node:
+            rid: 3199185294528348218
+          _position: {x: -135.89789, y: -625.00024}
+          _ports:
+          - _name: 
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: UnityEngine.UI.Image, UnityEngine.UI
+      - key: 37
+        value:
+          _nodeId: 37
+          _node:
+            rid: 3199185294528348219
+          _position: {x: -467.89792, y: -521.8002}
+          _ports:
+          - _name: 
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: System.Boolean, mscorlib
+      - key: 38
+        value:
+          _nodeId: 38
+          _node:
+            rid: 3199185294528348220
+          _position: {x: -467.09787, y: -462.60022}
+          _ports:
+          - _name: 
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: UnityEngine.Material, UnityEngine.CoreModule
+      - key: 39
+        value:
+          _nodeId: 39
+          _node:
+            rid: 3199185294528348221
+          _position: {x: -122.29782, y: -486.60022}
+          _ports:
+          - _name: Condition
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: System.Boolean, mscorlib
+          - _name: On True
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: UnityEngine.Material, UnityEngine.CoreModule
+          - _name: On False
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: UnityEngine.Material, UnityEngine.CoreModule
+          - _name: 
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: UnityEngine.Material, UnityEngine.CoreModule
+      - key: 40
+        value:
+          _nodeId: 40
+          _node:
+            rid: 3199185294528348222
+          _position: {x: -466.29788, y: -394.08014}
+          _ports:
+          - _name: 
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: UnityEngine.Material, UnityEngine.CoreModule
+      - key: 41
+        value:
+          _nodeId: 41
+          _node:
+            rid: 3199185294528348223
+          _position: {x: 93.70209, y: -688.2002}
+          _ports:
+          - _name: 
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: On Start
+            _mode: 1
+            _options: 3
+            _dataType:
+              _type: 
+      - key: 42
+        value:
+          _nodeId: 42
+          _node:
+            rid: 3199185294528348224
+          _position: {x: -134.29788, y: -560.2002}
+          _ports:
+          - _name: 
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: UnityEngine.UI.Image, UnityEngine.UI
+      - key: 62
+        value:
+          _nodeId: 62
+          _node:
+            rid: 3199185295503523841
+          _position: {x: 563.07965, y: -266.48135}
+          _ports:
+          - _name: 
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: System.Boolean, mscorlib
+          - _name: IsBlocked
+            _mode: 3
+            _options: 3
+            _dataType:
+              _type: System.Boolean, mscorlib
+      - key: 44
+        value:
+          _nodeId: 44
+          _node:
+            rid: 3199185294528348226
+          _position: {x: 933.08, y: -619.8213}
+          _ports:
+          - _name: 
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: UnityEngine.GameObject, UnityEngine.CoreModule
+      - key: 46
+        value:
+          _nodeId: 46
+          _node:
+            rid: 3199185294528348228
+          _position: {x: 569.87994, y: -600.62134}
+          _ports:
+          - _name: 
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: System.Boolean, mscorlib
+      - key: 47
+        value:
+          _nodeId: 47
+          _node:
+            rid: 3199185294528348229
+          _position: {x: 586.67993, y: -527.0213}
+          _ports:
+          - _name: 
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: UnityEngine.Color, UnityEngine.CoreModule
+      - key: 49
+        value:
+          _nodeId: 49
+          _node:
+            rid: 3199185294528348231
+          _position: {x: 946.67993, y: -547.8213}
+          _ports:
+          - _name: Condition
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: System.Boolean, mscorlib
+          - _name: On True
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: UnityEngine.Color, UnityEngine.CoreModule
+          - _name: On False
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: UnityEngine.Color, UnityEngine.CoreModule
+          - _name: 
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: UnityEngine.Color, UnityEngine.CoreModule
+      - key: 50
+        value:
+          _nodeId: 50
+          _node:
+            rid: 3199185294528348232
+          _position: {x: 585.88, y: -463.0213}
+          _ports:
+          - _name: 
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: UnityEngine.Color, UnityEngine.CoreModule
+      - key: 51
+        value:
+          _nodeId: 51
+          _node:
+            rid: 3199185294528348234
+          _position: {x: 1189.0798, y: -700.6213}
+          _ports:
+          - _name: 
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: On Start
+            _mode: 1
+            _options: 3
+            _dataType:
+              _type: 
+      - key: 64
+        value:
+          _nodeId: 64
+          _node:
+            rid: 3199185295503523843
+          _position: {x: -460.501, y: -161.35388}
+          _ports:
+          - _name: 
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: System.Boolean, mscorlib
+          - _name: IsBlocked
+            _mode: 3
+            _options: 3
+            _dataType:
+              _type: System.Boolean, mscorlib
+      - key: 68
+        value:
+          _nodeId: 68
+          _node:
+            rid: 3199185295766978582
+          _position: {x: 1329.3914, y: -627.54785}
+          _ports:
+          - _name: 
+            _mode: 1
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: Game object
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: UnityEngine.GameObject, UnityEngine.CoreModule
+          - _name: Color
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: UnityEngine.Color, UnityEngine.CoreModule
+          - _name: Intensity
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: System.Single, mscorlib
+          - _name: 
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+      - key: 55
+        value:
+          _nodeId: 55
+          _node:
+            rid: 3199185294528348238
+          _position: {x: 897.47974, y: -284.88135}
+          _ports:
+          - _name: 
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: UnityEngine.GameObject, UnityEngine.CoreModule
+      - key: 57
+        value:
+          _nodeId: 57
+          _node:
+            rid: 3199185294528348240
+          _position: {x: 551.07965, y: -192.88132}
+          _ports:
+          - _name: 
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: UnityEngine.Color, UnityEngine.CoreModule
+      - key: 58
+        value:
+          _nodeId: 58
+          _node:
+            rid: 3199185294528348241
+          _position: {x: 911.87964, y: -212.8814}
+          _ports:
+          - _name: Condition
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: System.Boolean, mscorlib
+          - _name: On True
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: UnityEngine.Color, UnityEngine.CoreModule
+          - _name: On False
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: UnityEngine.Color, UnityEngine.CoreModule
+          - _name: 
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: UnityEngine.Color, UnityEngine.CoreModule
+      - key: 59
+        value:
+          _nodeId: 59
+          _node:
+            rid: 3199185294528348242
+          _position: {x: 550.2796, y: -114.48135}
+          _ports:
+          - _name: 
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: UnityEngine.Color, UnityEngine.CoreModule
+      - key: 65
+        value:
+          _nodeId: 65
+          _node:
+            rid: 3199185295503523844
+          _position: {x: -97.37138, y: -295.11212}
+          _ports:
+          - _name: 
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: SetBlocked
+            _mode: 1
+            _options: 3
+            _dataType:
+              _type: 
+      - key: 67
+        value:
+          _nodeId: 67
+          _node:
+            rid: 3199185295766978581
+          _position: {x: 1330.9999, y: -308.90244}
+          _ports:
+          - _name: 
+            _mode: 1
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: Game object
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: UnityEngine.GameObject, UnityEngine.CoreModule
+          - _name: Color
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: UnityEngine.Color, UnityEngine.CoreModule
+          - _name: Intensity
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: System.Single, mscorlib
+          - _name: 
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
     _fromNodePortLinksMap:
       _entries:
       - key: 4
@@ -487,7 +954,7 @@ MonoBehaviour:
           _entries:
           - key: 0
             value:
-            - nodeId: 6
+            - nodeId: 64
               portIndex: 0
           - key: 2
             value:
@@ -496,13 +963,6 @@ MonoBehaviour:
           - key: 1
             value:
             - nodeId: 7
-              portIndex: 0
-      - key: 10
-        value:
-          _entries:
-          - key: 0
-            value:
-            - nodeId: 4
               portIndex: 0
       - key: 11
         value:
@@ -527,11 +987,7 @@ MonoBehaviour:
           _entries:
           - key: 3
             value:
-            - nodeId: 15
-              portIndex: 0
-            - nodeId: 20
-              portIndex: 0
-            - nodeId: 25
+            - nodeId: 29
               portIndex: 0
           - key: 1
             value:
@@ -590,7 +1046,144 @@ MonoBehaviour:
             value:
             - nodeId: 23
               portIndex: 0
-    _addedNodesTotalCount: 28
+      - key: 29
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 15
+              portIndex: 0
+            - nodeId: 20
+              portIndex: 0
+            - nodeId: 25
+              portIndex: 0
+      - key: 31
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 30
+              portIndex: 0
+          - key: 3
+            value:
+            - nodeId: 29
+              portIndex: 0
+      - key: 34
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 31
+              portIndex: 0
+      - key: 41
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 35
+              portIndex: 0
+      - key: 35
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 36
+              portIndex: 0
+            - nodeId: 42
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 39
+              portIndex: 3
+      - key: 68
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 44
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 49
+              portIndex: 3
+      - key: 49
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 47
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 50
+              portIndex: 0
+          - key: 0
+            value:
+            - nodeId: 46
+              portIndex: 0
+      - key: 65
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 4
+              portIndex: 0
+      - key: 39
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 37
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 40
+              portIndex: 0
+          - key: 1
+            value:
+            - nodeId: 38
+              portIndex: 0
+      - key: 63
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 67
+              portIndex: 0
+      - key: 51
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 68
+              portIndex: 0
+      - key: 58
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 57
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 59
+              portIndex: 0
+          - key: 0
+            value:
+            - nodeId: 62
+              portIndex: 0
+      - key: 67
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 55
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 58
+              portIndex: 3
+    _addedNodesTotalCount: 69
     _toNodePortLinksMap:
       _entries:
       - key: 8
@@ -600,13 +1193,6 @@ MonoBehaviour:
             value:
             - nodeId: 4
               portIndex: 2
-      - key: 6
-        value:
-          _entries:
-          - key: 0
-            value:
-            - nodeId: 8
-              portIndex: 0
       - key: 9
         value:
           _entries:
@@ -626,7 +1212,7 @@ MonoBehaviour:
           _entries:
           - key: 0
             value:
-            - nodeId: 10
+            - nodeId: 65
               portIndex: 0
       - key: 12
         value:
@@ -654,8 +1240,8 @@ MonoBehaviour:
           _entries:
           - key: 0
             value:
-            - nodeId: 17
-              portIndex: 3
+            - nodeId: 29
+              portIndex: 1
       - key: 18
         value:
           _entries:
@@ -675,8 +1261,8 @@ MonoBehaviour:
           _entries:
           - key: 0
             value:
-            - nodeId: 17
-              portIndex: 3
+            - nodeId: 29
+              portIndex: 1
       - key: 11
         value:
           _entries:
@@ -714,8 +1300,8 @@ MonoBehaviour:
           _entries:
           - key: 0
             value:
-            - nodeId: 17
-              portIndex: 3
+            - nodeId: 29
+              portIndex: 1
       - key: 24
         value:
           _entries:
@@ -744,10 +1330,173 @@ MonoBehaviour:
             value:
             - nodeId: 20
               portIndex: 1
+      - key: 29
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 17
+              portIndex: 3
+            - nodeId: 31
+              portIndex: 3
+      - key: 30
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 31
+              portIndex: 1
+      - key: 31
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 34
+              portIndex: 0
+      - key: 35
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 41
+              portIndex: 0
+      - key: 36
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 35
+              portIndex: 1
+      - key: 42
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 35
+              portIndex: 1
+      - key: 39
+        value:
+          _entries:
+          - key: 3
+            value:
+            - nodeId: 35
+              portIndex: 2
+      - key: 64
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 8
+              portIndex: 0
+      - key: 47
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 49
+              portIndex: 1
+      - key: 50
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 49
+              portIndex: 2
+      - key: 62
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 58
+              portIndex: 0
+      - key: 46
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 49
+              portIndex: 0
+      - key: 67
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 63
+              portIndex: 0
+      - key: 37
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 39
+              portIndex: 0
+      - key: 38
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 39
+              portIndex: 1
+      - key: 40
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 39
+              portIndex: 2
+      - key: 44
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 68
+              portIndex: 1
+      - key: 49
+        value:
+          _entries:
+          - key: 3
+            value:
+            - nodeId: 68
+              portIndex: 2
+      - key: 68
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 51
+              portIndex: 0
+      - key: 57
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 58
+              portIndex: 1
+      - key: 59
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 58
+              portIndex: 2
+      - key: 58
+        value:
+          _entries:
+          - key: 3
+            value:
+            - nodeId: 67
+              portIndex: 2
+      - key: 55
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 67
+              portIndex: 1
     _subgraphReferencesMap:
       _entries: []
   _blackboard:
-    _properties: 8dfec9a243414177ae0d52f6aaaf443fb37cfda1f9af6211f8af6211f6789dbaf5789dba
+    _properties: 8dfec9a243414177ae0d52f6aaaf443fb37cfda1f9af6211f8af6211f6789dbaf5789dbae08c83edf8300ab15111e024
     _propertiesMap:
       _entries:
       - key: -1577222989
@@ -795,6 +1544,21 @@ MonoBehaviour:
           name: Interactive 1
           type:
             _type: MisterGames.Interact.Interactives.Interactive, MisterGames.Interact
+      - key: -310145824
+        value:
+          name: EmissiveGameObject
+          type:
+            _type: UnityEngine.GameObject, UnityEngine.CoreModule
+      - key: -1324732168
+        value:
+          name: EmissionColorBlocked
+          type:
+            _type: UnityEngine.Color, UnityEngine.CoreModule
+      - key: 618664273
+        value:
+          name: EmissionColorEnabled
+          type:
+            _type: UnityEngine.Color, UnityEngine.CoreModule
     _bools:
       _entries:
       - key: -1577222989
@@ -824,7 +1588,11 @@ MonoBehaviour:
     _quaternions:
       _entries: []
     _colors:
-      _entries: []
+      _entries:
+      - key: -1324732168
+        value: {r: 0, g: 0, b: 0, a: 0}
+      - key: 618664273
+        value: {r: 0, g: 0, b: 0, a: 0}
     _layerMasks:
       _entries: []
     _curves:
@@ -847,6 +1615,9 @@ MonoBehaviour:
         value:
           value: {fileID: 0}
       - key: -1164085003
+        value:
+          value: {fileID: 0}
+      - key: -310145824
         value:
           value: {fileID: 0}
     _enums:
@@ -898,6 +1669,108 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
+    - rid: 3199185288725266434
+      type: {class: BlueprintNodePipe, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _exits: 1
+    - rid: 3199185288725266436
+      type: {class: BlueprintNodeInput, ns: MisterGames.Blueprints.Nodes, asm: MisterGames.Blueprints}
+      data:
+        _port: IsBlocked
+    - rid: 3199185288725266437
+      type: {class: BlueprintNodeIf, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _condition: 0
+    - rid: 3199185288725266440
+      type: {class: BlueprintNodeEnter, ns: MisterGames.Blueprints.Nodes, asm: MisterGames.Blueprints}
+      data:
+        _port: SetBlocked
+    - rid: 3199185294528348217
+      type: {class: BlueprintNodeImageSetMaterial, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+    - rid: 3199185294528348218
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: 291680249
+    - rid: 3199185294528348219
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: 1061466026
+    - rid: 3199185294528348220
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: 2000765251
+    - rid: 3199185294528348221
+      type: {class: BlueprintNodeIfData, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _condition: 0
+    - rid: 3199185294528348222
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: -162394706
+    - rid: 3199185294528348223
+      type: {class: BlueprintNodeStart, ns: MisterGames.Blueprints.Nodes, asm: MisterGames.Blueprints}
+    - rid: 3199185294528348224
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: 291680248
+    - rid: 3199185294528348226
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: -310145824
+    - rid: 3199185294528348228
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: 1061466026
+    - rid: 3199185294528348229
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: -1324732168
+    - rid: 3199185294528348231
+      type: {class: BlueprintNodeIfData, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _condition: 0
+    - rid: 3199185294528348232
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: 618664273
+    - rid: 3199185294528348234
+      type: {class: BlueprintNodeStart, ns: MisterGames.Blueprints.Nodes, asm: MisterGames.Blueprints}
+    - rid: 3199185294528348238
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: -310145824
+    - rid: 3199185294528348240
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: -1324732168
+    - rid: 3199185294528348241
+      type: {class: BlueprintNodeIfData, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _condition: 0
+    - rid: 3199185294528348242
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: 618664273
+    - rid: 3199185295503523841
+      type: {class: BlueprintNodeInput, ns: MisterGames.Blueprints.Nodes, asm: MisterGames.Blueprints}
+      data:
+        _port: IsBlocked
+    - rid: 3199185295503523842
+      type: {class: BlueprintNodeEnter, ns: MisterGames.Blueprints.Nodes, asm: MisterGames.Blueprints}
+      data:
+        _port: SetBlocked
+    - rid: 3199185295503523843
+      type: {class: BlueprintNodeInput, ns: MisterGames.Blueprints.Nodes, asm: MisterGames.Blueprints}
+      data:
+        _port: IsBlocked
+    - rid: 3199185295503523844
+      type: {class: BlueprintNodeEnter, ns: MisterGames.Blueprints.Nodes, asm: MisterGames.Blueprints}
+      data:
+        _port: SetBlocked
+    - rid: 3199185295766978581
+      type: {class: BlueprintNodeSetMaterialEmission, ns: MisterGames.BlueprintLib, asm: Assembly-CSharp}
+    - rid: 3199185295766978582
+      type: {class: BlueprintNodeSetMaterialEmission, ns: MisterGames.BlueprintLib, asm: Assembly-CSharp}
     - rid: 8965086222731444228
       type: {class: ProgressTween, ns: MisterGames.Tweens, asm: MisterGames.Tweens}
       data:
@@ -943,10 +1816,6 @@ MonoBehaviour:
       type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
         _property: 291680249
-    - rid: 8965086244798988290
-      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
-      data:
-        _property: 1061466026
     - rid: 8965086244798988291
       type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
@@ -959,8 +1828,6 @@ MonoBehaviour:
       type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
         _property: -162394706
-    - rid: 8965086244798988294
-      type: {class: BlueprintNodeStart, ns: MisterGames.Blueprints.Nodes, asm: MisterGames.Blueprints}
     - rid: 8965086244798988298
       type: {class: BlueprintNodeRunTween, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
