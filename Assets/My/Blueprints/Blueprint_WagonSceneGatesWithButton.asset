@@ -20,7 +20,7 @@ MonoBehaviour:
           _nodeId: 0
           _node:
             rid: 6507890123770691584
-          _position: {x: 389.99997, y: 344.8}
+          _position: {x: 851.3667, y: 216.75974}
           _ports:
           - _name: 
             _mode: 1
@@ -47,7 +47,7 @@ MonoBehaviour:
           _nodeId: 2
           _node:
             rid: 6507890123770691586
-          _position: {x: -52.210033, y: 394.45}
+          _position: {x: 488.03326, y: 254.75975}
           _ports:
           - _name: 
             _mode: 2
@@ -59,7 +59,7 @@ MonoBehaviour:
           _nodeId: 5
           _node:
             rid: 6507890123770691589
-          _position: {x: -549.45, y: 138.25}
+          _position: {x: -414.32254, y: 156.49403}
           _ports:
           - _name: 
             _mode: 2
@@ -71,7 +71,7 @@ MonoBehaviour:
           _nodeId: 6
           _node:
             rid: 6507890123770691590
-          _position: {x: -115.799995, y: 89.600006}
+          _position: {x: -60.77684, y: 130.5644}
           _ports:
           - _name: Set Interactive
             _mode: 1
@@ -115,7 +115,7 @@ MonoBehaviour:
             _options: 0
             _dataType:
               _type: 
-          - _name:
+          - _name: 
             _mode: 3
             _options: 0
             _dataType:
@@ -130,31 +130,19 @@ MonoBehaviour:
           _nodeId: 8
           _node:
             rid: 3199185254397771777
-          _position: {x: 481.19995, y: -15.800018}
+          _position: {x: 485.16864, y: 119.67745}
           _ports:
           - _name: 
             _mode: 2
             _options: 0
             _dataType:
               _type: UnityEngine.GameObject, UnityEngine.CoreModule
-      - key: 9
-        value:
-          _nodeId: 9
-          _node:
-            rid: 3199185254397771778
-          _position: {x: 668.2, y: 211.20004}
-          _ports:
-          - _name:
-            _mode: 2
-            _options: 0
-            _dataType:
-              _type: System.Boolean, mscorlib
       - key: 10
         value:
           _nodeId: 10
           _node:
             rid: 3199185254397771779
-          _position: {x: -139.92053, y: -24.136343}
+          _position: {x: -166.63414, y: -85.777504}
           _ports:
           - _name: 
             _mode: 0
@@ -171,7 +159,7 @@ MonoBehaviour:
           _nodeId: 11
           _node:
             rid: 3199185254397771780
-          _position: {x: -188, y: -187.2}
+          _position: {x: -449.9675, y: -26.444183}
           _ports:
           - _name: 
             _mode: 2
@@ -183,14 +171,14 @@ MonoBehaviour:
           _nodeId: 12
           _node:
             rid: 3199185254397771781
-          _position: {x: 282, y: -165.4}
+          _position: {x: -61.30081, y: -78.444145}
           _ports:
           - _name: Apply
             _mode: 1
             _options: 0
             _dataType:
               _type: 
-          - _name:
+          - _name: 
             _mode: 3
             _options: 0
             _dataType:
@@ -200,24 +188,12 @@ MonoBehaviour:
             _options: 0
             _dataType:
               _type: System.Boolean, mscorlib
-      - key: 13
-        value:
-          _nodeId: 13
-          _node:
-            rid: 3199185254397771782
-          _position: {x: 15.599991, y: -31.600006}
-          _ports:
-          - _name:
-            _mode: 2
-            _options: 0
-            _dataType:
-              _type: System.Boolean, mscorlib
       - key: 14
         value:
           _nodeId: 14
           _node:
             rid: 3199185254397771783
-          _position: {x: 604.09155, y: -182.20085}
+          _position: {x: 493.97845, y: 7.3094826}
           _ports:
           - _name: 
             _mode: 2
@@ -229,32 +205,20 @@ MonoBehaviour:
           _nodeId: 15
           _node:
             rid: 3199185254397771784
-          _position: {x: 1103.2, y: -92.399994}
+          _position: {x: 855.3117, y: -42.690514}
           _ports:
           - _name: Apply
             _mode: 1
             _options: 0
             _dataType:
               _type: 
-          - _name:
+          - _name: 
             _mode: 3
             _options: 0
             _dataType:
               _type: UnityEngine.GameObject, UnityEngine.CoreModule
           - _name: Is Enabled
             _mode: 3
-            _options: 0
-            _dataType:
-              _type: System.Boolean, mscorlib
-      - key: 16
-        value:
-          _nodeId: 16
-          _node:
-            rid: 3199185254397771785
-          _position: {x: 877.60004, y: -25}
-          _ports:
-          - _name:
-            _mode: 2
             _options: 0
             _dataType:
               _type: System.Boolean, mscorlib
@@ -285,10 +249,6 @@ MonoBehaviour:
       - key: 7
         value:
           _entries:
-          - key: 2
-            value:
-            - nodeId: 9
-              portIndex: 0
           - key: 1
             value:
             - nodeId: 8
@@ -296,10 +256,6 @@ MonoBehaviour:
       - key: 12
         value:
           _entries:
-          - key: 2
-            value:
-            - nodeId: 13
-              portIndex: 0
           - key: 1
             value:
             - nodeId: 11
@@ -314,10 +270,6 @@ MonoBehaviour:
       - key: 15
         value:
           _entries:
-          - key: 2
-            value:
-            - nodeId: 16
-              portIndex: 0
           - key: 1
             value:
             - nodeId: 14
@@ -353,20 +305,6 @@ MonoBehaviour:
             value:
             - nodeId: 6
               portIndex: 2
-      - key: 9
-        value:
-          _entries:
-          - key: 0
-            value:
-            - nodeId: 7
-              portIndex: 2
-      - key: 13
-        value:
-          _entries:
-          - key: 0
-            value:
-            - nodeId: 12
-              portIndex: 2
       - key: 11
         value:
           _entries:
@@ -388,13 +326,6 @@ MonoBehaviour:
             value:
             - nodeId: 7
               portIndex: 1
-      - key: 16
-        value:
-          _entries:
-          - key: 0
-            value:
-            - nodeId: 15
-              portIndex: 2
       - key: 14
         value:
           _entries:
@@ -531,10 +462,6 @@ MonoBehaviour:
       type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
         _property: 1052401335
-    - rid: 3199185254397771778
-      type: {class: BlueprintNodeBool, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
-      data:
-        _value: 1
     - rid: 3199185254397771779
       type: {class: BlueprintNodeStart, ns: MisterGames.Blueprints.Nodes, asm: MisterGames.Blueprints}
     - rid: 3199185254397771780
@@ -545,11 +472,7 @@ MonoBehaviour:
       type: {class: BlueprintNodeEnableDisable, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
         _input: 0
-        _isEnabled: 1
-    - rid: 3199185254397771782
-      type: {class: BlueprintNodeBool, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
-      data:
-        _value: 0
+        _isEnabled: 0
     - rid: 3199185254397771783
       type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
@@ -558,11 +481,7 @@ MonoBehaviour:
       type: {class: BlueprintNodeEnableDisable, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
         _input: 0
-        _isEnabled: 1
-    - rid: 3199185254397771785
-      type: {class: BlueprintNodeBool, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
-      data:
-        _value: 0
+        _isEnabled: 0
     - rid: 6507890123770691584
       type: {class: BlueprintNodeSetPosition, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:

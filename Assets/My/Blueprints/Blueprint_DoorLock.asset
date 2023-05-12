@@ -39,7 +39,7 @@ MonoBehaviour:
             rid: 3199185295766978588
           _position: {x: 1274.22, y: 339.655}
           _ports:
-          - _name:
+          - _name: 
             _mode: 2
             _options: 0
             _dataType:
@@ -127,7 +127,7 @@ MonoBehaviour:
             _options: 0
             _dataType:
               _type: 
-          - _name:
+          - _name: 
             _mode: 3
             _options: 0
             _dataType:
@@ -149,18 +149,6 @@ MonoBehaviour:
             _options: 0
             _dataType:
               _type: UnityEngine.GameObject, UnityEngine.CoreModule
-      - key: 13
-        value:
-          _nodeId: 13
-          _node:
-            rid: 3199185299486277643
-          _position: {x: 101.50171, y: 286.88397}
-          _ports:
-          - _name:
-            _mode: 2
-            _options: 0
-            _dataType:
-              _type: System.Boolean, mscorlib
       - key: 14
         value:
           _nodeId: 14
@@ -173,25 +161,13 @@ MonoBehaviour:
             _options: 0
             _dataType:
               _type: 
-          - _name:
+          - _name: 
             _mode: 3
             _options: 0
             _dataType:
               _type: UnityEngine.GameObject, UnityEngine.CoreModule
           - _name: Is Enabled
             _mode: 3
-            _options: 0
-            _dataType:
-              _type: System.Boolean, mscorlib
-      - key: 15
-        value:
-          _nodeId: 15
-          _node:
-            rid: 3199185299486277645
-          _position: {x: 1499.82, y: 183.65501}
-          _ports:
-          - _name:
-            _mode: 2
             _options: 0
             _dataType:
               _type: System.Boolean, mscorlib
@@ -440,20 +416,12 @@ MonoBehaviour:
             value:
             - nodeId: 12
               portIndex: 0
-          - key: 2
-            value:
-            - nodeId: 13
-              portIndex: 0
       - key: 14
         value:
           _entries:
           - key: 1
             value:
             - nodeId: 16
-              portIndex: 0
-          - key: 2
-            value:
-            - nodeId: 15
               portIndex: 0
       - key: 17
         value:
@@ -547,20 +515,6 @@ MonoBehaviour:
             value:
             - nodeId: 25
               portIndex: 1
-      - key: 13
-        value:
-          _entries:
-          - key: 0
-            value:
-            - nodeId: 11
-              portIndex: 2
-      - key: 15
-        value:
-          _entries:
-          - key: 0
-            value:
-            - nodeId: 14
-              portIndex: 2
       - key: 17
         value:
           _entries:
@@ -774,19 +728,11 @@ MonoBehaviour:
       type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
         _property: 1491221608
-    - rid: 3199185299486277643
-      type: {class: BlueprintNodeBool, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
-      data:
-        _value: 1
     - rid: 3199185299486277644
       type: {class: BlueprintNodeEnableDisable, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
         _input: 0
-        _isEnabled: 1
-    - rid: 3199185299486277645
-      type: {class: BlueprintNodeBool, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
-      data:
-        _value: 0
+        _isEnabled: 0
     - rid: 3199185299486277646
       type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
