@@ -22,17 +22,17 @@ MonoBehaviour:
             rid: 3199185295503523866
           _position: {x: 854.2, y: -96.20001}
           _ports:
-          - _name: 
+          - _name: Apply
             _mode: 1
             _options: 0
             _dataType:
               _type: 
-          - _name: GameObject
+          - _name:
             _mode: 3
             _options: 0
             _dataType:
               _type: UnityEngine.GameObject, UnityEngine.CoreModule
-          - _name: Value
+          - _name: Is Enabled
             _mode: 3
             _options: 0
             _dataType:
@@ -44,7 +44,7 @@ MonoBehaviour:
             rid: 3199185295503523867
           _position: {x: 652.4, y: -30}
           _ports:
-          - _name: Value
+          - _name:
             _mode: 2
             _options: 0
             _dataType:
@@ -215,17 +215,17 @@ MonoBehaviour:
             rid: 3199185295766978563
           _position: {x: 878.69836, y: 466.8777}
           _ports:
-          - _name: 
+          - _name: Apply
             _mode: 1
             _options: 0
             _dataType:
               _type: 
-          - _name: GameObject
+          - _name:
             _mode: 3
             _options: 0
             _dataType:
               _type: UnityEngine.GameObject, UnityEngine.CoreModule
-          - _name: Value
+          - _name: Is Enabled
             _mode: 3
             _options: 0
             _dataType:
@@ -237,7 +237,7 @@ MonoBehaviour:
             rid: 3199185295766978564
           _position: {x: 684.2983, y: 534.8777}
           _ports:
-          - _name: Value
+          - _name:
             _mode: 2
             _options: 0
             _dataType:
@@ -339,7 +339,7 @@ MonoBehaviour:
             rid: 3199185295766978576
           _position: {x: 204.52249, y: 168.74998}
           _ports:
-          - _name: Value
+          - _name:
             _mode: 2
             _options: 0
             _dataType:
@@ -939,9 +939,12 @@ MonoBehaviour:
     - rid: 3199185295503523853
       type: {class: BlueprintNodeStart, ns: MisterGames.Blueprints.Nodes, asm: MisterGames.Blueprints}
     - rid: 3199185295503523866
-      type: {class: BlueprintNodeGameObjectSetActive, ns: MisterGames.BlueprintLib, asm: Assembly-CSharp}
+      type: {class: BlueprintNodeEnableDisable, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _input: 0
+        _isEnabled: 1
     - rid: 3199185295503523867
-      type: {class: BlueprintNodeBoolean, ns: MisterGames.BlueprintLib, asm: Assembly-CSharp}
+      type: {class: BlueprintNodeBool, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
         _value: 0
     - rid: 3199185295503523868
@@ -955,9 +958,12 @@ MonoBehaviour:
       data:
         _duration: 0
     - rid: 3199185295766978563
-      type: {class: BlueprintNodeGameObjectSetActive, ns: MisterGames.BlueprintLib, asm: Assembly-CSharp}
+      type: {class: BlueprintNodeEnableDisable, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _input: 0
+        _isEnabled: 1
     - rid: 3199185295766978564
-      type: {class: BlueprintNodeBoolean, ns: MisterGames.BlueprintLib, asm: Assembly-CSharp}
+      type: {class: BlueprintNodeBool, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
         _value: 1
     - rid: 3199185295766978565
@@ -981,7 +987,7 @@ MonoBehaviour:
     - rid: 3199185295766978575
       type: {class: BlueprintNodeSetMaterialEmission, ns: MisterGames.BlueprintLib, asm: Assembly-CSharp}
     - rid: 3199185295766978576
-      type: {class: BlueprintNodeFloat, ns: MisterGames.BlueprintLib, asm: Assembly-CSharp}
+      type: {class: BlueprintNodeFloat, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
         _value: 0
     - rid: 3199185295766978577

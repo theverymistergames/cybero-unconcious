@@ -39,7 +39,7 @@ MonoBehaviour:
             rid: 3199185295766978588
           _position: {x: 1274.22, y: 339.655}
           _ports:
-          - _name: Value
+          - _name:
             _mode: 2
             _options: 0
             _dataType:
@@ -122,17 +122,17 @@ MonoBehaviour:
             rid: 3199185299486277641
           _position: {x: 294.30176, y: 194.08394}
           _ports:
-          - _name: 
+          - _name: Apply
             _mode: 1
             _options: 0
             _dataType:
               _type: 
-          - _name: GameObject
+          - _name:
             _mode: 3
             _options: 0
             _dataType:
               _type: UnityEngine.GameObject, UnityEngine.CoreModule
-          - _name: Value
+          - _name: Is Enabled
             _mode: 3
             _options: 0
             _dataType:
@@ -156,7 +156,7 @@ MonoBehaviour:
             rid: 3199185299486277643
           _position: {x: 101.50171, y: 286.88397}
           _ports:
-          - _name: Value
+          - _name:
             _mode: 2
             _options: 0
             _dataType:
@@ -168,17 +168,17 @@ MonoBehaviour:
             rid: 3199185299486277644
           _position: {x: 1691.8201, y: 87.65498}
           _ports:
-          - _name: 
+          - _name: Apply
             _mode: 1
             _options: 0
             _dataType:
               _type: 
-          - _name: GameObject
+          - _name:
             _mode: 3
             _options: 0
             _dataType:
               _type: UnityEngine.GameObject, UnityEngine.CoreModule
-          - _name: Value
+          - _name: Is Enabled
             _mode: 3
             _options: 0
             _dataType:
@@ -190,7 +190,7 @@ MonoBehaviour:
             rid: 3199185299486277645
           _position: {x: 1499.82, y: 183.65501}
           _ports:
-          - _name: Value
+          - _name:
             _mode: 2
             _options: 0
             _dataType:
@@ -748,7 +748,7 @@ MonoBehaviour:
     - rid: 3199185295766978586
       type: {class: BlueprintNodeStart, ns: MisterGames.Blueprints.Nodes, asm: MisterGames.Blueprints}
     - rid: 3199185295766978588
-      type: {class: BlueprintNodeBoolean, ns: MisterGames.BlueprintLib, asm: Assembly-CSharp}
+      type: {class: BlueprintNodeBool, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
         _value: 0
     - rid: 3199185295766978589
@@ -766,19 +766,25 @@ MonoBehaviour:
         _externalRunner: -36725196
         _blueprintAsset: {fileID: 11400000, guid: 13dccdc4e304d26429daf94f83c74991, type: 2}
     - rid: 3199185299486277641
-      type: {class: BlueprintNodeGameObjectSetActive, ns: MisterGames.BlueprintLib, asm: Assembly-CSharp}
+      type: {class: BlueprintNodeEnableDisable, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _input: 0
+        _isEnabled: 1
     - rid: 3199185299486277642
       type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
         _property: 1491221608
     - rid: 3199185299486277643
-      type: {class: BlueprintNodeBoolean, ns: MisterGames.BlueprintLib, asm: Assembly-CSharp}
+      type: {class: BlueprintNodeBool, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
         _value: 1
     - rid: 3199185299486277644
-      type: {class: BlueprintNodeGameObjectSetActive, ns: MisterGames.BlueprintLib, asm: Assembly-CSharp}
+      type: {class: BlueprintNodeEnableDisable, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _input: 0
+        _isEnabled: 1
     - rid: 3199185299486277645
-      type: {class: BlueprintNodeBoolean, ns: MisterGames.BlueprintLib, asm: Assembly-CSharp}
+      type: {class: BlueprintNodeBool, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
         _value: 0
     - rid: 3199185299486277646

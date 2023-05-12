@@ -238,7 +238,7 @@ MonoBehaviour:
             rid: 6507890109537320973
           _position: {x: 3359.2258, y: 888.50977}
           _ports:
-          - _name: Value
+          - _name:
             _mode: 2
             _options: 0
             _dataType:
@@ -250,17 +250,17 @@ MonoBehaviour:
             rid: 6507890109537320974
           _position: {x: 3622.9185, y: 779.2262}
           _ports:
-          - _name: 
+          - _name: Apply
             _mode: 1
             _options: 0
             _dataType:
               _type: 
-          - _name: GameObject
+          - _name:
             _mode: 3
             _options: 0
             _dataType:
               _type: UnityEngine.GameObject, UnityEngine.CoreModule
-          - _name: Value
+          - _name: Is Enabled
             _mode: 3
             _options: 0
             _dataType:
@@ -284,7 +284,7 @@ MonoBehaviour:
             rid: 6507890109537320979
           _position: {x: 2493.4, y: 716.05005}
           _ports:
-          - _name: Value
+          - _name:
             _mode: 2
             _options: 0
             _dataType:
@@ -296,17 +296,17 @@ MonoBehaviour:
             rid: 6507890109537320978
           _position: {x: 2794.0996, y: 659.8195}
           _ports:
-          - _name: 
+          - _name: Apply
             _mode: 1
             _options: 0
             _dataType:
               _type: 
-          - _name: GameObject
+          - _name:
             _mode: 3
             _options: 0
             _dataType:
               _type: UnityEngine.GameObject, UnityEngine.CoreModule
-          - _name: Value
+          - _name: Is Enabled
             _mode: 3
             _options: 0
             _dataType:
@@ -654,18 +654,24 @@ MonoBehaviour:
       data:
         _property: 1554795451
     - rid: 6507890109537320973
-      type: {class: BlueprintNodeBoolean, ns: MisterGames.BlueprintLib, asm: Assembly-CSharp}
+      type: {class: BlueprintNodeBool, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
         _value: 0
     - rid: 6507890109537320974
-      type: {class: BlueprintNodeGameObjectSetActive, ns: MisterGames.BlueprintLib, asm: Assembly-CSharp}
+      type: {class: BlueprintNodeEnableDisable, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _input: 0
+        _isEnabled: 1
     - rid: 6507890109537320975
       type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
         _property: 1461655518
     - rid: 6507890109537320978
-      type: {class: BlueprintNodeGameObjectSetActive, ns: MisterGames.BlueprintLib, asm: Assembly-CSharp}
+      type: {class: BlueprintNodeEnableDisable, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _input: 0
+        _isEnabled: 1
     - rid: 6507890109537320979
-      type: {class: BlueprintNodeBoolean, ns: MisterGames.BlueprintLib, asm: Assembly-CSharp}
+      type: {class: BlueprintNodeBool, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
         _value: 1
