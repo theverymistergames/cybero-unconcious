@@ -1,0 +1,773 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95aa8f7d5aa490e9877070cd957eaff, type: 3}
+  m_Name: Blueprint_PipeWithVent
+  m_EditorClassIdentifier: 
+  _blueprintMeta:
+    _nodesMap:
+      _entries:
+      - key: 0
+        value:
+          _nodeId: 0
+          _node:
+            rid: 1258928985913688064
+          _position: {x: 390.48254, y: 359.74252}
+          _ports:
+          - _name: Set Zone
+            _mode: 1
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: Zone
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Motion.CharacterForceZone, MisterGames.Character
+          - _name: 
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
+          - _name: On Enter
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: On Exit
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: On Force Update
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: Force Vector
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: UnityEngine.Vector3, UnityEngine.CoreModule
+      - key: 1
+        value:
+          _nodeId: 1
+          _node:
+            rid: 1258928985913688065
+          _position: {x: -73.83576, y: 406.3768}
+          _ports:
+          - _name: 
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Motion.CharacterForceZone, MisterGames.Character
+      - key: 3
+        value:
+          _nodeId: 3
+          _node:
+            rid: 1258928985913688067
+          _position: {x: 964.8245, y: 549.3728}
+          _ports:
+          - _name: 
+            _mode: 1
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: Zone
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Motion.CharacterForceZone, MisterGames.Character
+          - _name: Multiplier
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: System.Single, mscorlib
+      - key: 10
+        value:
+          _nodeId: 10
+          _node:
+            rid: 1258928985913688074
+          _position: {x: 256.49338, y: 345.19202}
+          _ports:
+          - _name: 
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: On Start
+            _mode: 1
+            _options: 3
+            _dataType:
+              _type: 
+      - key: 11
+        value:
+          _nodeId: 11
+          _node:
+            rid: 1258928985913688075
+          _position: {x: 560.8245, y: 661.37274}
+          _ports:
+          - _name: A
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: System.Single, mscorlib
+          - _name: B
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: System.Single, mscorlib
+          - _name: 
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: System.Single, mscorlib
+      - key: 9
+        value:
+          _nodeId: 9
+          _node:
+            rid: 1258928985913688073
+          _position: {x: 371.9975, y: 612.375}
+          _ports:
+          - _name: Time
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: System.Single, mscorlib
+          - _name: Sine time
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: System.Single, mscorlib
+          - _name: Cosine time
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: System.Single, mscorlib
+      - key: 30
+        value:
+          _nodeId: 30
+          _node:
+            rid: 1258928985913688094
+          _position: {x: 904.4, y: 258.8}
+          _ports:
+          - _name: A
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: System.Single, mscorlib
+          - _name: B
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: System.Single, mscorlib
+          - _name: 
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: System.Single, mscorlib
+      - key: 26
+        value:
+          _nodeId: 26
+          _node:
+            rid: 1258928985913688090
+          _position: {x: 761.99567, y: 212.07912}
+          _ports:
+          - _name: Time
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: System.Single, mscorlib
+          - _name: Sine time
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: System.Single, mscorlib
+          - _name: Cosine time
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: System.Single, mscorlib
+      - key: 25
+        value:
+          _nodeId: 25
+          _node:
+            rid: 1258928985913688089
+          _position: {x: 520.02454, y: 574.1729}
+          _ports:
+          - _name: 
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Motion.CharacterForceZone, MisterGames.Character
+      - key: 15
+        value:
+          _nodeId: 15
+          _node:
+            rid: 1258928985913688079
+          _position: {x: 196.555, y: 739.9176}
+          _ports:
+          - _name: 
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: System.Single, mscorlib
+      - key: 21
+        value:
+          _nodeId: 21
+          _node:
+            rid: 1258928985913688085
+          _position: {x: 1742.8973, y: 187.45486}
+          _ports:
+          - _name: x
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: System.Single, mscorlib
+          - _name: y
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: System.Single, mscorlib
+          - _name: z
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: System.Single, mscorlib
+          - _name: Vector3
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: UnityEngine.Vector3, UnityEngine.CoreModule
+      - key: 22
+        value:
+          _nodeId: 22
+          _node:
+            rid: 1258928985913688086
+          _position: {x: 2165.297, y: 8.254875}
+          _ports:
+          - _name: 
+            _mode: 1
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: Transform
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: UnityEngine.Transform, UnityEngine.CoreModule
+          - _name: Rotation
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: UnityEngine.Vector3, UnityEngine.CoreModule
+          - _name: 
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+      - key: 23
+        value:
+          _nodeId: 23
+          _node:
+            rid: 1258928985913688087
+          _position: {x: 1777.2971, y: 37.854836}
+          _ports:
+          - _name: 
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: UnityEngine.Transform, UnityEngine.CoreModule
+      - key: 24
+        value:
+          _nodeId: 24
+          _node:
+            rid: 1258928985913688088
+          _position: {x: 393.61005, y: 8.6700115}
+          _ports:
+          - _name: Transform
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: UnityEngine.Transform, UnityEngine.CoreModule
+          - _name: Position
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: UnityEngine.Vector3, UnityEngine.CoreModule
+          - _name: Euler Angles
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: UnityEngine.Vector3, UnityEngine.CoreModule
+          - _name: Rotation
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: UnityEngine.Quaternion, UnityEngine.CoreModule
+          - _name: Scale
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: UnityEngine.Vector3, UnityEngine.CoreModule
+      - key: 27
+        value:
+          _nodeId: 27
+          _node:
+            rid: 1258928985913688091
+          _position: {x: 20.810028, y: 7.870005}
+          _ports:
+          - _name: 
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: UnityEngine.Transform, UnityEngine.CoreModule
+      - key: 28
+        value:
+          _nodeId: 28
+          _node:
+            rid: 1258928985913688092
+          _position: {x: 768.01, y: 31.069996}
+          _ports:
+          - _name: Vector3
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: UnityEngine.Vector3, UnityEngine.CoreModule
+          - _name: x
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: System.Single, mscorlib
+          - _name: y
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: System.Single, mscorlib
+          - _name: z
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: System.Single, mscorlib
+      - key: 29
+        value:
+          _nodeId: 29
+          _node:
+            rid: 1258928985913688093
+          _position: {x: 1322.0973, y: 233.05487}
+          _ports:
+          - _name: A
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: System.Single, mscorlib
+          - _name: B
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: System.Single, mscorlib
+          - _name: 
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: System.Single, mscorlib
+    _fromNodePortLinksMap:
+      _entries:
+      - key: 0
+        value:
+          _entries:
+          - key: 5
+            value:
+            - nodeId: 22
+              portIndex: 0
+            - nodeId: 3
+              portIndex: 0
+          - key: 1
+            value:
+            - nodeId: 1
+              portIndex: 0
+      - key: 3
+        value:
+          _entries:
+          - key: 2
+            value:
+            - nodeId: 11
+              portIndex: 2
+          - key: 1
+            value:
+            - nodeId: 25
+              portIndex: 0
+      - key: 10
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 0
+              portIndex: 0
+      - key: 24
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 27
+              portIndex: 0
+      - key: 28
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 24
+              portIndex: 2
+      - key: 11
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 9
+              portIndex: 2
+          - key: 1
+            value:
+            - nodeId: 15
+              portIndex: 0
+      - key: 22
+        value:
+          _entries:
+          - key: 2
+            value:
+            - nodeId: 21
+              portIndex: 3
+          - key: 1
+            value:
+            - nodeId: 23
+              portIndex: 0
+      - key: 21
+        value:
+          _entries:
+          - key: 2
+            value:
+            - nodeId: 29
+              portIndex: 2
+          - key: 0
+            value:
+            - nodeId: 28
+              portIndex: 1
+          - key: 1
+            value:
+            - nodeId: 28
+              portIndex: 2
+      - key: 29
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 28
+              portIndex: 3
+          - key: 1
+            value:
+            - nodeId: 30
+              portIndex: 2
+      - key: 30
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 26
+              portIndex: 2
+    _addedNodesTotalCount: 34
+    _toNodePortLinksMap:
+      _entries:
+      - key: 0
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 10
+              portIndex: 0
+      - key: 3
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 0
+              portIndex: 5
+      - key: 9
+        value:
+          _entries:
+          - key: 2
+            value:
+            - nodeId: 11
+              portIndex: 0
+      - key: 25
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 3
+              portIndex: 1
+      - key: 29
+        value:
+          _entries:
+          - key: 2
+            value:
+            - nodeId: 21
+              portIndex: 2
+      - key: 11
+        value:
+          _entries:
+          - key: 2
+            value:
+            - nodeId: 3
+              portIndex: 2
+      - key: 15
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 11
+              portIndex: 1
+      - key: 1
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 0
+              portIndex: 1
+      - key: 21
+        value:
+          _entries:
+          - key: 3
+            value:
+            - nodeId: 22
+              portIndex: 2
+      - key: 23
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 22
+              portIndex: 1
+      - key: 22
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 0
+              portIndex: 5
+      - key: 27
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 24
+              portIndex: 0
+      - key: 24
+        value:
+          _entries:
+          - key: 2
+            value:
+            - nodeId: 28
+              portIndex: 0
+      - key: 28
+        value:
+          _entries:
+          - key: 1
+            value:
+            - nodeId: 21
+              portIndex: 0
+          - key: 2
+            value:
+            - nodeId: 21
+              portIndex: 1
+          - key: 3
+            value:
+            - nodeId: 29
+              portIndex: 0
+      - key: 26
+        value:
+          _entries:
+          - key: 2
+            value:
+            - nodeId: 30
+              portIndex: 0
+      - key: 30
+        value:
+          _entries:
+          - key: 2
+            value:
+            - nodeId: 29
+              portIndex: 1
+    _subgraphReferencesMap:
+      _entries: []
+  _blackboard:
+    _properties: ef3c860893eb81c7314e2bb8
+    _propertiesMap:
+      _entries:
+      - key: 143015151
+        value:
+          name: Force Zone
+          type:
+            _type: MisterGames.Character.Motion.CharacterForceZone, MisterGames.Character
+      - key: -947786861
+        value:
+          name: MaxMultiplier
+          type:
+            _type: System.Single, mscorlib
+      - key: -1205121487
+        value:
+          name: Vent GO
+          type:
+            _type: UnityEngine.Transform, UnityEngine.CoreModule
+    _bools:
+      _entries: []
+    _ints:
+      _entries: []
+    _longs:
+      _entries: []
+    _floats:
+      _entries:
+      - key: -947786861
+        value: 0
+    _doubles:
+      _entries: []
+    _strings:
+      _entries: []
+    _vectors2Int:
+      _entries: []
+    _vectors3Int:
+      _entries: []
+    _vectors2:
+      _entries: []
+    _vectors3:
+      _entries: []
+    _vectors4:
+      _entries: []
+    _quaternions:
+      _entries: []
+    _colors:
+      _entries: []
+    _layerMasks:
+      _entries: []
+    _curves:
+      _entries: []
+    _objects:
+      _entries:
+      - key: 143015151
+        value:
+          value: {fileID: 0}
+      - key: -1205121487
+        value:
+          value: {fileID: 0}
+    _enums:
+      _entries: []
+    _references:
+      _entries: []
+    _boolArrays:
+      _entries: []
+    _intArrays:
+      _entries: []
+    _longArrays:
+      _entries: []
+    _floatArrays:
+      _entries: []
+    _doubleArrays:
+      _entries: []
+    _stringArrays:
+      _entries: []
+    _vectors2IntArrays:
+      _entries: []
+    _vectors3IntArrays:
+      _entries: []
+    _vectors2Arrays:
+      _entries: []
+    _vectors3Arrays:
+      _entries: []
+    _vectors4Arrays:
+      _entries: []
+    _quaternionArrays:
+      _entries: []
+    _colorArrays:
+      _entries: []
+    _layerMaskArrays:
+      _entries: []
+    _curveArrays:
+      _entries: []
+    _objectArrays:
+      _entries: []
+    _enumArrays:
+      _entries: []
+    _referenceArrays:
+      _entries: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 1258928985913688064
+      type: {class: BlueprintNodeCharacterForceZone, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _autoSetZoneAtStart: 0
+    - rid: 1258928985913688065
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: 143015151
+    - rid: 1258928985913688067
+      type: {class: BlueprintNodeSetForceZoneMultiplier, ns: MisterGames.BlueprintLib, asm: Assembly-CSharp}
+    - rid: 1258928985913688073
+      type: {class: BlueprintNodeTime, ns: MisterGames.BlueprintLib, asm: Assembly-CSharp}
+    - rid: 1258928985913688074
+      type: {class: BlueprintNodeStart, ns: MisterGames.Blueprints.Nodes, asm: MisterGames.Blueprints}
+    - rid: 1258928985913688075
+      type: {class: BlueprintNodeMultiplyFloat, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _a: 0
+        _b: 2
+    - rid: 1258928985913688079
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: -947786861
+    - rid: 1258928985913688085
+      type: {class: BlueprintNodeVector3, ns: MisterGames.BlueprintLib, asm: Assembly-CSharp}
+      data:
+        _x: 0
+        _y: 0
+        _z: 0
+    - rid: 1258928985913688086
+      type: {class: BlueprintNodeSetEulerAngles, ns: MisterGames.BlueprintLib, asm: Assembly-CSharp}
+      data:
+        _angles: {x: 0, y: 0, z: 0}
+    - rid: 1258928985913688087
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: -1205121487
+    - rid: 1258928985913688088
+      type: {class: BlueprintNodeTransform, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _useLocal: 1
+    - rid: 1258928985913688089
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: 143015151
+    - rid: 1258928985913688090
+      type: {class: BlueprintNodeTime, ns: MisterGames.BlueprintLib, asm: Assembly-CSharp}
+    - rid: 1258928985913688091
+      type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _property: -1205121487
+    - rid: 1258928985913688092
+      type: {class: BlueprintNodeSplitVector3, ns: MisterGames.BlueprintLib, asm: Assembly-CSharp}
+    - rid: 1258928985913688093
+      type: {class: BlueprintNodeAddFloat, ns: MisterGames.BlueprintLib, asm: Assembly-CSharp}
+      data:
+        _a: 0
+        _b: 0
+    - rid: 1258928985913688094
+      type: {class: BlueprintNodeMultiplyFloat, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _a: 0
+        _b: 2
