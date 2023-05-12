@@ -384,20 +384,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 120867503666608460, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
       propertyPath: _blackboardOverridesMap._entries.Array.data[0].value._properties.Array.size
-      value: 7
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 120867503666608460, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
       propertyPath: _blackboardOverridesMap._entries.Array.data[0].value._objects._entries.Array.size
-      value: 4
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 120867503666608460, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
       propertyPath: _blackboardOverridesMap._entries.Array.data[0].value._propertiesMap._entries.Array.size
-      value: 7
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 120867503666608460, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
       propertyPath: _blackboardOverridesMap._entries.Array.data[0].value._propertiesMap._entries.Array.data[6].key
       value: 291680248
       objectReference: {fileID: 0}
+    - target: {fileID: 120867503666608460, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
+      propertyPath: _blackboardOverridesMap._entries.Array.data[0].value._objects._entries.Array.data[5].value.value
+      value: 
+      objectReference: {fileID: 2373686911476172976}
     - target: {fileID: 120867503666608460, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
       propertyPath: _blackboardOverridesMap._entries.Array.data[0].value._propertiesMap._entries.Array.data[6].value.name
       value: Indicator 1
@@ -412,7 +416,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 374631074124201292, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 374631074124201292, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
       propertyPath: m_LocalPosition.x
@@ -541,6 +545,17 @@ PrefabInstance:
       addedObject: {fileID: 1843866585764442134}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
+--- !u!114 &2373686911476172976 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4692234100612762904, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}
+  m_PrefabInstance: {fileID: 7056909335312958888}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15607a9816044bc7b2548f343182030f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &4653707923459688570 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2412353892672851410, guid: 5b59bbd9f1c315349a0be430c9269000, type: 3}

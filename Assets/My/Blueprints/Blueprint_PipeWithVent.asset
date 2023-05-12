@@ -62,7 +62,7 @@ MonoBehaviour:
           _nodeId: 1
           _node:
             rid: 1258928985913688065
-          _position: {x: -73.83576, y: 406.3768}
+          _position: {x: -11.248501, y: 385.77002}
           _ports:
           - _name: 
             _mode: 2
@@ -91,23 +91,6 @@ MonoBehaviour:
             _options: 0
             _dataType:
               _type: System.Single, mscorlib
-      - key: 10
-        value:
-          _nodeId: 10
-          _node:
-            rid: 1258928985913688074
-          _position: {x: 256.49338, y: 345.19202}
-          _ports:
-          - _name: 
-            _mode: 0
-            _options: 0
-            _dataType:
-              _type: 
-          - _name: On Start
-            _mode: 1
-            _options: 3
-            _dataType:
-              _type: 
       - key: 11
         value:
           _nodeId: 11
@@ -337,7 +320,7 @@ MonoBehaviour:
             rid: 1258928985913688092
           _position: {x: 768.01, y: 31.069996}
           _ports:
-          - _name: Vector3
+          - _name: 
             _mode: 3
             _options: 0
             _dataType:
@@ -405,13 +388,6 @@ MonoBehaviour:
             value:
             - nodeId: 25
               portIndex: 0
-      - key: 10
-        value:
-          _entries:
-          - key: 0
-            value:
-            - nodeId: 0
-              portIndex: 0
       - key: 24
         value:
           _entries:
@@ -419,13 +395,6 @@ MonoBehaviour:
             value:
             - nodeId: 27
               portIndex: 0
-      - key: 28
-        value:
-          _entries:
-          - key: 0
-            value:
-            - nodeId: 24
-              portIndex: 2
       - key: 11
         value:
           _entries:
@@ -481,16 +450,16 @@ MonoBehaviour:
             value:
             - nodeId: 26
               portIndex: 2
-    _addedNodesTotalCount: 34
-    _toNodePortLinksMap:
-      _entries:
-      - key: 0
+      - key: 28
         value:
           _entries:
           - key: 0
             value:
-            - nodeId: 10
-              portIndex: 0
+            - nodeId: 24
+              portIndex: 2
+    _addedNodesTotalCount: 34
+    _toNodePortLinksMap:
+      _entries:
       - key: 3
         value:
           _entries:
@@ -568,13 +537,6 @@ MonoBehaviour:
             value:
             - nodeId: 24
               portIndex: 0
-      - key: 24
-        value:
-          _entries:
-          - key: 2
-            value:
-            - nodeId: 28
-              portIndex: 0
       - key: 28
         value:
           _entries:
@@ -604,6 +566,13 @@ MonoBehaviour:
             value:
             - nodeId: 29
               portIndex: 1
+      - key: 24
+        value:
+          _entries:
+          - key: 2
+            value:
+            - nodeId: 28
+              portIndex: 0
     _subgraphReferencesMap:
       _entries: []
   _blackboard:
@@ -711,17 +680,17 @@ MonoBehaviour:
     - rid: 1258928985913688064
       type: {class: BlueprintNodeCharacterForceZone, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
-        _autoSetZoneAtStart: 0
+        _autoSetZoneAtStart: 1
     - rid: 1258928985913688065
       type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
         _property: 143015151
     - rid: 1258928985913688067
-      type: {class: BlueprintNodeSetForceZoneMultiplier, ns: MisterGames.BlueprintLib, asm: Assembly-CSharp}
+      type: {class: BlueprintNodeSetForceZoneMultiplier, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _multiplier: 0
     - rid: 1258928985913688073
       type: {class: BlueprintNodeTime, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
-    - rid: 1258928985913688074
-      type: {class: BlueprintNodeStart, ns: MisterGames.Blueprints.Nodes, asm: MisterGames.Blueprints}
     - rid: 1258928985913688075
       type: {class: BlueprintNodeMultiplyFloat, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
