@@ -7,7 +7,7 @@ using UnityEngine.UI;
 namespace MisterGames.BlueprintLib {
 
     [Serializable]
-    [BlueprintNodeMeta(Name = "Set Emission", Category = "Material", Color = BlueprintColors.Node.Actions)]
+    [BlueprintNodeMeta(Name = "Set Emission (Obsolete)", Category = "Material", Color = BlueprintColors.Node.Actions)]
     public sealed class BlueprintNodeSetMaterialEmission : BlueprintNode, IBlueprintEnter {
 
         private float _intensity;

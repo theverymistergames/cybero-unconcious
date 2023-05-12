@@ -227,22 +227,22 @@ MonoBehaviour:
             rid: 1258928985913688085
           _position: {x: 1742.8973, y: 187.45486}
           _ports:
-          - _name: x
+          - _name: X
             _mode: 3
             _options: 0
             _dataType:
               _type: System.Single, mscorlib
-          - _name: y
+          - _name: Y
             _mode: 3
             _options: 0
             _dataType:
               _type: System.Single, mscorlib
-          - _name: z
+          - _name: Z
             _mode: 3
             _options: 0
             _dataType:
               _type: System.Single, mscorlib
-          - _name: Vector3
+          - _name: 
             _mode: 2
             _options: 0
             _dataType:
@@ -259,12 +259,12 @@ MonoBehaviour:
             _options: 0
             _dataType:
               _type: 
-          - _name: Transform
+          - _name: 
             _mode: 3
             _options: 0
             _dataType:
               _type: UnityEngine.Transform, UnityEngine.CoreModule
-          - _name: Rotation
+          - _name: Eulers
             _mode: 3
             _options: 0
             _dataType:
@@ -719,7 +719,7 @@ MonoBehaviour:
     - rid: 1258928985913688067
       type: {class: BlueprintNodeSetForceZoneMultiplier, ns: MisterGames.BlueprintLib, asm: Assembly-CSharp}
     - rid: 1258928985913688073
-      type: {class: BlueprintNodeTime, ns: MisterGames.BlueprintLib, asm: Assembly-CSharp}
+      type: {class: BlueprintNodeTime, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
     - rid: 1258928985913688074
       type: {class: BlueprintNodeStart, ns: MisterGames.Blueprints.Nodes, asm: MisterGames.Blueprints}
     - rid: 1258928985913688075
@@ -732,15 +732,13 @@ MonoBehaviour:
       data:
         _property: -947786861
     - rid: 1258928985913688085
-      type: {class: BlueprintNodeVector3, ns: MisterGames.BlueprintLib, asm: Assembly-CSharp}
+      type: {class: BlueprintNodeVector3, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
-        _x: 0
-        _y: 0
-        _z: 0
+        _vector: {x: 0, y: 0, z: 0}
     - rid: 1258928985913688086
-      type: {class: BlueprintNodeSetEulerAngles, ns: MisterGames.BlueprintLib, asm: Assembly-CSharp}
+      type: {class: BlueprintNodeSetEulerAngles, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
-        _angles: {x: 0, y: 0, z: 0}
+        _eulers: {x: 0, y: 0, z: 0}
     - rid: 1258928985913688087
       type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
@@ -754,15 +752,17 @@ MonoBehaviour:
       data:
         _property: 143015151
     - rid: 1258928985913688090
-      type: {class: BlueprintNodeTime, ns: MisterGames.BlueprintLib, asm: Assembly-CSharp}
+      type: {class: BlueprintNodeTime, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
     - rid: 1258928985913688091
       type: {class: BlueprintNodeGetBlackboardProperty, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
         _property: -1205121487
     - rid: 1258928985913688092
-      type: {class: BlueprintNodeSplitVector3, ns: MisterGames.BlueprintLib, asm: Assembly-CSharp}
+      type: {class: BlueprintNodeSplitVector3, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _vector: {x: 0, y: 0, z: 0}
     - rid: 1258928985913688093
-      type: {class: BlueprintNodeAddFloat, ns: MisterGames.BlueprintLib, asm: Assembly-CSharp}
+      type: {class: BlueprintNodeAddFloat, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
         _a: 0
         _b: 0

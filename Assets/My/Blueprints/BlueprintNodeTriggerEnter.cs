@@ -7,7 +7,7 @@ using UnityEngine;
 namespace MisterGames.BlueprintLib {
 
     [Serializable]
-    [BlueprintNodeMeta(Name = "Trigger Enter", Category = "Physics", Color = BlueprintColors.Node.Data)]
+    [BlueprintNodeMeta(Name = "Trigger Enter (Obsolete)", Category = "Collision", Color = BlueprintColors.Node.Data)]
     public sealed class BlueprintNodeTriggerEnter : BlueprintNode, IBlueprintEnter {
         public override Port[] CreatePorts() => new[] {
             Port.Enter(),
