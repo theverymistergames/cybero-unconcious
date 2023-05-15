@@ -63,7 +63,7 @@ MonoBehaviour:
             _mode: 43
             _options: 0
             _dataType:
-              _type: MisterGames.Common.Conditions.ICondition, MisterGames.Common
+              _type: MisterGames.Common.Conditions.ITransition, MisterGames.Common
       - key: 3
         value:
           _nodeId: 3
@@ -129,12 +129,17 @@ MonoBehaviour:
             _mode: 22
             _options: 0
             _dataType:
-              _type: MisterGames.Common.Conditions.ICondition, MisterGames.Common
+              _type: MisterGames.Common.Conditions.ITransition, MisterGames.Common
           - _name: On Transit
             _mode: 0
             _options: 0
             _dataType:
               _type: 
+          - _name: 
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
           - _name: 
             _mode: 3
             _options: 0
@@ -151,12 +156,37 @@ MonoBehaviour:
             _mode: 22
             _options: 0
             _dataType:
-              _type: MisterGames.Common.Conditions.ICondition, MisterGames.Common
+              _type: MisterGames.Common.Conditions.ITransition, MisterGames.Common
           - _name: On Transit
             _mode: 0
             _options: 0
             _dataType:
               _type: 
+          - _name: 
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
+          - _name: 
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
+          - _name: 
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
+          - _name: 
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
+          - _name: 
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
           - _name: 
             _mode: 3
             _options: 0
@@ -190,12 +220,22 @@ MonoBehaviour:
             _mode: 22
             _options: 0
             _dataType:
-              _type: MisterGames.Common.Conditions.ICondition, MisterGames.Common
+              _type: MisterGames.Common.Conditions.ITransition, MisterGames.Common
           - _name: On Transit
             _mode: 0
             _options: 0
             _dataType:
               _type: 
+          - _name: 
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
+          - _name: 
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
           - _name: 
             _mode: 3
             _options: 0
@@ -358,8 +398,6 @@ MonoBehaviour:
               portIndex: 0
             - nodeId: 22
               portIndex: 0
-            - nodeId: 24
-              portIndex: 0
       - key: 6
         value:
           _entries:
@@ -380,6 +418,10 @@ MonoBehaviour:
             value:
             - nodeId: 3
               portIndex: 0
+          - key: 3
+            value:
+            - nodeId: 3
+              portIndex: 0
       - key: 24
         value:
           _entries:
@@ -393,6 +435,14 @@ MonoBehaviour:
             value:
             - nodeId: 3
               portIndex: 0
+          - key: 3
+            value:
+            - nodeId: 3
+              portIndex: 0
+          - key: 4
+            value:
+            - nodeId: 3
+              portIndex: 0
       - key: 20
         value:
           _entries:
@@ -401,6 +451,26 @@ MonoBehaviour:
             - nodeId: 29
               portIndex: 0
           - key: 2
+            value:
+            - nodeId: 3
+              portIndex: 0
+          - key: 3
+            value:
+            - nodeId: 3
+              portIndex: 0
+          - key: 4
+            value:
+            - nodeId: 3
+              portIndex: 0
+          - key: 5
+            value:
+            - nodeId: 3
+              portIndex: 0
+          - key: 6
+            value:
+            - nodeId: 3
+              portIndex: 0
+          - key: 7
             value:
             - nodeId: 3
               portIndex: 0
@@ -456,6 +526,22 @@ MonoBehaviour:
               portIndex: 2
             - nodeId: 34
               portIndex: 2
+            - nodeId: 20
+              portIndex: 3
+            - nodeId: 20
+              portIndex: 4
+            - nodeId: 20
+              portIndex: 5
+            - nodeId: 20
+              portIndex: 6
+            - nodeId: 20
+              portIndex: 7
+            - nodeId: 22
+              portIndex: 3
+            - nodeId: 24
+              portIndex: 3
+            - nodeId: 24
+              portIndex: 4
       - key: 6
         value:
           _entries:
@@ -463,13 +549,6 @@ MonoBehaviour:
             value:
             - nodeId: 1
               portIndex: 2
-      - key: 20
-        value:
-          _entries:
-          - key: 0
-            value:
-            - nodeId: 1
-              portIndex: 4
       - key: 34
         value:
           _entries:
@@ -512,7 +591,7 @@ MonoBehaviour:
             value:
             - nodeId: 1
               portIndex: 4
-      - key: 24
+      - key: 20
         value:
           _entries:
           - key: 0
@@ -628,13 +707,13 @@ MonoBehaviour:
       type: {class: BlueprintNodeFsmTransition, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
         _checkImmediatelyAfterArmed: 0
-        _condition:
+        _transition:
           rid: 6196715892176322627
     - rid: 6196715892176322596
       type: {class: BlueprintNodeFsmTransition, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
         _checkImmediatelyAfterArmed: 1
-        _condition:
+        _transition:
           rid: 6196715892176322633
     - rid: 6196715892176322598
       type: {class: BlueprintNodeExit, ns: MisterGames.Blueprints.Nodes, asm: MisterGames.Blueprints}
@@ -644,7 +723,7 @@ MonoBehaviour:
       type: {class: BlueprintNodeFsmTransition, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
         _checkImmediatelyAfterArmed: 0
-        _condition:
+        _transition:
           rid: 6196715892176322636
     - rid: 6196715892176322601
       type: {class: BlueprintNodeExit, ns: MisterGames.Blueprints.Nodes, asm: MisterGames.Blueprints}

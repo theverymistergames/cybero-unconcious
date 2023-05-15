@@ -2206,7 +2206,7 @@ MonoBehaviour:
       data:
         airInertialFactor: 10
         groundInertialFactor: 20
-        forceInfluenceFactor: 0.5
+        inputInfluenceFactor: 1
         gravityForce: 15
         isGravityEnabled: 1
 --- !u!1 &7205586869398250321
@@ -2718,7 +2718,7 @@ PrefabInstance:
       objectReference: {fileID: 8818717125505618302}
     - target: {fileID: 3248882044609864277, guid: 3197c3c2ccd50b249a7b3ef86a4980c3, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3539474951015124131, guid: 3197c3c2ccd50b249a7b3ef86a4980c3, type: 3}
       propertyPath: m_Name
@@ -2726,7 +2726,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7201652344378548620, guid: 3197c3c2ccd50b249a7b3ef86a4980c3, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8106019091452929334, guid: 3197c3c2ccd50b249a7b3ef86a4980c3, type: 3}
       propertyPath: m_RootOrder
@@ -2783,7 +2783,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 914670650207916062}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b037da6e34724cbc9af875a3571dc2b7, type: 3}
   m_Name: 
@@ -2794,7 +2794,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 914670650207916062}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8cb8e6afd38428a89598acf1fff6686, type: 3}
   m_Name: 
