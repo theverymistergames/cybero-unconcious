@@ -11,13 +11,18 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7da84188c8ef43ad9337f6ac5059524e, type: 3}
   m_Name: CharacterViewSettings
-  m_EditorClassIdentifier: 
-  _actions:
-  - rid: 6196715832316526596
-  - rid: 6196715832316526597
+  m_EditorClassIdentifier:
+  _action:
+    rid: 6196715832316526595
   references:
     version: 2
     RefIds:
+    - rid: 6196715832316526595
+      type: {class: CharacterActionSequence, ns: MisterGames.Character.Actions, asm: MisterGames.Character}
+      data:
+        actions:
+        - rid: 6196715832316526596
+        - rid: 6196715832316526597
     - rid: 6196715832316526596
       type: {class: CharacterActionSetViewSensitivity, ns: MisterGames.Character.View, asm: MisterGames.Character}
       data:

@@ -14,15 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier:
   _action:
     rid: 6196716168534294529
-  _asyncAction:
-    rid: -2
   references:
     version: 2
     RefIds:
-    - rid: -2
-      type: {class: , ns: , asm: }
     - rid: 6196716168534294529
-      type: {class: CharacterActions, ns: MisterGames.Character.Actions, asm: MisterGames.Character}
+      type: {class: CharacterActionSequence, ns: MisterGames.Character.Actions, asm: MisterGames.Character}
       data:
         actions:
         - rid: 6196716168534294530
