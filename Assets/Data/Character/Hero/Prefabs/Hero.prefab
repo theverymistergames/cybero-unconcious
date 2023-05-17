@@ -976,10 +976,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff05028f9caa4c3ea535caaf27fb9a93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _characterAccess: {fileID: 354778581290818253}
   _startupActions:
   - {fileID: 11400000, guid: d352a7826776e8b40a4237fc707e6412, type: 2}
   - {fileID: 11400000, guid: ea3e287881d73ba4eb0ea92881243975, type: 2}
+  _dependencies:
+    _dependencyMetaList:
+    - category: CharacterActionSetMassSettings
+      name: CharacterAccess
+      type:
+        _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
+      listIndex: 0
+      elementIndex: 0
+    - category: CharacterActionSetViewSensitivity
+      name: CharacterAccess
+      type:
+        _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
+      listIndex: 0
+      elementIndex: 1
+    - category: CharacterActionSetViewSmoothing
+      name: CharacterAccess
+      type:
+        _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
+      listIndex: 0
+      elementIndex: 2
+    _unityObjects:
+    - {fileID: 354778581290818253}
+    - {fileID: 354778581290818253}
+    - {fileID: 354778581290818253}
+    _objects: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &5404321588362709764
 GameObject:
   m_ObjectHideFlags: 0
