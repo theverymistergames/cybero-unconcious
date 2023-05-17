@@ -130,31 +130,21 @@ MonoBehaviour:
             _options: 0
             _dataType:
               _type: 
+          - _name: On Applied
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: On Released
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
           - _name: 
             _mode: 3
             _options: 0
             _dataType:
               _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
-          - _name: Apply Set
-            _mode: 11
-            _options: 0
-            _dataType:
-              _type: MisterGames.Character.Actions.CharacterActionsAsset, MisterGames.Character
-          - _name: Release Set
-            _mode: 11
-            _options: 0
-            _dataType:
-              _type: MisterGames.Character.Actions.CharacterActionsAsset, MisterGames.Character
-          - _name: On Apply
-            _mode: 0
-            _options: 0
-            _dataType:
-              _type: 
-          - _name: On Release
-            _mode: 0
-            _options: 0
-            _dataType:
-              _type: 
       - key: 51
         value:
           _nodeId: 51
@@ -287,7 +277,7 @@ MonoBehaviour:
       - key: 34
         value:
           _entries:
-          - key: 2
+          - key: 4
             value:
             - nodeId: 3
               portIndex: 0
@@ -342,24 +332,24 @@ MonoBehaviour:
           _entries:
           - key: 0
             value:
+            - nodeId: 50
+              portIndex: 2
+            - nodeId: 20
+              portIndex: 2
+            - nodeId: 20
+              portIndex: 3
+            - nodeId: 20
+              portIndex: 4
+            - nodeId: 20
+              portIndex: 5
+            - nodeId: 50
+              portIndex: 3
+            - nodeId: 50
+              portIndex: 4
+            - nodeId: 50
+              portIndex: 5
             - nodeId: 34
-              portIndex: 2
-            - nodeId: 50
-              portIndex: 2
-            - nodeId: 20
-              portIndex: 2
-            - nodeId: 20
-              portIndex: 3
-            - nodeId: 20
               portIndex: 4
-            - nodeId: 20
-              portIndex: 5
-            - nodeId: 50
-              portIndex: 3
-            - nodeId: 50
-              portIndex: 4
-            - nodeId: 50
-              portIndex: 5
       - key: 50
         value:
           _entries:
@@ -501,7 +491,7 @@ MonoBehaviour:
         _transition:
           rid: 6196716009706225686
     - rid: 6196715892176322642
-      type: {class: BlueprintNodeCharacterActions, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      type: {class: BlueprintNodeApplyAsyncActions, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
         _applyActions:
         - {fileID: 11400000, guid: 40223cf656be2a7418b53fc283ffc8e2, type: 2}
