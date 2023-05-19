@@ -1815,6 +1815,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _strategy: {fileID: 11400000, guid: 3e44b5b53bd4e5346bade11f43de6f95, type: 2}
+  _dependencies:
+    _mode: 0
+    _sharedDependencies: {fileID: 0}
+    _dependencyMetaList:
+    - category: InteractionStrategy
+      name: IInteractive
+      type:
+        _type: MisterGames.Interact.Interactives.IInteractive, MisterGames.Interact
+      listIndex: 1
+      elementIndex: 0
+    - category: InteractionStrategy
+      name: IInteractiveUser
+      type:
+        _type: MisterGames.Interact.Interactives.IInteractiveUser, MisterGames.Interact
+      listIndex: 1
+      elementIndex: 1
+    - category: InteractionConditionIsDetected
+      name: IInteractive
+      type:
+        _type: MisterGames.Interact.Interactives.IInteractive, MisterGames.Interact
+      listIndex: 1
+      elementIndex: 2
+    - category: InteractionConditionIsDetected
+      name: IInteractiveUser
+      type:
+        _type: MisterGames.Interact.Interactives.IInteractiveUser, MisterGames.Interact
+      listIndex: 1
+      elementIndex: 3
+    _unityObjects: []
+    _objects:
+    - rid: -2
+    - rid: -2
+    - rid: -2
+    - rid: -2
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
 --- !u!114 &2814034182591148817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1829,6 +1868,59 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactive: {fileID: 4692234100612762904}
   _strategy: {fileID: 11400000, guid: 2ef8e637213508440a44520645625afe, type: 2}
+  _dependencies:
+    _mode: 0
+    _sharedDependencies: {fileID: 0}
+    _dependencyMetaList:
+    - category: InteractionConditionIsDetected
+      name: IInteractive
+      type:
+        _type: MisterGames.Interact.Interactives.IInteractive, MisterGames.Interact
+      listIndex: 1
+      elementIndex: 0
+    - category: InteractionConditionIsDetected
+      name: IInteractiveUser
+      type:
+        _type: MisterGames.Interact.Interactives.IInteractiveUser, MisterGames.Interact
+      listIndex: 1
+      elementIndex: 1
+    - category: InteractionConditionIsInteracting
+      name: IInteractive
+      type:
+        _type: MisterGames.Interact.Interactives.IInteractive, MisterGames.Interact
+      listIndex: 1
+      elementIndex: 2
+    - category: InteractionConditionIsInteracting
+      name: IInteractiveUser
+      type:
+        _type: MisterGames.Interact.Interactives.IInteractiveUser, MisterGames.Interact
+      listIndex: 1
+      elementIndex: 3
+    - category: InteractionConditionIsAllowedInteraction
+      name: IInteractive
+      type:
+        _type: MisterGames.Interact.Interactives.IInteractive, MisterGames.Interact
+      listIndex: 1
+      elementIndex: 4
+    - category: InteractionConditionIsAllowedInteraction
+      name: IInteractiveUser
+      type:
+        _type: MisterGames.Interact.Interactives.IInteractiveUser, MisterGames.Interact
+      listIndex: 1
+      elementIndex: 5
+    _unityObjects: []
+    _objects:
+    - rid: -2
+    - rid: -2
+    - rid: -2
+    - rid: -2
+    - rid: -2
+    - rid: -2
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
 --- !u!114 &3250199313326630626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1842,7 +1934,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _strategy: {fileID: 11400000, guid: 866b0e22a3cebe944a1168130ef167e7, type: 2}
+  _dependencies:
+    _mode: 0
+    _sharedDependencies: {fileID: 0}
+    _dependencyMetaList:
+    - category: DetectionConditionMaxDirectViewDistance
+      name: IDetector
+      type:
+        _type: MisterGames.Interact.Detectables.IDetector, MisterGames.Interact
+      listIndex: 1
+      elementIndex: 0
+    - category: DetectionConditionMaxDirectViewDistance
+      name: IDetectable
+      type:
+        _type: MisterGames.Interact.Detectables.IDetectable, MisterGames.Interact
+      listIndex: 1
+      elementIndex: 1
+    - category: DetectionConditionMaxDirectViewDistance
+      name: IDetector
+      type:
+        _type: MisterGames.Interact.Detectables.IDetector, MisterGames.Interact
+      listIndex: 1
+      elementIndex: 2
+    - category: DetectionConditionMaxDirectViewDistance
+      name: IDetectable
+      type:
+        _type: MisterGames.Interact.Detectables.IDetectable, MisterGames.Interact
+      listIndex: 1
+      elementIndex: 3
+    _unityObjects: []
+    _objects:
+    - rid: -2
+    - rid: -2
+    - rid: -2
+    - rid: -2
   _debugDrawDetectable: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
 --- !u!114 &6245961606273251567 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6245961607935014025, guid: d433da2e9593ad6469e6bbe83b69d365, type: 3}
@@ -2017,6 +2148,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _strategy: {fileID: 11400000, guid: 3e44b5b53bd4e5346bade11f43de6f95, type: 2}
+  _dependencies:
+    _mode: 0
+    _sharedDependencies: {fileID: 0}
+    _dependencyMetaList:
+    - category: InteractionStrategy
+      name: IInteractive
+      type:
+        _type: MisterGames.Interact.Interactives.IInteractive, MisterGames.Interact
+      listIndex: 1
+      elementIndex: 0
+    - category: InteractionStrategy
+      name: IInteractiveUser
+      type:
+        _type: MisterGames.Interact.Interactives.IInteractiveUser, MisterGames.Interact
+      listIndex: 1
+      elementIndex: 1
+    - category: InteractionConditionIsDetected
+      name: IInteractive
+      type:
+        _type: MisterGames.Interact.Interactives.IInteractive, MisterGames.Interact
+      listIndex: 1
+      elementIndex: 2
+    - category: InteractionConditionIsDetected
+      name: IInteractiveUser
+      type:
+        _type: MisterGames.Interact.Interactives.IInteractiveUser, MisterGames.Interact
+      listIndex: 1
+      elementIndex: 3
+    _unityObjects: []
+    _objects:
+    - rid: -2
+    - rid: -2
+    - rid: -2
+    - rid: -2
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
 --- !u!114 &5977086544145820898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2031,6 +2201,59 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactive: {fileID: 3830931403225376943}
   _strategy: {fileID: 11400000, guid: 2ef8e637213508440a44520645625afe, type: 2}
+  _dependencies:
+    _mode: 0
+    _sharedDependencies: {fileID: 0}
+    _dependencyMetaList:
+    - category: InteractionConditionIsDetected
+      name: IInteractive
+      type:
+        _type: MisterGames.Interact.Interactives.IInteractive, MisterGames.Interact
+      listIndex: 1
+      elementIndex: 0
+    - category: InteractionConditionIsDetected
+      name: IInteractiveUser
+      type:
+        _type: MisterGames.Interact.Interactives.IInteractiveUser, MisterGames.Interact
+      listIndex: 1
+      elementIndex: 1
+    - category: InteractionConditionIsInteracting
+      name: IInteractive
+      type:
+        _type: MisterGames.Interact.Interactives.IInteractive, MisterGames.Interact
+      listIndex: 1
+      elementIndex: 2
+    - category: InteractionConditionIsInteracting
+      name: IInteractiveUser
+      type:
+        _type: MisterGames.Interact.Interactives.IInteractiveUser, MisterGames.Interact
+      listIndex: 1
+      elementIndex: 3
+    - category: InteractionConditionIsAllowedInteraction
+      name: IInteractive
+      type:
+        _type: MisterGames.Interact.Interactives.IInteractive, MisterGames.Interact
+      listIndex: 1
+      elementIndex: 4
+    - category: InteractionConditionIsAllowedInteraction
+      name: IInteractiveUser
+      type:
+        _type: MisterGames.Interact.Interactives.IInteractiveUser, MisterGames.Interact
+      listIndex: 1
+      elementIndex: 5
+    _unityObjects: []
+    _objects:
+    - rid: -2
+    - rid: -2
+    - rid: -2
+    - rid: -2
+    - rid: -2
+    - rid: -2
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
 --- !u!114 &5901546728359316868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2044,7 +2267,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _strategy: {fileID: 11400000, guid: 866b0e22a3cebe944a1168130ef167e7, type: 2}
+  _dependencies:
+    _mode: 0
+    _sharedDependencies: {fileID: 0}
+    _dependencyMetaList:
+    - category: DetectionConditionMaxDirectViewDistance
+      name: IDetector
+      type:
+        _type: MisterGames.Interact.Detectables.IDetector, MisterGames.Interact
+      listIndex: 1
+      elementIndex: 0
+    - category: DetectionConditionMaxDirectViewDistance
+      name: IDetectable
+      type:
+        _type: MisterGames.Interact.Detectables.IDetectable, MisterGames.Interact
+      listIndex: 1
+      elementIndex: 1
+    - category: DetectionConditionMaxDirectViewDistance
+      name: IDetector
+      type:
+        _type: MisterGames.Interact.Detectables.IDetector, MisterGames.Interact
+      listIndex: 1
+      elementIndex: 2
+    - category: DetectionConditionMaxDirectViewDistance
+      name: IDetectable
+      type:
+        _type: MisterGames.Interact.Detectables.IDetectable, MisterGames.Interact
+      listIndex: 1
+      elementIndex: 3
+    _unityObjects: []
+    _objects:
+    - rid: -2
+    - rid: -2
+    - rid: -2
+    - rid: -2
   _debugDrawDetectable: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
 --- !u!1 &2089291750 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6245961606170637318, guid: d433da2e9593ad6469e6bbe83b69d365, type: 3}
