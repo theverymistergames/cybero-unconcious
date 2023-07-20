@@ -979,37 +979,35 @@ MonoBehaviour:
   _characterAccess: {fileID: 354778581290818253}
   _startupActions:
   - {fileID: 11400000, guid: ea3e287881d73ba4eb0ea92881243975, type: 2}
-  - {fileID: 11400000, guid: d352a7826776e8b40a4237fc707e6412, type: 2}
   _dependencies:
     _mode: 0
     _sharedDependencies: {fileID: 0}
-    _dependencyMetaList:
-    - category: CharacterActionSetViewSensitivity
-      name: CharacterAccess
-      type:
-        _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
-      listIndex: 0
-      elementIndex: 0
-    - category: CharacterActionSetViewSmoothing
-      name: CharacterAccess
-      type:
-        _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
-      listIndex: 0
-      elementIndex: 1
-    - category: CharacterActionSetMassSettings
-      name: CharacterAccess
-      type:
-        _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
-      listIndex: 0
-      elementIndex: 2
-    _unityObjects:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    _objects: []
+    _buckets:
+    - name: CharacterActionSetViewSensitivity
+      offset: 0
+      count: 1
+    - name: CharacterActionSetViewSmoothing
+      offset: 1
+      count: 1
+    _dependencyPointers:
+    - list: 1
+      index: 0
+    - list: 1
+      index: 1
+    _dependencyMetas:
+    - type:
+        _type: MisterGames.Character.Core.ICharacterAccess, MisterGames.Character
+    - type:
+        _type: MisterGames.Character.Core.ICharacterAccess, MisterGames.Character
+    _objects:
+    - rid: -2
+    - rid: -2
+    _unityObjects: []
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
 --- !u!1 &5404321588362709764
 GameObject:
   m_ObjectHideFlags: 0
@@ -2575,7 +2573,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8965563844700577084}
-  - {fileID: 5330041459638592098}
   - {fileID: 2236722660689622430}
   - {fileID: 7205586868961636114}
   - {fileID: 7205586869398250320}
@@ -2606,7 +2603,7 @@ MonoBehaviour:
   headAdapter: {fileID: 4283694202728951010}
   _bodyAdapter: {fileID: 150641572023669722}
   _pipelines:
-  - {fileID: 7309461021355576228}
+  - {fileID: 0}
   - {fileID: 6169025681448676973}
   - {fileID: 4560268376781457666}
   - {fileID: 2252703057486833798}
@@ -2682,54 +2679,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _light: {fileID: 2027359103}
   _flashlightMesh: {fileID: 1308605269}
---- !u!1 &8034314636682606040
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5330041459638592098}
-  - component: {fileID: 7309461021355576228}
-  m_Layer: 2
-  m_Name: Animation
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5330041459638592098
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8034314636682606040}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7205586870401899320}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7309461021355576228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8034314636682606040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edca38a43b7c47d99fbec8b08ad6c804, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _characterAccess: {fileID: 354778581290818253}
-  _cameraController: {fileID: 4741229143266635619}
-  _playerLoopStage: 1
-  _edgeInterpolationWeight: 0.05
 --- !u!1001 &914670650207916062
 PrefabInstance:
   m_ObjectHideFlags: 0
