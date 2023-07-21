@@ -174,61 +174,73 @@ MonoBehaviour:
               name: Tween
               type:
                 _type: MisterGames.Tweens.Core.ITween, MisterGames.Tweens
+              mapIndex: 17
           - key: -162394706
             value:
               name: Material Enabled
               type:
                 _type: UnityEngine.Material, UnityEngine.CoreModule
+              mapIndex: 16
           - key: 291680249
             value:
               name: Indicator 0
               type:
                 _type: UnityEngine.UI.Image, UnityEngine.UI
+              mapIndex: 16
           - key: 291680248
             value:
               name: Indicator 1
               type:
                 _type: UnityEngine.UI.Image, UnityEngine.UI
+              mapIndex: 16
           - key: 1061466026
             value:
               name: Is Blocked
               type:
                 _type: System.Boolean, mscorlib
+              mapIndex: 0
           - key: -1577222989
             value:
               name: Is Opened
               type:
                 _type: System.Boolean, mscorlib
+              mapIndex: 0
           - key: -1164085002
             value:
               name: Interactive 0
               type:
                 _type: MisterGames.Interact.Interactives.Interactive, MisterGames.Interact
+              mapIndex: 16
           - key: 2000765251
             value:
               name: Material Blocked
               type:
                 _type: UnityEngine.Material, UnityEngine.CoreModule
+              mapIndex: 16
           - key: -1164085003
             value:
               name: Interactive 1
               type:
                 _type: MisterGames.Interact.Interactives.Interactive, MisterGames.Interact
+              mapIndex: 16
           - key: -310145824
             value:
               name: EmissiveGameObject
               type:
                 _type: UnityEngine.GameObject, UnityEngine.CoreModule
+              mapIndex: 16
           - key: -1324732168
             value:
               name: EmissionColorBlocked
               type:
                 _type: UnityEngine.Color, UnityEngine.CoreModule
+              mapIndex: 13
           - key: 618664273
             value:
               name: EmissionColorEnabled
               type:
                 _type: UnityEngine.Color, UnityEngine.CoreModule
+              mapIndex: 13
         _bools:
           _entries:
           - key: 1061466026
@@ -257,15 +269,17 @@ MonoBehaviour:
           _entries: []
         _quaternions:
           _entries: []
+        _layerMasks:
+          _entries: []
         _colors:
           _entries:
           - key: -1324732168
             value: {r: 0, g: 0, b: 0, a: 0}
           - key: 618664273
             value: {r: 0, g: 0, b: 0, a: 0}
-        _layerMasks:
-          _entries: []
         _curves:
+          _entries: []
+        _enums:
           _entries: []
         _objects:
           _entries:
@@ -290,8 +304,6 @@ MonoBehaviour:
           - key: -310145824
             value:
               value: {fileID: 0}
-        _enums:
-          _entries: []
         _references:
           _entries:
           - key: -1563820403
@@ -328,9 +340,9 @@ MonoBehaviour:
           _entries: []
         _curveArrays:
           _entries: []
-        _objectArrays:
-          _entries: []
         _enumArrays:
+          _entries: []
+        _objectArrays:
           _entries: []
         _referenceArrays:
           _entries: []
@@ -521,42 +533,40 @@ MonoBehaviour:
   _dependencies:
     _mode: 0
     _sharedDependencies: {fileID: 0}
-    _dependencyMetaList:
-    - category: InteractionStrategy
-      name: IInteractive
-      type:
-        _type: MisterGames.Interact.Interactives.IInteractive, MisterGames.Interact
-      listIndex: 1
-      elementIndex: 0
-    - category: InteractionStrategy
-      name: IInteractiveUser
-      type:
-        _type: MisterGames.Interact.Interactives.IInteractiveUser, MisterGames.Interact
-      listIndex: 1
-      elementIndex: 1
-    - category: InteractionConditionIsDetected
-      name: IInteractive
-      type:
-        _type: MisterGames.Interact.Interactives.IInteractive, MisterGames.Interact
-      listIndex: 1
-      elementIndex: 2
-    - category: InteractionConditionIsDetected
-      name: IInteractiveUser
-      type:
-        _type: MisterGames.Interact.Interactives.IInteractiveUser, MisterGames.Interact
-      listIndex: 1
-      elementIndex: 3
-    _unityObjects: []
-    _objects:
-    - rid: -2
-    - rid: -2
-    - rid: -2
-    - rid: -2
+    _buckets:
+    - name: InteractionStrategy
+      offset: 0
+      count: 2
+    - name: InteractionConditionIsDetected
+      offset: 2
+      count: 2
+    _dependencyPointers:
+    - list: 0
+      index: 0
+    - list: 0
+      index: 1
+    - list: 0
+      index: 2
+    - list: 0
+      index: 3
+    _dependencyMetas:
+    - type:
+        _type: MisterGames.Interact.Interactives.Interactive, MisterGames.Interact
+    - type:
+        _type: MisterGames.Interact.Interactives.InteractiveUser, MisterGames.Interact
+    - type:
+        _type: MisterGames.Interact.Interactives.Interactive, MisterGames.Interact
+    - type:
+        _type: MisterGames.Interact.Interactives.InteractiveUser, MisterGames.Interact
+    _objects: []
+    _unityObjects:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   references:
     version: 2
-    RefIds:
-    - rid: -2
-      type: {class: , ns: , asm: }
+    RefIds: []
 --- !u!114 &471120546913492436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -574,56 +584,53 @@ MonoBehaviour:
   _dependencies:
     _mode: 0
     _sharedDependencies: {fileID: 0}
-    _dependencyMetaList:
-    - category: InteractionConditionIsDetected
-      name: IInteractive
-      type:
-        _type: MisterGames.Interact.Interactives.IInteractive, MisterGames.Interact
-      listIndex: 1
-      elementIndex: 0
-    - category: InteractionConditionIsDetected
-      name: IInteractiveUser
-      type:
-        _type: MisterGames.Interact.Interactives.IInteractiveUser, MisterGames.Interact
-      listIndex: 1
-      elementIndex: 1
-    - category: InteractionConditionIsInteracting
-      name: IInteractive
-      type:
-        _type: MisterGames.Interact.Interactives.IInteractive, MisterGames.Interact
-      listIndex: 1
-      elementIndex: 2
-    - category: InteractionConditionIsInteracting
-      name: IInteractiveUser
-      type:
-        _type: MisterGames.Interact.Interactives.IInteractiveUser, MisterGames.Interact
-      listIndex: 1
-      elementIndex: 3
-    - category: InteractionConditionIsAllowedInteraction
-      name: IInteractive
-      type:
-        _type: MisterGames.Interact.Interactives.IInteractive, MisterGames.Interact
-      listIndex: 1
-      elementIndex: 4
-    - category: InteractionConditionIsAllowedInteraction
-      name: IInteractiveUser
-      type:
-        _type: MisterGames.Interact.Interactives.IInteractiveUser, MisterGames.Interact
-      listIndex: 1
-      elementIndex: 5
-    _unityObjects: []
-    _objects:
-    - rid: -2
-    - rid: -2
-    - rid: -2
-    - rid: -2
-    - rid: -2
-    - rid: -2
+    _buckets:
+    - name: InteractionConditionIsDetected
+      offset: 0
+      count: 2
+    - name: InteractionConditionIsInteracting
+      offset: 2
+      count: 2
+    - name: InteractionConditionIsAllowedInteraction
+      offset: 4
+      count: 2
+    _dependencyPointers:
+    - list: 0
+      index: 0
+    - list: 0
+      index: 1
+    - list: 0
+      index: 2
+    - list: 0
+      index: 3
+    - list: 0
+      index: 4
+    - list: 0
+      index: 5
+    _dependencyMetas:
+    - type:
+        _type: MisterGames.Interact.Interactives.Interactive, MisterGames.Interact
+    - type:
+        _type: MisterGames.Interact.Interactives.InteractiveUser, MisterGames.Interact
+    - type:
+        _type: MisterGames.Interact.Interactives.Interactive, MisterGames.Interact
+    - type:
+        _type: MisterGames.Interact.Interactives.InteractiveUser, MisterGames.Interact
+    - type:
+        _type: MisterGames.Interact.Interactives.Interactive, MisterGames.Interact
+    - type:
+        _type: MisterGames.Interact.Interactives.InteractiveUser, MisterGames.Interact
+    _objects: []
+    _unityObjects:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   references:
     version: 2
-    RefIds:
-    - rid: -2
-      type: {class: , ns: , asm: }
+    RefIds: []
 --- !u!114 &3552189197395715930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -640,40 +647,38 @@ MonoBehaviour:
   _dependencies:
     _mode: 0
     _sharedDependencies: {fileID: 0}
-    _dependencyMetaList:
-    - category: DetectionConditionMaxDirectViewDistance
-      name: IDetector
-      type:
-        _type: MisterGames.Interact.Detectables.IDetector, MisterGames.Interact
-      listIndex: 1
-      elementIndex: 0
-    - category: DetectionConditionMaxDirectViewDistance
-      name: IDetectable
-      type:
-        _type: MisterGames.Interact.Detectables.IDetectable, MisterGames.Interact
-      listIndex: 1
-      elementIndex: 1
-    - category: DetectionConditionMaxDirectViewDistance
-      name: IDetector
-      type:
-        _type: MisterGames.Interact.Detectables.IDetector, MisterGames.Interact
-      listIndex: 1
-      elementIndex: 2
-    - category: DetectionConditionMaxDirectViewDistance
-      name: IDetectable
-      type:
-        _type: MisterGames.Interact.Detectables.IDetectable, MisterGames.Interact
-      listIndex: 1
-      elementIndex: 3
-    _unityObjects: []
-    _objects:
-    - rid: -2
-    - rid: -2
-    - rid: -2
-    - rid: -2
+    _buckets:
+    - name: DetectionConditionMaxDirectViewDistance
+      offset: 0
+      count: 2
+    - name: DetectionConditionMaxDirectViewDistance
+      offset: 2
+      count: 2
+    _dependencyPointers:
+    - list: 0
+      index: 0
+    - list: 0
+      index: 1
+    - list: 0
+      index: 2
+    - list: 0
+      index: 3
+    _dependencyMetas:
+    - type:
+        _type: MisterGames.Interact.Detectables.Detector, MisterGames.Interact
+    - type:
+        _type: MisterGames.Interact.Detectables.Detectable, MisterGames.Interact
+    - type:
+        _type: MisterGames.Interact.Detectables.Detector, MisterGames.Interact
+    - type:
+        _type: MisterGames.Interact.Detectables.Detectable, MisterGames.Interact
+    _objects: []
+    _unityObjects:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   _debugDrawDetectable: 0
   references:
     version: 2
-    RefIds:
-    - rid: -2
-      type: {class: , ns: , asm: }
+    RefIds: []
