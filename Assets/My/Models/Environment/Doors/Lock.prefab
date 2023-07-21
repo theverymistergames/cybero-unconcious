@@ -120,7 +120,7 @@ Transform:
   - {fileID: 5013617070503893415}
   - {fileID: 7700370886449296661}
   m_Father: {fileID: 0}
-  m_RootOrder: 698
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3249612614453788034
 GameObject:
@@ -513,6 +513,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _strategy: {fileID: 11400000, guid: 3e44b5b53bd4e5346bade11f43de6f95, type: 2}
+  _dependencies:
+    _mode: 0
+    _sharedDependencies: {fileID: 0}
+    _buckets:
+    - name: InteractionStrategy
+      offset: 0
+      count: 2
+    - name: InteractionConditionIsDetected
+      offset: 2
+      count: 2
+    _dependencyPointers:
+    - list: 0
+      index: 0
+    - list: 0
+      index: 1
+    - list: 0
+      index: 2
+    - list: 0
+      index: 3
+    _dependencyMetas:
+    - type:
+        _type: MisterGames.Interact.Interactives.Interactive, MisterGames.Interact
+    - type:
+        _type: MisterGames.Interact.Interactives.InteractiveUser, MisterGames.Interact
+    - type:
+        _type: MisterGames.Interact.Interactives.Interactive, MisterGames.Interact
+    - type:
+        _type: MisterGames.Interact.Interactives.InteractiveUser, MisterGames.Interact
+    _objects: []
+    _unityObjects:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &5691573500331875781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -526,7 +563,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _strategy: {fileID: 11400000, guid: 866b0e22a3cebe944a1168130ef167e7, type: 2}
+  _dependencies:
+    _mode: 0
+    _sharedDependencies: {fileID: 0}
+    _buckets:
+    - name: DetectionConditionMaxDirectViewDistance
+      offset: 0
+      count: 2
+    - name: DetectionConditionMaxDirectViewDistance
+      offset: 2
+      count: 2
+    _dependencyPointers:
+    - list: 0
+      index: 0
+    - list: 0
+      index: 1
+    - list: 0
+      index: 2
+    - list: 0
+      index: 3
+    _dependencyMetas:
+    - type:
+        _type: MisterGames.Interact.Detectables.Detector, MisterGames.Interact
+    - type:
+        _type: MisterGames.Interact.Detectables.Detectable, MisterGames.Interact
+    - type:
+        _type: MisterGames.Interact.Detectables.Detector, MisterGames.Interact
+    - type:
+        _type: MisterGames.Interact.Detectables.Detectable, MisterGames.Interact
+    _objects: []
+    _unityObjects:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   _debugDrawDetectable: 0
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &537156921325831925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -541,6 +615,56 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactive: {fileID: 4789339463489269844}
   _strategy: {fileID: 11400000, guid: 2ef8e637213508440a44520645625afe, type: 2}
+  _dependencies:
+    _mode: 0
+    _sharedDependencies: {fileID: 0}
+    _buckets:
+    - name: InteractionConditionIsDetected
+      offset: 0
+      count: 2
+    - name: InteractionConditionIsInteracting
+      offset: 2
+      count: 2
+    - name: InteractionConditionIsAllowedInteraction
+      offset: 4
+      count: 2
+    _dependencyPointers:
+    - list: 0
+      index: 0
+    - list: 0
+      index: 1
+    - list: 0
+      index: 2
+    - list: 0
+      index: 3
+    - list: 0
+      index: 4
+    - list: 0
+      index: 5
+    _dependencyMetas:
+    - type:
+        _type: MisterGames.Interact.Interactives.Interactive, MisterGames.Interact
+    - type:
+        _type: MisterGames.Interact.Interactives.InteractiveUser, MisterGames.Interact
+    - type:
+        _type: MisterGames.Interact.Interactives.Interactive, MisterGames.Interact
+    - type:
+        _type: MisterGames.Interact.Interactives.InteractiveUser, MisterGames.Interact
+    - type:
+        _type: MisterGames.Interact.Interactives.Interactive, MisterGames.Interact
+    - type:
+        _type: MisterGames.Interact.Interactives.InteractiveUser, MisterGames.Interact
+    _objects: []
+    _unityObjects:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &4075676797889789802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -566,26 +690,31 @@ MonoBehaviour:
               name: DoorBP
               type:
                 _type: MisterGames.Blueprints.BlueprintRunner, MisterGames.Blueprints
+              mapIndex: 16
           - key: 1049108326
             value:
               name: Interactive
               type:
                 _type: MisterGames.Interact.Interactives.Interactive, MisterGames.Interact
+              mapIndex: 16
           - key: 1491221608
             value:
               name: Handle
               type:
                 _type: UnityEngine.GameObject, UnityEngine.CoreModule
+              mapIndex: 16
           - key: 963907503
             value:
               name: Lock
               type:
                 _type: UnityEngine.GameObject, UnityEngine.CoreModule
+              mapIndex: 16
           - key: 206364972
             value:
               name: HandleTransform
               type:
                 _type: UnityEngine.Transform, UnityEngine.CoreModule
+              mapIndex: 16
         _bools:
           _entries: []
         _ints:
@@ -610,11 +739,13 @@ MonoBehaviour:
           _entries: []
         _quaternions:
           _entries: []
-        _colors:
-          _entries: []
         _layerMasks:
           _entries: []
+        _colors:
+          _entries: []
         _curves:
+          _entries: []
+        _enums:
           _entries: []
         _objects:
           _entries:
@@ -633,8 +764,6 @@ MonoBehaviour:
           - key: 206364972
             value:
               value: {fileID: 6753408651254720653}
-        _enums:
-          _entries: []
         _references:
           _entries: []
         _boolArrays:
@@ -667,9 +796,9 @@ MonoBehaviour:
           _entries: []
         _curveArrays:
           _entries: []
-        _objectArrays:
-          _entries: []
         _enumArrays:
+          _entries: []
+        _objectArrays:
           _entries: []
         _referenceArrays:
           _entries: []
