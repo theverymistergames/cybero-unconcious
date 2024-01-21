@@ -34,7 +34,7 @@ namespace MisterGames.BlueprintLib {
             
             _intensity = material.GetFloat("_EmissiveIntensity");
             _color = material.GetColor("_EmissiveColor") / _intensity;
-            _sharedMaterial = renderer.sharedMaterial;
+            _sharedMaterial = renderer.material;
         }
 
         public void OnEnterPort(int port) {

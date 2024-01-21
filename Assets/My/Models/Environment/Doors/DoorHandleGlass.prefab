@@ -97,7 +97,7 @@ Transform:
   m_Children:
   - {fileID: 6870629163322778809}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 125
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -90}
 --- !u!33 &4704847673177878558
 MeshFilter:
@@ -166,7 +166,7 @@ MonoBehaviour:
     _entries:
     - key: {fileID: 11400000, guid: 13dccdc4e304d26429daf94f83c74991, type: 2}
       value:
-        _properties: 8dfec9a243414177ae0d52f6aaaf443fb37cfda1f9af6211f8af6211f6789dbaf5789dba
+        _properties: 8dfec9a243414177ae0d52f6aaaf443fb37cfda1f9af6211f8af6211f6789dbaf5789dbae08c83edf8300ab15111e024
         _propertiesMap:
           _entries:
           - key: -1563820403
@@ -214,6 +214,21 @@ MonoBehaviour:
               name: Interactive 1
               type:
                 _type: MisterGames.Interact.Interactives.Interactive, MisterGames.Interact
+          - key: -310145824
+            value:
+              name: EmissiveGameObject
+              type:
+                _type: UnityEngine.GameObject, UnityEngine.CoreModule
+          - key: -1324732168
+            value:
+              name: EmissionColorBlocked
+              type:
+                _type: UnityEngine.Color, UnityEngine.CoreModule
+          - key: 618664273
+            value:
+              name: EmissionColorEnabled
+              type:
+                _type: UnityEngine.Color, UnityEngine.CoreModule
         _bools:
           _entries:
           - key: 1061466026
@@ -243,7 +258,11 @@ MonoBehaviour:
         _quaternions:
           _entries: []
         _colors:
-          _entries: []
+          _entries:
+          - key: -1324732168
+            value: {r: 0, g: 0, b: 0, a: 0}
+          - key: 618664273
+            value: {r: 0, g: 0, b: 0, a: 0}
         _layerMasks:
           _entries: []
         _curves:
@@ -266,6 +285,9 @@ MonoBehaviour:
             value:
               value: {fileID: 2131840926}
           - key: -1164085003
+            value:
+              value: {fileID: 0}
+          - key: -310145824
             value:
               value: {fileID: 0}
         _enums:
@@ -366,6 +388,7 @@ MonoBehaviour:
         startEulerAngles: {x: 0, y: 0, z: 0}
         endEulerAngles: {x: 0, y: 0, z: 120}
         useLocal: 1
+        useEulerInterpolation: 0
 --- !u!1001 &1768221405256810923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -374,6 +397,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6870629163322778809}
     m_Modifications:
+    - target: {fileID: 858040972405570822, guid: b3f05c3fb29921a459f471a1928ec384, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5fce38ae989eef340bbfed983cca4d12, type: 2}
     - target: {fileID: 2161252216037043124, guid: b3f05c3fb29921a459f471a1928ec384, type: 3}
       propertyPath: m_RootOrder
       value: 1

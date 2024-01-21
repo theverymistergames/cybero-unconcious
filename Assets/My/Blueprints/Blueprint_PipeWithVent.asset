@@ -118,7 +118,7 @@ MonoBehaviour:
           _nodeId: 9
           _node:
             rid: 1258928985913688073
-          _position: {x: 371.9975, y: 612.375}
+          _position: {x: 30.44751, y: 585.8775}
           _ports:
           - _name: Time
             _mode: 2
@@ -162,7 +162,7 @@ MonoBehaviour:
           _nodeId: 26
           _node:
             rid: 1258928985913688090
-          _position: {x: 761.99567, y: 212.07912}
+          _position: {x: 279.63132, y: 200.86957}
           _ports:
           - _name: Time
             _mode: 2
@@ -196,7 +196,7 @@ MonoBehaviour:
           _nodeId: 15
           _node:
             rid: 1258928985913688079
-          _position: {x: 196.555, y: 739.9176}
+          _position: {x: 202.15501, y: 726.84}
           _ports:
           - _name: 
             _mode: 2
@@ -362,6 +362,50 @@ MonoBehaviour:
             _options: 0
             _dataType:
               _type: System.Single, mscorlib
+      - key: 34
+        value:
+          _nodeId: 34
+          _node:
+            rid: 1258929079233282048
+          _position: {x: 166.4325, y: 611.1825}
+          _ports:
+          - _name: A
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: System.Single, mscorlib
+          - _name: B
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: System.Single, mscorlib
+          - _name: 
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: System.Single, mscorlib
+      - key: 35
+        value:
+          _nodeId: 35
+          _node:
+            rid: 1258929079233282049
+          _position: {x: 517.8087, y: 241.04347}
+          _ports:
+          - _name: A
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: System.Single, mscorlib
+          - _name: B
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: System.Single, mscorlib
+          - _name: 
+            _mode: 2
+            _options: 0
+            _dataType:
+              _type: System.Single, mscorlib
     _fromNodePortLinksMap:
       _entries:
       - key: 0
@@ -400,7 +444,7 @@ MonoBehaviour:
           _entries:
           - key: 0
             value:
-            - nodeId: 9
+            - nodeId: 34
               portIndex: 2
           - key: 1
             value:
@@ -443,7 +487,7 @@ MonoBehaviour:
             value:
             - nodeId: 30
               portIndex: 2
-      - key: 30
+      - key: 35
         value:
           _entries:
           - key: 0
@@ -457,7 +501,21 @@ MonoBehaviour:
             value:
             - nodeId: 24
               portIndex: 2
-    _addedNodesTotalCount: 34
+      - key: 34
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 9
+              portIndex: 2
+      - key: 30
+        value:
+          _entries:
+          - key: 0
+            value:
+            - nodeId: 35
+              portIndex: 2
+    _addedNodesTotalCount: 36
     _toNodePortLinksMap:
       _entries:
       - key: 3
@@ -472,7 +530,7 @@ MonoBehaviour:
           _entries:
           - key: 2
             value:
-            - nodeId: 11
+            - nodeId: 34
               portIndex: 0
       - key: 25
         value:
@@ -557,7 +615,7 @@ MonoBehaviour:
           _entries:
           - key: 2
             value:
-            - nodeId: 30
+            - nodeId: 35
               portIndex: 0
       - key: 30
         value:
@@ -572,6 +630,20 @@ MonoBehaviour:
           - key: 2
             value:
             - nodeId: 28
+              portIndex: 0
+      - key: 34
+        value:
+          _entries:
+          - key: 2
+            value:
+            - nodeId: 11
+              portIndex: 0
+      - key: 35
+        value:
+          _entries:
+          - key: 2
+            value:
+            - nodeId: 30
               portIndex: 0
     _subgraphReferencesMap:
       _entries: []
@@ -740,3 +812,13 @@ MonoBehaviour:
       data:
         _a: 0
         _b: 2
+    - rid: 1258929079233282048
+      type: {class: BlueprintNodeAddFloat, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _a: 0
+        _b: 1
+    - rid: 1258929079233282049
+      type: {class: BlueprintNodeAddFloat, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      data:
+        _a: 0
+        _b: 1

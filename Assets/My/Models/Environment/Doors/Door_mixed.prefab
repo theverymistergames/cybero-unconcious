@@ -2044,7 +2044,7 @@ MonoBehaviour:
     _entries:
     - key: {fileID: 11400000, guid: 13dccdc4e304d26429daf94f83c74991, type: 2}
       value:
-        _properties: 8dfec9a243414177ae0d52f6aaaf443fb37cfda1f9af6211f8af6211f6789dbaf5789dba
+        _properties: 8dfec9a243414177ae0d52f6aaaf443fb37cfda1f9af6211f8af6211f6789dbaf5789dbae08c83edf8300ab15111e024
         _propertiesMap:
           _entries:
           - key: -1577222989
@@ -2092,6 +2092,21 @@ MonoBehaviour:
               name: Interactive 1
               type:
                 _type: MisterGames.Interact.Interactives.Interactive, MisterGames.Interact
+          - key: -310145824
+            value:
+              name: EmissiveGameObject
+              type:
+                _type: UnityEngine.GameObject, UnityEngine.CoreModule
+          - key: -1324732168
+            value:
+              name: EmissionColorBlocked
+              type:
+                _type: UnityEngine.Color, UnityEngine.CoreModule
+          - key: 618664273
+            value:
+              name: EmissionColorEnabled
+              type:
+                _type: UnityEngine.Color, UnityEngine.CoreModule
         _bools:
           _entries:
           - key: -1577222989
@@ -2121,7 +2136,11 @@ MonoBehaviour:
         _quaternions:
           _entries: []
         _colors:
-          _entries: []
+          _entries:
+          - key: -1324732168
+            value: {r: 0, g: 0, b: 0, a: 0}
+          - key: 618664273
+            value: {r: 0, g: 0, b: 0, a: 0}
         _layerMasks:
           _entries: []
         _curves:
@@ -2146,6 +2165,9 @@ MonoBehaviour:
           - key: -1164085003
             value:
               value: {fileID: 8663574614422119522}
+          - key: -310145824
+            value:
+              value: {fileID: 0}
         _enums:
           _entries: []
         _references:
