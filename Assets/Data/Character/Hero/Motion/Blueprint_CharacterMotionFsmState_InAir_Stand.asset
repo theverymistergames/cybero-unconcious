@@ -63,7 +63,7 @@ MonoBehaviour:
             _mode: 43
             _options: 0
             _dataType:
-              _type: MisterGames.Common.Conditions.ICondition, MisterGames.Common
+              _type: MisterGames.Common.Conditions.ITransition, MisterGames.Common
       - key: 3
         value:
           _nodeId: 3
@@ -93,31 +93,31 @@ MonoBehaviour:
             _options: 0
             _dataType:
               _type: 
+          - _name: On Applied
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: On Released
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
           - _name: 
             _mode: 3
             _options: 0
             _dataType:
               _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
-          - _name: Apply Set
-            _mode: 11
+          - _name: 
+            _mode: 3
             _options: 0
             _dataType:
-              _type: MisterGames.Character.Actions.CharacterActionSet, MisterGames.Character
-          - _name: Release Set
-            _mode: 11
+              _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
+          - _name: 
+            _mode: 3
             _options: 0
             _dataType:
-              _type: MisterGames.Character.Actions.CharacterActionSet, MisterGames.Character
-          - _name: On Apply
-            _mode: 0
-            _options: 0
-            _dataType:
-              _type: 
-          - _name: On Release
-            _mode: 0
-            _options: 0
-            _dataType:
-              _type: 
+              _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
       - key: 20
         value:
           _nodeId: 20
@@ -129,12 +129,22 @@ MonoBehaviour:
             _mode: 22
             _options: 0
             _dataType:
-              _type: MisterGames.Common.Conditions.ICondition, MisterGames.Common
+              _type: MisterGames.Common.Conditions.ITransition, MisterGames.Common
           - _name: On Transit
             _mode: 0
             _options: 0
             _dataType:
               _type: 
+          - _name: 
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
+          - _name: 
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
           - _name: 
             _mode: 3
             _options: 0
@@ -151,7 +161,7 @@ MonoBehaviour:
             _mode: 22
             _options: 0
             _dataType:
-              _type: MisterGames.Common.Conditions.ICondition, MisterGames.Common
+              _type: MisterGames.Common.Conditions.ITransition, MisterGames.Common
           - _name: On Transit
             _mode: 0
             _options: 0
@@ -162,12 +172,22 @@ MonoBehaviour:
             _options: 0
             _dataType:
               _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
+          - _name: 
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
+          - _name: 
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
       - key: 25
         value:
           _nodeId: 25
           _node:
             rid: 6196715892176322601
-          _position: {x: 1373.05, y: 1519.8834}
+          _position: {x: 1387.6058, y: 1521.0609}
           _ports:
           - _name: 
             _mode: 1
@@ -213,31 +233,21 @@ MonoBehaviour:
             _options: 0
             _dataType:
               _type: 
+          - _name: On Applied
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: On Released
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
           - _name: 
             _mode: 3
             _options: 0
             _dataType:
               _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
-          - _name: Apply Set
-            _mode: 11
-            _options: 0
-            _dataType:
-              _type: MisterGames.Character.Actions.CharacterActionSet, MisterGames.Character
-          - _name: Release Set
-            _mode: 11
-            _options: 0
-            _dataType:
-              _type: MisterGames.Character.Actions.CharacterActionSet, MisterGames.Character
-          - _name: On Apply
-            _mode: 0
-            _options: 0
-            _dataType:
-              _type: 
-          - _name: On Release
-            _mode: 0
-            _options: 0
-            _dataType:
-              _type: 
       - key: 32
         value:
           _nodeId: 32
@@ -249,12 +259,22 @@ MonoBehaviour:
             _mode: 22
             _options: 0
             _dataType:
-              _type: MisterGames.Common.Conditions.ICondition, MisterGames.Common
+              _type: MisterGames.Common.Conditions.ITransition, MisterGames.Common
           - _name: On Transit
             _mode: 0
             _options: 0
             _dataType:
               _type: 
+          - _name: 
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
+          - _name: 
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
           - _name: 
             _mode: 3
             _options: 0
@@ -288,12 +308,22 @@ MonoBehaviour:
             _mode: 22
             _options: 0
             _dataType:
-              _type: MisterGames.Common.Conditions.ICondition, MisterGames.Common
+              _type: MisterGames.Common.Conditions.ITransition, MisterGames.Common
           - _name: On Transit
             _mode: 0
             _options: 0
             _dataType:
               _type: 
+          - _name: 
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
+          - _name: 
+            _mode: 3
+            _options: 0
+            _dataType:
+              _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
           - _name: 
             _mode: 3
             _options: 0
@@ -316,31 +346,21 @@ MonoBehaviour:
             _options: 0
             _dataType:
               _type: 
+          - _name: On Applied
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: On Released
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
           - _name: 
             _mode: 3
             _options: 0
             _dataType:
               _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
-          - _name: Apply Set
-            _mode: 11
-            _options: 0
-            _dataType:
-              _type: MisterGames.Character.Actions.CharacterActionSet, MisterGames.Character
-          - _name: Release Set
-            _mode: 11
-            _options: 0
-            _dataType:
-              _type: MisterGames.Character.Actions.CharacterActionSet, MisterGames.Character
-          - _name: On Apply
-            _mode: 0
-            _options: 0
-            _dataType:
-              _type: 
-          - _name: On Release
-            _mode: 0
-            _options: 0
-            _dataType:
-              _type: 
       - key: 38
         value:
           _nodeId: 38
@@ -375,37 +395,27 @@ MonoBehaviour:
             _options: 0
             _dataType:
               _type: 
+          - _name: On Applied
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: On Released
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
           - _name: 
             _mode: 3
             _options: 0
             _dataType:
               _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
-          - _name: Apply Set
-            _mode: 11
-            _options: 0
-            _dataType:
-              _type: MisterGames.Character.Actions.CharacterActionSet, MisterGames.Character
-          - _name: Release Set
-            _mode: 11
-            _options: 0
-            _dataType:
-              _type: MisterGames.Character.Actions.CharacterActionSet, MisterGames.Character
-          - _name: On Apply
-            _mode: 0
-            _options: 0
-            _dataType:
-              _type: 
-          - _name: On Release
-            _mode: 0
-            _options: 0
-            _dataType:
-              _type: 
       - key: 40
         value:
           _nodeId: 40
           _node:
             rid: 6196715892176322719
-          _position: {x: 1374.3666, y: 1579.4667}
+          _position: {x: 1388.9392, y: 1580.3942}
           _ports:
           - _name: Apply
             _mode: 1
@@ -417,31 +427,21 @@ MonoBehaviour:
             _options: 0
             _dataType:
               _type: 
+          - _name: On Applied
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
+          - _name: On Released
+            _mode: 0
+            _options: 0
+            _dataType:
+              _type: 
           - _name: 
             _mode: 3
             _options: 0
             _dataType:
               _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
-          - _name: Apply Set
-            _mode: 11
-            _options: 0
-            _dataType:
-              _type: MisterGames.Character.Actions.CharacterActionSet, MisterGames.Character
-          - _name: Release Set
-            _mode: 11
-            _options: 0
-            _dataType:
-              _type: MisterGames.Character.Actions.CharacterActionSet, MisterGames.Character
-          - _name: On Apply
-            _mode: 0
-            _options: 0
-            _dataType:
-              _type: 
-          - _name: On Release
-            _mode: 0
-            _options: 0
-            _dataType:
-              _type: 
       - key: 47
         value:
           _nodeId: 47
@@ -485,10 +485,10 @@ MonoBehaviour:
               portIndex: 0
             - nodeId: 24
               portIndex: 0
-      - key: 6
+      - key: 40
         value:
           _entries:
-          - key: 2
+          - key: 4
             value:
             - nodeId: 3
               portIndex: 0
@@ -505,6 +505,14 @@ MonoBehaviour:
             value:
             - nodeId: 3
               portIndex: 0
+          - key: 3
+            value:
+            - nodeId: 3
+              portIndex: 0
+          - key: 4
+            value:
+            - nodeId: 3
+              portIndex: 0
       - key: 20
         value:
           _entries:
@@ -518,10 +526,18 @@ MonoBehaviour:
             value:
             - nodeId: 3
               portIndex: 0
-      - key: 31
+          - key: 3
+            value:
+            - nodeId: 3
+              portIndex: 0
+          - key: 4
+            value:
+            - nodeId: 3
+              portIndex: 0
+      - key: 39
         value:
           _entries:
-          - key: 2
+          - key: 4
             value:
             - nodeId: 3
               portIndex: 0
@@ -538,6 +554,14 @@ MonoBehaviour:
               portIndex: 0
             - nodeId: 39
               portIndex: 0
+          - key: 3
+            value:
+            - nodeId: 3
+              portIndex: 0
+          - key: 4
+            value:
+            - nodeId: 3
+              portIndex: 0
       - key: 36
         value:
           _entries:
@@ -551,24 +575,40 @@ MonoBehaviour:
             value:
             - nodeId: 3
               portIndex: 0
+          - key: 3
+            value:
+            - nodeId: 3
+              portIndex: 0
+          - key: 4
+            value:
+            - nodeId: 3
+              portIndex: 0
       - key: 37
         value:
           _entries:
-          - key: 2
+          - key: 4
             value:
             - nodeId: 3
               portIndex: 0
-      - key: 39
+      - key: 31
         value:
           _entries:
-          - key: 2
+          - key: 4
             value:
             - nodeId: 3
               portIndex: 0
-      - key: 40
+      - key: 6
         value:
           _entries:
-          - key: 2
+          - key: 4
+            value:
+            - nodeId: 3
+              portIndex: 0
+          - key: 5
+            value:
+            - nodeId: 3
+              portIndex: 0
+          - key: 6
             value:
             - nodeId: 3
               portIndex: 0
@@ -598,10 +638,6 @@ MonoBehaviour:
           _entries:
           - key: 0
             value:
-            - nodeId: 6
-              portIndex: 2
-            - nodeId: 31
-              portIndex: 2
             - nodeId: 32
               portIndex: 2
             - nodeId: 20
@@ -610,12 +646,36 @@ MonoBehaviour:
               portIndex: 2
             - nodeId: 36
               portIndex: 2
+            - nodeId: 20
+              portIndex: 3
+            - nodeId: 20
+              portIndex: 4
+            - nodeId: 36
+              portIndex: 3
+            - nodeId: 36
+              portIndex: 4
+            - nodeId: 32
+              portIndex: 3
+            - nodeId: 32
+              portIndex: 4
+            - nodeId: 24
+              portIndex: 3
+            - nodeId: 24
+              portIndex: 4
+            - nodeId: 6
+              portIndex: 4
+            - nodeId: 6
+              portIndex: 5
+            - nodeId: 6
+              portIndex: 6
+            - nodeId: 31
+              portIndex: 4
             - nodeId: 37
-              portIndex: 2
+              portIndex: 4
             - nodeId: 39
-              portIndex: 2
+              portIndex: 4
             - nodeId: 40
-              portIndex: 2
+              portIndex: 4
       - key: 6
         value:
           _entries:
@@ -623,7 +683,7 @@ MonoBehaviour:
             value:
             - nodeId: 1
               portIndex: 2
-      - key: 20
+      - key: 24
         value:
           _entries:
           - key: 0
@@ -658,7 +718,7 @@ MonoBehaviour:
             value:
             - nodeId: 32
               portIndex: 1
-      - key: 24
+      - key: 20
         value:
           _entries:
           - key: 0
@@ -718,6 +778,7 @@ MonoBehaviour:
           name: CharacterAccess
           type:
             _type: MisterGames.Character.Core.CharacterAccess, MisterGames.Character
+          mapIndex: 16
     _bools:
       _entries: []
     _ints:
@@ -803,7 +864,7 @@ MonoBehaviour:
       data:
         _property: 24753629
     - rid: 6196715892176322567
-      type: {class: BlueprintNodeCharacterActions, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      type: {class: BlueprintNodeApplyAsyncActions, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
         _applyActions:
         - {fileID: 11400000, guid: 07bacbc9275bbee4c9d6d0f93b4f8f7f, type: 2}
@@ -816,13 +877,13 @@ MonoBehaviour:
       type: {class: BlueprintNodeFsmTransition, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
         _checkImmediatelyAfterArmed: 0
-        _condition:
+        _transition:
           rid: 6196715892176322627
     - rid: 6196715892176322599
       type: {class: BlueprintNodeFsmTransition, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
         _checkImmediatelyAfterArmed: 1
-        _condition:
+        _transition:
           rid: 6196715892176322636
     - rid: 6196715892176322601
       type: {class: BlueprintNodeExit, ns: MisterGames.Blueprints.Nodes, asm: MisterGames.Blueprints}
@@ -833,7 +894,7 @@ MonoBehaviour:
       data:
         _port: InAir_Crouch
     - rid: 6196715892176322614
-      type: {class: BlueprintNodeCharacterActions, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      type: {class: BlueprintNodeApplyAsyncActions, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
         _applyActions:
         - {fileID: 11400000, guid: 8400d14b486655a4d8e8b1e00b9f4040, type: 2}
@@ -842,7 +903,7 @@ MonoBehaviour:
       type: {class: BlueprintNodeFsmTransition, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
         _checkImmediatelyAfterArmed: 1
-        _condition:
+        _transition:
           rid: 6196715892176322617
     - rid: 6196715892176322617
       type: {class: ConditionGroupAll, ns: MisterGames.Common.Conditions, asm: MisterGames.Common}
@@ -947,7 +1008,7 @@ MonoBehaviour:
       type: {class: BlueprintNodeFsmTransition, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
         _checkImmediatelyAfterArmed: 0
-        _condition:
+        _transition:
           rid: 6196715892176322696
     - rid: 6196715892176322696
       type: {class: ConditionGroupAll, ns: MisterGames.Common.Conditions, asm: MisterGames.Common}
@@ -996,7 +1057,7 @@ MonoBehaviour:
           _hasValue: 1
           _value: 1
     - rid: 6196715892176322701
-      type: {class: BlueprintNodeCharacterActions, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      type: {class: BlueprintNodeApplyAsyncActions, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
         _applyActions:
         - {fileID: 11400000, guid: 40223cf656be2a7418b53fc283ffc8e2, type: 2}
@@ -1021,13 +1082,13 @@ MonoBehaviour:
           _hasValue: 1
           _value: 0
     - rid: 6196715892176322718
-      type: {class: BlueprintNodeCharacterActions, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      type: {class: BlueprintNodeApplyAsyncActions, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
         _applyActions:
         - {fileID: 11400000, guid: fb2af0ff37d685c418c7836758e5ad4c, type: 2}
         _releaseActions: []
     - rid: 6196715892176322719
-      type: {class: BlueprintNodeCharacterActions, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
+      type: {class: BlueprintNodeApplyAsyncActions, ns: MisterGames.BlueprintLib, asm: MisterGames.BlueprintsLib}
       data:
         _applyActions:
         - {fileID: 11400000, guid: fb2af0ff37d685c418c7836758e5ad4c, type: 2}

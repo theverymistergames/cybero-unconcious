@@ -34,7 +34,7 @@ Transform:
   - {fileID: 5861326307997081066}
   - {fileID: 7847618397789179142}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4942905867416125442
 MonoBehaviour:
@@ -49,15 +49,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _splineContainer: {fileID: 8637604740486279900}
-  _startReserveBound: 0.1
-  _endReserveBound: 0.8
-  _sections:
-  - start: 0
-    stop: 1
-    orientationWeights: {x: 0, y: 1, z: 0}
-    orientationOffset: {x: 0, y: 0, z: 0}
-    forwardWeights: {x: 1, y: 1, z: 1}
-    forwardOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &984921792824588151
 GameObject:
   m_ObjectHideFlags: 0
@@ -261,6 +252,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _strategy: {fileID: 11400000, guid: 2f455542cffb7924c9ea82a9c841a494, type: 2}
+  _dependencies:
+    _mode: 0
+    _sharedDependencies: {fileID: 0}
+    _buckets:
+    - name: InteractionStrategy
+      offset: 0
+      count: 2
+    _dependencyPointers:
+    - list: 0
+      index: 0
+    - list: 0
+      index: 1
+    _dependencyMetas:
+    - type:
+        _type: MisterGames.Interact.Interactives.Interactive, MisterGames.Interact
+    - type:
+        _type: MisterGames.Interact.Interactives.InteractiveUser, MisterGames.Interact
+    _objects: []
+    _unityObjects:
+    - {fileID: 0}
+    - {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &6147633684654235845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,6 +290,56 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interactive: {fileID: 1945155924886961644}
   _strategy: {fileID: 11400000, guid: 2ef8e637213508440a44520645625afe, type: 2}
+  _dependencies:
+    _mode: 0
+    _sharedDependencies: {fileID: 0}
+    _buckets:
+    - name: InteractionConditionIsDetected
+      offset: 0
+      count: 2
+    - name: InteractionConditionIsInteracting
+      offset: 2
+      count: 2
+    - name: InteractionConditionIsAllowedInteraction
+      offset: 4
+      count: 2
+    _dependencyPointers:
+    - list: 0
+      index: 0
+    - list: 0
+      index: 1
+    - list: 0
+      index: 2
+    - list: 0
+      index: 3
+    - list: 0
+      index: 4
+    - list: 0
+      index: 5
+    _dependencyMetas:
+    - type:
+        _type: MisterGames.Interact.Interactives.Interactive, MisterGames.Interact
+    - type:
+        _type: MisterGames.Interact.Interactives.InteractiveUser, MisterGames.Interact
+    - type:
+        _type: MisterGames.Interact.Interactives.Interactive, MisterGames.Interact
+    - type:
+        _type: MisterGames.Interact.Interactives.InteractiveUser, MisterGames.Interact
+    - type:
+        _type: MisterGames.Interact.Interactives.Interactive, MisterGames.Interact
+    - type:
+        _type: MisterGames.Interact.Interactives.InteractiveUser, MisterGames.Interact
+    _objects: []
+    _unityObjects:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &983131359972434345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,7 +353,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _strategy: {fileID: 11400000, guid: 866b0e22a3cebe944a1168130ef167e7, type: 2}
+  _dependencies:
+    _mode: 0
+    _sharedDependencies: {fileID: 0}
+    _buckets:
+    - name: DetectionConditionMaxDirectViewDistance
+      offset: 0
+      count: 2
+    - name: DetectionConditionMaxDirectViewDistance
+      offset: 2
+      count: 2
+    _dependencyPointers:
+    - list: 0
+      index: 0
+    - list: 0
+      index: 1
+    - list: 0
+      index: 2
+    - list: 0
+      index: 3
+    _dependencyMetas:
+    - type:
+        _type: MisterGames.Interact.Detectables.Detector, MisterGames.Interact
+    - type:
+        _type: MisterGames.Interact.Detectables.Detectable, MisterGames.Interact
+    - type:
+        _type: MisterGames.Interact.Detectables.Detector, MisterGames.Interact
+    - type:
+        _type: MisterGames.Interact.Detectables.Detectable, MisterGames.Interact
+    _objects: []
+    _unityObjects:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   _debugDrawDetectable: 0
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &2046154143754619430
 GameObject:
   m_ObjectHideFlags: 0

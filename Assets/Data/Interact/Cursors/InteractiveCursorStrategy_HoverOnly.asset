@@ -19,14 +19,8 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 6196716169574481923
-      type: {class: InteractionConstraintAll, ns: MisterGames.Interact.Interactives, asm: MisterGames.Interact}
-      data:
-        constraints:
-        - rid: 6196716169574481924
-        - rid: 6196716169574481925
-    - rid: 6196716169574481924
-      type: {class: InteractionConstraintIsAllowedInteraction, ns: MisterGames.Interact.Interactives, asm: MisterGames.Interact}
+    - rid: 4788946424385503236
+      type: {class: InteractionConditionIsAllowedInteraction, ns: MisterGames.Interact.Interactives, asm: MisterGames.Interact}
       data:
         shouldBeReadyToStartInteract:
           _hasValue: 1
@@ -37,7 +31,18 @@ MonoBehaviour:
         shouldBeAllowedToContinueInteract:
           _hasValue: 0
           _value: 0
-    - rid: 6196716169574481925
-      type: {class: InteractionConstraintIsInteracting, ns: MisterGames.Interact.Interactives, asm: MisterGames.Interact}
+    - rid: 4788946424385503237
+      type: {class: InteractionConditionIsInteracting, ns: MisterGames.Interact.Interactives, asm: MisterGames.Interact}
       data:
         shouldBeInInteraction: 0
+    - rid: 4788946424385503238
+      type: {class: InteractionConditionIsDetected, ns: MisterGames.Interact.Interactives, asm: MisterGames.Interact}
+      data:
+        shouldBeDetected: 1
+    - rid: 6196716169574481923
+      type: {class: ConditionGroupAll, ns: MisterGames.Common.Conditions, asm: MisterGames.Common}
+      data:
+        conditions:
+        - rid: 4788946424385503238
+        - rid: 4788946424385503237
+        - rid: 4788946424385503236
